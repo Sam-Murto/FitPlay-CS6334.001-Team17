@@ -257,6 +257,15 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.xr.oculus": {
+      "version": "3.2.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.management": "4.2.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.xr.openxr": {
       "version": "1.10.0",
       "depth": 0,
@@ -266,15 +275,6 @@
         "com.unity.xr.legacyinputhelpers": "2.1.2",
         "com.unity.inputsystem": "1.6.3",
         "com.unity.xr.core-utils": "2.1.1"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.xr.oculus": {
-      "version": "3.2.3",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.xr.management": "4.2.0"
       },
       "url": "https://packages.unity.com"
     },
