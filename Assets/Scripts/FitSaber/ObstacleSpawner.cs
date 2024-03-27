@@ -36,10 +36,9 @@ public class ObstacleSpawner : MonoBehaviour
 
     GameObject RandomObstacle()
     {
-        int min = 0;
         int max = obstacleTypes.Length - 1;
         float t = Random.value;
-        int randomIndex = (int)((max - 0.5f) * t + 0.5f);
+        int randomIndex = (int)((max) * t + 0.5f);
 
         return obstacleTypes[randomIndex];
     }
