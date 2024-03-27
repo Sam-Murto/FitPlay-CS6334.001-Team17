@@ -19,7 +19,7 @@ public class Score_text : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        current_score = player.GetComponent<Player_controller>().cuurent_score();
+        current_score = player.GetComponent<Player_controller>().current_score();
         score_text.text = "Score: " + current_score.ToString();
         
     }
