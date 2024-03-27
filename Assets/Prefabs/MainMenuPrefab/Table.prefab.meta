@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/MainMenuPrefab/Table.prefab.meta
+guid: df97228ac708f7345b40b4c5495c9895
+========
+guid: 235acfc671ae9de4e929fca3c0c80fd1
+>>>>>>>> development:Assets/Prefabs/Elements.prefab.meta
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
