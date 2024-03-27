@@ -13,6 +13,7 @@ public class MenuButtonCheck : MonoBehaviour
         List<InputDevice> devices = new List<InputDevice>();
         InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
         InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devices);
+        Debug.Log(devices.Count);
         targetDevice = devices[0];
     }
 
