@@ -51,127 +51,129 @@ extern void IntegratedSubsystem_get_valid_m6537B83457B7E79D9743A0EA9144BD116B0E8
 extern void IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009 (void);
 // 0x00000016 System.Void UnityEngine.IntegratedSubsystem::.ctor()
 extern void IntegratedSubsystem__ctor_m8A0E82CAFC72287502DB0158488C98831B2DF405 (void);
-// 0x00000017 System.Void UnityEngine.IntegratedSubsystem`1::.ctor()
-// 0x00000018 System.Void UnityEngine.SubsystemBindings::DestroySubsystem(System.IntPtr)
+// 0x00000017 TSubsystemDescriptor UnityEngine.IntegratedSubsystem`1::get_subsystemDescriptor()
+// 0x00000018 TSubsystemDescriptor UnityEngine.IntegratedSubsystem`1::get_SubsystemDescriptor()
+// 0x00000019 System.Void UnityEngine.IntegratedSubsystem`1::.ctor()
+// 0x0000001A System.Void UnityEngine.SubsystemBindings::DestroySubsystem(System.IntPtr)
 extern void SubsystemBindings_DestroySubsystem_m601801D653E84DE619656D06A61357F3C9BC7456 (void);
-// 0x00000019 System.Void UnityEngine.ISubsystem::Start()
-// 0x0000001A System.Void UnityEngine.ISubsystem::Stop()
-// 0x0000001B System.Void UnityEngine.ISubsystem::Destroy()
-// 0x0000001C System.Void UnityEngine.SubsystemManager::GetInstances(System.Collections.Generic.List`1<T>)
-// 0x0000001D System.Boolean UnityEngine.SubsystemManager::RemoveDeprecatedSubsystem(UnityEngine.Subsystem)
+// 0x0000001B System.Void UnityEngine.ISubsystem::Start()
+// 0x0000001C System.Void UnityEngine.ISubsystem::Stop()
+// 0x0000001D System.Void UnityEngine.ISubsystem::Destroy()
+// 0x0000001E System.Void UnityEngine.SubsystemManager::GetInstances(System.Collections.Generic.List`1<T>)
+// 0x0000001F System.Boolean UnityEngine.SubsystemManager::RemoveDeprecatedSubsystem(UnityEngine.Subsystem)
 extern void SubsystemManager_RemoveDeprecatedSubsystem_mBD8928FA7AE2FFC79D2768ED6F707FF61F65092D (void);
-// 0x0000001E System.Void UnityEngine.SubsystemManager::.cctor()
+// 0x00000020 System.Void UnityEngine.SubsystemManager::.cctor()
 extern void SubsystemManager__cctor_m4B044EB8875B225C565E6FB10A2296C0E72BDE2F (void);
-// 0x0000001F System.Void UnityEngine.SubsystemManager::GetSubsystemDescriptors(System.Collections.Generic.List`1<T>)
-// 0x00000020 System.Void UnityEngine.SubsystemManager::GetSubsystems(System.Collections.Generic.List`1<T>)
-// 0x00000021 System.Void UnityEngine.SubsystemManager::AddSubsystemSubset(System.Collections.Generic.List`1<TBaseTypeInList>,System.Collections.Generic.List`1<TQueryType>)
-// 0x00000022 UnityEngine.IntegratedSubsystem UnityEngine.SubsystemManager::GetIntegratedSubsystemByPtr(System.IntPtr)
+// 0x00000021 System.Void UnityEngine.SubsystemManager::GetSubsystemDescriptors(System.Collections.Generic.List`1<T>)
+// 0x00000022 System.Void UnityEngine.SubsystemManager::GetSubsystems(System.Collections.Generic.List`1<T>)
+// 0x00000023 System.Void UnityEngine.SubsystemManager::AddSubsystemSubset(System.Collections.Generic.List`1<TBaseTypeInList>,System.Collections.Generic.List`1<TQueryType>)
+// 0x00000024 UnityEngine.IntegratedSubsystem UnityEngine.SubsystemManager::GetIntegratedSubsystemByPtr(System.IntPtr)
 extern void SubsystemManager_GetIntegratedSubsystemByPtr_mC117FBE03DF764DB78D48B11AD5AC324F223BDE7 (void);
-// 0x00000023 System.Void UnityEngine.SubsystemManager::RemoveIntegratedSubsystemByPtr(System.IntPtr)
+// 0x00000025 System.Void UnityEngine.SubsystemManager::RemoveIntegratedSubsystemByPtr(System.IntPtr)
 extern void SubsystemManager_RemoveIntegratedSubsystemByPtr_mBFD54C173F757CAF38E897250D05D517D08D4784 (void);
-// 0x00000024 System.Void UnityEngine.SubsystemManager::AddStandaloneSubsystem(UnityEngine.SubsystemsImplementation.SubsystemWithProvider)
+// 0x00000026 System.Void UnityEngine.SubsystemManager::AddStandaloneSubsystem(UnityEngine.SubsystemsImplementation.SubsystemWithProvider)
 extern void SubsystemManager_AddStandaloneSubsystem_mBEE590C56742D1E540349BB4D225C265A145D722 (void);
-// 0x00000025 System.Boolean UnityEngine.SubsystemManager::RemoveStandaloneSubsystem(UnityEngine.SubsystemsImplementation.SubsystemWithProvider)
+// 0x00000027 System.Boolean UnityEngine.SubsystemManager::RemoveStandaloneSubsystem(UnityEngine.SubsystemsImplementation.SubsystemWithProvider)
 extern void SubsystemManager_RemoveStandaloneSubsystem_m61CD473221C4A3210629379D92018723301E982A (void);
-// 0x00000026 UnityEngine.SubsystemsImplementation.SubsystemWithProvider UnityEngine.SubsystemManager::FindStandaloneSubsystemByDescriptor(UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider)
+// 0x00000028 UnityEngine.SubsystemsImplementation.SubsystemWithProvider UnityEngine.SubsystemManager::FindStandaloneSubsystemByDescriptor(UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider)
 extern void SubsystemManager_FindStandaloneSubsystemByDescriptor_m49CCAABC4FB6569333A0D54281EC885C5447BA4D (void);
-// 0x00000027 System.Void UnityEngine.SubsystemManager::ReloadSubsystemsStarted()
+// 0x00000029 System.Void UnityEngine.SubsystemManager::ReloadSubsystemsStarted()
 extern void SubsystemManager_ReloadSubsystemsStarted_mE6BE70BD76D9C294AFC4ABCD9E4A0DF9BB0E4273 (void);
-// 0x00000028 System.Void UnityEngine.SubsystemManager::ReloadSubsystemsCompleted()
+// 0x0000002A System.Void UnityEngine.SubsystemManager::ReloadSubsystemsCompleted()
 extern void SubsystemManager_ReloadSubsystemsCompleted_m708F6B5CEF21605E49DF6DF6DDA81FE3DA19099B (void);
-// 0x00000029 System.Void UnityEngine.SubsystemManager::InitializeIntegratedSubsystem(System.IntPtr,UnityEngine.IntegratedSubsystem)
+// 0x0000002B System.Void UnityEngine.SubsystemManager::InitializeIntegratedSubsystem(System.IntPtr,UnityEngine.IntegratedSubsystem)
 extern void SubsystemManager_InitializeIntegratedSubsystem_mE3336CB0547C0B2CF195BA2372AFBC99F65AB6F5 (void);
-// 0x0000002A System.Void UnityEngine.SubsystemManager::ClearSubsystems()
+// 0x0000002C System.Void UnityEngine.SubsystemManager::ClearSubsystems()
 extern void SubsystemManager_ClearSubsystems_m36DD2EBBD868BD00A34CAAFD48BFA4E79D031443 (void);
-// 0x0000002B System.Void UnityEngine.SubsystemManager::StaticConstructScriptingClassMap()
+// 0x0000002D System.Void UnityEngine.SubsystemManager::StaticConstructScriptingClassMap()
 extern void SubsystemManager_StaticConstructScriptingClassMap_m350147EEDFABFFADB6541B807F1A94337F8E2337 (void);
-// 0x0000002C System.Void UnityEngine.Subsystem::Start()
-// 0x0000002D System.Void UnityEngine.Subsystem::Stop()
-// 0x0000002E System.Void UnityEngine.Subsystem::Destroy()
+// 0x0000002E System.Void UnityEngine.Subsystem::Start()
+// 0x0000002F System.Void UnityEngine.Subsystem::Stop()
+// 0x00000030 System.Void UnityEngine.Subsystem::Destroy()
 extern void Subsystem_Destroy_m0CE70A94D9CAD2E4B2528CFE5D9C874FD5BC4759 (void);
-// 0x0000002F System.Void UnityEngine.Subsystem::OnDestroy()
-// 0x00000030 System.Void UnityEngine.Subsystem::.ctor()
+// 0x00000031 System.Void UnityEngine.Subsystem::OnDestroy()
+// 0x00000032 System.Void UnityEngine.Subsystem::.ctor()
 extern void Subsystem__ctor_m43AA875446123D3DCF6016748B19934D0141447A (void);
-// 0x00000031 System.String UnityEngine.ISubsystemDescriptor::get_id()
-// 0x00000032 UnityEngine.ISubsystem UnityEngine.ISubsystemDescriptor::Create()
-// 0x00000033 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::RegisterDeprecatedDescriptor(UnityEngine.SubsystemDescriptor)
+// 0x00000033 System.String UnityEngine.ISubsystemDescriptor::get_id()
+// 0x00000034 UnityEngine.ISubsystem UnityEngine.ISubsystemDescriptor::Create()
+// 0x00000035 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::RegisterDeprecatedDescriptor(UnityEngine.SubsystemDescriptor)
 extern void SubsystemDescriptorStore_RegisterDeprecatedDescriptor_m0314598F5A51921C9C9B254B4E82C1191FC4D4B1 (void);
-// 0x00000034 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::InitializeManagedDescriptor(System.IntPtr,UnityEngine.IntegratedSubsystemDescriptor)
+// 0x00000036 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::InitializeManagedDescriptor(System.IntPtr,UnityEngine.IntegratedSubsystemDescriptor)
 extern void SubsystemDescriptorStore_InitializeManagedDescriptor_m74418769D7CDE1CED4F07A179A9173E6F0ECD12C (void);
-// 0x00000035 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::ClearManagedDescriptors()
+// 0x00000037 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::ClearManagedDescriptors()
 extern void SubsystemDescriptorStore_ClearManagedDescriptors_m14AEFE442EDDC8BD082F300C7054FE185E1EA1D5 (void);
-// 0x00000036 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::ReportSingleSubsystemAnalytics(System.String)
+// 0x00000038 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::ReportSingleSubsystemAnalytics(System.String)
 extern void SubsystemDescriptorStore_ReportSingleSubsystemAnalytics_m12986597FBE76C21232348BAC03ADEEB9F02DB99 (void);
-// 0x00000037 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::RegisterDescriptor(UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider)
+// 0x00000039 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::RegisterDescriptor(UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider)
 extern void SubsystemDescriptorStore_RegisterDescriptor_m6DEC96199F95ACCD68822060CEB79CA77AF44F12 (void);
-// 0x00000038 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::GetSubsystemDescriptors(System.Collections.Generic.List`1<T>)
-// 0x00000039 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::AddDescriptorSubset(System.Collections.Generic.List`1<TBaseTypeInList>,System.Collections.Generic.List`1<TQueryType>)
-// 0x0000003A System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::RegisterDescriptor(TDescriptor,System.Collections.Generic.List`1<TBaseTypeInList>)
-// 0x0000003B System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::.cctor()
+// 0x0000003A System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::GetSubsystemDescriptors(System.Collections.Generic.List`1<T>)
+// 0x0000003B System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::AddDescriptorSubset(System.Collections.Generic.List`1<TBaseTypeInList>,System.Collections.Generic.List`1<TQueryType>)
+// 0x0000003C System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::RegisterDescriptor(TDescriptor,System.Collections.Generic.List`1<TBaseTypeInList>)
+// 0x0000003D System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorStore::.cctor()
 extern void SubsystemDescriptorStore__cctor_mE267CA787BE559BD490D9ED8BD2D55F4E8DE6A14 (void);
-// 0x0000003C System.String UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::get_id()
+// 0x0000003E System.String UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::get_id()
 extern void SubsystemDescriptorWithProvider_get_id_m9E92FDF45FE9BFB0B28C2AE3EFE475998D01BBC7 (void);
-// 0x0000003D System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::set_id(System.String)
+// 0x0000003F System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::set_id(System.String)
 extern void SubsystemDescriptorWithProvider_set_id_m4E93140B46C960FFB4723062C55D05D7B551A57B (void);
-// 0x0000003E System.Type UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::get_providerType()
+// 0x00000040 System.Type UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::get_providerType()
 extern void SubsystemDescriptorWithProvider_get_providerType_m1ED8F898361B508FFE2A46D05E81CEAC43B040D4 (void);
-// 0x0000003F System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::set_providerType(System.Type)
+// 0x00000041 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::set_providerType(System.Type)
 extern void SubsystemDescriptorWithProvider_set_providerType_m27A630CAFBA225796667E17DE114673056339EA4 (void);
-// 0x00000040 System.Type UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::get_subsystemTypeOverride()
+// 0x00000042 System.Type UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::get_subsystemTypeOverride()
 extern void SubsystemDescriptorWithProvider_get_subsystemTypeOverride_mCE84F1611CB09975FBB4BE48E015316ADDB52668 (void);
-// 0x00000041 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::set_subsystemTypeOverride(System.Type)
+// 0x00000043 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::set_subsystemTypeOverride(System.Type)
 extern void SubsystemDescriptorWithProvider_set_subsystemTypeOverride_m34C15BBBE4EB41226EF1C0A0C8BB73A0955E0F3E (void);
-// 0x00000042 UnityEngine.ISubsystem UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::CreateImpl()
-// 0x00000043 UnityEngine.ISubsystem UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::UnityEngine.ISubsystemDescriptor.Create()
+// 0x00000044 UnityEngine.ISubsystem UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::CreateImpl()
+// 0x00000045 UnityEngine.ISubsystem UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::UnityEngine.ISubsystemDescriptor.Create()
 extern void SubsystemDescriptorWithProvider_UnityEngine_ISubsystemDescriptor_Create_m93889530D53B9658319E5EF704F277AC3B03B336 (void);
-// 0x00000044 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::ThrowIfInvalid()
-// 0x00000045 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::.ctor()
+// 0x00000046 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::ThrowIfInvalid()
+// 0x00000047 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider::.ctor()
 extern void SubsystemDescriptorWithProvider__ctor_mADB008B99F8F98EDD0C5AEBE00368F96D11FCCD1 (void);
-// 0x00000046 UnityEngine.ISubsystem UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::CreateImpl()
-// 0x00000047 TSubsystem UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::Create()
-// 0x00000048 System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::ThrowIfInvalid()
-// 0x00000049 TProvider UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::CreateProvider()
-// 0x0000004A System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::.ctor()
-// 0x0000004B System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::Start()
+// 0x00000048 UnityEngine.ISubsystem UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::CreateImpl()
+// 0x00000049 TSubsystem UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::Create()
+// 0x0000004A System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::ThrowIfInvalid()
+// 0x0000004B TProvider UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::CreateProvider()
+// 0x0000004C System.Void UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider`2::.ctor()
+// 0x0000004D System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::Start()
 extern void SubsystemWithProvider_Start_m720DC3EDB918F58D65CA4B12017D395788934644 (void);
-// 0x0000004C System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::OnStart()
-// 0x0000004D System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::Stop()
+// 0x0000004E System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::OnStart()
+// 0x0000004F System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::Stop()
 extern void SubsystemWithProvider_Stop_mB22AB4811D2636FCB317C0E54E8A7139D81A8E16 (void);
-// 0x0000004E System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::OnStop()
-// 0x0000004F System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::Destroy()
+// 0x00000050 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::OnStop()
+// 0x00000051 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::Destroy()
 extern void SubsystemWithProvider_Destroy_m8161D5B71C856F836660430CED8550AA17438BAF (void);
-// 0x00000050 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::OnDestroy()
-// 0x00000051 System.Boolean UnityEngine.SubsystemsImplementation.SubsystemWithProvider::get_running()
+// 0x00000052 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::OnDestroy()
+// 0x00000053 System.Boolean UnityEngine.SubsystemsImplementation.SubsystemWithProvider::get_running()
 extern void SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A4151B22C44 (void);
-// 0x00000052 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::set_running(System.Boolean)
+// 0x00000054 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::set_running(System.Boolean)
 extern void SubsystemWithProvider_set_running_mBEF44DA55F99B873A21E2003CDE06981E0348477 (void);
-// 0x00000053 UnityEngine.SubsystemsImplementation.SubsystemProvider UnityEngine.SubsystemsImplementation.SubsystemWithProvider::get_providerBase()
+// 0x00000055 UnityEngine.SubsystemsImplementation.SubsystemProvider UnityEngine.SubsystemsImplementation.SubsystemWithProvider::get_providerBase()
 extern void SubsystemWithProvider_get_providerBase_m8229B40F322D44A2E22B0AD62C581D284813410A (void);
-// 0x00000054 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::set_providerBase(UnityEngine.SubsystemsImplementation.SubsystemProvider)
+// 0x00000056 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::set_providerBase(UnityEngine.SubsystemsImplementation.SubsystemProvider)
 extern void SubsystemWithProvider_set_providerBase_m0517BCC9991DC69C2AAF8C60AF96211BB5CAE14C (void);
-// 0x00000055 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::Initialize(UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider,UnityEngine.SubsystemsImplementation.SubsystemProvider)
-// 0x00000056 UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider UnityEngine.SubsystemsImplementation.SubsystemWithProvider::get_descriptor()
-// 0x00000057 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::.ctor()
+// 0x00000057 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::Initialize(UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider,UnityEngine.SubsystemsImplementation.SubsystemProvider)
+// 0x00000058 UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider UnityEngine.SubsystemsImplementation.SubsystemWithProvider::get_descriptor()
+// 0x00000059 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider::.ctor()
 extern void SubsystemWithProvider__ctor_m7AAC2F13A01D674BF5040F42A08C88611FE60914 (void);
-// 0x00000058 TSubsystemDescriptor UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::get_subsystemDescriptor()
-// 0x00000059 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::set_subsystemDescriptor(TSubsystemDescriptor)
-// 0x0000005A TProvider UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::get_provider()
-// 0x0000005B System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::set_provider(TProvider)
-// 0x0000005C System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::OnCreate()
-// 0x0000005D System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::OnStart()
-// 0x0000005E System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::OnStop()
-// 0x0000005F System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::OnDestroy()
-// 0x00000060 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::Initialize(UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider,UnityEngine.SubsystemsImplementation.SubsystemProvider)
-// 0x00000061 UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::get_descriptor()
-// 0x00000062 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::.ctor()
-// 0x00000063 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider::.ctor()
+// 0x0000005A TSubsystemDescriptor UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::get_subsystemDescriptor()
+// 0x0000005B System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::set_subsystemDescriptor(TSubsystemDescriptor)
+// 0x0000005C TProvider UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::get_provider()
+// 0x0000005D System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::set_provider(TProvider)
+// 0x0000005E System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::OnCreate()
+// 0x0000005F System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::OnStart()
+// 0x00000060 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::OnStop()
+// 0x00000061 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::OnDestroy()
+// 0x00000062 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::Initialize(UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider,UnityEngine.SubsystemsImplementation.SubsystemProvider)
+// 0x00000063 UnityEngine.SubsystemsImplementation.SubsystemDescriptorWithProvider UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::get_descriptor()
+// 0x00000064 System.Void UnityEngine.SubsystemsImplementation.SubsystemWithProvider`3::.ctor()
+// 0x00000065 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider::.ctor()
 extern void SubsystemProvider__ctor_mF88170FBB0EBEEB2AB312C10958130058F256038 (void);
-// 0x00000064 System.Boolean UnityEngine.SubsystemsImplementation.SubsystemProvider`1::TryInitialize()
-// 0x00000065 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider`1::Start()
-// 0x00000066 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider`1::Stop()
-// 0x00000067 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider`1::Destroy()
-// 0x00000068 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider`1::.ctor()
-static Il2CppMethodPointer s_methodPointers[104] = 
+// 0x00000066 System.Boolean UnityEngine.SubsystemsImplementation.SubsystemProvider`1::TryInitialize()
+// 0x00000067 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider`1::Start()
+// 0x00000068 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider`1::Stop()
+// 0x00000069 System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider`1::Destroy()
+// 0x0000006A System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider`1::.ctor()
+static Il2CppMethodPointer s_methodPointers[106] = 
 {
 	IntegratedSubsystemDescriptor_get_id_m89DBA940C79ED7EFE1137E3EC4A5A53BF7052F15,
 	IntegratedSubsystemDescriptor_UnityEngine_ISubsystemDescriptor_Create_m8B6149525628F9DB15BB0651CEE0BE2FCAE1E875,
@@ -195,6 +197,8 @@ static Il2CppMethodPointer s_methodPointers[104] =
 	IntegratedSubsystem_get_valid_m6537B83457B7E79D9743A0EA9144BD116B0E850B,
 	IntegratedSubsystem_IsRunning_m6AF6106D2DA0A840DBA7D52E9D5F373658B66009,
 	IntegratedSubsystem__ctor_m8A0E82CAFC72287502DB0158488C98831B2DF405,
+	NULL,
+	NULL,
 	NULL,
 	SubsystemBindings_DestroySubsystem_m601801D653E84DE619656D06A61357F3C9BC7456,
 	NULL,
@@ -278,99 +282,97 @@ static Il2CppMethodPointer s_methodPointers[104] =
 	NULL,
 	NULL,
 };
-static const int32_t s_InvokerIndices[104] = 
+static const int32_t s_InvokerIndices[106] = 
 {
-	6114,
-	6114,
+	6339,
+	6339,
 	0,
-	6228,
-	0,
-	0,
-	0,
-	9845,
-	9913,
-	6114,
-	6114,
-	0,
-	6228,
-	10204,
-	4901,
-	6228,
-	6228,
-	6228,
-	6023,
-	6023,
-	6023,
-	6228,
-	0,
-	10202,
+	6464,
 	0,
 	0,
 	0,
+	10122,
+	10191,
+	6339,
+	6339,
 	0,
-	9686,
-	11040,
-	0,
-	0,
-	0,
-	9913,
-	10202,
-	10204,
-	9686,
-	9915,
-	11040,
-	11040,
-	8861,
-	11040,
-	11040,
-	0,
-	0,
-	6228,
-	0,
-	6228,
-	0,
-	0,
-	10204,
-	8861,
-	11040,
-	10204,
-	10204,
+	6464,
+	10483,
+	5084,
+	6464,
+	6464,
+	6464,
+	6244,
+	6244,
+	6244,
+	6464,
 	0,
 	0,
 	0,
-	11040,
-	6114,
-	4901,
-	6114,
-	4901,
-	6114,
-	4901,
-	0,
-	6114,
-	0,
-	6228,
+	10481,
 	0,
 	0,
 	0,
 	0,
-	0,
-	6228,
-	0,
-	6228,
-	0,
-	6228,
-	0,
-	6023,
-	4814,
-	6114,
-	4901,
-	0,
-	0,
-	6228,
+	9963,
+	11322,
 	0,
 	0,
 	0,
+	10191,
+	10481,
+	10483,
+	9963,
+	10193,
+	11322,
+	11322,
+	9133,
+	11322,
+	11322,
 	0,
+	0,
+	6464,
+	0,
+	6464,
+	0,
+	0,
+	10483,
+	9133,
+	11322,
+	10483,
+	10483,
+	0,
+	0,
+	0,
+	11322,
+	6339,
+	5084,
+	6339,
+	5084,
+	6339,
+	5084,
+	0,
+	6339,
+	0,
+	6464,
+	0,
+	0,
+	0,
+	0,
+	0,
+	6464,
+	0,
+	6464,
+	0,
+	6464,
+	0,
+	6244,
+	4989,
+	6339,
+	5084,
+	0,
+	0,
+	6464,
 	0,
 	0,
 	0,
@@ -378,28 +380,35 @@ static const int32_t s_InvokerIndices[104] =
 	0,
 	0,
 	0,
-	6228,
+	0,
+	0,
+	0,
+	0,
+	6464,
 	0,
 	0,
 	0,
 	0,
 	0,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[10] = 
+static const Il2CppTokenRangePair s_rgctxIndices[11] = 
 {
 	{ 0x02000003, { 0, 2 } },
-	{ 0x02000010, { 43, 9 } },
-	{ 0x02000012, { 52, 12 } },
-	{ 0x0600001C, { 2, 1 } },
-	{ 0x0600001F, { 3, 1 } },
-	{ 0x06000020, { 4, 5 } },
-	{ 0x06000021, { 9, 10 } },
-	{ 0x06000038, { 19, 5 } },
-	{ 0x06000039, { 24, 10 } },
-	{ 0x0600003A, { 34, 9 } },
+	{ 0x02000008, { 2, 2 } },
+	{ 0x02000010, { 45, 9 } },
+	{ 0x02000012, { 54, 12 } },
+	{ 0x0600001E, { 4, 1 } },
+	{ 0x06000021, { 5, 1 } },
+	{ 0x06000022, { 6, 5 } },
+	{ 0x06000023, { 11, 10 } },
+	{ 0x0600003A, { 21, 5 } },
+	{ 0x0600003B, { 26, 10 } },
+	{ 0x0600003C, { 36, 9 } },
 };
 extern const uint32_t g_rgctx_IntegratedSubsystemDescriptor_1_Create_m5973E509BE85C79B944AADEE93FD6D6E80940FE8;
 extern const uint32_t g_rgctx_TSubsystem_t75D38629E5B58BB4C8423B2F494B75E5F4509F1B;
+extern const uint32_t g_rgctx_TSubsystemDescriptor_t59C3F2B01B7FD365079268A90FA6EFF650F91FD9;
+extern const uint32_t g_rgctx_IntegratedSubsystem_1_get_subsystemDescriptor_m0F5F562F4FC1F45020225C5B959D63C7D0B41815;
 extern const uint32_t g_rgctx_SubsystemManager_GetSubsystems_TisT_tA2BB34A5254F7B52F2C218C16C9A0455942FC0F5_m53382D779438B0D7A18B1E6338DAD0F52008E1A4;
 extern const uint32_t g_rgctx_SubsystemDescriptorStore_GetSubsystemDescriptors_TisT_tC1C7E91EE3BF9F5F6CB6AEF844014EB2DFE9C857_m72893DE58B7F09F8306FD53372F4943E4D1A6235;
 extern const uint32_t g_rgctx_List_1_t4D4A4160AD6A5AF7BE63E6C9DDD4B2E4E331E8AD;
@@ -462,10 +471,12 @@ extern const uint32_t g_rgctx_SubsystemWithProvider_3_set_subsystemDescriptor_mD
 extern const uint32_t g_rgctx_SubsystemWithProvider_3_t22ADF9793EA3BE343C3D4A23FFBBCD4160380E74;
 extern const uint32_t g_rgctx_SubsystemWithProvider_3_OnCreate_mD74283A12D5D4FC397358732B086A5FDCD49C8B0;
 extern const uint32_t g_rgctx_SubsystemWithProvider_3_get_subsystemDescriptor_mCA2535C01B55FA21DBFE8D30A7A7F0BB1FB8A7A9;
-static const Il2CppRGCTXDefinition s_rgctxValues[64] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[66] = 
 {
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_IntegratedSubsystemDescriptor_1_Create_m5973E509BE85C79B944AADEE93FD6D6E80940FE8 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TSubsystem_t75D38629E5B58BB4C8423B2F494B75E5F4509F1B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TSubsystemDescriptor_t59C3F2B01B7FD365079268A90FA6EFF650F91FD9 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_IntegratedSubsystem_1_get_subsystemDescriptor_m0F5F562F4FC1F45020225C5B959D63C7D0B41815 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SubsystemManager_GetSubsystems_TisT_tA2BB34A5254F7B52F2C218C16C9A0455942FC0F5_m53382D779438B0D7A18B1E6338DAD0F52008E1A4 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SubsystemDescriptorStore_GetSubsystemDescriptors_TisT_tC1C7E91EE3BF9F5F6CB6AEF844014EB2DFE9C857_m72893DE58B7F09F8306FD53372F4943E4D1A6235 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_t4D4A4160AD6A5AF7BE63E6C9DDD4B2E4E331E8AD },
@@ -533,16 +544,16 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_SubsystemsModule_CodeGen
 const Il2CppCodeGenModule g_UnityEngine_SubsystemsModule_CodeGenModule = 
 {
 	"UnityEngine.SubsystemsModule.dll",
-	104,
+	106,
 	s_methodPointers,
 	0,
 	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,
-	10,
+	11,
 	s_rgctxIndices,
-	64,
+	66,
 	s_rgctxValues,
 	NULL,
 	NULL, // module initializer,
