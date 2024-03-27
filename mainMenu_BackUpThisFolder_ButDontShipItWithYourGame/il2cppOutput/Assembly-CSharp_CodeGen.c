@@ -132,7 +132,11 @@ extern void Score_text_Start_m10FA5BAADB3C75CABEE8A916CEA8924E945502FC (void);
 extern void Score_text_Update_m620F7C73EDE9A2778B0853E38E2D52875E37B8CA (void);
 // 0x0000003C System.Void Score_text::.ctor()
 extern void Score_text__ctor_m4CFFE51FB983EAC3D072A848428281AA677341D1 (void);
-static Il2CppMethodPointer s_methodPointers[60] = 
+// 0x0000003D System.Void FollowCamera::Update()
+extern void FollowCamera_Update_m7F27B438BF442E57A4634CC05DCDCF073BA762BA (void);
+// 0x0000003E System.Void FollowCamera::.ctor()
+extern void FollowCamera__ctor_m34E276CE6734948A2EF28412E342BB823F8FB69C (void);
+static Il2CppMethodPointer s_methodPointers[62] = 
 {
 	Outline_get_OutlineMode_m407E90C88C66DA2B6155740D4FB9142C355A491B,
 	Outline_set_OutlineMode_m82C5D0413E7460037A2A2BF8FB60B84C9AC17C06,
@@ -194,8 +198,10 @@ static Il2CppMethodPointer s_methodPointers[60] =
 	Score_text_Start_m10FA5BAADB3C75CABEE8A916CEA8924E945502FC,
 	Score_text_Update_m620F7C73EDE9A2778B0853E38E2D52875E37B8CA,
 	Score_text__ctor_m4CFFE51FB983EAC3D072A848428281AA677341D1,
+	FollowCamera_Update_m7F27B438BF442E57A4634CC05DCDCF073BA762BA,
+	FollowCamera__ctor_m34E276CE6734948A2EF28412E342BB823F8FB69C,
 };
-static const int32_t s_InvokerIndices[60] = 
+static const int32_t s_InvokerIndices[62] = 
 {
 	6309,
 	5056,
@@ -257,12 +263,14 @@ static const int32_t s_InvokerIndices[60] =
 	6464,
 	6464,
 	6464,
+	6464,
+	6464,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	60,
+	62,
 	s_methodPointers,
 	0,
 	NULL,
