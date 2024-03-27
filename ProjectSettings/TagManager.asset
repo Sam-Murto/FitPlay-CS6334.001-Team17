@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Coin
   - Finish_line
+  - Left
+  - Right
   layers:
   - Default
   - TransparentFX
