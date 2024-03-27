@@ -8,6 +8,8 @@ public class MenuButtonCheck : MonoBehaviour
     private InputDevice targetDevice;
     public GameObject pauseMenu;
 
+    private bool isActive = false;
+
     void Start()
     {
         List<InputDevice> devices = new List<InputDevice>();
@@ -25,6 +27,7 @@ public class MenuButtonCheck : MonoBehaviour
     {
         if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
         {
+            
             pauseMenu.SetActive(!pauseMenu.activeSelf);
         }
     }
