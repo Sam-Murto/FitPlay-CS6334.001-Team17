@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8ae3555d07f5b754bbf5ad155b3dd1b7
   - enabled: 1
+    path: Assets/Scenes/Boxing.unity
+    guid: dbd2fe5ab0fc00444a79aa70baf99e7b
+  - enabled: 1
+    path: Assets/Scenes/FitSaber.unity
+    guid: a8bd1ed5444588349ac09ff739a8e9e1
+  - enabled: 1
     path: Assets/Scenes/FitRunning.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/HandsDemoScene.unity
+    guid: 3ff35cecbcc52cc42945cf531638a60a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8a4dc22059e1425469af99bdb8fdda10, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 90fcddaa5678ab64791f4b09294367b6, type: 2}
