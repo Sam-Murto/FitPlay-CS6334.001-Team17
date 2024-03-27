@@ -9,6 +9,8 @@ public class MoveAlongTrack : MonoBehaviour
     float distanceTraveled = 0.0f;
     void Update()
     {
+        if (GameState.isPaused) return;
+
         float moveAmount = speed * Time.deltaTime;
         transform.Translate(Vector3.back * moveAmount);
         distanceTraveled += moveAmount;

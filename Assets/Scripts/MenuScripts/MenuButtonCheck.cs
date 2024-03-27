@@ -7,6 +7,7 @@ public class MenuButtonCheck : MonoBehaviour
 {
     private InputDevice targetDevice;
     public GameObject pauseMenu;
+    private bool previousMenuButtonValue = false;
 
     void Start()
     {
@@ -19,9 +20,13 @@ public class MenuButtonCheck : MonoBehaviour
 
     void Update()
     {
-        if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
+
+        if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue && previousMenuButtonValue != menuButtonValue)
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
+            GameState.TogglePause();
         }
+
+        previousMenuButtonValue = menuButtonValue;
     }
 }
