@@ -20,8 +20,8 @@ extern void Coin_Update_mD81A56D3C82C2FF349BB57ED6C8B95699F2E5908 (void);
 extern void Coin_FixedUpdate_mB68618169D6029CBB2CA2833A9D7E255411E7B96 (void);
 // 0x00000004 System.Void Coin::.ctor()
 extern void Coin__ctor_mFEAAC42C1DAABB5CCCF4B39FCDBC5D0B0B8A183D (void);
-// 0x00000005 System.Void SceneTransition::ChangeScene(System.String)
-extern void SceneTransition_ChangeScene_mE7AA28C40D8F8FDDAF54307E20004AC2C15A67BE (void);
+// 0x00000005 System.Void SceneTransition::ChangeScene(System.Int32)
+extern void SceneTransition_ChangeScene_m0DBD39D7AA6EFE0E127C7FABEC455B4509EB27C6 (void);
 // 0x00000006 System.Void SceneTransition::.ctor()
 extern void SceneTransition__ctor_m6FEBED7A92C4C5A3ED76C9251DC10A680690B5E5 (void);
 // 0x00000007 System.Void Player_controller::Start()
@@ -46,7 +46,7 @@ static Il2CppMethodPointer s_methodPointers[14] =
 	Coin_Update_mD81A56D3C82C2FF349BB57ED6C8B95699F2E5908,
 	Coin_FixedUpdate_mB68618169D6029CBB2CA2833A9D7E255411E7B96,
 	Coin__ctor_mFEAAC42C1DAABB5CCCF4B39FCDBC5D0B0B8A183D,
-	SceneTransition_ChangeScene_mE7AA28C40D8F8FDDAF54307E20004AC2C15A67BE,
+	SceneTransition_ChangeScene_m0DBD39D7AA6EFE0E127C7FABEC455B4509EB27C6,
 	SceneTransition__ctor_m6FEBED7A92C4C5A3ED76C9251DC10A680690B5E5,
 	Player_controller_Start_m07F4F6507510C1457F9A07C0533BD10B2ADE321E,
 	Player_controller_Update_mE7BD5D13C51AE1DCD5F1CC1CCDE93B03A06B5A32,
@@ -63,7 +63,7 @@ static const int32_t s_InvokerIndices[14] =
 	6451,
 	6451,
 	6451,
-	5072,
+	5044,
 	6451,
 	6451,
 	6451,
