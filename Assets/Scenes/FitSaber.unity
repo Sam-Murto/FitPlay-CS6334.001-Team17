@@ -380,7 +380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6180204182741784689, guid: 5154132929c393d43b9f01c633df7590, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6180204182741784689, guid: 5154132929c393d43b9f01c633df7590, type: 3}
       propertyPath: m_LocalPosition.z
@@ -418,6 +418,14 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7315049982386785227, guid: 5154132929c393d43b9f01c633df7590, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315049982386785227, guid: 5154132929c393d43b9f01c633df7590, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7379853819362812620, guid: 5154132929c393d43b9f01c633df7590, type: 3}
       propertyPath: strikeSpeedThreshold
       value: 10
@@ -427,6 +435,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8247674113205866371, guid: 5154132929c393d43b9f01c633df7590, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257104656142450854, guid: 5154132929c393d43b9f01c633df7590, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
