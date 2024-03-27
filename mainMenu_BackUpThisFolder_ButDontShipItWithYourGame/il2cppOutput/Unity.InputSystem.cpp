@@ -150,8 +150,6 @@ struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
 struct IReadOnlyList_1_t061F8725FAC909CEBEA712B5532006744C8957EC;
 // System.Collections.Generic.IReadOnlyList`1<System.Object>
 struct IReadOnlyList_1_t096750C6D09536A8131A83E4ACF863B54ADEE544;
-// UnityEngine.InputSystem.InputProcessor`1<System.Int32>
-struct InputProcessor_1_t6E31E29C499C6D9610C662BCCAD45B97D442C96B;
 // UnityEngine.InputSystem.InputProcessor`1<UnityEngine.Quaternion>
 struct InputProcessor_1_t43B1AEC927E378D43D0207A4C031927E872280CE;
 // UnityEngine.InputSystem.InputProcessor`1<System.Single>
@@ -200,8 +198,6 @@ struct Action_2U5BU5D_tE313524623BEAF7FD2ABCEDAD1C5A2C556630373;
 struct EntryU5BU5D_t96DB90A5E7AF5DE8856F1D1B687FB2AAB9714EEE;
 // System.Collections.Generic.Dictionary`2/Entry<System.String,System.Int32>[]
 struct EntryU5BU5D_tEA0133B78B9FF7045128C508FA50247E525A94D6;
-// UnityEngine.InputSystem.InputProcessor`1<System.Int32>[]
-struct InputProcessor_1U5BU5D_tB3C64A18219DEBFF75635AE580655A02C187A57E;
 // UnityEngine.InputSystem.InputProcessor`1<UnityEngine.Quaternion>[]
 struct InputProcessor_1U5BU5D_t8533CEA9A58C5C83EB993039C5E7601637DA4140;
 // UnityEngine.InputSystem.InputProcessor`1<System.Single>[]
@@ -316,8 +312,6 @@ struct DisplayNameAttribute_tECBA9AC4CCBE61186E2B3C397C93AAFA5A2631E8;
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
 // System.Reflection.FieldInfo
 struct FieldInfo_t;
-// Unity.XR.Oculus.Input.GearVRTrackedController
-struct GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A;
 // Unity.XR.OpenVR.HandedViveTracker
 struct HandedViveTracker_tC5271F12BDA5976E7419EE56E13F42B9487BE39B;
 // UnityEngine.XR.WindowsMR.Input.HololensHand
@@ -336,6 +330,8 @@ struct InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD;
 struct InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D;
 // UnityEngine.InputSystem.InputActionMap
 struct InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09;
+// UnityEngine.InputSystem.InputActionReference
+struct InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1;
 // UnityEngine.InputSystem.InputActionState
 struct InputActionState_t780948EA293BAA800AD8699518B58B59FFB8A700;
 // UnityEngine.InputSystem.InputBinding
@@ -368,16 +364,6 @@ struct MethodInfo_t;
 struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
-// Unity.XR.Oculus.Input.OculusHMD
-struct OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1;
-// Unity.XR.Oculus.Input.OculusHMDExtended
-struct OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB;
-// Unity.XR.Oculus.Input.OculusRemote
-struct OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0;
-// Unity.XR.Oculus.Input.OculusTouchController
-struct OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C;
-// Unity.XR.Oculus.Input.OculusTrackingReference
-struct OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D;
 // Unity.XR.OpenVR.OpenVRControllerWMR
 struct OpenVRControllerWMR_tC4E4C2F4AD9F1BE36251784D046F778EA6D42306;
 // Unity.XR.OpenVR.OpenVRHMD
@@ -490,6 +476,7 @@ IL2CPP_EXTERN_C RuntimeClass* IInputActionCollection2_tA4D3640154DE282224A60A444
 IL2CPP_EXTERN_C RuntimeClass* InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InputActionPhase_t79D9374C1940AA7248377075A0E83122540334C6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InputActionRebindingExtensions_t47AC4DA1EF88B99CDA442F6A93C59AC6DD6E0F3A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InputActionState_t780948EA293BAA800AD8699518B58B59FFB8A700_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InputActionType_t7E3615BDDF3C84F39712E5889559D3AD8E773108_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InputActionU5BU5D_t6F881A9FE5C2016615C8D2E0B192608EA5FCE810_il2cpp_TypeInfo_var;
@@ -520,8 +507,10 @@ IL2CPP_EXTERN_C RuntimeClass* Parameter_tD6E1ED34401D532B18F2CEBCDA8BC4E5332110B
 IL2CPP_EXTERN_C RuntimeClass* Predicate_1_t2F2BEC402386E3B09B1D7D7D935BD33BDB4FAFF8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReadActionJsonU5BU5D_t77929C62C9D95D0C5DF96AEB33748B4CD11EF89D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReadMapJsonU5BU5D_t68A2EDFE76A2A6CBA2E01CEB45D87BF711694308_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ReadOnlyArray_1_tB688C6ED4807227AAD260815DAFB574392403081_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReadOnlyArray_1_tF49E7A2430C7D717C5DF8A8C2626314D0D9C1CF4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RebindingOperation_tF7D9BCBB6E69668FA3A5C211104FF8637F9F3470_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RuntimeObject_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SchemeJsonU5BU5D_tE8D200C4C143F0FE243B6AE24496ED24284FEC28_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringBuilder_t_il2cpp_TypeInfo_var;
@@ -540,7 +529,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral003528DCAD37B27CF7D8112F88321E166C4DE072
 IL2CPP_EXTERN_C String_t* _stringLiteral023DD7331D6D2552C2332AAE94DB1E66780AE095;
 IL2CPP_EXTERN_C String_t* _stringLiteral03BA665089B55557F531FE15362514C440338A88;
 IL2CPP_EXTERN_C String_t* _stringLiteral0493B34AF18FDCACFEA9CE22A4A986D4997C9BB4;
-IL2CPP_EXTERN_C String_t* _stringLiteral04EA248327ED413DE02A011F18AC3C95CE6B8EF0;
 IL2CPP_EXTERN_C String_t* _stringLiteral077AC4F37BECA7E305659A36FD4351A1A726D74E;
 IL2CPP_EXTERN_C String_t* _stringLiteral07FE91C6DD5CF0CC38647619A84ABB716E8FC62F;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B027DF4509B94EE202D7911887D9FC93669514B;
@@ -552,25 +540,23 @@ IL2CPP_EXTERN_C String_t* _stringLiteral114A81E0999B507FB15C43C137CB34DA4305BB75
 IL2CPP_EXTERN_C String_t* _stringLiteral1170092DF5BE56D21F8D1162C48687759C36B0C8;
 IL2CPP_EXTERN_C String_t* _stringLiteral123C43710F305AB10E82F1B225DACB726753B5B8;
 IL2CPP_EXTERN_C String_t* _stringLiteral125E19000A9AFFA661B16A35D5087E438123661A;
-IL2CPP_EXTERN_C String_t* _stringLiteral156E662C55D382C18194118C3287CEAB98FA2C6F;
 IL2CPP_EXTERN_C String_t* _stringLiteral17BB1E2655B25CF3189C66EFEAED012734FCA67C;
 IL2CPP_EXTERN_C String_t* _stringLiteral1B661C870217F11756934F5826E14A434DC7DF03;
 IL2CPP_EXTERN_C String_t* _stringLiteral1CE4A6CDFD85BAA924C76E3D6FB1AF4BC07DC0E5;
 IL2CPP_EXTERN_C String_t* _stringLiteral1D9BC2C776D045C8AE166A942A9E637A7CADE7E5;
 IL2CPP_EXTERN_C String_t* _stringLiteral2089C15C4332D83D0388E9B6CF7057950BB5CD54;
+IL2CPP_EXTERN_C String_t* _stringLiteral22C0BFC803D5BD7AC2BA78E866EC35DBF4356A5B;
 IL2CPP_EXTERN_C String_t* _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745;
 IL2CPP_EXTERN_C String_t* _stringLiteral24BA0B3EAF2D368DF4A667A3DA43E98A55602935;
-IL2CPP_EXTERN_C String_t* _stringLiteral29340CC6DE4F0D8CF1A3ADBF57306A53920E648A;
-IL2CPP_EXTERN_C String_t* _stringLiteral2AD47C03F7A83F82E3B2ADFE8A60F1727FD3BEFD;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C43BA5A481CBEF412DB695717FC94453B3769F6;
 IL2CPP_EXTERN_C String_t* _stringLiteral2D3C0882E8B897E888F8BF5C82A33ED850CDEA80;
 IL2CPP_EXTERN_C String_t* _stringLiteral2D957F270C1C976B53F9247D036B0CAE04598861;
 IL2CPP_EXTERN_C String_t* _stringLiteral2FAF69E7069A74915581E7B248D1232DBBACF6CC;
 IL2CPP_EXTERN_C String_t* _stringLiteral3225DAD95AB24961010C12E3650816717F53AEB8;
-IL2CPP_EXTERN_C String_t* _stringLiteral3624BAC25188A8C57A604CA0D3ACB2CBF73CF5DF;
+IL2CPP_EXTERN_C String_t* _stringLiteral324B7BF2CA4CDF2B0890671B3810E93A4B864259;
 IL2CPP_EXTERN_C String_t* _stringLiteral37B97248AD78DD69BA3DF192A954DA136A0917D3;
-IL2CPP_EXTERN_C String_t* _stringLiteral381617D1A1C0C848CBE085A3C3BF523A03E9659F;
 IL2CPP_EXTERN_C String_t* _stringLiteral3C686C624D22B0C45E4FADFB00FA535DDDC88AD7;
+IL2CPP_EXTERN_C String_t* _stringLiteral3D0876C1556DFC2E63862DAD485048B7A5B2BBE9;
 IL2CPP_EXTERN_C String_t* _stringLiteral42646B33B50B6AA15E22733C8900716F0FE19E1D;
 IL2CPP_EXTERN_C String_t* _stringLiteral43187C90BBB5DFB063A95733C9BD65ECD25A2E84;
 IL2CPP_EXTERN_C String_t* _stringLiteral4375062BD8882E451B6BEE137E47CDAFE50A90EC;
@@ -582,7 +568,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral4ADB212528F8CF625764142B108030A0499510F0
 IL2CPP_EXTERN_C String_t* _stringLiteral4C9B28579DAB706CEF903A85854B98A08280D27D;
 IL2CPP_EXTERN_C String_t* _stringLiteral4D1DC203F0C5F17225ECA9C512567695D1F57C24;
 IL2CPP_EXTERN_C String_t* _stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30;
-IL2CPP_EXTERN_C String_t* _stringLiteral4E267D25EFB4D56321079C3FF27EAE0DC4819CC9;
 IL2CPP_EXTERN_C String_t* _stringLiteral4FAF1332EAA22ED62546993B44D1AE07024AA9C9;
 IL2CPP_EXTERN_C String_t* _stringLiteral5875F6A815DAAC3261C20810A8B3CFE552960398;
 IL2CPP_EXTERN_C String_t* _stringLiteral5BEFD8CC60A79699B5BB00E37BAC5B62D371E174;
@@ -592,31 +577,32 @@ IL2CPP_EXTERN_C String_t* _stringLiteral5E59ADEC6D065EC4D3C24CACB84516581F7EA09D
 IL2CPP_EXTERN_C String_t* _stringLiteral6A8CECB369E64DA7E1FBB6FDE079801EFD1EBFEB;
 IL2CPP_EXTERN_C String_t* _stringLiteral6B7B4D9A6606E6EE99A64447DFA7DB3DC7C870F5;
 IL2CPP_EXTERN_C String_t* _stringLiteral70F65AEE81F97590F7F0901232AAFE6147B87BE4;
-IL2CPP_EXTERN_C String_t* _stringLiteral767FF60B240D13D0E7862196C1340B1049EF4B4B;
 IL2CPP_EXTERN_C String_t* _stringLiteral7762427C3252F7C58210B9472BDD0261982D2DE1;
 IL2CPP_EXTERN_C String_t* _stringLiteral7B72C5CEFC46633AFEAE775EBD716EE5D3E8BE9C;
 IL2CPP_EXTERN_C String_t* _stringLiteral7C1DD17793A959EEED6AE2F7374714DAD760B136;
 IL2CPP_EXTERN_C String_t* _stringLiteral7C89946E4D4632742C28CE8B5364B14D9B01D258;
 IL2CPP_EXTERN_C String_t* _stringLiteral7D3C9781D907A7776ACC4FA672B81C2E44257E6B;
 IL2CPP_EXTERN_C String_t* _stringLiteral7DE03E5EBA0308517D1762F2C0DF3B9E2A2F1870;
+IL2CPP_EXTERN_C String_t* _stringLiteral7F67F2BEECF89EF5CDF8DE4682F3A9B37BE8E5AE;
 IL2CPP_EXTERN_C String_t* _stringLiteral81244B93268D391ECE039BC7D437F0BA5B417802;
 IL2CPP_EXTERN_C String_t* _stringLiteral8269852B92E4A68A3B4FD4D2BE99CAC1251D6CF3;
 IL2CPP_EXTERN_C String_t* _stringLiteral827E09C11A4BC48DE84AF1E4A6E0A987CD39CC68;
 IL2CPP_EXTERN_C String_t* _stringLiteral836BEF03CDF7F78C55ADABFC8E7F1FC31387E456;
 IL2CPP_EXTERN_C String_t* _stringLiteral85AA9BC37D637232022ECD84C2C25B3117734177;
 IL2CPP_EXTERN_C String_t* _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1;
-IL2CPP_EXTERN_C String_t* _stringLiteral890FDBCF037770EED7A1937DEF697FFC44FBF0B3;
+IL2CPP_EXTERN_C String_t* _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D;
 IL2CPP_EXTERN_C String_t* _stringLiteral8A43899ED9EC0C014D53779046A43C26EBD91D66;
 IL2CPP_EXTERN_C String_t* _stringLiteral8AE263ACD0B994D3BE52A427E3279DE126BB0E6A;
 IL2CPP_EXTERN_C String_t* _stringLiteral8AF7B9D6121033ED1DE80EFA3688A7998521AB1F;
 IL2CPP_EXTERN_C String_t* _stringLiteral8B0BAD691757D16D6283F2E533FEAA25D0219804;
 IL2CPP_EXTERN_C String_t* _stringLiteral8C86A0168073A8D5BD2DAB7F709FA20D552076CF;
+IL2CPP_EXTERN_C String_t* _stringLiteral90F0368FD1E939DF97C4180C4159E1B8783C898C;
 IL2CPP_EXTERN_C String_t* _stringLiteral92B8E551EF78EA21EABB85995C1DDDF9474CD320;
 IL2CPP_EXTERN_C String_t* _stringLiteral95D9CEBA703A971C1360204FF93C4215006D3B1D;
 IL2CPP_EXTERN_C String_t* _stringLiteral9C0461316058197D67FFB59CE6A345F2B7BEA590;
 IL2CPP_EXTERN_C String_t* _stringLiteral9D66EF12A6CD82764376802923341E3DC77EED80;
-IL2CPP_EXTERN_C String_t* _stringLiteral9E98EC4F7D85E6AB585D718D9BEDBB163E42B54C;
 IL2CPP_EXTERN_C String_t* _stringLiteral9FE5967523CA0E49A247084021DB0C0C2C996FDF;
+IL2CPP_EXTERN_C String_t* _stringLiteralA42779B09629BCE81B76EF626A57A0B40F2AD827;
 IL2CPP_EXTERN_C String_t* _stringLiteralA50BD304226505CD59BAEECE4F335B233D87784B;
 IL2CPP_EXTERN_C String_t* _stringLiteralA8BC3112B7D8BA7D239031A9B33E96A23E0E29CB;
 IL2CPP_EXTERN_C String_t* _stringLiteralAA41A2AF3818FFBB07189032FA171A7510DFAAA9;
@@ -628,8 +614,8 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB65ECF98859F9960AF3A135B1DB157C6A9E64500
 IL2CPP_EXTERN_C String_t* _stringLiteralB68C3FC46C8FAFC9C422751FEACA9C2FD2DC12E2;
 IL2CPP_EXTERN_C String_t* _stringLiteralB720A9AE58815DFF5576319E5228D318E7899C07;
 IL2CPP_EXTERN_C String_t* _stringLiteralB72BE2F59EE51147A95A37BA61416BE74CE0822A;
-IL2CPP_EXTERN_C String_t* _stringLiteralB795E7C13E4CFACF08133C1739B538F3A728EF41;
 IL2CPP_EXTERN_C String_t* _stringLiteralB81B10F5CAB114184CB2AEC199DE4C618C7F57DB;
+IL2CPP_EXTERN_C String_t* _stringLiteralB83C20F0372B83AFCF2F380FFFEDF0FC5B2716DF;
 IL2CPP_EXTERN_C String_t* _stringLiteralBAB78FE52E1FDB7FF399F8778E6696CD0042FF45;
 IL2CPP_EXTERN_C String_t* _stringLiteralBD2155E54D0A0EF69D6B035ACE4FB0D1E5C8A136;
 IL2CPP_EXTERN_C String_t* _stringLiteralBEC60036F42A807E632C327173214645D880BF86;
@@ -638,7 +624,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB
 IL2CPP_EXTERN_C String_t* _stringLiteralC24CF334CB21B70F92A9C591DBC94E85738C0C4E;
 IL2CPP_EXTERN_C String_t* _stringLiteralC263EA29ADF3548CFEBC57B532EED28451A56C10;
 IL2CPP_EXTERN_C String_t* _stringLiteralC304E7B9445AC087CDA6675596A2D443AF7A5CE1;
-IL2CPP_EXTERN_C String_t* _stringLiteralC3E98CA0D21B6899AC08C4CE0868CF1323933585;
 IL2CPP_EXTERN_C String_t* _stringLiteralC49271934571B500FDC497EFB8A9FA5650E48B32;
 IL2CPP_EXTERN_C String_t* _stringLiteralC789BB4D28BFD5F3834863F0213E73AEF017902B;
 IL2CPP_EXTERN_C String_t* _stringLiteralC8FE4FB2F0C7351CCB064A9D9BD65C0FC83D4E12;
@@ -666,9 +651,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF64BD2E3B35D211DDDF5000ED8CE421EA8EDD07A
 IL2CPP_EXTERN_C String_t* _stringLiteralF6CFDC1274B766A282F7B3F8F7CCC8BDF8038D7B;
 IL2CPP_EXTERN_C String_t* _stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267;
 IL2CPP_EXTERN_C String_t* _stringLiteralFAAED55F148F74B2C74F8C745D3CF6CBC766B1DC;
-IL2CPP_EXTERN_C String_t* _stringLiteralFABA7B84135B56F6F79588F7B57766574B6E8C66;
 IL2CPP_EXTERN_C String_t* _stringLiteralFE79FF373808574898C82AC1320C55C1182FB75A;
-IL2CPP_EXTERN_C String_t* _stringLiteralFE99981D4BE3BFBE312C52C21EADDC2EACD9ED3D;
 IL2CPP_EXTERN_C const RuntimeMethod* ArrayHelpers_AppendListWithCapacity_TisInputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B_TisReadOnlyArray_1_t21E90B3F1DF1E9A2088EA0523F03C47910735BCA_mC1A7620FED360937655E908F8FD8632035A891FB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ArrayHelpers_AppendWithCapacity_TisParameterOverride_tC0D5877125AE0F07C6A1EF2110FB799B3DCB89BA_m040FFE4E418832699EB7DF51CD874B958DD5117D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ArrayHelpers_AppendWithCapacity_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m4AB5D7766BAD45E03929DF54506F9E3D98545967_RuntimeMethod_var;
@@ -698,6 +681,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m326BE21727998E7762D5806
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mA3C3860EDE2CDD08BBD68C389377BC89D029D968_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m038480C0EC13713DBD89A53BE69FF0359501B4C2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m5CF545BA47D9D9A8403BBB66E1634E2BEC940CB5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Contains_TisInputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_mDB4A35240D267764A47303CA94557A173E5AF220_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Count_TisInputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_mDE1D4517D8553BE465CD46AFF7DBC610DC7591B0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m09170C1C13419F141F9828D8CCCB9C39C5C81676_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m1BBD4A9E69D6AE442844EB73540D87EBD5550945_RuntimeMethod_var;
@@ -763,6 +747,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* InputActionRebindingExtensions_RemoveBindin
 IL2CPP_EXTERN_C const RuntimeMethod* InputActionRebindingExtensions_RemoveBindingOverrides_m33613A625E256982E6E86DDD39A6C68286C48D29_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputActionRebindingExtensions_SaveBindingOverridesAsJson_m5D0C450183AE58C714119EF5A5FC99F3C9019BF0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputActionRebindingExtensions_SaveBindingOverridesAsJson_m98B49964226B6954AC147C7C6439785217B24ED7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* InputActionReference_SetInternal_m953C49C2F169CEB8A34ED2F35B9976FD23F3C83C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* InputActionReference_Set_m6FD5F9454BE84DCF93582263A8D5F9E78D78299A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* InputActionReference_Set_mA08B7801CA2E7C3BB7C5C4F282538F1616734B86_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputAction_BindingIndexOnActionToBindingIndexOnMap_mCC5353C51215568F0B647255DC1122BDDDAC2817_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputControlList_1_Add_m97EF06743F221062A1090A90E1D48B87C2D83489_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputControlList_1_Clear_m37199CE0432AB811610C4D5C715302CE99AD026F_RuntimeMethod_var;
@@ -775,7 +762,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* InputControlList_1_get_Item_m1D6E78B065D973
 IL2CPP_EXTERN_C const RuntimeMethod* InputControlList_1_set_Capacity_mFE0AF24F639011DED95560D190359ED714540CBC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* InputControl_GetChildControl_TisIntegerControl_tA24544EFF42204852F638FF5147F754962C997AB_m87D5D6574BD57F88D41DDE18D17933360E255297_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputControl_GetChildControl_TisQuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1_m6F3533847D96A9AD4363B88D2D912D7ADCE096C4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var;
@@ -863,6 +849,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* RebindingOperation_WithExpectedControlType_
 IL2CPP_EXTERN_C const RuntimeMethod* RebindingOperation_WithMagnitudeHavingToBeGreaterThan_m2F9535324425FF0157F0F7742B8E24E03C2FE38B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RebindingOperation_WithTargetBinding_mB2211D62497D0D9B562662E768F9CF2C23A88DD8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ScriptableObject_CreateInstance_TisInputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D_m98C68FC7FCE935BA42C0882AEEC422DD51D355EF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ScriptableObject_CreateInstance_TisInputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1_mBEDFA5D250E26DA02AC5BC2D26338EC2551F7415_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StringHelpers_Join_TisString_t_mB4934CF381F7A06E5AA2BB1ED99011F3A999D85D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CGetEnumeratorU3Ed__32_System_Collections_IEnumerator_Reset_mB16B63B9A31534EAFC15207277BB51B9D15E8926_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass25_0_U3CGetBindingDisplayStringU3Eb__0_mE35A48928D0919B1B5F66D85E8C543B66C6A1188_RuntimeMethod_var;
@@ -1288,17 +1275,6 @@ struct InlinedArray_1_tF80F63393E0BF97AFE20E770FC71798135300300
 	Action_2U5BU5D_tE313524623BEAF7FD2ABCEDAD1C5A2C556630373* ___additionalValues_2;
 };
 
-// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<System.Int32>>
-struct InlinedArray_1_tCBE1C2CE719FCFE71270323E0AEFF8C6536B0493 
-{
-	// System.Int32 UnityEngine.InputSystem.Utilities.InlinedArray`1::length
-	int32_t ___length_0;
-	// TValue UnityEngine.InputSystem.Utilities.InlinedArray`1::firstValue
-	InputProcessor_1_t6E31E29C499C6D9610C662BCCAD45B97D442C96B* ___firstValue_1;
-	// TValue[] UnityEngine.InputSystem.Utilities.InlinedArray`1::additionalValues
-	InputProcessor_1U5BU5D_tB3C64A18219DEBFF75635AE580655A02C187A57E* ___additionalValues_2;
-};
-
 // UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<UnityEngine.Quaternion>>
 struct InlinedArray_1_t209C5F9C876036B8C081C3E70D85ADAA2018197B 
 {
@@ -1569,6 +1545,31 @@ struct Guid_t
 	uint8_t ____j_10;
 	// System.Byte System.Guid::_k
 	uint8_t ____k_11;
+};
+
+// UnityEngine.InputSystem.InputActionProperty
+struct InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD 
+{
+	// System.Boolean UnityEngine.InputSystem.InputActionProperty::m_UseReference
+	bool ___m_UseReference_0;
+	// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionProperty::m_Action
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_Action_1;
+	// UnityEngine.InputSystem.InputActionReference UnityEngine.InputSystem.InputActionProperty::m_Reference
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_Reference_2;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.InputSystem.InputActionProperty
+struct InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_pinvoke
+{
+	int32_t ___m_UseReference_0;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_Action_1;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_Reference_2;
+};
+// Native definition for COM marshalling of UnityEngine.InputSystem.InputActionProperty
+struct InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_com
+{
+	int32_t ___m_UseReference_0;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_Action_1;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___m_Reference_2;
 };
 
 // UnityEngine.InputSystem.InputBinding
@@ -4721,19 +4722,6 @@ struct Func_3_t2B401BCD35B0B99F92A4DFE6D49848E9CA19DB66  : public MulticastDeleg
 {
 };
 
-// UnityEngine.InputSystem.InputControl`1<System.Int32>
-struct InputControl_1_t6610D981ECAED7950370CC37B55465BBFDDD6A61  : public InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E
-{
-	// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<TValue>> UnityEngine.InputSystem.InputControl`1::m_ProcessorStack
-	InlinedArray_1_tCBE1C2CE719FCFE71270323E0AEFF8C6536B0493 ___m_ProcessorStack_24;
-	// TValue UnityEngine.InputSystem.InputControl`1::m_CachedValue
-	int32_t ___m_CachedValue_25;
-	// TValue UnityEngine.InputSystem.InputControl`1::m_UnprocessedCachedValue
-	int32_t ___m_UnprocessedCachedValue_26;
-	// System.Boolean UnityEngine.InputSystem.InputControl`1::evaluateProcessorsEveryRead
-	bool ___evaluateProcessorsEveryRead_27;
-};
-
 // UnityEngine.InputSystem.InputControl`1<UnityEngine.Quaternion>
 struct InputControl_1_t9C13D8BC7805C38134C3ED7262E9ECF28CC59770  : public InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E
 {
@@ -4820,6 +4808,17 @@ struct InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D  : public Scri
 	ParameterOverrideU5BU5D_tC408277D7E98D32E4B0AEFA1E2EDDB74790897EE* ___m_ParameterOverrides_11;
 	// UnityEngine.InputSystem.InputActionMap/DeviceArray UnityEngine.InputSystem.InputActionAsset::m_Devices
 	DeviceArray_t7F2F2D8A9D5CAF504DC1A21C1FEF79BCA9E4761E ___m_Devices_12;
+};
+
+// UnityEngine.InputSystem.InputActionReference
+struct InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	// UnityEngine.InputSystem.InputActionAsset UnityEngine.InputSystem.InputActionReference::m_Asset
+	InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* ___m_Asset_4;
+	// System.String UnityEngine.InputSystem.InputActionReference::m_ActionId
+	String_t* ___m_ActionId_5;
+	// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionReference::m_Action
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_Action_6;
 };
 
 // UnityEngine.InputSystem.InputDevice
@@ -4965,22 +4964,6 @@ struct InputActionState_t780948EA293BAA800AD8699518B58B59FFB8A700  : public Runt
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___m_OnAfterUpdateDelegate_13;
 };
 
-// UnityEngine.InputSystem.Controls.IntegerControl
-struct IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB  : public InputControl_1_t6610D981ECAED7950370CC37B55465BBFDDD6A61
-{
-};
-
-// Unity.XR.Oculus.Input.OculusRemote
-struct OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0  : public InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B
-{
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusRemote::<back>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CbackU3Ek__BackingField_44;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusRemote::<start>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CstartU3Ek__BackingField_45;
-	// UnityEngine.InputSystem.Controls.Vector2Control Unity.XR.Oculus.Input.OculusRemote::<touchpad>k__BackingField
-	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CtouchpadU3Ek__BackingField_46;
-};
-
 // UnityEngine.InputSystem.Controls.QuaternionControl
 struct QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1  : public InputControl_1_t9C13D8BC7805C38134C3ED7262E9ECF28CC59770
 {
@@ -5032,15 +5015,6 @@ struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF  : public AxisCon
 {
 	// System.Single UnityEngine.InputSystem.Controls.ButtonControl::pressPoint
 	float ___pressPoint_39;
-};
-
-// Unity.XR.Oculus.Input.OculusTrackingReference
-struct OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D  : public TrackedDevice_t9B8AC60AAD52E906174449ED57660F3F8A3599E9
-{
-	// UnityEngine.InputSystem.Controls.IntegerControl Unity.XR.Oculus.Input.OculusTrackingReference::<trackingState>k__BackingField
-	IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___U3CtrackingStateU3Ek__BackingField_48;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTrackingReference::<isTracked>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CisTrackedU3Ek__BackingField_49;
 };
 
 // Unity.XR.OpenVR.ViveLighthouse
@@ -5111,29 +5085,6 @@ struct DaydreamHMD_tF19E4E4EF4153FBB8A9D15DE74C729354FD460C6  : public XRHMD_t2A
 {
 };
 
-// Unity.XR.Oculus.Input.GearVRTrackedController
-struct GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A  : public XRController_tB7EBF72339C56C18DEB74B1176FD39B9C421F1E2
-{
-	// UnityEngine.InputSystem.Controls.Vector2Control Unity.XR.Oculus.Input.GearVRTrackedController::<touchpad>k__BackingField
-	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CtouchpadU3Ek__BackingField_48;
-	// UnityEngine.InputSystem.Controls.AxisControl Unity.XR.Oculus.Input.GearVRTrackedController::<trigger>k__BackingField
-	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CtriggerU3Ek__BackingField_49;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.GearVRTrackedController::<back>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CbackU3Ek__BackingField_50;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.GearVRTrackedController::<triggerPressed>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CtriggerPressedU3Ek__BackingField_51;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.GearVRTrackedController::<touchpadClicked>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CtouchpadClickedU3Ek__BackingField_52;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.GearVRTrackedController::<touchpadTouched>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CtouchpadTouchedU3Ek__BackingField_53;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.GearVRTrackedController::<deviceAngularVelocity>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAngularVelocityU3Ek__BackingField_54;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.GearVRTrackedController::<deviceAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAccelerationU3Ek__BackingField_55;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.GearVRTrackedController::<deviceAngularAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAngularAccelerationU3Ek__BackingField_56;
-};
-
 // Unity.XR.OpenVR.HandedViveTracker
 struct HandedViveTracker_tC5271F12BDA5976E7419EE56E13F42B9487BE39B  : public ViveTracker_tF405E958B0BE924E85FF0206D12AA66440766017
 {
@@ -5160,37 +5111,6 @@ struct HololensHand_t3AF16AF7A1F5490B3C991E628D34CD3676B67BDE  : public XRContro
 	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CsourceLossRiskU3Ek__BackingField_50;
 	// UnityEngine.InputSystem.Controls.Vector3Control UnityEngine.XR.WindowsMR.Input.HololensHand::<sourceLossMitigationDirection>k__BackingField
 	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CsourceLossMitigationDirectionU3Ek__BackingField_51;
-};
-
-// Unity.XR.Oculus.Input.OculusHMD
-struct OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1  : public XRHMD_t2AB69188B210850F78044E5288C17FD173DB9B98
-{
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusHMD::<userPresence>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CuserPresenceU3Ek__BackingField_54;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<deviceAngularVelocity>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAngularVelocityU3Ek__BackingField_55;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<deviceAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAccelerationU3Ek__BackingField_56;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<deviceAngularAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAngularAccelerationU3Ek__BackingField_57;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<leftEyeAngularVelocity>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CleftEyeAngularVelocityU3Ek__BackingField_58;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<leftEyeAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CleftEyeAccelerationU3Ek__BackingField_59;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<leftEyeAngularAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CleftEyeAngularAccelerationU3Ek__BackingField_60;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<rightEyeAngularVelocity>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CrightEyeAngularVelocityU3Ek__BackingField_61;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<rightEyeAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CrightEyeAccelerationU3Ek__BackingField_62;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<rightEyeAngularAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CrightEyeAngularAccelerationU3Ek__BackingField_63;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<centerEyeAngularVelocity>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CcenterEyeAngularVelocityU3Ek__BackingField_64;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<centerEyeAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CcenterEyeAccelerationU3Ek__BackingField_65;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::<centerEyeAngularAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CcenterEyeAngularAccelerationU3Ek__BackingField_66;
 };
 
 // Unity.XR.OpenVR.OpenVRControllerWMR
@@ -5251,54 +5171,6 @@ struct WMRHMD_tADAF7BF3F9023438922D56EC7F071858CB19FB99  : public XRHMD_t2AB6918
 // UnityEngine.InputSystem.XR.XRControllerWithRumble
 struct XRControllerWithRumble_tE748B7C11688766EF1F006DBBA82B5C7564877EB  : public XRController_tB7EBF72339C56C18DEB74B1176FD39B9C421F1E2
 {
-};
-
-// Unity.XR.Oculus.Input.OculusHMDExtended
-struct OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB  : public OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1
-{
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusHMDExtended::<back>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CbackU3Ek__BackingField_67;
-	// UnityEngine.InputSystem.Controls.Vector2Control Unity.XR.Oculus.Input.OculusHMDExtended::<touchpad>k__BackingField
-	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CtouchpadU3Ek__BackingField_68;
-};
-
-// Unity.XR.Oculus.Input.OculusTouchController
-struct OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C  : public XRControllerWithRumble_tE748B7C11688766EF1F006DBBA82B5C7564877EB
-{
-	// UnityEngine.InputSystem.Controls.Vector2Control Unity.XR.Oculus.Input.OculusTouchController::<thumbstick>k__BackingField
-	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CthumbstickU3Ek__BackingField_48;
-	// UnityEngine.InputSystem.Controls.AxisControl Unity.XR.Oculus.Input.OculusTouchController::<trigger>k__BackingField
-	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CtriggerU3Ek__BackingField_49;
-	// UnityEngine.InputSystem.Controls.AxisControl Unity.XR.Oculus.Input.OculusTouchController::<grip>k__BackingField
-	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CgripU3Ek__BackingField_50;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<primaryButton>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CprimaryButtonU3Ek__BackingField_51;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<secondaryButton>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CsecondaryButtonU3Ek__BackingField_52;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<gripPressed>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CgripPressedU3Ek__BackingField_53;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<start>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CstartU3Ek__BackingField_54;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<thumbstickClicked>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CthumbstickClickedU3Ek__BackingField_55;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<primaryTouched>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CprimaryTouchedU3Ek__BackingField_56;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<secondaryTouched>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CsecondaryTouchedU3Ek__BackingField_57;
-	// UnityEngine.InputSystem.Controls.AxisControl Unity.XR.Oculus.Input.OculusTouchController::<triggerTouched>k__BackingField
-	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CtriggerTouchedU3Ek__BackingField_58;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<triggerPressed>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CtriggerPressedU3Ek__BackingField_59;
-	// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::<thumbstickTouched>k__BackingField
-	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CthumbstickTouchedU3Ek__BackingField_60;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusTouchController::<deviceVelocity>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceVelocityU3Ek__BackingField_61;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusTouchController::<deviceAngularVelocity>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAngularVelocityU3Ek__BackingField_62;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusTouchController::<deviceAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAccelerationU3Ek__BackingField_63;
-	// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusTouchController::<deviceAngularAcceleration>k__BackingField
-	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdeviceAngularAccelerationU3Ek__BackingField_64;
 };
 
 // Unity.XR.OpenVR.OpenVROculusTouchController
@@ -5549,10 +5421,6 @@ struct String_t_StaticFields
 
 // UnityEngine.InputSystem.Utilities.InlinedArray`1<System.Action`2<System.Object,UnityEngine.InputSystem.InputActionChange>>
 
-// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<System.Int32>>
-
-// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<System.Int32>>
-
 // UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<UnityEngine.Quaternion>>
 
 // UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<UnityEngine.Quaternion>>
@@ -5683,6 +5551,10 @@ struct Guid_t_StaticFields
 };
 
 // System.Guid
+
+// UnityEngine.InputSystem.InputActionProperty
+
+// UnityEngine.InputSystem.InputActionProperty
 
 // UnityEngine.InputSystem.InputBinding
 
@@ -6282,10 +6154,6 @@ struct Type_t_StaticFields
 
 // System.Func`3<System.Object,UnityEngine.InputSystem.LowLevel.InputEventPtr,System.Single>
 
-// UnityEngine.InputSystem.InputControl`1<System.Int32>
-
-// UnityEngine.InputSystem.InputControl`1<System.Int32>
-
 // UnityEngine.InputSystem.InputControl`1<UnityEngine.Quaternion>
 
 // UnityEngine.InputSystem.InputControl`1<UnityEngine.Quaternion>
@@ -6317,6 +6185,10 @@ struct Type_t_StaticFields
 // UnityEngine.InputSystem.InputActionAsset
 
 // UnityEngine.InputSystem.InputActionAsset
+
+// UnityEngine.InputSystem.InputActionReference
+
+// UnityEngine.InputSystem.InputActionReference
 
 // UnityEngine.InputSystem.InputDevice
 
@@ -6359,14 +6231,6 @@ struct InputActionState_t780948EA293BAA800AD8699518B58B59FFB8A700_StaticFields
 
 // UnityEngine.InputSystem.InputActionState
 
-// UnityEngine.InputSystem.Controls.IntegerControl
-
-// UnityEngine.InputSystem.Controls.IntegerControl
-
-// Unity.XR.Oculus.Input.OculusRemote
-
-// Unity.XR.Oculus.Input.OculusRemote
-
 // UnityEngine.InputSystem.Controls.QuaternionControl
 
 // UnityEngine.InputSystem.Controls.QuaternionControl
@@ -6394,10 +6258,6 @@ struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_StaticFields
 
 // UnityEngine.InputSystem.Controls.ButtonControl
 
-// Unity.XR.Oculus.Input.OculusTrackingReference
-
-// Unity.XR.Oculus.Input.OculusTrackingReference
-
 // Unity.XR.OpenVR.ViveLighthouse
 
 // Unity.XR.OpenVR.ViveLighthouse
@@ -6422,10 +6282,6 @@ struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_StaticFields
 
 // Unity.XR.GoogleVr.DaydreamHMD
 
-// Unity.XR.Oculus.Input.GearVRTrackedController
-
-// Unity.XR.Oculus.Input.GearVRTrackedController
-
 // Unity.XR.OpenVR.HandedViveTracker
 
 // Unity.XR.OpenVR.HandedViveTracker
@@ -6433,10 +6289,6 @@ struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_StaticFields
 // UnityEngine.XR.WindowsMR.Input.HololensHand
 
 // UnityEngine.XR.WindowsMR.Input.HololensHand
-
-// Unity.XR.Oculus.Input.OculusHMD
-
-// Unity.XR.Oculus.Input.OculusHMD
 
 // Unity.XR.OpenVR.OpenVRControllerWMR
 
@@ -6453,14 +6305,6 @@ struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_StaticFields
 // UnityEngine.InputSystem.XR.XRControllerWithRumble
 
 // UnityEngine.InputSystem.XR.XRControllerWithRumble
-
-// Unity.XR.Oculus.Input.OculusHMDExtended
-
-// Unity.XR.Oculus.Input.OculusHMDExtended
-
-// Unity.XR.Oculus.Input.OculusTouchController
-
-// Unity.XR.Oculus.Input.OculusTouchController
 
 // Unity.XR.OpenVR.OpenVROculusTouchController
 
@@ -7760,6 +7604,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControlList_1_Clear_m0532B3B3F9BC76
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControlList_1_set_Capacity_m42D42F4C12EF4F0EEF03959C651B5A1597B0D316_gshared (InputControlList_1_t48EC0F64E524A57EFE5948AFCA4A576846FC1C31* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Single>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m7090A0C6890D4FE1C83844A6616D8E9A5AEC802C_gshared (Dictionary_2_t1E85CF9786F2C7C796C8CC2EB86ADA13A263ECAB* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Linq.Enumerable::Contains<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,TSource)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Contains_TisRuntimeObject_mBCDB5870C52FC5BD2B6AE472A749FC03B9CF8958_gshared (RuntimeObject* ___0_source, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
 
 // System.Void UnityEngine.InputSystem.InputSystem::RegisterLayout(System.String,System.String,System.Nullable`1<UnityEngine.InputSystem.Layouts.InputDeviceMatcher>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputSystem_RegisterLayout_m8FBCD0A0BD4FF8E93362CC0965AF7718F2EB318A (String_t* ___0_json, String_t* ___1_name, Nullable_1_t4EEC710224A7596AC94C3B6D292E4CB7D84B7F2C ___2_matches, const RuntimeMethod* method) ;
@@ -7895,111 +7741,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OpenVROculusTouchController_
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OpenVROculusTouchController_set_deviceVelocity_m4781367F04392C97349F0D10FC5B5D98AB47A22A_inline (OpenVROculusTouchController_t5CF626C11066EECA384979000E336607E303A278* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
 // System.Void Unity.XR.OpenVR.OpenVROculusTouchController::set_deviceAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OpenVROculusTouchController_set_deviceAngularVelocity_m86663651B6D8B7B7D35B1FC7D98A8EAA25DA85D8_inline (OpenVROculusTouchController_t5CF626C11066EECA384979000E336607E303A278* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_userPresence(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_userPresence_m9382DD80D17E6CE8801C46B38A42BE3492E519CB_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_deviceAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAngularVelocity_mF3B220CA82B9789DDD7F3B0F315515AC2650D0B9_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_deviceAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAcceleration_m0C44A502D3AAFFEEAC5CA872C96E10DD65F7D457_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_deviceAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAngularAcceleration_m1AE11BB88730DFBFF29C79862BBC93F2E7EA3AB3_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_leftEyeAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAngularVelocity_mB099BE0DE7F820AE68808AA467ED4DD046875732_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_leftEyeAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAcceleration_mFF8E2C7DF7CDB8B9678CAC556C6C55729C0E4B5B_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_leftEyeAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAngularAcceleration_m8AB825C7FEBBB51FD2604E65DFE47E434A4C849B_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_rightEyeAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAngularVelocity_m9692627AA2CF6B4F6D86CBEA9A57276932493D79_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_rightEyeAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAcceleration_m22E1AE61CBCDD1026CF194059C595EBE45B91F67_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_rightEyeAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAngularAcceleration_m47E245FA3BCBE6648D32AB2F73DF7FBEF874CA59_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_centerEyeAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAngularVelocity_m7A6980405DBDF0FF29CD08CC461CBECF69EE44A5_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_centerEyeAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAcceleration_mA919EB844D70BC622FFE0EC7840A04E766BA600C_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_centerEyeAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAngularAcceleration_m113EEE8528B4CD25D43495CE52FD8B4ADFDBE45F_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_thumbstick(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstick_mCE83285324084A9CC134A9AC82D5F314D2EC54C4_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_trigger(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_trigger_m2EF8D53F3CBAD1425FC859C0A21DB0B774B1A56A_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_triggerTouched(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerTouched_mFC06DA4C6C489729C52C4CD9EEDBE3FF21468231_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_grip(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_grip_mBAB2588AC3AE13E12C121D734D36DA1437D7D2B8_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_primaryButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryButton_m3CB8515E5AA191972822C45FD9B2B9CC770C84E2_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_secondaryButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryButton_m8ABA7FC425FF57D4F89111CA1CF373027F969967_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_gripPressed(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_gripPressed_m7A78C0352AD402161E89542E0AFB6533B5FDA57D_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_start(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_start_m2AC9310CE8C314708914B7F70087F63C4DBF475A_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_thumbstickClicked(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickClicked_m2B77552D010F410F79775D9011F051D074E351AC_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_primaryTouched(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryTouched_m3564C5A78160FED2FED435817FEE427C347EB5D3_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_secondaryTouched(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryTouched_mB6D9FB1C1628F387D05631CC0E8A194CF30F5C2D_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_thumbstickTouched(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickTouched_m767F4A2B2D7F5B4738709A1A6540F73C1090B3D5_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_triggerPressed(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerPressed_mA092DC3CA66DC755439B3AB7B03FC2F448A50D18_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_deviceVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceVelocity_m3884B11F2C1AB204863FE0E7AA72053751CE4BEE_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_deviceAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAngularVelocity_mE25CAB51D1052A7B22F393268FA30B82E380F02A_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_deviceAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAcceleration_m0272E8DDE0A780331E855F98E7DD0BAEAB8FE26F_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_deviceAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAngularAcceleration_mE36DFAFB38E32F6901806BABA3B291E3BA62BDB5_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// TControl UnityEngine.InputSystem.InputControl::GetChildControl<UnityEngine.InputSystem.Controls.IntegerControl>(System.String)
-inline IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* InputControl_GetChildControl_TisIntegerControl_tA24544EFF42204852F638FF5147F754962C997AB_m87D5D6574BD57F88D41DDE18D17933360E255297 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___0_path, const RuntimeMethod* method)
-{
-	return ((  IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___0_path, method);
-}
-// System.Void Unity.XR.Oculus.Input.OculusTrackingReference::set_trackingState(UnityEngine.InputSystem.Controls.IntegerControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTrackingReference_set_trackingState_m3F8708A858EFD56D8F8D52A4F1A9A589C7196FDE_inline (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusTrackingReference::set_isTracked(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTrackingReference_set_isTracked_m6FA86987B7D53C3A27DA409A388E2BB4880EFCC8_inline (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void UnityEngine.InputSystem.InputControl::FinishSetup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_FinishSetup_m46B682B124C6E127183D19E1BA86E966472C7C15 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusRemote::set_back(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusRemote_set_back_m75CB133735E0140397A9431AE6712F510B007D2B_inline (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusRemote::set_start(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusRemote_set_start_mF34230989E43F99FC07DA0ABB5FD98D6DB637BF3_inline (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusRemote::set_touchpad(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusRemote_set_touchpad_m7F66B8C9541ECF48FB455727D57B66CC79D51AB9_inline (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) ;
-// System.Void UnityEngine.InputSystem.InputDevice::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice__ctor_mAA72B9458CD588116A968FE54C2AD2B59C787E51 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::FinishSetup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_FinishSetup_m8EA2AFF036658DDE6C36E19D95C8ED58CC31D32B (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMDExtended::set_back(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMDExtended_set_back_mC98306E8847DDAB9B2F46B0D52F937AE987E41F3_inline (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMDExtended::set_touchpad(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMDExtended_set_touchpad_m035B180B2E1AB1DFF685C77EEA8BF03B32CC18D1_inline (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.OculusHMD::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD__ctor_m71D4611011F2354421932FDD66B44BA03EBA67DB (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_touchpad(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpad_m87E51972471D3A1793059625346F5A4226EA2B73_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_trigger(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_trigger_mE8C85BD46A8788DB3A8D6BDA7259DDF7A3CE1269_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_back(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_back_m682575B11BF03556AB63F65D60BD611A950E3C04_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_triggerPressed(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_triggerPressed_m21ADF87BF994317C21BA32B90BE9826DBF4723CF_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_touchpadClicked(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpadClicked_m0E5304650AC2A578534A590CD9D4722199113936_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_touchpadTouched(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpadTouched_m2EF525225849C501EEA08F72C76E8608671F92AE_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_deviceAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAngularVelocity_mB421CECAF8A29E0EDADEE349E75EA7C16BBFCD50_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_deviceAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAcceleration_mE4E78CF454405139C0ACE63737E5F457721580AB_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_deviceAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAngularAcceleration_m212BB263779D06893E7C2E6D4D6C351335A18CA9_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) ;
 // System.Void Unity.XR.GoogleVr.DaydreamController::set_touchpad(UnityEngine.InputSystem.Controls.Vector2Control)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DaydreamController_set_touchpad_m656EB770ECD5DB7C5F9C24B855027333C885B48A_inline (DaydreamController_t0C72D30A04B7DFBF022E1648FB24C92542048F5E* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) ;
 // System.Void Unity.XR.GoogleVr.DaydreamController::set_volumeUp(UnityEngine.InputSystem.Controls.ButtonControl)
@@ -9536,6 +9277,62 @@ inline void Dictionary_2__ctor_m326BE21727998E7762D58062F4C70D6700B134C4 (Dictio
 {
 	((  void (*) (Dictionary_2_t955741F14981C0BAF47FDE7823F2703758A8723C*, const RuntimeMethod*))Dictionary_2__ctor_m7090A0C6890D4FE1C83844A6616D8E9A5AEC802C_gshared)(__this, method);
 }
+// System.String UnityEngine.InputSystem.InputControlScheme::get_bindingGroup()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputControlScheme_get_bindingGroup_m44B4669B8B5D5FDEE8DB190307415AA2F99F5835_inline (InputControlScheme_tB60FB32F414727140B32E1A0447679DC7ABC8434* __this, const RuntimeMethod* method) ;
+// System.Boolean System.String::Equals(System.String,System.StringComparison)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_Equals_m7BDFC0B951005B9DC2BAED464AFE68FF7E9ACE5A (String_t* __this, String_t* ___0_value, int32_t ___1_comparisonType, const RuntimeMethod* method) ;
+// System.Void UnityEngine.InputSystem.InputActionState::DeferredResolutionOfBindings()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionState_DeferredResolutionOfBindings_m607A0C4428312C015F0C7B0E1338B834EB776A52 (const RuntimeMethod* method) ;
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionReference::get_action()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, const RuntimeMethod* method) ;
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionProperty::get_action()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionProperty_get_action_mABF2197D9CC6586E5DFB0481CF9C1B2586F41A47 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) ;
+// UnityEngine.InputSystem.InputActionReference UnityEngine.InputSystem.InputActionProperty::get_reference()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* InputActionProperty_get_reference_m71A5E6BC4908F5AD358FAE3821EEFB236AFC71D3 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) ;
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionProperty::get_serializedAction()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionProperty_get_serializedAction_m4787371FBBE72755480187B22201E0770BE8E563_inline (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) ;
+// UnityEngine.InputSystem.InputActionReference UnityEngine.InputSystem.InputActionProperty::get_serializedReference()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* InputActionProperty_get_serializedReference_m37DAE831375C51B239CD2044A1EC3E20F6502ACC_inline (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.InputSystem.InputActionProperty::.ctor(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionProperty__ctor_m0E922A8B1C135221416D4ADB0B28FE1BCA80209A (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method) ;
+// System.Void UnityEngine.InputSystem.InputActionProperty::.ctor(UnityEngine.InputSystem.InputActionReference)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionProperty__ctor_m1B4A297857D1968B4021B8ED04B4FEA1624CAE38 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___0_reference, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::Equals(UnityEngine.InputSystem.InputActionProperty)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_Equals_m0C06212922B79EBA82960388EB39C48458009F98 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___0_other, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::Equals(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_Equals_m97BF84F9329A5012737F02DA31691B9C9FDE989E (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_other, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::Equals(UnityEngine.InputSystem.InputActionReference)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_Equals_mB10D5450B844184F08BAB09296129F539BEC7432 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___0_other, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::Equals(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_Equals_m2068BC73A36627EB4AE36D09CCF389E8B0B5F5BC (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
+// System.Int32 UnityEngine.InputSystem.InputActionProperty::GetHashCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t InputActionProperty_GetHashCode_mE5D1A51A7D75FBD7332A14ACCA7EA94A91D3BAED (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) ;
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionAsset::FindAction(System.Guid)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionAsset_FindAction_m16E1640E2BBADC5F408EA6F05C81D593269CD24A (InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* __this, Guid_t ___0_guid, const RuntimeMethod* method) ;
+// System.Void UnityEngine.InputSystem.InputActionReference::SetInternal(UnityEngine.InputSystem.InputActionAsset,UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionReference_SetInternal_m953C49C2F169CEB8A34ED2F35B9976FD23F3C83C (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* ___0_asset, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___1_action, const RuntimeMethod* method) ;
+// UnityEngine.InputSystem.InputActionMap UnityEngine.InputSystem.InputActionAsset::FindActionMap(System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* InputActionAsset_FindActionMap_mE04E63102310DA7662194A4D283E2E42D90CCC75 (InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* __this, String_t* ___0_nameOrId, bool ___1_throwIfNotFound, const RuntimeMethod* method) ;
+// System.Boolean System.Linq.Enumerable::Contains<UnityEngine.InputSystem.InputActionMap>(System.Collections.Generic.IEnumerable`1<TSource>,TSource)
+inline bool Enumerable_Contains_TisInputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_mDB4A35240D267764A47303CA94557A173E5AF220 (RuntimeObject* ___0_source, InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* ___1_value, const RuntimeMethod* method)
+{
+	return ((  bool (*) (RuntimeObject*, InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09*, const RuntimeMethod*))Enumerable_Contains_TisRuntimeObject_mBCDB5870C52FC5BD2B6AE472A749FC03B9CF8958_gshared)(___0_source, ___1_value, method);
+}
+// System.Guid UnityEngine.InputSystem.InputAction::get_id()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Guid_t InputAction_get_id_mC9CBAB090420289E55D0BE9A6582EA3B08C40624 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* __this, const RuntimeMethod* method) ;
+// System.String UnityEngine.InputSystem.InputActionReference::GetDisplayName(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InputActionReference_GetDisplayName_mE97C6DA2412BF20294AA795A67C9384E6476FFC2 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_values, const RuntimeMethod* method) ;
+// System.String UnityEngine.Object::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_ToString_m590B13E2C40DB814E3CF9C3615952B3CC7C4B36C (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
+// T UnityEngine.ScriptableObject::CreateInstance<UnityEngine.InputSystem.InputActionReference>()
+inline InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ScriptableObject_CreateInstance_TisInputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1_mBEDFA5D250E26DA02AC5BC2D26338EC2551F7415 (const RuntimeMethod* method)
+{
+	return ((  InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* (*) (const RuntimeMethod*))ScriptableObject_CreateInstance_TisRuntimeObject_mC07BE383F5EF546F4191035A679930852BC19BDA_gshared)(method);
+}
+// System.Void UnityEngine.InputSystem.InputActionReference::Set(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionReference_Set_m6FD5F9454BE84DCF93582263A8D5F9E78D78299A (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Utilities.FourCC::.ctor(System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FourCC__ctor_mE761C8779BB6DC85BA1662DC9ECEC39D62ED9A56_inline (FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED* __this, int32_t ___0_code, const RuntimeMethod* method) ;
 #ifdef __clang__
@@ -10968,1358 +10765,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenVROculusTouchController__ctor_m8E6EB
 {
 	{
 		XRControllerWithRumble__ctor_m78ED6D19588BE805A9BDFD5C194FEB0520A273D0(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusHMD::get_userPresence()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusHMD_get_userPresence_mE80EA97E924ADE1F7A50B8C046BC66682665B918 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl userPresence { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CuserPresenceU3Ek__BackingField_54;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_userPresence(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_userPresence_m9382DD80D17E6CE8801C46B38A42BE3492E519CB (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl userPresence { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CuserPresenceU3Ek__BackingField_54 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CuserPresenceU3Ek__BackingField_54), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_deviceAngularVelocity()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_deviceAngularVelocity_m9646C780E6EC059733722052FC4C58618AF0341F (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAngularVelocityU3Ek__BackingField_55;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_deviceAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAngularVelocity_mF3B220CA82B9789DDD7F3B0F315515AC2650D0B9 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularVelocityU3Ek__BackingField_55 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularVelocityU3Ek__BackingField_55), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_deviceAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_deviceAcceleration_mAAC6EE8FD3CFB92E9D958CB8932C1F1ACFC91F4D (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAccelerationU3Ek__BackingField_56;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_deviceAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAcceleration_m0C44A502D3AAFFEEAC5CA872C96E10DD65F7D457 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAccelerationU3Ek__BackingField_56 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAccelerationU3Ek__BackingField_56), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_deviceAngularAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_deviceAngularAcceleration_m32F391A22136C3D99CE41175D6DD3B328AC00324 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAngularAccelerationU3Ek__BackingField_57;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_deviceAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAngularAcceleration_m1AE11BB88730DFBFF29C79862BBC93F2E7EA3AB3 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_57 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_57), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_leftEyeAngularVelocity()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_leftEyeAngularVelocity_m199B65C1E35E2911CF89DD63AD95FD670C7DCDDF (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CleftEyeAngularVelocityU3Ek__BackingField_58;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_leftEyeAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAngularVelocity_mB099BE0DE7F820AE68808AA467ED4DD046875732 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CleftEyeAngularVelocityU3Ek__BackingField_58 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAngularVelocityU3Ek__BackingField_58), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_leftEyeAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_leftEyeAcceleration_m2C0E72D9667D3B18A2AD140BE394EC44F52DBD36 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CleftEyeAccelerationU3Ek__BackingField_59;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_leftEyeAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAcceleration_mFF8E2C7DF7CDB8B9678CAC556C6C55729C0E4B5B (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CleftEyeAccelerationU3Ek__BackingField_59 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAccelerationU3Ek__BackingField_59), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_leftEyeAngularAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_leftEyeAngularAcceleration_m8C2A814C584727330A07EE77906180EB0E18509A (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CleftEyeAngularAccelerationU3Ek__BackingField_60;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_leftEyeAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAngularAcceleration_m8AB825C7FEBBB51FD2604E65DFE47E434A4C849B (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CleftEyeAngularAccelerationU3Ek__BackingField_60 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAngularAccelerationU3Ek__BackingField_60), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_rightEyeAngularVelocity()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_rightEyeAngularVelocity_m550D4D4869D97586102D8E68B105B2F6E2CEA10D (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CrightEyeAngularVelocityU3Ek__BackingField_61;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_rightEyeAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAngularVelocity_m9692627AA2CF6B4F6D86CBEA9A57276932493D79 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CrightEyeAngularVelocityU3Ek__BackingField_61 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAngularVelocityU3Ek__BackingField_61), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_rightEyeAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_rightEyeAcceleration_mF676DEBD5A07BAB36B990F4F72EEB55B8D8BAD0C (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CrightEyeAccelerationU3Ek__BackingField_62;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_rightEyeAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAcceleration_m22E1AE61CBCDD1026CF194059C595EBE45B91F67 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CrightEyeAccelerationU3Ek__BackingField_62 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAccelerationU3Ek__BackingField_62), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_rightEyeAngularAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_rightEyeAngularAcceleration_mDDCE07A5A11557364DE0948FF0937D79F5131DE3 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CrightEyeAngularAccelerationU3Ek__BackingField_63;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_rightEyeAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAngularAcceleration_m47E245FA3BCBE6648D32AB2F73DF7FBEF874CA59 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CrightEyeAngularAccelerationU3Ek__BackingField_63 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAngularAccelerationU3Ek__BackingField_63), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_centerEyeAngularVelocity()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_centerEyeAngularVelocity_m7BB302163514915BF4ADFD2BC9DF8DF5FB9183B9 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CcenterEyeAngularVelocityU3Ek__BackingField_64;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_centerEyeAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAngularVelocity_m7A6980405DBDF0FF29CD08CC461CBECF69EE44A5 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CcenterEyeAngularVelocityU3Ek__BackingField_64 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAngularVelocityU3Ek__BackingField_64), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_centerEyeAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_centerEyeAcceleration_mBB28EE2D73468A32EC9AE173C879559B70D86228 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CcenterEyeAccelerationU3Ek__BackingField_65;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_centerEyeAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAcceleration_mA919EB844D70BC622FFE0EC7840A04E766BA600C (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CcenterEyeAccelerationU3Ek__BackingField_65 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAccelerationU3Ek__BackingField_65), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusHMD::get_centerEyeAngularAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusHMD_get_centerEyeAngularAcceleration_m98719E54E037F694BD91DAFC95B9C434FE078929 (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CcenterEyeAngularAccelerationU3Ek__BackingField_66;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::set_centerEyeAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAngularAcceleration_m113EEE8528B4CD25D43495CE52FD8B4ADFDBE45F (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CcenterEyeAngularAccelerationU3Ek__BackingField_66 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAngularAccelerationU3Ek__BackingField_66), (void*)L_0);
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::FinishSetup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD_FinishSetup_m8EA2AFF036658DDE6C36E19D95C8ED58CC31D32B (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral04EA248327ED413DE02A011F18AC3C95CE6B8EF0);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral077AC4F37BECA7E305659A36FD4351A1A726D74E);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral156E662C55D382C18194118C3287CEAB98FA2C6F);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral24BA0B3EAF2D368DF4A667A3DA43E98A55602935);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2C43BA5A481CBEF412DB695717FC94453B3769F6);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3624BAC25188A8C57A604CA0D3ACB2CBF73CF5DF);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral48FC1F936713D53F5EFACC314E330907113FDC9D);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4E267D25EFB4D56321079C3FF27EAE0DC4819CC9);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5E00AB7EC86A20EC1ECB923C22939506C6806CC9);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB795E7C13E4CFACF08133C1739B538F3A728EF41);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC3E98CA0D21B6899AC08C4CE0868CF1323933585);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC49271934571B500FDC497EFB8A9FA5650E48B32);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFABA7B84135B56F6F79588F7B57766574B6E8C66);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.FinishSetup();
-		XRHMD_FinishSetup_mB75FCAE73C22F861B52EBCD168FF6C225265FD64(__this, NULL);
-		// userPresence = GetChildControl<ButtonControl>("userPresence");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0;
-		L_0 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteralC49271934571B500FDC497EFB8A9FA5650E48B32, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusHMD_set_userPresence_m9382DD80D17E6CE8801C46B38A42BE3492E519CB_inline(__this, L_0, NULL);
-		// deviceAngularVelocity = GetChildControl<Vector3Control>("deviceAngularVelocity");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_1;
-		L_1 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral48FC1F936713D53F5EFACC314E330907113FDC9D, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_deviceAngularVelocity_mF3B220CA82B9789DDD7F3B0F315515AC2650D0B9_inline(__this, L_1, NULL);
-		// deviceAcceleration = GetChildControl<Vector3Control>("deviceAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_2;
-		L_2 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral5E00AB7EC86A20EC1ECB923C22939506C6806CC9, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_deviceAcceleration_m0C44A502D3AAFFEEAC5CA872C96E10DD65F7D457_inline(__this, L_2, NULL);
-		// deviceAngularAcceleration = GetChildControl<Vector3Control>("deviceAngularAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_3;
-		L_3 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteralC3E98CA0D21B6899AC08C4CE0868CF1323933585, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_deviceAngularAcceleration_m1AE11BB88730DFBFF29C79862BBC93F2E7EA3AB3_inline(__this, L_3, NULL);
-		// leftEyeAngularVelocity = GetChildControl<Vector3Control>("leftEyeAngularVelocity");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_4;
-		L_4 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral2C43BA5A481CBEF412DB695717FC94453B3769F6, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_leftEyeAngularVelocity_mB099BE0DE7F820AE68808AA467ED4DD046875732_inline(__this, L_4, NULL);
-		// leftEyeAcceleration = GetChildControl<Vector3Control>("leftEyeAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_5;
-		L_5 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral3624BAC25188A8C57A604CA0D3ACB2CBF73CF5DF, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_leftEyeAcceleration_mFF8E2C7DF7CDB8B9678CAC556C6C55729C0E4B5B_inline(__this, L_5, NULL);
-		// leftEyeAngularAcceleration = GetChildControl<Vector3Control>("leftEyeAngularAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_6;
-		L_6 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral156E662C55D382C18194118C3287CEAB98FA2C6F, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_leftEyeAngularAcceleration_m8AB825C7FEBBB51FD2604E65DFE47E434A4C849B_inline(__this, L_6, NULL);
-		// rightEyeAngularVelocity = GetChildControl<Vector3Control>("rightEyeAngularVelocity");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_7;
-		L_7 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral24BA0B3EAF2D368DF4A667A3DA43E98A55602935, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_rightEyeAngularVelocity_m9692627AA2CF6B4F6D86CBEA9A57276932493D79_inline(__this, L_7, NULL);
-		// rightEyeAcceleration = GetChildControl<Vector3Control>("rightEyeAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_8;
-		L_8 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteralB795E7C13E4CFACF08133C1739B538F3A728EF41, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_rightEyeAcceleration_m22E1AE61CBCDD1026CF194059C595EBE45B91F67_inline(__this, L_8, NULL);
-		// rightEyeAngularAcceleration = GetChildControl<Vector3Control>("rightEyeAngularAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_9;
-		L_9 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteralFABA7B84135B56F6F79588F7B57766574B6E8C66, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_rightEyeAngularAcceleration_m47E245FA3BCBE6648D32AB2F73DF7FBEF874CA59_inline(__this, L_9, NULL);
-		// centerEyeAngularVelocity = GetChildControl<Vector3Control>("centerEyeAngularVelocity");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_10;
-		L_10 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral077AC4F37BECA7E305659A36FD4351A1A726D74E, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_centerEyeAngularVelocity_m7A6980405DBDF0FF29CD08CC461CBECF69EE44A5_inline(__this, L_10, NULL);
-		// centerEyeAcceleration = GetChildControl<Vector3Control>("centerEyeAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_11;
-		L_11 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral4E267D25EFB4D56321079C3FF27EAE0DC4819CC9, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_centerEyeAcceleration_mA919EB844D70BC622FFE0EC7840A04E766BA600C_inline(__this, L_11, NULL);
-		// centerEyeAngularAcceleration = GetChildControl<Vector3Control>("centerEyeAngularAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_12;
-		L_12 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral04EA248327ED413DE02A011F18AC3C95CE6B8EF0, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusHMD_set_centerEyeAngularAcceleration_m113EEE8528B4CD25D43495CE52FD8B4ADFDBE45F_inline(__this, L_12, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMD::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMD__ctor_m71D4611011F2354421932FDD66B44BA03EBA67DB (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, const RuntimeMethod* method) 
-{
-	{
-		XRHMD__ctor_m45E075B7C9DC2E1A59AF838FCCDE51E9D6C13C7E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// UnityEngine.InputSystem.Controls.Vector2Control Unity.XR.Oculus.Input.OculusTouchController::get_thumbstick()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* OculusTouchController_get_thumbstick_m81D56DC1F9419EC167219A1C8447AFC4D548286D (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control thumbstick { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = __this->___U3CthumbstickU3Ek__BackingField_48;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_thumbstick(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstick_mCE83285324084A9CC134A9AC82D5F314D2EC54C4 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control thumbstick { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
-		__this->___U3CthumbstickU3Ek__BackingField_48 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CthumbstickU3Ek__BackingField_48), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.AxisControl Unity.XR.Oculus.Input.OculusTouchController::get_trigger()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* OculusTouchController_get_trigger_mEF1B77604DD1B715FF9E62BFE5EA53D608DFB83A (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl trigger { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = __this->___U3CtriggerU3Ek__BackingField_49;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_trigger(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_trigger_m2EF8D53F3CBAD1425FC859C0A21DB0B774B1A56A (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl trigger { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
-		__this->___U3CtriggerU3Ek__BackingField_49 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerU3Ek__BackingField_49), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.AxisControl Unity.XR.Oculus.Input.OculusTouchController::get_grip()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* OculusTouchController_get_grip_mABBA82B2C1C4FEE65CEF1B63C1234DF3C6BA2915 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl grip { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = __this->___U3CgripU3Ek__BackingField_50;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_grip(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_grip_mBAB2588AC3AE13E12C121D734D36DA1437D7D2B8 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl grip { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
-		__this->___U3CgripU3Ek__BackingField_50 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CgripU3Ek__BackingField_50), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_primaryButton()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_primaryButton_mDDD9FC7406A3C73C9ABFED2921E0921743476C8A (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl primaryButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CprimaryButtonU3Ek__BackingField_51;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_primaryButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryButton_m3CB8515E5AA191972822C45FD9B2B9CC770C84E2 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl primaryButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CprimaryButtonU3Ek__BackingField_51 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CprimaryButtonU3Ek__BackingField_51), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_secondaryButton()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_secondaryButton_mA80F65C17BBE9E2C9BF2E24C174F2A318EB4F182 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl secondaryButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CsecondaryButtonU3Ek__BackingField_52;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_secondaryButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryButton_m8ABA7FC425FF57D4F89111CA1CF373027F969967 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl secondaryButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CsecondaryButtonU3Ek__BackingField_52 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsecondaryButtonU3Ek__BackingField_52), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_gripPressed()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_gripPressed_m7E0B3D6273D05313DA5F7BAE0189AC798C16FF55 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl gripPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CgripPressedU3Ek__BackingField_53;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_gripPressed(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_gripPressed_m7A78C0352AD402161E89542E0AFB6533B5FDA57D (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl gripPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CgripPressedU3Ek__BackingField_53 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CgripPressedU3Ek__BackingField_53), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_start_mAB5937695D08A6D3FAB23A4513EFA6D5B63B6385 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl start { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CstartU3Ek__BackingField_54;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_start(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_start_m2AC9310CE8C314708914B7F70087F63C4DBF475A (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl start { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CstartU3Ek__BackingField_54 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CstartU3Ek__BackingField_54), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_thumbstickClicked()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_thumbstickClicked_mABBFF96B68549223E40E690D22C582B7BE2C8AE2 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl thumbstickClicked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CthumbstickClickedU3Ek__BackingField_55;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_thumbstickClicked(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickClicked_m2B77552D010F410F79775D9011F051D074E351AC (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl thumbstickClicked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CthumbstickClickedU3Ek__BackingField_55 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CthumbstickClickedU3Ek__BackingField_55), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_primaryTouched()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_primaryTouched_mD25239B1E2EF86AB3B8CED12E027F34BD311B45E (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl primaryTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CprimaryTouchedU3Ek__BackingField_56;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_primaryTouched(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryTouched_m3564C5A78160FED2FED435817FEE427C347EB5D3 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl primaryTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CprimaryTouchedU3Ek__BackingField_56 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CprimaryTouchedU3Ek__BackingField_56), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_secondaryTouched()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_secondaryTouched_mFC5E4007721D53337CD7CC37C0E6A364C709493A (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl secondaryTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CsecondaryTouchedU3Ek__BackingField_57;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_secondaryTouched(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryTouched_mB6D9FB1C1628F387D05631CC0E8A194CF30F5C2D (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl secondaryTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CsecondaryTouchedU3Ek__BackingField_57 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsecondaryTouchedU3Ek__BackingField_57), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.AxisControl Unity.XR.Oculus.Input.OculusTouchController::get_triggerTouched()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* OculusTouchController_get_triggerTouched_m15D8ED9F12CBC5D879C1214AB6219CCDCDF59507 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl triggerTouched { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = __this->___U3CtriggerTouchedU3Ek__BackingField_58;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_triggerTouched(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerTouched_mFC06DA4C6C489729C52C4CD9EEDBE3FF21468231 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl triggerTouched { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
-		__this->___U3CtriggerTouchedU3Ek__BackingField_58 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerTouchedU3Ek__BackingField_58), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_triggerPressed()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_triggerPressed_mB1215F1F13E5AD1CEBDD8B016AC7D01D023ACD58 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl triggerPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CtriggerPressedU3Ek__BackingField_59;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_triggerPressed(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerPressed_mA092DC3CA66DC755439B3AB7B03FC2F448A50D18 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl triggerPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CtriggerPressedU3Ek__BackingField_59 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerPressedU3Ek__BackingField_59), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTouchController::get_thumbstickTouched()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_thumbstickTouched_m223E0AD1C6DEEE2DE525D0F94BFA9C092B945738 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl thumbstickTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CthumbstickTouchedU3Ek__BackingField_60;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_thumbstickTouched(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickTouched_m767F4A2B2D7F5B4738709A1A6540F73C1090B3D5 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl thumbstickTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CthumbstickTouchedU3Ek__BackingField_60 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CthumbstickTouchedU3Ek__BackingField_60), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusTouchController::get_deviceVelocity()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusTouchController_get_deviceVelocity_m414C766B86ABC7D2FADD51D60F1CD3776FAD1CE8 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceVelocityU3Ek__BackingField_61;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_deviceVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceVelocity_m3884B11F2C1AB204863FE0E7AA72053751CE4BEE (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceVelocityU3Ek__BackingField_61 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceVelocityU3Ek__BackingField_61), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusTouchController::get_deviceAngularVelocity()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusTouchController_get_deviceAngularVelocity_m67F584AC54F4BC8A7E7012C7177258B26F66C262 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAngularVelocityU3Ek__BackingField_62;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_deviceAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAngularVelocity_mE25CAB51D1052A7B22F393268FA30B82E380F02A (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularVelocityU3Ek__BackingField_62 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularVelocityU3Ek__BackingField_62), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusTouchController::get_deviceAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusTouchController_get_deviceAcceleration_m849E20148580958F23C4AF533289B2391B83DE6E (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAccelerationU3Ek__BackingField_63;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_deviceAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAcceleration_m0272E8DDE0A780331E855F98E7DD0BAEAB8FE26F (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAccelerationU3Ek__BackingField_63 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAccelerationU3Ek__BackingField_63), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.OculusTouchController::get_deviceAngularAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusTouchController_get_deviceAngularAcceleration_mBFE8338F82A89FC269FA287C6067165EC8BCDC96 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAngularAccelerationU3Ek__BackingField_64;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::set_deviceAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAngularAcceleration_mE36DFAFB38E32F6901806BABA3B291E3BA62BDB5 (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_64 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_64), (void*)L_0);
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::FinishSetup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_FinishSetup_mC9118BA5E8A7F4F90A8742B1C0C57DAC02086DDD (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2AD47C03F7A83F82E3B2ADFE8A60F1727FD3BEFD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2D3C0882E8B897E888F8BF5C82A33ED850CDEA80);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral48FC1F936713D53F5EFACC314E330907113FDC9D);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4ADB212528F8CF625764142B108030A0499510F0);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4C9B28579DAB706CEF903A85854B98A08280D27D);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4FAF1332EAA22ED62546993B44D1AE07024AA9C9);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5DA5B233166AA50A8488D3B97E0B5A1D09EA4905);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5E00AB7EC86A20EC1ECB923C22939506C6806CC9);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6A8CECB369E64DA7E1FBB6FDE079801EFD1EBFEB);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral767FF60B240D13D0E7862196C1340B1049EF4B4B);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral836BEF03CDF7F78C55ADABFC8E7F1FC31387E456);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral890FDBCF037770EED7A1937DEF697FFC44FBF0B3);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C0461316058197D67FFB59CE6A345F2B7BEA590);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9E98EC4F7D85E6AB585D718D9BEDBB163E42B54C);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9FE5967523CA0E49A247084021DB0C0C2C996FDF);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB5CCD6D3CB93DC1BEDD79DB8A4B75174089A3455);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC3E98CA0D21B6899AC08C4CE0868CF1323933585);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.FinishSetup();
-		XRController_FinishSetup_mF6E943DE3B32052071293EC7F337E704717C2128(__this, NULL);
-		// thumbstick = GetChildControl<Vector2Control>("thumbstick");
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0;
-		L_0 = InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85(__this, _stringLiteral6A8CECB369E64DA7E1FBB6FDE079801EFD1EBFEB, InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var);
-		OculusTouchController_set_thumbstick_mCE83285324084A9CC134A9AC82D5F314D2EC54C4_inline(__this, L_0, NULL);
-		// trigger = GetChildControl<AxisControl>("trigger");
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_1;
-		L_1 = InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841(__this, _stringLiteral9FE5967523CA0E49A247084021DB0C0C2C996FDF, InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841_RuntimeMethod_var);
-		OculusTouchController_set_trigger_m2EF8D53F3CBAD1425FC859C0A21DB0B774B1A56A_inline(__this, L_1, NULL);
-		// triggerTouched = GetChildControl<AxisControl>("triggerTouched");
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_2;
-		L_2 = InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841(__this, _stringLiteral767FF60B240D13D0E7862196C1340B1049EF4B4B, InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841_RuntimeMethod_var);
-		OculusTouchController_set_triggerTouched_mFC06DA4C6C489729C52C4CD9EEDBE3FF21468231_inline(__this, L_2, NULL);
-		// grip = GetChildControl<AxisControl>("grip");
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_3;
-		L_3 = InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841(__this, _stringLiteral4FAF1332EAA22ED62546993B44D1AE07024AA9C9, InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841_RuntimeMethod_var);
-		OculusTouchController_set_grip_mBAB2588AC3AE13E12C121D734D36DA1437D7D2B8_inline(__this, L_3, NULL);
-		// primaryButton = GetChildControl<ButtonControl>("primaryButton");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_4;
-		L_4 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral5DA5B233166AA50A8488D3B97E0B5A1D09EA4905, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_primaryButton_m3CB8515E5AA191972822C45FD9B2B9CC770C84E2_inline(__this, L_4, NULL);
-		// secondaryButton = GetChildControl<ButtonControl>("secondaryButton");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_5;
-		L_5 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral4ADB212528F8CF625764142B108030A0499510F0, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_secondaryButton_m8ABA7FC425FF57D4F89111CA1CF373027F969967_inline(__this, L_5, NULL);
-		// gripPressed = GetChildControl<ButtonControl>("gripPressed");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_6;
-		L_6 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral836BEF03CDF7F78C55ADABFC8E7F1FC31387E456, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_gripPressed_m7A78C0352AD402161E89542E0AFB6533B5FDA57D_inline(__this, L_6, NULL);
-		// start = GetChildControl<ButtonControl>("start");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_7;
-		L_7 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral2AD47C03F7A83F82E3B2ADFE8A60F1727FD3BEFD, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_start_m2AC9310CE8C314708914B7F70087F63C4DBF475A_inline(__this, L_7, NULL);
-		// thumbstickClicked = GetChildControl<ButtonControl>("thumbstickClicked");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_8;
-		L_8 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteralB5CCD6D3CB93DC1BEDD79DB8A4B75174089A3455, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_thumbstickClicked_m2B77552D010F410F79775D9011F051D074E351AC_inline(__this, L_8, NULL);
-		// primaryTouched = GetChildControl<ButtonControl>("primaryTouched");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_9;
-		L_9 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral9E98EC4F7D85E6AB585D718D9BEDBB163E42B54C, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_primaryTouched_m3564C5A78160FED2FED435817FEE427C347EB5D3_inline(__this, L_9, NULL);
-		// secondaryTouched = GetChildControl<ButtonControl>("secondaryTouched");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_10;
-		L_10 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral890FDBCF037770EED7A1937DEF697FFC44FBF0B3, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_secondaryTouched_mB6D9FB1C1628F387D05631CC0E8A194CF30F5C2D_inline(__this, L_10, NULL);
-		// thumbstickTouched = GetChildControl<ButtonControl>("thumbstickTouched");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_11;
-		L_11 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral4C9B28579DAB706CEF903A85854B98A08280D27D, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_thumbstickTouched_m767F4A2B2D7F5B4738709A1A6540F73C1090B3D5_inline(__this, L_11, NULL);
-		// triggerPressed = GetChildControl<ButtonControl>("triggerPressed");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_12;
-		L_12 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral9C0461316058197D67FFB59CE6A345F2B7BEA590, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTouchController_set_triggerPressed_mA092DC3CA66DC755439B3AB7B03FC2F448A50D18_inline(__this, L_12, NULL);
-		// deviceVelocity = GetChildControl<Vector3Control>("deviceVelocity");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_13;
-		L_13 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral2D3C0882E8B897E888F8BF5C82A33ED850CDEA80, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusTouchController_set_deviceVelocity_m3884B11F2C1AB204863FE0E7AA72053751CE4BEE_inline(__this, L_13, NULL);
-		// deviceAngularVelocity = GetChildControl<Vector3Control>("deviceAngularVelocity");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_14;
-		L_14 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral48FC1F936713D53F5EFACC314E330907113FDC9D, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusTouchController_set_deviceAngularVelocity_mE25CAB51D1052A7B22F393268FA30B82E380F02A_inline(__this, L_14, NULL);
-		// deviceAcceleration = GetChildControl<Vector3Control>("deviceAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_15;
-		L_15 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral5E00AB7EC86A20EC1ECB923C22939506C6806CC9, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusTouchController_set_deviceAcceleration_m0272E8DDE0A780331E855F98E7DD0BAEAB8FE26F_inline(__this, L_15, NULL);
-		// deviceAngularAcceleration = GetChildControl<Vector3Control>("deviceAngularAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_16;
-		L_16 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteralC3E98CA0D21B6899AC08C4CE0868CF1323933585, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		OculusTouchController_set_deviceAngularAcceleration_mE36DFAFB38E32F6901806BABA3B291E3BA62BDB5_inline(__this, L_16, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTouchController::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController__ctor_mAE11C7DD30947F1CD2A10E19FA75D8A99793A21F (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, const RuntimeMethod* method) 
-{
-	{
-		XRControllerWithRumble__ctor_m78ED6D19588BE805A9BDFD5C194FEB0520A273D0(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// UnityEngine.InputSystem.Controls.IntegerControl Unity.XR.Oculus.Input.OculusTrackingReference::get_trackingState()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* OculusTrackingReference_get_trackingState_mB741095C300E968F867117FE72D19EE3711B8189 (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, const RuntimeMethod* method) 
-{
-	{
-		// public new IntegerControl trackingState { get; protected set; }
-		IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* L_0 = __this->___U3CtrackingStateU3Ek__BackingField_48;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTrackingReference::set_trackingState(UnityEngine.InputSystem.Controls.IntegerControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTrackingReference_set_trackingState_m3F8708A858EFD56D8F8D52A4F1A9A589C7196FDE (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public new IntegerControl trackingState { get; protected set; }
-		IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* L_0 = ___0_value;
-		__this->___U3CtrackingStateU3Ek__BackingField_48 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackingStateU3Ek__BackingField_48), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusTrackingReference::get_isTracked()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTrackingReference_get_isTracked_mF36956E307D96C1E8E28B76568971A3C3F81E905 (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, const RuntimeMethod* method) 
-{
-	{
-		// public new ButtonControl isTracked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CisTrackedU3Ek__BackingField_49;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTrackingReference::set_isTracked(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTrackingReference_set_isTracked_m6FA86987B7D53C3A27DA409A388E2BB4880EFCC8 (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public new ButtonControl isTracked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CisTrackedU3Ek__BackingField_49 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CisTrackedU3Ek__BackingField_49), (void*)L_0);
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTrackingReference::FinishSetup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTrackingReference_FinishSetup_m34B4F1608285238B9F20AFAC4F8101FA866294CB (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisIntegerControl_tA24544EFF42204852F638FF5147F754962C997AB_m87D5D6574BD57F88D41DDE18D17933360E255297_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29340CC6DE4F0D8CF1A3ADBF57306A53920E648A);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFE99981D4BE3BFBE312C52C21EADDC2EACD9ED3D);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.FinishSetup();
-		TrackedDevice_FinishSetup_m8FE5D25BCB3BE51AA50D75C97265A8B8D39D0DC5(__this, NULL);
-		// trackingState = GetChildControl<IntegerControl>("trackingState");
-		IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* L_0;
-		L_0 = InputControl_GetChildControl_TisIntegerControl_tA24544EFF42204852F638FF5147F754962C997AB_m87D5D6574BD57F88D41DDE18D17933360E255297(__this, _stringLiteralFE99981D4BE3BFBE312C52C21EADDC2EACD9ED3D, InputControl_GetChildControl_TisIntegerControl_tA24544EFF42204852F638FF5147F754962C997AB_m87D5D6574BD57F88D41DDE18D17933360E255297_RuntimeMethod_var);
-		OculusTrackingReference_set_trackingState_m3F8708A858EFD56D8F8D52A4F1A9A589C7196FDE_inline(__this, L_0, NULL);
-		// isTracked = GetChildControl<ButtonControl>("isTracked");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_1;
-		L_1 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral29340CC6DE4F0D8CF1A3ADBF57306A53920E648A, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusTrackingReference_set_isTracked_m6FA86987B7D53C3A27DA409A388E2BB4880EFCC8_inline(__this, L_1, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusTrackingReference::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTrackingReference__ctor_m10F0FC0C9B89A554CEAB01BB6504D940B1440AC3 (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, const RuntimeMethod* method) 
-{
-	{
-		TrackedDevice__ctor_mB27788B88E0EACB28065D20F6FE6E39AF391B375(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusRemote::get_back()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusRemote_get_back_m4ED5C52B1CA3F8DF55A773D879BDA73E75855152 (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CbackU3Ek__BackingField_44;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusRemote::set_back(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusRemote_set_back_m75CB133735E0140397A9431AE6712F510B007D2B (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CbackU3Ek__BackingField_44 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbackU3Ek__BackingField_44), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusRemote::get_start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusRemote_get_start_m27B80FE95DF8BFE9EA7E07715A06F3FF73544180 (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl start { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CstartU3Ek__BackingField_45;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusRemote::set_start(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusRemote_set_start_mF34230989E43F99FC07DA0ABB5FD98D6DB637BF3 (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl start { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CstartU3Ek__BackingField_45 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CstartU3Ek__BackingField_45), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector2Control Unity.XR.Oculus.Input.OculusRemote::get_touchpad()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* OculusRemote_get_touchpad_m0F0EA736989A0388623BBACF7F4CD18F355790E4 (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = __this->___U3CtouchpadU3Ek__BackingField_46;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusRemote::set_touchpad(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusRemote_set_touchpad_m7F66B8C9541ECF48FB455727D57B66CC79D51AB9 (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
-		__this->___U3CtouchpadU3Ek__BackingField_46 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadU3Ek__BackingField_46), (void*)L_0);
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusRemote::FinishSetup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusRemote_FinishSetup_m9ED2C825EB4113F55E7F59EE8B6AF84EBE939ABC (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2AD47C03F7A83F82E3B2ADFE8A60F1727FD3BEFD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral381617D1A1C0C848CBE085A3C3BF523A03E9659F);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4375062BD8882E451B6BEE137E47CDAFE50A90EC);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.FinishSetup();
-		InputControl_FinishSetup_m46B682B124C6E127183D19E1BA86E966472C7C15(__this, NULL);
-		// back = GetChildControl<ButtonControl>("back");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0;
-		L_0 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral381617D1A1C0C848CBE085A3C3BF523A03E9659F, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusRemote_set_back_m75CB133735E0140397A9431AE6712F510B007D2B_inline(__this, L_0, NULL);
-		// start = GetChildControl<ButtonControl>("start");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_1;
-		L_1 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral2AD47C03F7A83F82E3B2ADFE8A60F1727FD3BEFD, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusRemote_set_start_mF34230989E43F99FC07DA0ABB5FD98D6DB637BF3_inline(__this, L_1, NULL);
-		// touchpad = GetChildControl<Vector2Control>("touchpad");
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_2;
-		L_2 = InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85(__this, _stringLiteral4375062BD8882E451B6BEE137E47CDAFE50A90EC, InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var);
-		OculusRemote_set_touchpad_m7F66B8C9541ECF48FB455727D57B66CC79D51AB9_inline(__this, L_2, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusRemote::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusRemote__ctor_m043054D60B1A0FEDF4F81DFAA53D87B61DDB74B4 (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, const RuntimeMethod* method) 
-{
-	{
-		InputDevice__ctor_mAA72B9458CD588116A968FE54C2AD2B59C787E51(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.OculusHMDExtended::get_back()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusHMDExtended_get_back_m6F903E25C7C469356BFCD6A2510472A4172D46A9 (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CbackU3Ek__BackingField_67;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMDExtended::set_back(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMDExtended_set_back_mC98306E8847DDAB9B2F46B0D52F937AE987E41F3 (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CbackU3Ek__BackingField_67 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbackU3Ek__BackingField_67), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector2Control Unity.XR.Oculus.Input.OculusHMDExtended::get_touchpad()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* OculusHMDExtended_get_touchpad_mBBD2B5548DA5051A2D73C4B195FFAFF9239B6F30 (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = __this->___U3CtouchpadU3Ek__BackingField_68;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMDExtended::set_touchpad(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMDExtended_set_touchpad_m035B180B2E1AB1DFF685C77EEA8BF03B32CC18D1 (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
-		__this->___U3CtouchpadU3Ek__BackingField_68 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadU3Ek__BackingField_68), (void*)L_0);
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMDExtended::FinishSetup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMDExtended_FinishSetup_m697A60FAD84530E45D1E7E166FDB39442FA86EC5 (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral381617D1A1C0C848CBE085A3C3BF523A03E9659F);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4375062BD8882E451B6BEE137E47CDAFE50A90EC);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.FinishSetup();
-		OculusHMD_FinishSetup_m8EA2AFF036658DDE6C36E19D95C8ED58CC31D32B(__this, NULL);
-		// back = GetChildControl<ButtonControl>("back");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0;
-		L_0 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral381617D1A1C0C848CBE085A3C3BF523A03E9659F, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		OculusHMDExtended_set_back_mC98306E8847DDAB9B2F46B0D52F937AE987E41F3_inline(__this, L_0, NULL);
-		// touchpad = GetChildControl<Vector2Control>("touchpad");
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_1;
-		L_1 = InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85(__this, _stringLiteral4375062BD8882E451B6BEE137E47CDAFE50A90EC, InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var);
-		OculusHMDExtended_set_touchpad_m035B180B2E1AB1DFF685C77EEA8BF03B32CC18D1_inline(__this, L_1, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.OculusHMDExtended::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusHMDExtended__ctor_m9FA11B79374341F5A0679CA246282FA4D19778DD (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, const RuntimeMethod* method) 
-{
-	{
-		OculusHMD__ctor_m71D4611011F2354421932FDD66B44BA03EBA67DB(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// UnityEngine.InputSystem.Controls.Vector2Control Unity.XR.Oculus.Input.GearVRTrackedController::get_touchpad()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* GearVRTrackedController_get_touchpad_m70F504C0DC3A58C7818D146185F84F5B4932A0ED (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = __this->___U3CtouchpadU3Ek__BackingField_48;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_touchpad(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpad_m87E51972471D3A1793059625346F5A4226EA2B73 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
-		__this->___U3CtouchpadU3Ek__BackingField_48 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadU3Ek__BackingField_48), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.AxisControl Unity.XR.Oculus.Input.GearVRTrackedController::get_trigger()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* GearVRTrackedController_get_trigger_mEA54915EF20454FE1460781C3B16F42EDBB712BD (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl trigger { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = __this->___U3CtriggerU3Ek__BackingField_49;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_trigger(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_trigger_mE8C85BD46A8788DB3A8D6BDA7259DDF7A3CE1269 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl trigger { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
-		__this->___U3CtriggerU3Ek__BackingField_49 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerU3Ek__BackingField_49), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.GearVRTrackedController::get_back()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* GearVRTrackedController_get_back_m9229D4C8804D0576C509C6217DE5D7FBD4B4F42F (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CbackU3Ek__BackingField_50;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_back(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_back_m682575B11BF03556AB63F65D60BD611A950E3C04 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CbackU3Ek__BackingField_50 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbackU3Ek__BackingField_50), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.GearVRTrackedController::get_triggerPressed()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* GearVRTrackedController_get_triggerPressed_m65CA3994E9F3278C982CE818514805E4D0F60416 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl triggerPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CtriggerPressedU3Ek__BackingField_51;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_triggerPressed(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_triggerPressed_m21ADF87BF994317C21BA32B90BE9826DBF4723CF (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl triggerPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CtriggerPressedU3Ek__BackingField_51 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerPressedU3Ek__BackingField_51), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.GearVRTrackedController::get_touchpadClicked()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* GearVRTrackedController_get_touchpadClicked_m1577DA18349BF5708497E1311641BD7102489315 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl touchpadClicked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CtouchpadClickedU3Ek__BackingField_52;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_touchpadClicked(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpadClicked_m0E5304650AC2A578534A590CD9D4722199113936 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl touchpadClicked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CtouchpadClickedU3Ek__BackingField_52 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadClickedU3Ek__BackingField_52), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.ButtonControl Unity.XR.Oculus.Input.GearVRTrackedController::get_touchpadTouched()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* GearVRTrackedController_get_touchpadTouched_mA8C4ACD974B2B5DA9CC3AE0821FC8EBCB1202201 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl touchpadTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = __this->___U3CtouchpadTouchedU3Ek__BackingField_53;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_touchpadTouched(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpadTouched_m2EF525225849C501EEA08F72C76E8608671F92AE (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl touchpadTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CtouchpadTouchedU3Ek__BackingField_53 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadTouchedU3Ek__BackingField_53), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.GearVRTrackedController::get_deviceAngularVelocity()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* GearVRTrackedController_get_deviceAngularVelocity_m2958A3D39350C636BF4A8170E0E872ABC7EAB96A (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAngularVelocityU3Ek__BackingField_54;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_deviceAngularVelocity(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAngularVelocity_mB421CECAF8A29E0EDADEE349E75EA7C16BBFCD50 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularVelocityU3Ek__BackingField_54 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularVelocityU3Ek__BackingField_54), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.GearVRTrackedController::get_deviceAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* GearVRTrackedController_get_deviceAcceleration_m790CFA4AE74FA058907B9A54B64C2B3BD833EB72 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAccelerationU3Ek__BackingField_55;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_deviceAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAcceleration_mE4E78CF454405139C0ACE63737E5F457721580AB (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAccelerationU3Ek__BackingField_55 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAccelerationU3Ek__BackingField_55), (void*)L_0);
-		return;
-	}
-}
-// UnityEngine.InputSystem.Controls.Vector3Control Unity.XR.Oculus.Input.GearVRTrackedController::get_deviceAngularAcceleration()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* GearVRTrackedController_get_deviceAngularAcceleration_m4AE1B6DBD5ECE45BD29FBE033059CB6F2FAD2A49 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = __this->___U3CdeviceAngularAccelerationU3Ek__BackingField_56;
-		return L_0;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::set_deviceAngularAcceleration(UnityEngine.InputSystem.Controls.Vector3Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAngularAcceleration_m212BB263779D06893E7C2E6D4D6C351335A18CA9 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_56 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_56), (void*)L_0);
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::FinishSetup()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController_FinishSetup_m1D42C40E99442DE264197BB9C4DCCE3547A9CEC2 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral381617D1A1C0C848CBE085A3C3BF523A03E9659F);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4375062BD8882E451B6BEE137E47CDAFE50A90EC);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral48FC1F936713D53F5EFACC314E330907113FDC9D);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5E00AB7EC86A20EC1ECB923C22939506C6806CC9);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C0461316058197D67FFB59CE6A345F2B7BEA590);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9FE5967523CA0E49A247084021DB0C0C2C996FDF);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB81B10F5CAB114184CB2AEC199DE4C618C7F57DB);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC3E98CA0D21B6899AC08C4CE0868CF1323933585);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEDC78BA63A133C81FC2DD3E3CA7EC02E945F89CE);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// base.FinishSetup();
-		XRController_FinishSetup_mF6E943DE3B32052071293EC7F337E704717C2128(__this, NULL);
-		// touchpad = GetChildControl<Vector2Control>("touchpad");
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0;
-		L_0 = InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85(__this, _stringLiteral4375062BD8882E451B6BEE137E47CDAFE50A90EC, InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85_RuntimeMethod_var);
-		GearVRTrackedController_set_touchpad_m87E51972471D3A1793059625346F5A4226EA2B73_inline(__this, L_0, NULL);
-		// trigger = GetChildControl<AxisControl>("trigger");
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_1;
-		L_1 = InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841(__this, _stringLiteral9FE5967523CA0E49A247084021DB0C0C2C996FDF, InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841_RuntimeMethod_var);
-		GearVRTrackedController_set_trigger_mE8C85BD46A8788DB3A8D6BDA7259DDF7A3CE1269_inline(__this, L_1, NULL);
-		// back = GetChildControl<ButtonControl>("back");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_2;
-		L_2 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral381617D1A1C0C848CBE085A3C3BF523A03E9659F, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		GearVRTrackedController_set_back_m682575B11BF03556AB63F65D60BD611A950E3C04_inline(__this, L_2, NULL);
-		// triggerPressed = GetChildControl<ButtonControl>("triggerPressed");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_3;
-		L_3 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteral9C0461316058197D67FFB59CE6A345F2B7BEA590, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		GearVRTrackedController_set_triggerPressed_m21ADF87BF994317C21BA32B90BE9826DBF4723CF_inline(__this, L_3, NULL);
-		// touchpadClicked = GetChildControl<ButtonControl>("touchpadClicked");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_4;
-		L_4 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteralEDC78BA63A133C81FC2DD3E3CA7EC02E945F89CE, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		GearVRTrackedController_set_touchpadClicked_m0E5304650AC2A578534A590CD9D4722199113936_inline(__this, L_4, NULL);
-		// touchpadTouched = GetChildControl<ButtonControl>("touchpadTouched");
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_5;
-		L_5 = InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044(__this, _stringLiteralB81B10F5CAB114184CB2AEC199DE4C618C7F57DB, InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044_RuntimeMethod_var);
-		GearVRTrackedController_set_touchpadTouched_m2EF525225849C501EEA08F72C76E8608671F92AE_inline(__this, L_5, NULL);
-		// deviceAngularVelocity = GetChildControl<Vector3Control>("deviceAngularVelocity");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_6;
-		L_6 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral48FC1F936713D53F5EFACC314E330907113FDC9D, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		GearVRTrackedController_set_deviceAngularVelocity_mB421CECAF8A29E0EDADEE349E75EA7C16BBFCD50_inline(__this, L_6, NULL);
-		// deviceAcceleration = GetChildControl<Vector3Control>("deviceAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_7;
-		L_7 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteral5E00AB7EC86A20EC1ECB923C22939506C6806CC9, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		GearVRTrackedController_set_deviceAcceleration_mE4E78CF454405139C0ACE63737E5F457721580AB_inline(__this, L_7, NULL);
-		// deviceAngularAcceleration = GetChildControl<Vector3Control>("deviceAngularAcceleration");
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_8;
-		L_8 = InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418(__this, _stringLiteralC3E98CA0D21B6899AC08C4CE0868CF1323933585, InputControl_GetChildControl_TisVector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A_mD3B77ED4A28875CD650D600E82A0E4C1E9EBD418_RuntimeMethod_var);
-		GearVRTrackedController_set_deviceAngularAcceleration_m212BB263779D06893E7C2E6D4D6C351335A18CA9_inline(__this, L_8, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Unity.XR.Oculus.Input.GearVRTrackedController::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GearVRTrackedController__ctor_m4E30F1D6842892A94BE7A10B8ACF7D1E5EF73E49 (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, const RuntimeMethod* method) 
-{
-	{
-		XRController__ctor_mB780698DBF866160CF7C7D6198D115CE263593ED(__this, NULL);
 		return;
 	}
 }
@@ -37650,6 +36095,1411 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RebindingOperation__ctor_mA5BCC7385A1A37
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.InputSystem.InputActionRebindingExtensions/RebindingOperation/<>c__DisplayClass32_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass32_0__ctor_m4ED3AFA799C90AFD80E17F044C9E2A99E7E0846A (U3CU3Ec__DisplayClass32_0_t02D7434797D66D68FBC3BADE6D89D0BEB1323109* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Boolean UnityEngine.InputSystem.InputActionRebindingExtensions/RebindingOperation/<>c__DisplayClass32_0::<WithTargetBinding>b__0(UnityEngine.InputSystem.InputControlScheme)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass32_0_U3CWithTargetBindingU3Eb__0_m2135F652046E74E1955EAFF73288FA7E7DFD16A2 (U3CU3Ec__DisplayClass32_0_t02D7434797D66D68FBC3BADE6D89D0BEB1323109* __this, InputControlScheme_tB60FB32F414727140B32E1A0447679DC7ABC8434 ___0_x, const RuntimeMethod* method) 
+{
+	{
+		// asset.controlSchemes.IndexOf(x => group.Equals(x.bindingGroup, StringComparison.InvariantCultureIgnoreCase));
+		String_t* L_0 = __this->___group_0;
+		String_t* L_1;
+		L_1 = InputControlScheme_get_bindingGroup_m44B4669B8B5D5FDEE8DB190307415AA2F99F5835_inline((&___0_x), NULL);
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = String_Equals_m7BDFC0B951005B9DC2BAED464AFE68FF7E9ACE5A(L_0, L_1, 3, NULL);
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.InputSystem.InputActionRebindingExtensions/DeferBindingResolutionWrapper::Acquire()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeferBindingResolutionWrapper_Acquire_mB9832C0A8B28C6C8B3A114B986E9EC0E360FFE4E (DeferBindingResolutionWrapper_tBEB0D0DEA05F9681F0189610B4D7B0CEAD32AC8C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// ++InputActionMap.s_DeferBindingResolution;
+		int32_t L_0 = ((InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_StaticFields*)il2cpp_codegen_static_fields_for(InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var))->___s_DeferBindingResolution_18;
+		((InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_StaticFields*)il2cpp_codegen_static_fields_for(InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var))->___s_DeferBindingResolution_18 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.InputSystem.InputActionRebindingExtensions/DeferBindingResolutionWrapper::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeferBindingResolutionWrapper_Dispose_m2B132F95F4EEE40B87CD0CAE44165F189199CC90 (DeferBindingResolutionWrapper_tBEB0D0DEA05F9681F0189610B4D7B0CEAD32AC8C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (InputActionMap.s_DeferBindingResolution > 0)
+		int32_t L_0 = ((InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_StaticFields*)il2cpp_codegen_static_fields_for(InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var))->___s_DeferBindingResolution_18;
+		if ((((int32_t)L_0) <= ((int32_t)0)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// --InputActionMap.s_DeferBindingResolution;
+		int32_t L_1 = ((InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_StaticFields*)il2cpp_codegen_static_fields_for(InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var))->___s_DeferBindingResolution_18;
+		((InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_StaticFields*)il2cpp_codegen_static_fields_for(InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var))->___s_DeferBindingResolution_18 = ((int32_t)il2cpp_codegen_subtract(L_1, 1));
+	}
+
+IL_0014:
+	{
+		// if (InputActionMap.s_DeferBindingResolution == 0)
+		int32_t L_2 = ((InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_StaticFields*)il2cpp_codegen_static_fields_for(InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_il2cpp_TypeInfo_var))->___s_DeferBindingResolution_18;
+		if (L_2)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		// InputActionState.DeferredResolutionOfBindings();
+		InputActionState_DeferredResolutionOfBindings_m607A0C4428312C015F0C7B0E1338B834EB776A52(NULL);
+	}
+
+IL_0020:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.InputSystem.InputActionRebindingExtensions/DeferBindingResolutionWrapper::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeferBindingResolutionWrapper__ctor_m5BAC382DB41CD195209084BD779477DDA78E4DC0 (DeferBindingResolutionWrapper_tBEB0D0DEA05F9681F0189610B4D7B0CEAD32AC8C* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.InputSystem.InputActionRebindingExtensions/<>c__DisplayClass25_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass25_0__ctor_mEA2103A848EBEFC0A7783FBDEF5BE156AF9C06A0 (U3CU3Ec__DisplayClass25_0_t48070A760B3049299E660D2E5D0967466654CB46* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.String UnityEngine.InputSystem.InputActionRebindingExtensions/<>c__DisplayClass25_0::<GetBindingDisplayString>b__0(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec__DisplayClass25_0_U3CGetBindingDisplayStringU3Eb__0_mE35A48928D0919B1B5F66D85E8C543B66C6A1188 (U3CU3Ec__DisplayClass25_0_t48070A760B3049299E660D2E5D0967466654CB46* __this, String_t* ___0_fragment, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReadOnlyArray_1_get_Item_mDAAB3D7833424DD373EA449309C8728D5BA96C4A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA42779B09629BCE81B76EF626A57A0B40F2AD827);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	int32_t V_1 = 0;
+	InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		// var result = string.Empty;
+		String_t* L_0 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		V_0 = L_0;
+		// for (var i = 0; i < partCount; ++i)
+		V_1 = 0;
+		goto IL_0059;
+	}
+
+IL_000a:
+	{
+		// if (!string.Equals(bindings[firstPartIndex + i].name, fragment, StringComparison.InvariantCultureIgnoreCase))
+		ReadOnlyArray_1_tF49E7A2430C7D717C5DF8A8C2626314D0D9C1CF4* L_1 = (&__this->___bindings_0);
+		int32_t L_2 = __this->___firstPartIndex_1;
+		int32_t L_3 = V_1;
+		InputBinding_t0D75BD1538CF81D29450D568D5C938E111633EC5 L_4;
+		L_4 = ReadOnlyArray_1_get_Item_mDAAB3D7833424DD373EA449309C8728D5BA96C4A(L_1, ((int32_t)il2cpp_codegen_add(L_2, L_3)), ReadOnlyArray_1_get_Item_mDAAB3D7833424DD373EA449309C8728D5BA96C4A_RuntimeMethod_var);
+		V_2 = L_4;
+		String_t* L_5;
+		L_5 = InputBinding_get_name_mA8D3C357E272E1C140226BDB8ABEE6FCA8693705_inline((&V_2), NULL);
+		String_t* L_6 = ___0_fragment;
+		bool L_7;
+		L_7 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_5, L_6, 3, NULL);
+		if (!L_7)
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		// if (!string.IsNullOrEmpty(result))
+		String_t* L_8 = V_0;
+		bool L_9;
+		L_9 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_8, NULL);
+		if (L_9)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		// result = $"{result}|{partStrings[i]}";
+		String_t* L_10 = V_0;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = __this->___partStrings_2;
+		int32_t L_12 = V_1;
+		NullCheck(L_11);
+		int32_t L_13 = L_12;
+		String_t* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		String_t* L_15;
+		L_15 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_10, _stringLiteralA42779B09629BCE81B76EF626A57A0B40F2AD827, L_14, NULL);
+		V_0 = L_15;
+		goto IL_0055;
+	}
+
+IL_004c:
+	{
+		// result = partStrings[i];
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16 = __this->___partStrings_2;
+		int32_t L_17 = V_1;
+		NullCheck(L_16);
+		int32_t L_18 = L_17;
+		String_t* L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
+		V_0 = L_19;
+	}
+
+IL_0055:
+	{
+		// for (var i = 0; i < partCount; ++i)
+		int32_t L_20 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_20, 1));
+	}
+
+IL_0059:
+	{
+		// for (var i = 0; i < partCount; ++i)
+		int32_t L_21 = V_1;
+		int32_t L_22 = __this->___partCount_3;
+		if ((((int32_t)L_21) < ((int32_t)L_22)))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		// if (string.IsNullOrEmpty(result))
+		String_t* L_23 = V_0;
+		bool L_24;
+		L_24 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_23, NULL);
+		if (!L_24)
+		{
+			goto IL_0070;
+		}
+	}
+	{
+		// result = " ";
+		V_0 = _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745;
+	}
+
+IL_0070:
+	{
+		// return result;
+		String_t* L_25 = V_0;
+		return L_25;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Conversion methods for marshalling of: UnityEngine.InputSystem.InputActionProperty
+IL2CPP_EXTERN_C void InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshal_pinvoke(const InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD& unmarshaled, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_pinvoke& marshaled)
+{
+	Exception_t* ___m_Action_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Action' of type 'InputActionProperty': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_Action_1Exception, NULL);
+}
+IL2CPP_EXTERN_C void InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshal_pinvoke_back(const InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_pinvoke& marshaled, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD& unmarshaled)
+{
+	Exception_t* ___m_Action_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Action' of type 'InputActionProperty': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_Action_1Exception, NULL);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.InputSystem.InputActionProperty
+IL2CPP_EXTERN_C void InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshal_pinvoke_cleanup(InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: UnityEngine.InputSystem.InputActionProperty
+IL2CPP_EXTERN_C void InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshal_com(const InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD& unmarshaled, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_com& marshaled)
+{
+	Exception_t* ___m_Action_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Action' of type 'InputActionProperty': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_Action_1Exception, NULL);
+}
+IL2CPP_EXTERN_C void InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshal_com_back(const InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_com& marshaled, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD& unmarshaled)
+{
+	Exception_t* ___m_Action_1Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Action' of type 'InputActionProperty': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_Action_1Exception, NULL);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.InputSystem.InputActionProperty
+IL2CPP_EXTERN_C void InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshal_com_cleanup(InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD_marshaled_com& marshaled)
+{
+}
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionProperty::get_action()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionProperty_get_action_mABF2197D9CC6586E5DFB0481CF9C1B2586F41A47 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public InputAction action => m_UseReference ? m_Reference != null ? m_Reference.action : null : m_Action;
+		bool L_0 = __this->___m_UseReference_0;
+		if (L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_1 = __this->___m_Action_1;
+		return L_1;
+	}
+
+IL_000f:
+	{
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_2 = __this->___m_Reference_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_3)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		return (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)NULL;
+	}
+
+IL_001f:
+	{
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_4 = __this->___m_Reference_2;
+		NullCheck(L_4);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_5;
+		L_5 = InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF(L_4, NULL);
+		return L_5;
+	}
+}
+IL2CPP_EXTERN_C  InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionProperty_get_action_mABF2197D9CC6586E5DFB0481CF9C1B2586F41A47_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* _returnValue;
+	_returnValue = InputActionProperty_get_action_mABF2197D9CC6586E5DFB0481CF9C1B2586F41A47(_thisAdjusted, method);
+	return _returnValue;
+}
+// UnityEngine.InputSystem.InputActionReference UnityEngine.InputSystem.InputActionProperty::get_reference()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* InputActionProperty_get_reference_m71A5E6BC4908F5AD358FAE3821EEFB236AFC71D3 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) 
+{
+	{
+		// public InputActionReference reference => m_UseReference ? m_Reference : null;
+		bool L_0 = __this->___m_UseReference_0;
+		if (L_0)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		return (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1*)NULL;
+	}
+
+IL_000a:
+	{
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_1 = __this->___m_Reference_2;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* InputActionProperty_get_reference_m71A5E6BC4908F5AD358FAE3821EEFB236AFC71D3_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* _returnValue;
+	_returnValue = InputActionProperty_get_reference_m71A5E6BC4908F5AD358FAE3821EEFB236AFC71D3(_thisAdjusted, method);
+	return _returnValue;
+}
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionProperty::get_serializedAction()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionProperty_get_serializedAction_m4787371FBBE72755480187B22201E0770BE8E563 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal InputAction serializedAction => m_Action;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = __this->___m_Action_1;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionProperty_get_serializedAction_m4787371FBBE72755480187B22201E0770BE8E563_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* _returnValue;
+	_returnValue = InputActionProperty_get_serializedAction_m4787371FBBE72755480187B22201E0770BE8E563_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+// UnityEngine.InputSystem.InputActionReference UnityEngine.InputSystem.InputActionProperty::get_serializedReference()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* InputActionProperty_get_serializedReference_m37DAE831375C51B239CD2044A1EC3E20F6502ACC (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal InputActionReference serializedReference => m_Reference;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_0 = __this->___m_Reference_2;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* InputActionProperty_get_serializedReference_m37DAE831375C51B239CD2044A1EC3E20F6502ACC_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* _returnValue;
+	_returnValue = InputActionProperty_get_serializedReference_m37DAE831375C51B239CD2044A1EC3E20F6502ACC_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.InputSystem.InputActionProperty::.ctor(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionProperty__ctor_m0E922A8B1C135221416D4ADB0B28FE1BCA80209A (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method) 
+{
+	{
+		// m_UseReference = false;
+		__this->___m_UseReference_0 = (bool)0;
+		// m_Action = action;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = ___0_action;
+		__this->___m_Action_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Action_1), (void*)L_0);
+		// m_Reference = null;
+		__this->___m_Reference_2 = (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Reference_2), (void*)(InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1*)NULL);
+		// }
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void InputActionProperty__ctor_m0E922A8B1C135221416D4ADB0B28FE1BCA80209A_AdjustorThunk (RuntimeObject* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	InputActionProperty__ctor_m0E922A8B1C135221416D4ADB0B28FE1BCA80209A(_thisAdjusted, ___0_action, method);
+}
+// System.Void UnityEngine.InputSystem.InputActionProperty::.ctor(UnityEngine.InputSystem.InputActionReference)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionProperty__ctor_m1B4A297857D1968B4021B8ED04B4FEA1624CAE38 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___0_reference, const RuntimeMethod* method) 
+{
+	{
+		// m_UseReference = true;
+		__this->___m_UseReference_0 = (bool)1;
+		// m_Action = null;
+		__this->___m_Action_1 = (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Action_1), (void*)(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)NULL);
+		// m_Reference = reference;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_0 = ___0_reference;
+		__this->___m_Reference_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Reference_2), (void*)L_0);
+		// }
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void InputActionProperty__ctor_m1B4A297857D1968B4021B8ED04B4FEA1624CAE38_AdjustorThunk (RuntimeObject* __this, InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___0_reference, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	InputActionProperty__ctor_m1B4A297857D1968B4021B8ED04B4FEA1624CAE38(_thisAdjusted, ___0_reference, method);
+}
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::Equals(UnityEngine.InputSystem.InputActionProperty)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_Equals_m0C06212922B79EBA82960388EB39C48458009F98 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return m_Reference == other.m_Reference &&
+		//     m_UseReference == other.m_UseReference &&
+		//     m_Action == other.m_Action;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_0 = __this->___m_Reference_2;
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_1 = ___0_other;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_2 = L_1.___m_Reference_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, L_2, NULL);
+		if (!L_3)
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		bool L_4 = __this->___m_UseReference_0;
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_5 = ___0_other;
+		bool L_6 = L_5.___m_UseReference_0;
+		if ((!(((uint32_t)L_4) == ((uint32_t)L_6))))
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_7 = __this->___m_Action_1;
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_8 = ___0_other;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_9 = L_8.___m_Action_1;
+		return (bool)((((RuntimeObject*)(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)L_7) == ((RuntimeObject*)(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)L_9))? 1 : 0);
+	}
+
+IL_0030:
+	{
+		return (bool)0;
+	}
+}
+IL2CPP_EXTERN_C  bool InputActionProperty_Equals_m0C06212922B79EBA82960388EB39C48458009F98_AdjustorThunk (RuntimeObject* __this, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___0_other, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = InputActionProperty_Equals_m0C06212922B79EBA82960388EB39C48458009F98(_thisAdjusted, ___0_other, method);
+	return _returnValue;
+}
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::Equals(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_Equals_m97BF84F9329A5012737F02DA31691B9C9FDE989E (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_other, const RuntimeMethod* method) 
+{
+	{
+		// return ReferenceEquals(action, other);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0;
+		L_0 = InputActionProperty_get_action_mABF2197D9CC6586E5DFB0481CF9C1B2586F41A47(__this, NULL);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_1 = ___0_other;
+		return (bool)((((RuntimeObject*)(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)L_0) == ((RuntimeObject*)(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)L_1))? 1 : 0);
+	}
+}
+IL2CPP_EXTERN_C  bool InputActionProperty_Equals_m97BF84F9329A5012737F02DA31691B9C9FDE989E_AdjustorThunk (RuntimeObject* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_other, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = InputActionProperty_Equals_m97BF84F9329A5012737F02DA31691B9C9FDE989E(_thisAdjusted, ___0_other, method);
+	return _returnValue;
+}
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::Equals(UnityEngine.InputSystem.InputActionReference)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_Equals_mB10D5450B844184F08BAB09296129F539BEC7432 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return m_Reference == other;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_0 = __this->___m_Reference_2;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_1 = ___0_other;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, L_1, NULL);
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C  bool InputActionProperty_Equals_mB10D5450B844184F08BAB09296129F539BEC7432_AdjustorThunk (RuntimeObject* __this, InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___0_other, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = InputActionProperty_Equals_mB10D5450B844184F08BAB09296129F539BEC7432(_thisAdjusted, ___0_other, method);
+	return _returnValue;
+}
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::Equals(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_Equals_m2068BC73A36627EB4AE36D09CCF389E8B0B5F5BC (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (m_UseReference)
+		bool L_0 = __this->___m_UseReference_0;
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		// return Equals(obj as InputActionReference);
+		RuntimeObject* L_1 = ___0_obj;
+		bool L_2;
+		L_2 = InputActionProperty_Equals_mB10D5450B844184F08BAB09296129F539BEC7432(__this, ((InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1*)IsInstClass((RuntimeObject*)L_1, InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1_il2cpp_TypeInfo_var)), NULL);
+		return L_2;
+	}
+
+IL_0015:
+	{
+		// return Equals(obj as InputAction);
+		RuntimeObject* L_3 = ___0_obj;
+		bool L_4;
+		L_4 = InputActionProperty_Equals_m97BF84F9329A5012737F02DA31691B9C9FDE989E(__this, ((InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)IsInstSealed((RuntimeObject*)L_3, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_il2cpp_TypeInfo_var)), NULL);
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C  bool InputActionProperty_Equals_m2068BC73A36627EB4AE36D09CCF389E8B0B5F5BC_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = InputActionProperty_Equals_m2068BC73A36627EB4AE36D09CCF389E8B0B5F5BC(_thisAdjusted, ___0_obj, method);
+	return _returnValue;
+}
+// System.Int32 UnityEngine.InputSystem.InputActionProperty::GetHashCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t InputActionProperty_GetHashCode_mE5D1A51A7D75FBD7332A14ACCA7EA94A91D3BAED (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (m_UseReference)
+		bool L_0 = __this->___m_UseReference_0;
+		if (!L_0)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// return m_Reference != null ? m_Reference.GetHashCode() : 0;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_1 = __this->___m_Reference_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (L_2)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_0018:
+	{
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_3 = __this->___m_Reference_2;
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, L_3);
+		return L_4;
+	}
+
+IL_0024:
+	{
+		// return m_Action != null ? m_Action.GetHashCode() : 0;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_5 = __this->___m_Action_1;
+		if (L_5)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_002e:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_6 = __this->___m_Action_1;
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, L_6);
+		return L_7;
+	}
+}
+IL2CPP_EXTERN_C  int32_t InputActionProperty_GetHashCode_mE5D1A51A7D75FBD7332A14ACCA7EA94A91D3BAED_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = InputActionProperty_GetHashCode_mE5D1A51A7D75FBD7332A14ACCA7EA94A91D3BAED(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::op_Equality(UnityEngine.InputSystem.InputActionProperty,UnityEngine.InputSystem.InputActionProperty)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_op_Equality_mDBBFEA787A68A86DA2DDB96320C5D94DD3EF60FD (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___0_left, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___1_right, const RuntimeMethod* method) 
+{
+	{
+		// return left.Equals(right);
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_0 = ___1_right;
+		bool L_1;
+		L_1 = InputActionProperty_Equals_m0C06212922B79EBA82960388EB39C48458009F98((&___0_left), L_0, NULL);
+		return L_1;
+	}
+}
+// System.Boolean UnityEngine.InputSystem.InputActionProperty::op_Inequality(UnityEngine.InputSystem.InputActionProperty,UnityEngine.InputSystem.InputActionProperty)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputActionProperty_op_Inequality_mCECAB23F7BD37CB44892D652DD30ED64189F3316 (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___0_left, InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___1_right, const RuntimeMethod* method) 
+{
+	{
+		// return !left.Equals(right);
+		InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD L_0 = ___1_right;
+		bool L_1;
+		L_1 = InputActionProperty_Equals_m0C06212922B79EBA82960388EB39C48458009F98((&___0_left), L_0, NULL);
+		return (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// UnityEngine.InputSystem.InputActionAsset UnityEngine.InputSystem.InputActionReference::get_asset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* InputActionReference_get_asset_m2ACB50A0D73B81FAB21C6BC80C59CB87814BEE2E (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, const RuntimeMethod* method) 
+{
+	{
+		// public InputActionAsset asset => m_Asset;
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_0 = __this->___m_Asset_4;
+		return L_0;
+	}
+}
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionReference::get_action()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (m_Action == null)
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = __this->___m_Action_6;
+		if (L_0)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		// if (m_Asset == null)
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_1 = __this->___m_Asset_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// return null;
+		return (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)NULL;
+	}
+
+IL_0018:
+	{
+		// m_Action = m_Asset.FindAction(new Guid(m_ActionId));
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_3 = __this->___m_Asset_4;
+		String_t* L_4 = __this->___m_ActionId_5;
+		Guid_t L_5;
+		memset((&L_5), 0, sizeof(L_5));
+		Guid__ctor_mAE66BA1C43B4194F4F7991E2E30370E36CBBF830((&L_5), L_4, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_6;
+		L_6 = InputActionAsset_FindAction_m16E1640E2BBADC5F408EA6F05C81D593269CD24A(L_3, L_5, NULL);
+		__this->___m_Action_6 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Action_6), (void*)L_6);
+	}
+
+IL_0034:
+	{
+		// return m_Action;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_7 = __this->___m_Action_6;
+		return L_7;
+	}
+}
+// System.Void UnityEngine.InputSystem.InputActionReference::Set(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionReference_Set_m6FD5F9454BE84DCF93582263A8D5F9E78D78299A (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* V_0 = NULL;
+	{
+		// if (action == null)
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = ___0_action;
+		if (L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// m_Asset = default;
+		__this->___m_Asset_4 = (InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Asset_4), (void*)(InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D*)NULL);
+		// m_ActionId = default;
+		__this->___m_ActionId_5 = (String_t*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ActionId_5), (void*)(String_t*)NULL);
+		// return;
+		return;
+	}
+
+IL_0012:
+	{
+		// var map = action.actionMap;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_1 = ___0_action;
+		NullCheck(L_1);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_2;
+		L_2 = InputAction_get_actionMap_m43B509A85057642A7DD0B89E4F27044ABB5B5E93(L_1, NULL);
+		V_0 = L_2;
+		// if (map == null || map.asset == null)
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_4 = V_0;
+		NullCheck(L_4);
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_5;
+		L_5 = InputActionMap_get_asset_mBE901C135AA146247F9A05D72116F8FF15063052_inline(L_4, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_003b;
+		}
+	}
+
+IL_002a:
+	{
+		// throw new InvalidOperationException(
+		//     $"Action '{action}' must be part of an InputActionAsset in order to be able to create an InputActionReference for it");
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_7 = ___0_action;
+		String_t* L_8;
+		L_8 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralB83C20F0372B83AFCF2F380FFFEDF0FC5B2716DF)), L_7, NULL);
+		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_9 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+		NullCheck(L_9);
+		InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_9, L_8, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_9, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InputActionReference_Set_m6FD5F9454BE84DCF93582263A8D5F9E78D78299A_RuntimeMethod_var)));
+	}
+
+IL_003b:
+	{
+		// SetInternal(map.asset, action);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_10 = V_0;
+		NullCheck(L_10);
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_11;
+		L_11 = InputActionMap_get_asset_mBE901C135AA146247F9A05D72116F8FF15063052_inline(L_10, NULL);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_12 = ___0_action;
+		InputActionReference_SetInternal_m953C49C2F169CEB8A34ED2F35B9976FD23F3C83C(__this, L_11, L_12, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.InputSystem.InputActionReference::Set(UnityEngine.InputSystem.InputActionAsset,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionReference_Set_mA08B7801CA2E7C3BB7C5C4F282538F1616734B86 (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* ___0_asset, String_t* ___1_mapName, String_t* ___2_actionName, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* V_0 = NULL;
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* G_B8_0 = NULL;
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* G_B7_0 = NULL;
+	{
+		// if (asset == null)
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_0 = ___0_asset;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// throw new ArgumentNullException(nameof(asset));
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_2 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral37B97248AD78DD69BA3DF192A954DA136A0917D3)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InputActionReference_Set_mA08B7801CA2E7C3BB7C5C4F282538F1616734B86_RuntimeMethod_var)));
+	}
+
+IL_0014:
+	{
+		// if (string.IsNullOrEmpty(mapName))
+		String_t* L_3 = ___1_mapName;
+		bool L_4;
+		L_4 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_3, NULL);
+		if (!L_4)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		// throw new ArgumentNullException(nameof(mapName));
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_5 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_5);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral22C0BFC803D5BD7AC2BA78E866EC35DBF4356A5B)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InputActionReference_Set_mA08B7801CA2E7C3BB7C5C4F282538F1616734B86_RuntimeMethod_var)));
+	}
+
+IL_0027:
+	{
+		// if (string.IsNullOrEmpty(actionName))
+		String_t* L_6 = ___2_actionName;
+		bool L_7;
+		L_7 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_6, NULL);
+		if (!L_7)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		// throw new ArgumentNullException(nameof(actionName));
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_8 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_8);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_8, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral324B7BF2CA4CDF2B0890671B3810E93A4B864259)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_8, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InputActionReference_Set_mA08B7801CA2E7C3BB7C5C4F282538F1616734B86_RuntimeMethod_var)));
+	}
+
+IL_003a:
+	{
+		// var actionMap = asset.FindActionMap(mapName);
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_9 = ___0_asset;
+		String_t* L_10 = ___1_mapName;
+		NullCheck(L_9);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_11;
+		L_11 = InputActionAsset_FindActionMap_mE04E63102310DA7662194A4D283E2E42D90CCC75(L_9, L_10, (bool)0, NULL);
+		// if (actionMap == null)
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_12 = L_11;
+		G_B7_0 = L_12;
+		if (L_12)
+		{
+			G_B8_0 = L_12;
+			goto IL_005c;
+		}
+	}
+	{
+		// throw new ArgumentException($"No action map '{mapName}' in '{asset}'", nameof(mapName));
+		String_t* L_13 = ___1_mapName;
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_14 = ___0_asset;
+		String_t* L_15;
+		L_15 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral90F0368FD1E939DF97C4180C4159E1B8783C898C)), L_13, L_14, NULL);
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_16 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_16);
+		ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62(L_16, L_15, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral22C0BFC803D5BD7AC2BA78E866EC35DBF4356A5B)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_16, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InputActionReference_Set_mA08B7801CA2E7C3BB7C5C4F282538F1616734B86_RuntimeMethod_var)));
+	}
+
+IL_005c:
+	{
+		// var action = actionMap.FindAction(actionName);
+		String_t* L_17 = ___2_actionName;
+		NullCheck(G_B8_0);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_18;
+		L_18 = InputActionMap_FindAction_m94A9B02203CFFA97310EC589FAD4CCB15898F0A3(G_B8_0, L_17, (bool)0, NULL);
+		V_0 = L_18;
+		// if (action == null)
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_19 = V_0;
+		if (L_19)
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		// throw new ArgumentException($"No action '{actionName}' in map '{mapName}' of asset '{asset}'",
+		//     nameof(actionName));
+		String_t* L_20 = ___2_actionName;
+		String_t* L_21 = ___1_mapName;
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_22 = ___0_asset;
+		String_t* L_23;
+		L_23 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral3D0876C1556DFC2E63862DAD485048B7A5B2BBE9)), L_20, L_21, L_22, NULL);
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_24 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_24);
+		ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62(L_24, L_23, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral324B7BF2CA4CDF2B0890671B3810E93A4B864259)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_24, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InputActionReference_Set_mA08B7801CA2E7C3BB7C5C4F282538F1616734B86_RuntimeMethod_var)));
+	}
+
+IL_007f:
+	{
+		// SetInternal(asset, action);
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_25 = ___0_asset;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_26 = V_0;
+		InputActionReference_SetInternal_m953C49C2F169CEB8A34ED2F35B9976FD23F3C83C(__this, L_25, L_26, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.InputSystem.InputActionReference::SetInternal(UnityEngine.InputSystem.InputActionAsset,UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionReference_SetInternal_m953C49C2F169CEB8A34ED2F35B9976FD23F3C83C (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* ___0_asset, InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___1_action, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Contains_TisInputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_mDB4A35240D267764A47303CA94557A173E5AF220_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReadOnlyArray_1_tB688C6ED4807227AAD260815DAFB574392403081_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* V_0 = NULL;
+	Guid_t V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// var actionMap = action.actionMap;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = ___1_action;
+		NullCheck(L_0);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_1;
+		L_1 = InputAction_get_actionMap_m43B509A85057642A7DD0B89E4F27044ABB5B5E93(L_0, NULL);
+		V_0 = L_1;
+		// if (!asset.actionMaps.Contains(actionMap))
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_2 = ___0_asset;
+		NullCheck(L_2);
+		ReadOnlyArray_1_tB688C6ED4807227AAD260815DAFB574392403081 L_3;
+		L_3 = InputActionAsset_get_actionMaps_m4466B91D0F82214F6B3CBE373B64D785657B63B4(L_2, NULL);
+		ReadOnlyArray_1_tB688C6ED4807227AAD260815DAFB574392403081 L_4 = L_3;
+		RuntimeObject* L_5 = Box(ReadOnlyArray_1_tB688C6ED4807227AAD260815DAFB574392403081_il2cpp_TypeInfo_var, &L_4);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_6 = V_0;
+		bool L_7;
+		L_7 = Enumerable_Contains_TisInputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_mDB4A35240D267764A47303CA94557A173E5AF220((RuntimeObject*)L_5, L_6, Enumerable_Contains_TisInputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09_mDB4A35240D267764A47303CA94557A173E5AF220_RuntimeMethod_var);
+		if (L_7)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		// throw new ArgumentException(
+		//     $"Action '{action}' is not contained in asset '{asset}'", nameof(action));
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_8 = ___1_action;
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_9 = ___0_asset;
+		String_t* L_10;
+		L_10 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral7F67F2BEECF89EF5CDF8DE4682F3A9B37BE8E5AE)), L_8, L_9, NULL);
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_11 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_11);
+		ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62(L_11, L_10, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF9010398F7F524C05AB19445BDCE02E617A3E267)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_11, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InputActionReference_SetInternal_m953C49C2F169CEB8A34ED2F35B9976FD23F3C83C_RuntimeMethod_var)));
+	}
+
+IL_0031:
+	{
+		// m_Asset = asset;
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_12 = ___0_asset;
+		__this->___m_Asset_4 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Asset_4), (void*)L_12);
+		// m_ActionId = action.id.ToString();
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_13 = ___1_action;
+		NullCheck(L_13);
+		Guid_t L_14;
+		L_14 = InputAction_get_id_mC9CBAB090420289E55D0BE9A6582EA3B08C40624(L_13, NULL);
+		V_1 = L_14;
+		String_t* L_15;
+		L_15 = Guid_ToString_m2BFFD5FA726E03FA707AAFCCF065896C46D5290C((&V_1), NULL);
+		__this->___m_ActionId_5 = L_15;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ActionId_5), (void*)L_15);
+		// name = GetDisplayName(action);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_16 = ___1_action;
+		String_t* L_17;
+		L_17 = InputActionReference_GetDisplayName_mE97C6DA2412BF20294AA795A67C9384E6476FFC2(L_16, NULL);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(__this, L_17, NULL);
+		// }
+		return;
+	}
+}
+// System.String UnityEngine.InputSystem.InputActionReference::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InputActionReference_ToString_m198573B4C0D05A39CE7C4EF1D96E82DE87DBE114 (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D);
+		s_Il2CppMethodInitialized = true;
+	}
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* V_0 = NULL;
+	String_t* V_1 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	try
+	{// begin try (depth: 1)
+		// var action = this.action;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0;
+		L_0 = InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF(__this, NULL);
+		V_0 = L_0;
+		// return $"{m_Asset.name}:{action.actionMap.name}/{action.name}";
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
+		InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_3 = __this->___m_Asset_4;
+		NullCheck(L_3);
+		String_t* L_4;
+		L_4 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_3, NULL);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_4);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_4);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_2;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_5;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_7 = V_0;
+		NullCheck(L_7);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_8;
+		L_8 = InputAction_get_actionMap_m43B509A85057642A7DD0B89E4F27044ABB5B5E93(L_7, NULL);
+		NullCheck(L_8);
+		String_t* L_9;
+		L_9 = InputActionMap_get_name_mCB679DD2375CBD4A3F7A3419CEDF8AE928CDEBC8_inline(L_8, NULL);
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_9);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_9);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = L_6;
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_10;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_12 = V_0;
+		NullCheck(L_12);
+		String_t* L_13;
+		L_13 = InputAction_get_name_m1F0AADC84A46CBF2EEE3AEACB760189F68D50938_inline(L_12, NULL);
+		NullCheck(L_11);
+		ArrayElementTypeCheck (L_11, L_13);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_13);
+		String_t* L_14;
+		L_14 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_11, NULL);
+		V_1 = L_14;
+		goto IL_0080;
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_004a;
+		}
+		throw e;
+	}
+
+CATCH_004a:
+	{// begin catch(System.Object)
+		{
+			// catch
+			// if (m_Asset != null)
+			InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_15 = __this->___m_Asset_4;
+			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var)));
+			bool L_16;
+			L_16 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_15, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+			if (!L_16)
+			{
+				goto IL_0077;
+			}
+		}
+		{
+			// return $"{m_Asset.name}:{m_ActionId}";
+			InputActionAsset_tF217AC5223B4AAA46EBCB44B33E9259FB117417D* L_17 = __this->___m_Asset_4;
+			NullCheck(L_17);
+			String_t* L_18;
+			L_18 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_17, NULL);
+			String_t* L_19 = __this->___m_ActionId_5;
+			String_t* L_20;
+			L_20 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_18, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D)), L_19, NULL);
+			V_1 = L_20;
+			IL2CPP_POP_ACTIVE_EXCEPTION();
+			goto IL_0080;
+		}
+
+IL_0077:
+		{
+			// }
+			IL2CPP_POP_ACTIVE_EXCEPTION();
+			goto IL_0079;
+		}
+	}// end catch (depth: 1)
+
+IL_0079:
+	{
+		// return base.ToString();
+		String_t* L_21;
+		L_21 = Object_ToString_m590B13E2C40DB814E3CF9C3615952B3CC7C4B36C(__this, NULL);
+		return L_21;
+	}
+
+IL_0080:
+	{
+		// }
+		String_t* L_22 = V_1;
+		return L_22;
+	}
+}
+// System.String UnityEngine.InputSystem.InputActionReference::GetDisplayName(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InputActionReference_GetDisplayName_mE97C6DA2412BF20294AA795A67C9384E6476FFC2 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* G_B5_0 = NULL;
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* G_B4_0 = NULL;
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* G_B3_0 = NULL;
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* G_B11_0 = NULL;
+	InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* G_B10_0 = NULL;
+	String_t* G_B12_0 = NULL;
+	{
+		// return !string.IsNullOrEmpty(action?.actionMap?.name) ? $"{action.actionMap?.name}/{action.name}" : action?.name;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = ___0_action;
+		if (L_0)
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		G_B5_0 = ((String_t*)(NULL));
+		goto IL_0018;
+	}
+
+IL_0006:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_1 = ___0_action;
+		NullCheck(L_1);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_2;
+		L_2 = InputAction_get_actionMap_m43B509A85057642A7DD0B89E4F27044ABB5B5E93(L_1, NULL);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_3 = L_2;
+		G_B3_0 = L_3;
+		if (L_3)
+		{
+			G_B4_0 = L_3;
+			goto IL_0013;
+		}
+	}
+	{
+		G_B5_0 = ((String_t*)(NULL));
+		goto IL_0018;
+	}
+
+IL_0013:
+	{
+		NullCheck(G_B4_0);
+		String_t* L_4;
+		L_4 = InputActionMap_get_name_mCB679DD2375CBD4A3F7A3419CEDF8AE928CDEBC8_inline(G_B4_0, NULL);
+		G_B5_0 = L_4;
+	}
+
+IL_0018:
+	{
+		bool L_5;
+		L_5 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(G_B5_0, NULL);
+		if (!L_5)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_6 = ___0_action;
+		if (L_6)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		return (String_t*)NULL;
+	}
+
+IL_0024:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_7 = ___0_action;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = InputAction_get_name_m1F0AADC84A46CBF2EEE3AEACB760189F68D50938_inline(L_7, NULL);
+		return L_8;
+	}
+
+IL_002b:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_9 = ___0_action;
+		NullCheck(L_9);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_10;
+		L_10 = InputAction_get_actionMap_m43B509A85057642A7DD0B89E4F27044ABB5B5E93(L_9, NULL);
+		InputActionMap_tFCE82E0E014319D4DED9F8962B06655DD0420A09* L_11 = L_10;
+		G_B10_0 = L_11;
+		if (L_11)
+		{
+			G_B11_0 = L_11;
+			goto IL_0038;
+		}
+	}
+	{
+		G_B12_0 = ((String_t*)(NULL));
+		goto IL_003d;
+	}
+
+IL_0038:
+	{
+		NullCheck(G_B11_0);
+		String_t* L_12;
+		L_12 = InputActionMap_get_name_mCB679DD2375CBD4A3F7A3419CEDF8AE928CDEBC8_inline(G_B11_0, NULL);
+		G_B12_0 = L_12;
+	}
+
+IL_003d:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_13 = ___0_action;
+		NullCheck(L_13);
+		String_t* L_14;
+		L_14 = InputAction_get_name_m1F0AADC84A46CBF2EEE3AEACB760189F68D50938_inline(L_13, NULL);
+		String_t* L_15;
+		L_15 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B12_0, _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1, L_14, NULL);
+		return L_15;
+	}
+}
+// System.String UnityEngine.InputSystem.InputActionReference::ToDisplayName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InputActionReference_ToDisplayName_m0398EF4B3F60D6DD35021AB0A9AA4096EC1E4B05 (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, const RuntimeMethod* method) 
+{
+	{
+		// return string.IsNullOrEmpty(name) ? GetDisplayName(action) : name;
+		String_t* L_0;
+		L_0 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
+		bool L_1;
+		L_1 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_0, NULL);
+		if (L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		String_t* L_2;
+		L_2 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
+		return L_2;
+	}
+
+IL_0014:
+	{
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_3;
+		L_3 = InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF(__this, NULL);
+		String_t* L_4;
+		L_4 = InputActionReference_GetDisplayName_mE97C6DA2412BF20294AA795A67C9384E6476FFC2(L_3, NULL);
+		return L_4;
+	}
+}
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionReference::op_Implicit(UnityEngine.InputSystem.InputActionReference)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionReference_op_Implicit_m58C74EE8E2CEB388C50609EEBAA3BE5BD08BD43D (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___0_reference, const RuntimeMethod* method) 
+{
+	{
+		// return reference?.action;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_0 = ___0_reference;
+		if (L_0)
+		{
+			goto IL_0005;
+		}
+	}
+	{
+		return (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD*)NULL;
+	}
+
+IL_0005:
+	{
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_1 = ___0_reference;
+		NullCheck(L_1);
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_2;
+		L_2 = InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF(L_1, NULL);
+		return L_2;
+	}
+}
+// UnityEngine.InputSystem.InputActionReference UnityEngine.InputSystem.InputActionReference::Create(UnityEngine.InputSystem.InputAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* InputActionReference_Create_m67AED8299DAEF2F2CAE54E3F20C045EF393CCAD2 (InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___0_action, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ScriptableObject_CreateInstance_TisInputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1_mBEDFA5D250E26DA02AC5BC2D26338EC2551F7415_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (action == null)
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = ___0_action;
+		if (L_0)
+		{
+			goto IL_0005;
+		}
+	}
+	{
+		// return null;
+		return (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1*)NULL;
+	}
+
+IL_0005:
+	{
+		// var reference = CreateInstance<InputActionReference>();
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_1;
+		L_1 = ScriptableObject_CreateInstance_TisInputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1_mBEDFA5D250E26DA02AC5BC2D26338EC2551F7415(ScriptableObject_CreateInstance_TisInputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1_mBEDFA5D250E26DA02AC5BC2D26338EC2551F7415_RuntimeMethod_var);
+		// reference.Set(action);
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_2 = L_1;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_3 = ___0_action;
+		NullCheck(L_2);
+		InputActionReference_Set_m6FD5F9454BE84DCF93582263A8D5F9E78D78299A(L_2, L_3, NULL);
+		// return reference;
+		return L_2;
+	}
+}
+// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.InputActionReference::ToInputAction()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionReference_ToInputAction_mA47B4EEAF88C563544D7E4E43CD528F2639104A6 (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, const RuntimeMethod* method) 
+{
+	{
+		// return action;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0;
+		L_0 = InputActionReference_get_action_m395EDEA6A93B54555D22323FDA6E1B1E931CE6EF(__this, NULL);
+		return L_0;
+	}
+}
+// System.Void UnityEngine.InputSystem.InputActionReference::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputActionReference__ctor_m36A98C171209D10EB89EC5F308192A6696345874 (InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* __this, const RuntimeMethod* method) 
+{
+	{
+		ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OpenVRHMD_set_deviceVelocity_mB3783887606A7B5608C517432FEA1E99BE5B198D_inline (OpenVRHMD_t417710297E73F113958EB78D2F0DC67BA8EC4021* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -38117,466 +37967,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OpenVROculusTouchController_
 		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
 		__this->___U3CdeviceAngularVelocityU3Ek__BackingField_58 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularVelocityU3Ek__BackingField_58), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_userPresence_m9382DD80D17E6CE8801C46B38A42BE3492E519CB_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl userPresence { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CuserPresenceU3Ek__BackingField_54 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CuserPresenceU3Ek__BackingField_54), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAngularVelocity_mF3B220CA82B9789DDD7F3B0F315515AC2650D0B9_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularVelocityU3Ek__BackingField_55 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularVelocityU3Ek__BackingField_55), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAcceleration_m0C44A502D3AAFFEEAC5CA872C96E10DD65F7D457_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAccelerationU3Ek__BackingField_56 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAccelerationU3Ek__BackingField_56), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_deviceAngularAcceleration_m1AE11BB88730DFBFF29C79862BBC93F2E7EA3AB3_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_57 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_57), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAngularVelocity_mB099BE0DE7F820AE68808AA467ED4DD046875732_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CleftEyeAngularVelocityU3Ek__BackingField_58 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAngularVelocityU3Ek__BackingField_58), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAcceleration_mFF8E2C7DF7CDB8B9678CAC556C6C55729C0E4B5B_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CleftEyeAccelerationU3Ek__BackingField_59 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAccelerationU3Ek__BackingField_59), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_leftEyeAngularAcceleration_m8AB825C7FEBBB51FD2604E65DFE47E434A4C849B_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control leftEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CleftEyeAngularAccelerationU3Ek__BackingField_60 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftEyeAngularAccelerationU3Ek__BackingField_60), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAngularVelocity_m9692627AA2CF6B4F6D86CBEA9A57276932493D79_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CrightEyeAngularVelocityU3Ek__BackingField_61 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAngularVelocityU3Ek__BackingField_61), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAcceleration_m22E1AE61CBCDD1026CF194059C595EBE45B91F67_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CrightEyeAccelerationU3Ek__BackingField_62 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAccelerationU3Ek__BackingField_62), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_rightEyeAngularAcceleration_m47E245FA3BCBE6648D32AB2F73DF7FBEF874CA59_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control rightEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CrightEyeAngularAccelerationU3Ek__BackingField_63 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightEyeAngularAccelerationU3Ek__BackingField_63), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAngularVelocity_m7A6980405DBDF0FF29CD08CC461CBECF69EE44A5_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CcenterEyeAngularVelocityU3Ek__BackingField_64 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAngularVelocityU3Ek__BackingField_64), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAcceleration_mA919EB844D70BC622FFE0EC7840A04E766BA600C_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CcenterEyeAccelerationU3Ek__BackingField_65 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAccelerationU3Ek__BackingField_65), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMD_set_centerEyeAngularAcceleration_m113EEE8528B4CD25D43495CE52FD8B4ADFDBE45F_inline (OculusHMD_tF56912D0A1C4B2E477974A5A930DEEA81E6888A1* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control centerEyeAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CcenterEyeAngularAccelerationU3Ek__BackingField_66 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcenterEyeAngularAccelerationU3Ek__BackingField_66), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstick_mCE83285324084A9CC134A9AC82D5F314D2EC54C4_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control thumbstick { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
-		__this->___U3CthumbstickU3Ek__BackingField_48 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CthumbstickU3Ek__BackingField_48), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_trigger_m2EF8D53F3CBAD1425FC859C0A21DB0B774B1A56A_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl trigger { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
-		__this->___U3CtriggerU3Ek__BackingField_49 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerU3Ek__BackingField_49), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerTouched_mFC06DA4C6C489729C52C4CD9EEDBE3FF21468231_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl triggerTouched { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
-		__this->___U3CtriggerTouchedU3Ek__BackingField_58 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerTouchedU3Ek__BackingField_58), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_grip_mBAB2588AC3AE13E12C121D734D36DA1437D7D2B8_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl grip { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
-		__this->___U3CgripU3Ek__BackingField_50 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CgripU3Ek__BackingField_50), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryButton_m3CB8515E5AA191972822C45FD9B2B9CC770C84E2_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl primaryButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CprimaryButtonU3Ek__BackingField_51 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CprimaryButtonU3Ek__BackingField_51), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryButton_m8ABA7FC425FF57D4F89111CA1CF373027F969967_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl secondaryButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CsecondaryButtonU3Ek__BackingField_52 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsecondaryButtonU3Ek__BackingField_52), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_gripPressed_m7A78C0352AD402161E89542E0AFB6533B5FDA57D_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl gripPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CgripPressedU3Ek__BackingField_53 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CgripPressedU3Ek__BackingField_53), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_start_m2AC9310CE8C314708914B7F70087F63C4DBF475A_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl start { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CstartU3Ek__BackingField_54 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CstartU3Ek__BackingField_54), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickClicked_m2B77552D010F410F79775D9011F051D074E351AC_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl thumbstickClicked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CthumbstickClickedU3Ek__BackingField_55 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CthumbstickClickedU3Ek__BackingField_55), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryTouched_m3564C5A78160FED2FED435817FEE427C347EB5D3_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl primaryTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CprimaryTouchedU3Ek__BackingField_56 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CprimaryTouchedU3Ek__BackingField_56), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryTouched_mB6D9FB1C1628F387D05631CC0E8A194CF30F5C2D_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl secondaryTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CsecondaryTouchedU3Ek__BackingField_57 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsecondaryTouchedU3Ek__BackingField_57), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickTouched_m767F4A2B2D7F5B4738709A1A6540F73C1090B3D5_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl thumbstickTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CthumbstickTouchedU3Ek__BackingField_60 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CthumbstickTouchedU3Ek__BackingField_60), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerPressed_mA092DC3CA66DC755439B3AB7B03FC2F448A50D18_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl triggerPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CtriggerPressedU3Ek__BackingField_59 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerPressedU3Ek__BackingField_59), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceVelocity_m3884B11F2C1AB204863FE0E7AA72053751CE4BEE_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceVelocityU3Ek__BackingField_61 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceVelocityU3Ek__BackingField_61), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAngularVelocity_mE25CAB51D1052A7B22F393268FA30B82E380F02A_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularVelocityU3Ek__BackingField_62 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularVelocityU3Ek__BackingField_62), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAcceleration_m0272E8DDE0A780331E855F98E7DD0BAEAB8FE26F_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAccelerationU3Ek__BackingField_63 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAccelerationU3Ek__BackingField_63), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceAngularAcceleration_mE36DFAFB38E32F6901806BABA3B291E3BA62BDB5_inline (OculusTouchController_t493BBBE79938072AA27BFF28B684A15CF564A21C* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_64 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_64), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTrackingReference_set_trackingState_m3F8708A858EFD56D8F8D52A4F1A9A589C7196FDE_inline (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public new IntegerControl trackingState { get; protected set; }
-		IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* L_0 = ___0_value;
-		__this->___U3CtrackingStateU3Ek__BackingField_48 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtrackingStateU3Ek__BackingField_48), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTrackingReference_set_isTracked_m6FA86987B7D53C3A27DA409A388E2BB4880EFCC8_inline (OculusTrackingReference_t8AF1435F51F12151D5B9B70B6C0583F22A052D0D* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public new ButtonControl isTracked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CisTrackedU3Ek__BackingField_49 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CisTrackedU3Ek__BackingField_49), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusRemote_set_back_m75CB133735E0140397A9431AE6712F510B007D2B_inline (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CbackU3Ek__BackingField_44 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbackU3Ek__BackingField_44), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusRemote_set_start_mF34230989E43F99FC07DA0ABB5FD98D6DB637BF3_inline (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl start { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CstartU3Ek__BackingField_45 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CstartU3Ek__BackingField_45), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusRemote_set_touchpad_m7F66B8C9541ECF48FB455727D57B66CC79D51AB9_inline (OculusRemote_tE6050FCE230F2AB05CDA0997E02AABCA377D5BC0* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
-		__this->___U3CtouchpadU3Ek__BackingField_46 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadU3Ek__BackingField_46), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMDExtended_set_back_mC98306E8847DDAB9B2F46B0D52F937AE987E41F3_inline (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CbackU3Ek__BackingField_67 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbackU3Ek__BackingField_67), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusHMDExtended_set_touchpad_m035B180B2E1AB1DFF685C77EEA8BF03B32CC18D1_inline (OculusHMDExtended_t6C362695A094ED039224E75392AB41DD52BE9BAB* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
-		__this->___U3CtouchpadU3Ek__BackingField_68 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadU3Ek__BackingField_68), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpad_m87E51972471D3A1793059625346F5A4226EA2B73_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector2Control touchpad { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
-		__this->___U3CtouchpadU3Ek__BackingField_48 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadU3Ek__BackingField_48), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_trigger_mE8C85BD46A8788DB3A8D6BDA7259DDF7A3CE1269_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public AxisControl trigger { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
-		__this->___U3CtriggerU3Ek__BackingField_49 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerU3Ek__BackingField_49), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_back_m682575B11BF03556AB63F65D60BD611A950E3C04_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl back { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CbackU3Ek__BackingField_50 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbackU3Ek__BackingField_50), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_triggerPressed_m21ADF87BF994317C21BA32B90BE9826DBF4723CF_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl triggerPressed { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CtriggerPressedU3Ek__BackingField_51 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtriggerPressedU3Ek__BackingField_51), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpadClicked_m0E5304650AC2A578534A590CD9D4722199113936_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl touchpadClicked { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CtouchpadClickedU3Ek__BackingField_52 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadClickedU3Ek__BackingField_52), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_touchpadTouched_m2EF525225849C501EEA08F72C76E8608671F92AE_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public ButtonControl touchpadTouched { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
-		__this->___U3CtouchpadTouchedU3Ek__BackingField_53 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtouchpadTouchedU3Ek__BackingField_53), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAngularVelocity_mB421CECAF8A29E0EDADEE349E75EA7C16BBFCD50_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularVelocity { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularVelocityU3Ek__BackingField_54 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularVelocityU3Ek__BackingField_54), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAcceleration_mE4E78CF454405139C0ACE63737E5F457721580AB_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAccelerationU3Ek__BackingField_55 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAccelerationU3Ek__BackingField_55), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GearVRTrackedController_set_deviceAngularAcceleration_m212BB263779D06893E7C2E6D4D6C351335A18CA9_inline (GearVRTrackedController_t3731B41FC1546864B2524CDBD3F0C1AAFC60274A* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Vector3Control deviceAngularAcceleration { get; protected set; }
-		Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* L_0 = ___0_value;
-		__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_56 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeviceAngularAccelerationU3Ek__BackingField_56), (void*)L_0);
 		return;
 	}
 }
@@ -39362,6 +38752,30 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputControl_t74F06B623518F992BF8
 	{
 		// public InputControl Current => m_CurrentControl;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0 = __this->___m_CurrentControl_9;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputControlScheme_get_bindingGroup_m44B4669B8B5D5FDEE8DB190307415AA2F99F5835_inline (InputControlScheme_tB60FB32F414727140B32E1A0447679DC7ABC8434* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => m_BindingGroup;
+		String_t* L_0 = __this->___m_BindingGroup_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* InputActionProperty_get_serializedAction_m4787371FBBE72755480187B22201E0770BE8E563_inline (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal InputAction serializedAction => m_Action;
+		InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* L_0 = __this->___m_Action_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* InputActionProperty_get_serializedReference_m37DAE831375C51B239CD2044A1EC3E20F6502ACC_inline (InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD* __this, const RuntimeMethod* method) 
+{
+	{
+		// internal InputActionReference serializedReference => m_Reference;
+		InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* L_0 = __this->___m_Reference_2;
 		return L_0;
 	}
 }

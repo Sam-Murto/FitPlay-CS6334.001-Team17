@@ -207,6 +207,7 @@ UnityEngine.Application::get_unityVersion
 UnityEngine.Application::get_version
 UnityEngine.Application::Quit
 UnityEngine.Application::get_platform
+UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
 UnityEngine.AudioSource::Play
@@ -245,6 +246,7 @@ UnityEngine.Camera::get_pixelRect_Injected
 UnityEngine.Camera::get_projectionMatrix_Injected
 UnityEngine.Camera::get_worldToCameraMatrix_Injected
 UnityEngine.Camera::set_rect_Injected
+UnityEngine.Camera::get_current
 UnityEngine.Camera::get_main
 UnityEngine.Camera::get_clearFlags
 UnityEngine.Camera::get_cameraType
@@ -291,6 +293,7 @@ UnityEngine.CanvasGroup::get_interactable
 UnityEngine.CanvasGroup::get_alpha
 UnityEngine.CanvasGroup::set_alpha
 UnityEngine.CanvasRenderer::get_cull
+UnityEngine.CanvasRenderer::get_cullTransparentMesh
 UnityEngine.CanvasRenderer::get_hasMoved
 UnityEngine.CanvasRenderer::get_absoluteDepth
 UnityEngine.CanvasRenderer::get_materialCount
@@ -309,9 +312,11 @@ UnityEngine.CanvasRenderer::SplitIndicesStreamsInternal
 UnityEngine.CanvasRenderer::SplitUIVertexStreamsInternal
 UnityEngine.CanvasRenderer::set_clippingSoftness_Injected
 UnityEngine.CanvasRenderer::set_cull
+UnityEngine.CanvasRenderer::set_cullTransparentMesh
 UnityEngine.CanvasRenderer::set_hasPopInstruction
 UnityEngine.CanvasRenderer::set_materialCount
 UnityEngine.CanvasRenderer::set_popMaterialCount
+UnityEngine.CanvasRenderer::GetMaterial
 UnityEngine.CapsuleCollider::get_direction
 UnityEngine.CapsuleCollider::get_height
 UnityEngine.CapsuleCollider::get_radius
@@ -358,6 +363,7 @@ UnityEngine.CubemapArray::SetPixels
 UnityEngine.Cursor::SetCursor_Injected
 UnityEngine.Cursor::set_lockState
 UnityEngine.Cursor::get_lockState
+UnityEngine.Debug::get_isDebugBuild
 UnityEngine.Debug::ExtractStackTraceNoAlloc
 UnityEngine.DebugLogHandler::Internal_Log
 UnityEngine.DebugLogHandler::Internal_LogException
@@ -423,6 +429,7 @@ UnityEngine.GameObject::CompareTag
 UnityEngine.GameObject::get_activeInHierarchy
 UnityEngine.GameObject::get_activeSelf
 UnityEngine.GameObject::get_layer
+UnityEngine.GameObject::get_tag
 UnityEngine.GameObject::GetComponentFastPath
 UnityEngine.GameObject::Internal_CreateGameObject
 UnityEngine.GameObject::SendMessage
@@ -618,11 +625,14 @@ UnityEngine.Material::HasProperty
 UnityEngine.Material::IsKeywordEnabled
 UnityEngine.Material::SetPass
 UnityEngine.Material::get_enableInstancing
+UnityEngine.Material::ComputeCRC
 UnityEngine.Material::GetFirstPropertyNameIdByAttribute
+UnityEngine.Material::get_passCount
 UnityEngine.Material::get_rawRenderQueue
 UnityEngine.Material::GetFloatImpl
 UnityEngine.Material::GetTagImpl
 UnityEngine.Material::GetShaderKeywords
+UnityEngine.Material::CopyPropertiesFromMaterial
 UnityEngine.Material::CreateWithMaterial
 UnityEngine.Material::CreateWithShader
 UnityEngine.Material::CreateWithString
@@ -632,6 +642,7 @@ UnityEngine.Material::GetColorImpl_Injected
 UnityEngine.Material::SetColorImpl_Injected
 UnityEngine.Material::SetConstantBufferImpl
 UnityEngine.Material::SetFloatImpl
+UnityEngine.Material::SetMatrixImpl_Injected
 UnityEngine.Material::SetOverrideTag
 UnityEngine.Material::SetShaderKeywords
 UnityEngine.Material::SetTextureImpl
@@ -657,6 +668,7 @@ UnityEngine.Mathf::LinearToGammaSpace
 UnityEngine.Mathf::FloatToHalf
 UnityEngine.Mathf::CorrelatedColorTemperatureToRGB_Injected
 UnityEngine.Matrix4x4::Inverse3DAffine_Injected
+UnityEngine.Matrix4x4::GetLossyScale_Injected
 UnityEngine.Matrix4x4::Inverse_Injected
 UnityEngine.Matrix4x4::LookAt_Injected
 UnityEngine.Matrix4x4::TRS_Injected
@@ -669,12 +681,16 @@ UnityEngine.Mesh::GetIndicesImpl
 UnityEngine.Mesh::ClearImpl
 UnityEngine.Mesh::GetArrayFromChannelImpl
 UnityEngine.Mesh::Internal_Create
+UnityEngine.Mesh::MarkDynamicImpl
 UnityEngine.Mesh::PrintErrorCantAccessChannel
 UnityEngine.Mesh::RecalculateBoundsImpl
 UnityEngine.Mesh::SetArrayForChannelImpl
 UnityEngine.Mesh::SetIndicesImpl
+UnityEngine.Mesh::get_bounds_Injected
+UnityEngine.Mesh::set_bounds_Injected
 UnityEngine.Mesh::set_indexFormat
 UnityEngine.MeshCollider::get_convex
+UnityEngine.MeshFilter::set_sharedMesh
 UnityEngine.MeshFilter::get_sharedMesh
 UnityEngine.MonoBehaviour::Internal_IsInvokingAll
 UnityEngine.MonoBehaviour::IsInvoking
@@ -800,6 +816,10 @@ UnityEngine.Renderer::SetMaterial
 UnityEngine.Renderer::SetMaterialArray
 UnityEngine.Renderer::get_bounds_Injected
 UnityEngine.Renderer::set_enabled
+UnityEngine.Renderer::set_receiveShadows
+UnityEngine.Renderer::set_shadowCastingMode
+UnityEngine.Renderer::set_sortingLayerID
+UnityEngine.Renderer::set_sortingOrder
 UnityEngine.Renderer::GetMaterial
 UnityEngine.Renderer::GetSharedMaterial
 UnityEngine.Renderer::GetSharedMaterialArray
@@ -916,6 +936,7 @@ UnityEngine.SceneManagement.Scene::GetRootGameObjectsInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
 UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
 UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
+UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
@@ -984,7 +1005,9 @@ UnityEngine.TextCore.LowLevel.FontEngine::TryGetGlyphWithUnicodeValue_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::TryGetSystemFontReference_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::GetFaceInfo_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::GetPairAdjustmentRecordsFromMarshallingArray
+UnityEngine.TextCore.LowLevel.FontEngine::InitializeFontEngine_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_And_FaceIndex_Internal
+UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_FromFont_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_and_FaceIndex_FromFont_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_by_FamilyName_and_StyleName_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::PopulatePairAdjustmentRecordMarshallingArray_from_KernTable
@@ -1139,7 +1162,12 @@ UnityEngine.XR.InputDevices::GetDevices_Internal
 UnityEngine.XR.InputDevices::GetDeviceCharacteristics
 UnityEngine.XR.InputTracking::GetDeviceIdAtXRNode
 UnityEngine.XR.InputTracking::GetNodeStates_Internal
+UnityEngine.XR.Provider.XRStats::TryGetStat_Internal
 UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking
+UnityEngine.XR.XRDisplaySubsystem::TryGetAppGPUTimeLastFrame
+UnityEngine.XR.XRDisplaySubsystem::TryGetCompositorGPUTimeLastFrame
+UnityEngine.XR.XRDisplaySubsystem::TryGetDisplayRefreshRate
+UnityEngine.XR.XRDisplaySubsystem::TryGetMotionToPhoton
 UnityEngine.XR.XRInputSubsystem::TryRecenter
 UnityEngine.XR.XRInputSubsystem::TrySetTrackingOriginMode
 UnityEngine.XR.XRInputSubsystem::GetSupportedTrackingOriginModes
