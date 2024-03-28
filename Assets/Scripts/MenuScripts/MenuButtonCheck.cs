@@ -25,10 +25,15 @@ public class MenuButtonCheck : MonoBehaviour
 
     void Update()
     {
-        if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
+        Debug.Log(targetDevice);
+        if(targetDevice != null)
+        {
+             if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
         {
             
             pauseMenu.SetActive(!pauseMenu.activeSelf);
         }
+        }
+       
     }
 }
