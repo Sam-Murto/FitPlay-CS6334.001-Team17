@@ -26749,6 +26749,8 @@ struct MenuButtonCheck_t8E8D44C6161A7DD5601D8BC1D612B0C88F96B8ED  : public MonoB
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___targetDevice_4;
 	// UnityEngine.GameObject MenuButtonCheck::pauseMenu
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pauseMenu_5;
+	// System.Boolean MenuButtonCheck::isActive
+	bool ___isActive_6;
 };
 
 // UnityEngine.XR.Hands.MetaAimHand
@@ -46644,9 +46646,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5722[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5724[1] = 
 {
 	static_cast<int32_t>(offsetof(Strikeable_tF982E6D7C5B786DB1A96C296C59029AF3F4E9274, ___correctStrikeDirection_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5725[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5725[3] = 
 {
-	static_cast<int32_t>(offsetof(MenuButtonCheck_t8E8D44C6161A7DD5601D8BC1D612B0C88F96B8ED, ___targetDevice_4)),static_cast<int32_t>(offsetof(MenuButtonCheck_t8E8D44C6161A7DD5601D8BC1D612B0C88F96B8ED, ___pauseMenu_5)),};
+	static_cast<int32_t>(offsetof(MenuButtonCheck_t8E8D44C6161A7DD5601D8BC1D612B0C88F96B8ED, ___targetDevice_4)),static_cast<int32_t>(offsetof(MenuButtonCheck_t8E8D44C6161A7DD5601D8BC1D612B0C88F96B8ED, ___pauseMenu_5)),static_cast<int32_t>(offsetof(MenuButtonCheck_t8E8D44C6161A7DD5601D8BC1D612B0C88F96B8ED, ___isActive_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5728[2] = 
 {
 	static_cast<int32_t>(offsetof(Player_controller_t72C5FD25D6DB32F0CBEFA9AFF52AA5B1F13FCD14, ___finish_stage_4)),static_cast<int32_t>(offsetof(Player_controller_t72C5FD25D6DB32F0CBEFA9AFF52AA5B1F13FCD14, ___score_5)),};

@@ -5467,6 +5467,8 @@ struct MenuButtonCheck_t8E8D44C6161A7DD5601D8BC1D612B0C88F96B8ED  : public MonoB
 	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___targetDevice_4;
 	// UnityEngine.GameObject MenuButtonCheck::pauseMenu
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pauseMenu_5;
+	// System.Boolean MenuButtonCheck::isActive
+	bool ___isActive_6;
 };
 
 // UnityEngine.XR.Interaction.Toolkit.Samples.Hands.MetaSystemGestureDetector
