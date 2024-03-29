@@ -8,21 +8,32 @@ public class MenuButtonCheck : MonoBehaviour
     private InputDevice targetDevice;
     public GameObject pauseMenu;
 
+    private bool isActive = false;
+
     void Start()
     {
         List<InputDevice> devices = new List<InputDevice>();
         InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
         InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devices);
-        Debug.Log(devices.Count);
-        targetDevice = devices[0];
+        if(devices[0] != null)
+        {
+            targetDevice = devices[0];
+        }
+        
     }
 
 
     void Update()
     {
-        if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
+        Debug.Log(targetDevice);
+        if(targetDevice != null)
         {
+             if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
+        {
+            
             pauseMenu.SetActive(!pauseMenu.activeSelf);
         }
+        }
+       
     }
 }
