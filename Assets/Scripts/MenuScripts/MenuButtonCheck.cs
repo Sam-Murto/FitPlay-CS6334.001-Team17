@@ -7,7 +7,7 @@ public class MenuButtonCheck : MonoBehaviour
 {
     private InputDevice targetDevice;
     public GameObject pauseMenu;
-
+    
     private bool isActive = false;
 
     void Start()
@@ -25,13 +25,22 @@ public class MenuButtonCheck : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(targetDevice);
+
         if(targetDevice != null)
         {
-             if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
+        if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
         {
             
-            pauseMenu.SetActive(!pauseMenu.activeSelf);
+            if(isActive==false)
+            {
+                pauseMenu.SetActive(!pauseMenu.activeSelf);
+                isActive=true;
+            }
+            
+
+        }
+        else{
+            isActive = false;
         }
         }
        
