@@ -20,6 +20,7 @@ public class DamagePlayer : MonoBehaviour
         {
             Debug.Log("Player hit");
             FitSaberPlayer.onPlayerDamaged?.Invoke();
+            Destroy(gameObject);
         }
 
     }
