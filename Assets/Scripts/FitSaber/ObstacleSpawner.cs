@@ -27,10 +27,9 @@ public class ObstacleSpawner : MonoBehaviour
 
         timeToNextSpawn -= Time.deltaTime;
 
-        if(timeToNextSpawn < 0)
+        if(timeToNextSpawn < 0 && obstacleTypes.Length > 0)
         {
-            Instantiate(RandomObstacle(), spawnTransform.position, Quaternion.identity);
-            timeToNextSpawn = spawnInterval;
+            SpawnObstacle(spawnTransform.position, Random.value * 360);
         }
 
 
@@ -44,4 +43,13 @@ public class ObstacleSpawner : MonoBehaviour
 
         return obstacleTypes[randomIndex];
     }
+
+    GameObject SpawnObstacle(Vector3 position, float rotationAngle)
+    {
+        GameObject obstacle = Instantiate(RandomObstacle(), position, Quaternion.Euler(0.0f, 0.0f, rotationAngle));
+        obstacle.name = "obstacle";
+        timeToNextSpawn = spawnInterval;
+        return obstacle;
+    }
+
 }
