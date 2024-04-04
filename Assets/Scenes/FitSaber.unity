@@ -265,6 +265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5193f16957812b4ba0b8dade2ded499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreLossOnMiss: 0
+  onPlayerHit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &855804570
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &855804571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 1, g: 0.1641509, b: 0.1641509, a: 1}
   outlineWidth: 1
   precomputeOutline: 0
@@ -497,7 +501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1049381763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 1, g: 0.1641509, b: 0.1641509, a: 1}
   outlineWidth: 1
   precomputeOutline: 0
@@ -925,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1976306726425429432, guid: 5154132929c393d43b9f01c633df7590, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2165123642350297098, guid: 5154132929c393d43b9f01c633df7590, type: 3}
       propertyPath: m_IsActive
@@ -937,7 +941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2581481405565688261, guid: 5154132929c393d43b9f01c633df7590, type: 3}
       propertyPath: m_Name
-      value: FitSaber XR Rig
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3340962450464218265, guid: 5154132929c393d43b9f01c633df7590, type: 3}
       propertyPath: m_LocalScale.x
@@ -1219,7 +1223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1810914188
 Transform:
   m_ObjectHideFlags: 0
@@ -1335,7 +1339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1851848408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,7 +1352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 1, g: 0.1641509, b: 0.1641509, a: 1}
   outlineWidth: 1
   precomputeOutline: 0
@@ -1672,11 +1676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleTypes:
-  - {fileID: 442220229211008475, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-  - {fileID: 3437369244858737059, guid: 8382fa259ed4fdf41a6f4c73efa8fca3, type: 3}
-  - {fileID: 2605680887872132430, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
-  - {fileID: 4786014678579286173, guid: c096aaf0dc0e5f04f85b4bf458da609b, type: 3}
-  - {fileID: 6118673257416241774, guid: 0c0a013e69c0a41449cd448c0c26f451, type: 3}
+  - {fileID: 4380484885797627775, guid: 6da805863cebbd34f891f5321614143f, type: 3}
   spawnInterval: 1
   spawnTransform: {fileID: 10984919}
 --- !u!1 &2104104735

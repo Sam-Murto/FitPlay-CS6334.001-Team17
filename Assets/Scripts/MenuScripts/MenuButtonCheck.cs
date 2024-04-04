@@ -30,9 +30,11 @@ public class MenuButtonCheck : MonoBehaviour
         {
             if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
             {
+                Debug.Log("Menu button pressed");
 
                 if (isActive == false)
                 {
+                    Debug.Log("Pausing");
                     pauseMenu.SetActive(!pauseMenu.activeSelf);
                     isActive = true;
                 }
