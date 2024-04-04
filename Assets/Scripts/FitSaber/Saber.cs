@@ -36,10 +36,10 @@ public class Saber : MonoBehaviour
 
     Vector3 GetStrikeDirection() {
         Vector3 strikeDirection = Vector3.zero;
-        strikeDirection.x = (Mathf.Abs(velocity.x) > strikeSpeedThreshold) ? Mathf.Sign(velocity.x) : 0;
-        strikeDirection.y = (Mathf.Abs(velocity.y) > strikeSpeedThreshold) ? Mathf.Sign(velocity.y) : 0;
+        strikeDirection.x = (Mathf.Abs(velocity.x) > strikeSpeedThreshold) ? velocity.x : 0;
+        strikeDirection.y = (Mathf.Abs(velocity.y) > strikeSpeedThreshold) ? velocity.y : 0;
 
-        return strikeDirection;
+        return strikeDirection.normalized;
     }
 
     private void UpdateVelocity()

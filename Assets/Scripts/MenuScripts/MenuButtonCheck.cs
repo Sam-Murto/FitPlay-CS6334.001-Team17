@@ -1,27 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
+using UnityEngine.InputSystem;
 
 public class MenuButtonCheck : MonoBehaviour
 {
-    private InputDevice targetDevice;
     public GameObject pauseMenu;
 
-    void Start()
+    private bool isActive = false;
+
+    bool deviceDetected = false;
+
+    [SerializeField]
+    InputActionReference menuReference = null;
+
+    void OnEnable()
     {
-        List<InputDevice> devices = new List<InputDevice>();
-        InputDeviceCharacteristics leftControllerCharacteristics = InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
-        InputDevices.GetDevicesWithCharacteristics(leftControllerCharacteristics, devices);
-        targetDevice = devices[0];
+        menuReference.action.started += Toggle;
+    }
+
+    private void OnDisable()
+    {
+        menuReference.action.started += Toggle;
+    }
+
+    void Toggle(InputAction.CallbackContext context)
+    {
+        Debug.Log("Toggling Pause");
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
     }
 
 
-    void Update()
-    {
-        if (targetDevice.TryGetFeatureValue(CommonUsages.menuButton, out bool menuButtonValue) && menuButtonValue)
-        {
-            pauseMenu.SetActive(!pauseMenu.activeSelf);
-        }
-    }
 }
+
