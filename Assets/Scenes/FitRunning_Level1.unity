@@ -2602,7 +2602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 3169405274636799009}
-  menuReference: {fileID: 0}
+  menuReference: {fileID: 8823183334835807813, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &2042266249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,7 +3085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7136548810890673129, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8068485626854212558, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_LocalScale.z
