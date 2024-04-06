@@ -8,6 +8,7 @@ public class HealthControl : MonoBehaviour
     public Slider healthBarSlider; // 在Inspector中指定的Slider组件
     public float currentHealth; // 当前生命值
     public float maxHealth = 1000f; // 最大生命值，可以根据需要调整
+    private bool isDead = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +24,17 @@ public class HealthControl : MonoBehaviour
         healthBarSlider.value = currentHealth; // 更新Slider的值显示新的生命值
         UnityEngine.Debug.Log("Current Health: " + currentHealth);
     }
-
+    void Update()
+    {
+        if (currentHealth <= 0 && isDead == false)
+        {
+            isDead = true;
+            // 调用Boss的死亡方法
+            IDeath death = GetComponent<IDeath>();
+            if (death != null)
+            {
+                death.OnDeath();
+            }
+        }
+    }
 }

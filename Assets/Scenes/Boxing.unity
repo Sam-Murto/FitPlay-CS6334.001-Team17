@@ -398,7 +398,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ae29ac02d08992344b9095971167e1c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -461,6 +461,7 @@ GameObject:
   - component: {fileID: 283270162}
   - component: {fileID: 283270163}
   - component: {fileID: 283270164}
+  - component: {fileID: 283270165}
   m_Layer: 0
   m_Name: Sandbag
   m_TagString: Sandbag
@@ -518,7 +519,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 830d28b607e09a2479e2005c2eb5c75e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -641,8 +642,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarSlider: {fileID: 1411993749}
-  currentHealth: 50
-  maxHealth: 50
+  currentHealth: 10
+  maxHealth: 10
 --- !u!114 &283270164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,6 +658,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthControl: {fileID: 283270163}
   damageFactor: 0.5
+--- !u!114 &283270165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283270154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f4e4d137268c54dbe8cb63f3314653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rope: {fileID: 1122920313}
+  self: {fileID: 283270154}
 --- !u!1 &371106127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,6 +1443,7 @@ GameObject:
   - component: {fileID: 1250344243}
   - component: {fileID: 1250344242}
   - component: {fileID: 1250344241}
+  - component: {fileID: 1250344245}
   m_Layer: 0
   m_Name: Daruma Kun
   m_TagString: Sandbag
@@ -1469,7 +1485,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a07fb872d58adc948b3cc47ff9ea4999, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1558,8 +1574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarSlider: {fileID: 790192686}
-  currentHealth: 50
-  maxHealth: 50
+  currentHealth: 10
+  maxHealth: 10
 --- !u!114 &1250344242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1602,6 +1618,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthControl: {fileID: 1250344241}
   damageFactor: 5
+--- !u!114 &1250344245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250344234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a943f3215d29345a7dbd23f955302c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 1250344234}
 --- !u!1 &1304570453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,6 +2588,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1787467908}
+    - target: {fileID: 8443973714222793850, guid: 97921d2fe19ea21419131dee1f292c0d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8443973714537067593, guid: 97921d2fe19ea21419131dee1f292c0d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
