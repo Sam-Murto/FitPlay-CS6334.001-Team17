@@ -13,9 +13,8 @@ public class DamagePlayer : Obstacle
 
         if (fitSaberPlayer)
         {
-            //Debug.Log("Player hit");
-            //fitSaberPlayer.onPlayerHit?.Invoke();
-            Destroy(gameObject);
+            Debug.Log("Player hit");
+            FindObjectOfType<FitSaberGameManager>().onDamagePlayerHitPlayer?.Invoke(this);
         }
 
     }

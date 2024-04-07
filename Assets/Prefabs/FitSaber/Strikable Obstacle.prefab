@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  strikeErrorTolerance: 0.301
+  strikeErrorTolerance: 0.409
 --- !u!1 &4456656587927734826
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,81 +17,81 @@ MonoBehaviour:
   obstacleSpawns:
   - timeToReachPlayer: 10
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
+    offset: {x: 0, y: 0.7}
     rotation: 180
   - timeToReachPlayer: 12
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: -0.5, y: 0.5}
+    offset: {x: -0.5, y: 0.7}
     rotation: 0
   - timeToReachPlayer: 12
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0.5, y: 0.5}
+    offset: {x: 0.5, y: 0.7}
     rotation: 0
   - timeToReachPlayer: 14
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0.5, y: 0.5}
+    offset: {x: 0.5, y: 0.7}
     rotation: 45
   - timeToReachPlayer: 14
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
+    offset: {x: 0, y: 0.7}
     rotation: 45
   - timeToReachPlayer: 15
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
+    offset: {x: 0, y: 0.7}
     rotation: 90
   - timeToReachPlayer: 15.5
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
+    offset: {x: 0, y: 0.7}
     rotation: 270
   - timeToReachPlayer: 15.5
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.75}
+    offset: {x: 0, y: 0.95}
     rotation: 270
-  - timeToReachPlayer: 15.5
+  - timeToReachPlayer: 17
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.25, y: 0.7}
+    rotation: 90
+  - timeToReachPlayer: 18
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.25}
+    rotation: 0
+  - timeToReachPlayer: 20
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.7}
+    rotation: 180
+  - timeToReachPlayer: 20
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.25, y: 0.95}
+    rotation: 180
+  - timeToReachPlayer: 21
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
     offset: {x: 0, y: 0.5}
     rotation: 270
-  - timeToReachPlayer: 15.5
+  - timeToReachPlayer: 21
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
     offset: {x: 0, y: 0.5}
     rotation: 270
-  - timeToReachPlayer: 15.5
+  - timeToReachPlayer: 25.5
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 25.5
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0.25, y: 0.5}
+    rotation: 90
+  - timeToReachPlayer: 26
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 26
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0.25, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 27
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
     offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
+    rotation: 180
+  - timeToReachPlayer: 27.5
     obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
     offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
-    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
-    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
-    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
-    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
-    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
-    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
-    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
-    rotation: 270
-  - timeToReachPlayer: 15.5
-    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
-    offset: {x: 0, y: 0.5}
-    rotation: 270
+    rotation: 0

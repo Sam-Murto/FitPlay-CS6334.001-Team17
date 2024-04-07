@@ -6,10 +6,19 @@ using UnityEngine.Events;
 public class FitSaberGameManager : MonoBehaviour
 {
     [SerializeField]
-    public UnityEvent<Obstacle> onObstacleStruck;
+    public UnityEvent<Strikeable> onObstacleStruck;
+
+    [SerializeField]
+    public UnityEvent<Strikeable> onStrikableReachDeathZone;
+    [SerializeField]
+    public UnityEvent<DamagePlayer> onDamagePlayerReachDeathZone;
+    [SerializeField]
+    public UnityEvent<DamagePlayer> onDamagePlayerHitPlayer;
 
     public static bool isPaused;
-    bool isLevelLoaded = false;
+    bool levelOver = false;
+
+    public int score { get; private set; }
 
     [SerializeField]
     ObstacleSpawner spawner;
@@ -27,10 +36,8 @@ public class FitSaberGameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        isPaused = true;
         obstacles = new List<GameObject>();
         LoadLevel();
-        isPaused = false;
     }
 
     private void OnDisable()
@@ -40,7 +47,7 @@ public class FitSaberGameManager : MonoBehaviour
 
     private void LoadLevel()
     {
-        isLevelLoaded = false;
+        isPaused = true;
 
         foreach (FitSaberLevel.ObstacleSpawn spawn in level.obstacleSpawns)
         {
@@ -49,18 +56,64 @@ public class FitSaberGameManager : MonoBehaviour
             obstacles.Add(obstacle);
 
         }
-
-        isLevelLoaded = true;
+        levelOver = false;
+        isPaused = false;
     }
 
-    public void OnObstacleDestroy(Obstacle obstacle)
+    public void OnStrikableStruck(Strikeable obstacle)
     {
         GameObject obstacleObject = obstacle.gameObject;
         Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
         obstacles.Remove(obstacleObject);
         Destroy(obstacleObject);
+
+        score += 100;
+
     }
 
+    public void OnStrikableReachDeathZone(Strikeable obstacle)
+    {
+        GameObject obstacleObject = obstacle.gameObject;
+        obstacles.Remove(obstacleObject);
+        Destroy(obstacleObject);
+
+        score -= 50;
+
+    }
+
+    public void OnDamagePlayerReachDeathZone(DamagePlayer obstacle)
+    {
+        GameObject obstacleObject = obstacle.gameObject;
+        obstacles.Remove(obstacleObject);
+        Destroy(obstacleObject);
+    }
+
+    public void OnDamagePlayerHitPlayer(DamagePlayer obstacle)
+    {
+        GameObject obstacleObject = obstacle.gameObject;
+        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
+        obstacles.Remove(obstacleObject);
+        Destroy(obstacleObject);
+
+        score -= 50;
+
+    }
+
+    private void Update()
+    {
+        //Loop level when over
+        if (levelOver)
+        {
+            LoadLevel();
+
+        }
+
+        if(obstacles.Count == 0)
+        {
+            levelOver = true;
+        }
+
+    }
 
 
 
