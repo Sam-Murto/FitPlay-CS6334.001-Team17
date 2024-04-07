@@ -36,6 +36,7 @@ public class Player_controller : MonoBehaviour
         {
             Debug.Log("Finish Line");
             finish_stage.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
