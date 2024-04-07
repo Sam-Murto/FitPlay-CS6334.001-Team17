@@ -6,7 +6,7 @@ public class nonTutorialGoSequence : MonoBehaviour
 {
 
     private bool isStart = false;
-    public void Update()
+     void Update()
     {
         if(!isStart)
         {
