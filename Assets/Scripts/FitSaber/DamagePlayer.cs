@@ -19,7 +19,7 @@ public class DamagePlayer : MonoBehaviour
         if (fitSaberPlayer)
         {
             //Debug.Log("Player hit");
-            fitSaberPlayer.onPlayerHit?.Invoke();
+            //fitSaberPlayer.onPlayerHit?.Invoke();
             Destroy(gameObject);
         }
 
