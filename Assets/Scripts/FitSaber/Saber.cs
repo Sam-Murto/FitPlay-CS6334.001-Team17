@@ -55,9 +55,9 @@ public class Saber : MonoBehaviour
         return saberEnd.transform.position;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        Strikeable struckObject = collision.collider.GetComponent<Strikeable>();
+        Strikeable struckObject = collider.GetComponent<Strikeable>();
 
         if(struckObject != null)
         {

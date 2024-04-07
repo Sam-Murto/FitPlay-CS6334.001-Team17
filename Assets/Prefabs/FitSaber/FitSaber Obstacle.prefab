@@ -9,10 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2605680887872132429}
-  - component: {fileID: 5643512889680230838}
   - component: {fileID: -1449215565589797218}
   - component: {fileID: 3427558984568896563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FitSaber Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,18 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5643512889680230838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605680887872132430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844ec03b1a7f3df44b7b251819625068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &-1449215565589797218
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f2931950b31174cb643edee425e5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 8
 --- !u!1 &2605680888359224179
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +78,7 @@ GameObject:
   - component: {fileID: 2605680888359224177}
   - component: {fileID: 5674920157937892109}
   - component: {fileID: 2180615897895929283}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f2931950b31174cb643edee425e5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 8
 --- !u!54 &2180615897895929283
 Rigidbody:
   m_ObjectHideFlags: 0

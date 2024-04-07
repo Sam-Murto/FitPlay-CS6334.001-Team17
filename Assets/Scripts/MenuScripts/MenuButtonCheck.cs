@@ -7,12 +7,8 @@ public class MenuButtonCheck : MonoBehaviour
 {
     public GameObject pauseMenu;
 
-    private bool isActive = false;
-
-    bool deviceDetected = false;
-
     [SerializeField]
-    InputActionReference menuReference = null;
+    InputActionReference menuReference;
 
     void OnEnable()
     {

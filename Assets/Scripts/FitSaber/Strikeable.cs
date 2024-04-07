@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent (typeof (Collider))]
-public class Strikeable : MonoBehaviour
+public class Strikeable : Obstacle
 {
     [SerializeField]
     [Range(0.0f, 1.0f)]
     float strikeErrorTolerance;
-
 
     public void GetStruck(Vector3 strikeDirection)
     {
@@ -30,6 +30,6 @@ public class Strikeable : MonoBehaviour
 
     void Crumble()
     {
-        Destroy(gameObject);
+        FindObjectOfType<FitSaberGameManager>().onObstacleStruck?.Invoke(this);
     }
 }
