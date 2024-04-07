@@ -16,8 +16,7 @@ public class FitSaberPlayer : MonoBehaviour
 
     private void OnDisable()
     {
-        onPlayerHit.RemoveListener(playerHit);
-        playerHit -= Miss;
+
     }
 
 
