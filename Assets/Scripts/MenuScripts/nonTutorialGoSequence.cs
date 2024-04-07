@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
-public class GoSequence : MonoBehaviour
+public class nonTutorialGoSequence : MonoBehaviour
 {
-
-
+    public void Start()
+    {
+        beginGoSequence();
+    }
     public TextMeshProUGUI goSequenceText;
     public void beginGoSequence()
     {
@@ -26,10 +27,10 @@ public class GoSequence : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         // Change to Begin
         goSequenceText.text = "0";
-        
+
         goSequenceText.gameObject.SetActive(false);
         Time.timeScale = 1f;
         // Set Active to false
-        
+
     }
 }
