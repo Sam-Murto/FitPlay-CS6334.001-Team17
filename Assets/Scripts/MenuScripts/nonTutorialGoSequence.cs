@@ -4,9 +4,17 @@ using UnityEngine;
 using TMPro;
 public class nonTutorialGoSequence : MonoBehaviour
 {
-    public void Start()
+
+    private bool isStart = false;
+    public void Update()
     {
-        beginGoSequence();
+        if(!isStart)
+        {
+            Debug.Log("start");
+            isStart = true;
+            beginGoSequence();
+        }
+        
     }
     public TextMeshProUGUI goSequenceText;
     public void beginGoSequence()
@@ -16,11 +24,13 @@ public class nonTutorialGoSequence : MonoBehaviour
 
     private IEnumerator PerformActionsWithDelays()
     {
+        Debug.Log("inside");
         // set active 3
         goSequenceText.gameObject.SetActive(true);
         yield return new WaitForSecondsRealtime(1);
         //2
         goSequenceText.text = "2";
+        Debug.Log("inside");
         yield return new WaitForSecondsRealtime(1);
         //1
         goSequenceText.text = "1";
