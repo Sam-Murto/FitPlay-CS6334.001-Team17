@@ -21,6 +21,9 @@ public class FitSaberGameManager : MonoBehaviour
     [SerializeField]
     Transform obstacleListTransform;
 
+    [SerializeField]
+    ParticleSystem strikeParticleEffect;
+
 
     private void OnEnable()
     {
@@ -50,10 +53,12 @@ public class FitSaberGameManager : MonoBehaviour
         isLevelLoaded = true;
     }
 
-    public void OnObstacleDestroy(GameObject obstacle)
+    public void OnObstacleDestroy(Obstacle obstacle)
     {
-        obstacles.Remove(obstacle);
-        Destroy(obstacle);
+        GameObject obstacleObject = obstacle.gameObject;
+        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
+        obstacles.Remove(obstacleObject);
+        Destroy(obstacleObject);
     }
 
 
