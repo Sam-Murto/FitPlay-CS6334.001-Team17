@@ -9,6 +9,7 @@ public class Player_controller : MonoBehaviour
     public GameObject finish_stage;
     public AudioClip sound_coin;
     int score;
+    public GameObject finish_menu;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class Player_controller : MonoBehaviour
         {
             Debug.Log("Finish Line");
             finish_stage.SetActive(true);
+            finish_menu.SetActive(true);
             Time.timeScale = 0f;
         }
     }
