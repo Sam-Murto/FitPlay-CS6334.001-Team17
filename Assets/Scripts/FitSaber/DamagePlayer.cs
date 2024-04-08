@@ -13,7 +13,7 @@ public class DamagePlayer : Obstacle
 
         if (fitSaberPlayer)
         {
-            Debug.Log("Player hit");
+            Debug.Log("Player hit!!");
             FindObjectOfType<FitSaberGameManager>().onDamagePlayerHitPlayer?.Invoke(this);
         }
 

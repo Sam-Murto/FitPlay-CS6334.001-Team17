@@ -20,10 +20,17 @@ public class MenuButtonCheck : MonoBehaviour
         menuReference.action.started += Toggle;
     }
 
+    public void TogglePause()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        GameState.isPaused = pauseMenu.activeSelf;
+    }
+
     void Toggle(InputAction.CallbackContext context)
     {
         Debug.Log("Toggling Pause");
         pauseMenu.SetActive(!pauseMenu.activeSelf);
+        GameState.isPaused = pauseMenu.activeSelf;
     }
 
 

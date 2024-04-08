@@ -15,7 +15,6 @@ public class FitSaberGameManager : MonoBehaviour
     [SerializeField]
     public UnityEvent<DamagePlayer> onDamagePlayerHitPlayer;
 
-    public static bool isPaused;
     bool levelOver = false;
 
     public int score { get; private set; }
@@ -47,7 +46,7 @@ public class FitSaberGameManager : MonoBehaviour
 
     private void LoadLevel()
     {
-        isPaused = true;
+        GameState.isLoading = true;
 
         foreach (FitSaberLevel.ObstacleSpawn spawn in level.obstacleSpawns)
         {
@@ -57,7 +56,7 @@ public class FitSaberGameManager : MonoBehaviour
 
         }
         levelOver = false;
-        isPaused = false;
+        GameState.isLoading = false;
     }
 
     public void OnStrikableStruck(Strikeable obstacle)
