@@ -1810,7 +1810,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 3169405274636799009}
-  timerObject: {fileID: 0}
+  timerObject: {fileID: 2116094831}
+  finishLine: {fileID: 2116094832}
   menuReference: {fileID: 8823183334835807813, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &2042266249
 MonoBehaviour:
@@ -2004,12 +2005,22 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9121602411691573407, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
   m_PrefabInstance: {fileID: 2116094828}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2116094831}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2116094831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9121602411691573400, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
+  m_PrefabInstance: {fileID: 2116094828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2116094832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9121602411133827194, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
+  m_PrefabInstance: {fileID: 2116094828}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &347290927678259191
 PrefabInstance:
   m_ObjectHideFlags: 0

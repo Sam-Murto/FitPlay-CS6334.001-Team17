@@ -7,6 +7,7 @@ public class MenuButtonCheck : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject timerObject;
+    public GameObject finishLine;
 
     private bool isActive = false;
 
@@ -29,14 +30,18 @@ public class MenuButtonCheck : MonoBehaviour
     {
         Debug.Log("Toggling Pause");
         pauseMenu.SetActive(!pauseMenu.activeSelf);
-        if(Time.timeScale == 0f)
+        if(!finishLine.activeSelf)
         {
-            Time.timeScale = 1f;
+            if (Time.timeScale == 0f)
+            {
+                Time.timeScale = 1f;
+            }
+            else
+            {
+                Time.timeScale = 0f;
+            }
         }
-        else
-        {
-            Time.timeScale = 0f;
-        }
+        
     }
 
 
