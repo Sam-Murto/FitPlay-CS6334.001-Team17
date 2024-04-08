@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class MenuButtonCheck : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject timerObject;
 
     [SerializeField]
     InputActionReference menuReference;
@@ -31,6 +32,14 @@ public class MenuButtonCheck : MonoBehaviour
         Debug.Log("Toggling Pause");
         pauseMenu.SetActive(!pauseMenu.activeSelf);
         GameState.isPaused = pauseMenu.activeSelf;
+        if(Time.timeScale == 0f)
+        {
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            Time.timeScale = 0f;
+        }
     }
 
 

@@ -7,6 +7,7 @@ public class Player_controller : MonoBehaviour
 {
 
     public GameObject finish_stage;
+    public AudioClip sound_coin;
     int score;
 
     // Start is called before the first frame update
@@ -29,6 +30,7 @@ public class Player_controller : MonoBehaviour
         if(other.tag == "Coin")
         {
             score++;
+            AudioSource.PlayClipAtPoint(sound_coin, transform.position, 1.0f);
             other.gameObject.SetActive(false);
         }
 
@@ -36,6 +38,7 @@ public class Player_controller : MonoBehaviour
         {
             Debug.Log("Finish Line");
             finish_stage.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
