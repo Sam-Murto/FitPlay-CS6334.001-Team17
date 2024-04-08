@@ -13,7 +13,7 @@ public class FitSaberUIManager : MonoBehaviour
 
     private void Update()
     {
-        scoreText.SetText("Score: " + gameManager.score);
+        scoreText.SetText("Score\n" + gameManager.score);
     }
 
 }

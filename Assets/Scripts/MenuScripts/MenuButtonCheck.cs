@@ -18,7 +18,7 @@ public class MenuButtonCheck : MonoBehaviour
 
     private void OnDisable()
     {
-        menuReference.action.started += Toggle;
+        menuReference.action.started -= Toggle;
     }
 
     public void TogglePause()

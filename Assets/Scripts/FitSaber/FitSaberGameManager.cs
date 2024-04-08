@@ -20,6 +20,7 @@ public class FitSaberGameManager : MonoBehaviour
     public UnityEvent<Bomb> onBombExplode;
 
     bool levelOver = false;
+    bool inTutorial = false;
 
     public int score { get; private set; }
 
@@ -36,16 +37,31 @@ public class FitSaberGameManager : MonoBehaviour
     [SerializeField]
     ParticleSystem strikeParticleEffect;
 
+    [SerializeField]
+    GameObject tutorialDisplay;
+
+    [SerializeField]
+    GameObject levelCompleteMenu;
+
+    [SerializeField]
+    GameObject inGameOverlay;
+
 
     private void OnEnable()
     {
         obstacles = new List<GameObject>();
-        LoadLevel();
+        DisplayTutorial();
     }
 
     private void OnDisable()
     {
         obstacles.Clear();
+    }
+
+    private void DisplayTutorial()
+    {
+        GameState.isPaused = true;
+        tutorialDisplay.SetActive(true);
     }
 
     private void LoadLevel()
@@ -66,77 +82,82 @@ public class FitSaberGameManager : MonoBehaviour
     public void OnStrikableStruck(Strikeable obstacle)
     {
         GameObject obstacleObject = obstacle.gameObject;
-        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
-        obstacles.Remove(obstacleObject);
-        Destroy(obstacleObject);
 
         score += 100;
+
+        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
+        RemoveObstacle(obstacleObject);
 
     }
 
     public void OnStrikableReachDeathZone(Strikeable obstacle)
     {
         GameObject obstacleObject = obstacle.gameObject;
-        obstacles.Remove(obstacleObject);
-        Destroy(obstacleObject);
-
         score -= 50;
+        RemoveObstacle(obstacleObject);
+
+
 
     }
 
     public void OnDamagePlayerReachDeathZone(DamagePlayer obstacle)
     {
         GameObject obstacleObject = obstacle.gameObject;
-        obstacles.Remove(obstacleObject);
-        Destroy(obstacleObject);
+        RemoveObstacle(obstacleObject);
     }
 
     public void OnDamagePlayerHitPlayer(DamagePlayer obstacle)
     {
         GameObject obstacleObject = obstacle.gameObject;
-        //Replace with getting hit effect (Won't want to end up destroying obstacle either, will want to remove collisions instead and spawn longer obstacles
-        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
-        obstacles.Remove(obstacleObject);
-        Destroy(obstacleObject);
 
         score -= 50;
 
+        //Replace with getting hit effect (Won't want to end up destroying obstacle either, will want to remove collisions instead and spawn longer obstacles
+        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
+        RemoveObstacle(obstacleObject);
     }
 
     public void OnBombExplode(Bomb obstacle) 
     {
         GameObject obstacleObject = obstacle.gameObject;
-        //Replace with bomb explosion effect
-        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
-        obstacles.Remove(obstacleObject);
-        Destroy(obstacleObject);
 
         score -= 50;
+
+        //Replace with bomb explosion effect
+        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
+        RemoveObstacle(obstacleObject);
     }
 
     public void OnBombReachDeathZone(Bomb obstacle)
     {
         GameObject obstacleObject = obstacle.gameObject;
-        obstacles.Remove(obstacleObject);
-        Destroy(obstacleObject);
+        RemoveObstacle(obstacleObject);
     }
 
-    private void Update()
+    public void BeginLevel()
     {
-        //Loop level when over
-        if (levelOver)
-        {
-            LoadLevel();
+        inGameOverlay.SetActive(true);
+        LoadLevel();
+        GameState.isPaused = true;
+    }
 
-        }
+    private void RemoveObstacle(GameObject obstacle)
+    {
+        obstacles.Remove(obstacle);
+        Destroy(obstacle);
 
         if(obstacles.Count == 0)
         {
-            levelOver = true;
+            EndLevel();
         }
 
     }
 
-
+    private void EndLevel()
+    {
+        inGameOverlay.SetActive(false);
+        levelCompleteMenu.SetActive(true);
+        FindObjectOfType<MenuButtonCheck>().enabled = false;
+    }
 
 }
