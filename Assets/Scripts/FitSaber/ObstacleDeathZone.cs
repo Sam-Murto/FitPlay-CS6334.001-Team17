@@ -31,6 +31,13 @@ public class ObstacleDeathZone : MonoBehaviour
             gameManager.onStrikableReachDeathZone?.Invoke(obstacle);
         }
         
+        Bomb bomb = collider.GetComponent<Bomb>();
+
+        if (bomb)
+        {
+            gameManager.onBombReachDeathZone?.Invoke(bomb);
+        }
+
 
     }
 }

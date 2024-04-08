@@ -14,6 +14,10 @@ public class FitSaberGameManager : MonoBehaviour
     public UnityEvent<DamagePlayer> onDamagePlayerReachDeathZone;
     [SerializeField]
     public UnityEvent<DamagePlayer> onDamagePlayerHitPlayer;
+    [SerializeField]
+    public UnityEvent<Bomb> onBombReachDeathZone;
+    [SerializeField]
+    public UnityEvent<Bomb> onBombExplode;
 
     bool levelOver = false;
 
@@ -90,12 +94,31 @@ public class FitSaberGameManager : MonoBehaviour
     public void OnDamagePlayerHitPlayer(DamagePlayer obstacle)
     {
         GameObject obstacleObject = obstacle.gameObject;
+        //Replace with getting hit effect (Won't want to end up destroying obstacle either, will want to remove collisions instead and spawn longer obstacles
         Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
         obstacles.Remove(obstacleObject);
         Destroy(obstacleObject);
 
         score -= 50;
 
+    }
+
+    public void OnBombExplode(Bomb obstacle) 
+    {
+        GameObject obstacleObject = obstacle.gameObject;
+        //Replace with bomb explosion effect
+        Instantiate(strikeParticleEffect, obstacleObject.transform.position, Quaternion.identity);
+        obstacles.Remove(obstacleObject);
+        Destroy(obstacleObject);
+
+        score -= 50;
+    }
+
+    public void OnBombReachDeathZone(Bomb obstacle)
+    {
+        GameObject obstacleObject = obstacle.gameObject;
+        obstacles.Remove(obstacleObject);
+        Destroy(obstacleObject);
     }
 
     private void Update()

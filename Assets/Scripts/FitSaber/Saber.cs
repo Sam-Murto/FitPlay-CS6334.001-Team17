@@ -63,6 +63,16 @@ public class Saber : MonoBehaviour
         {
             struckObject.GetStruck(GetStrikeDirection());
         }
+
+
+        Bomb bomb = collider.GetComponent<Bomb>();
+
+        if (bomb)
+        {
+            bomb.GetStruck();
+        }
+
+
     }
 
 }
