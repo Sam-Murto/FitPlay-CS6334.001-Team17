@@ -12,26 +12,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Boxing.unity
     guid: dbd2fe5ab0fc00444a79aa70baf99e7b
   - enabled: 1
-    path: Assets/Scenes/FitSaber.unity
-    guid: a8bd1ed5444588349ac09ff739a8e9e1
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/FitSaber new.unity
+    guid: 3d143ac5875dae14897d0e8b84f22f44
+  - enabled: 1
+    path: Assets/Scenes/FitRunning.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/FitRunning_Level1.unity
     guid: fd072a802846bea4fb9802b9583ac68e
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/FitRunning_Level2.unity
     guid: a811b81b31b3a544ab7d2cc9c30e190c
   - enabled: 1
     path: Assets/Scenes/FitRunning_Level3.unity
     guid: 1f3113079e610f548ab019c548f6f183
-  - enabled: 1
-    path: Assets/Scenes/FitRunning.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8a4dc22059e1425469af99bdb8fdda10, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 90fcddaa5678ab64791f4b09294367b6, type: 2}

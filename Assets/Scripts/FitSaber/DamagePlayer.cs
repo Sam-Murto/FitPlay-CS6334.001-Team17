@@ -3,13 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class DamagePlayer : MonoBehaviour
+public class DamagePlayer : Obstacle
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
@@ -18,9 +13,8 @@ public class DamagePlayer : MonoBehaviour
 
         if (fitSaberPlayer)
         {
-            //Debug.Log("Player hit");
-            fitSaberPlayer.onPlayerHit?.Invoke();
-            Destroy(gameObject);
+            Debug.Log("Player hit!!");
+            FindObjectOfType<FitSaberGameManager>().onDamagePlayerHitPlayer?.Invoke(this);
         }
 
     }

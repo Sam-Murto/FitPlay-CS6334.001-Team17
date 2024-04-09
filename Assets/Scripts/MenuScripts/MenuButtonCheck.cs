@@ -9,12 +9,8 @@ public class MenuButtonCheck : MonoBehaviour
     public GameObject timerObject;
     public GameObject finishLine;
 
-    private bool isActive = false;
-
-    bool deviceDetected = false;
-
     [SerializeField]
-    InputActionReference menuReference = null;
+    InputActionReference menuReference;
 
     void OnEnable()
     {
@@ -23,14 +19,26 @@ public class MenuButtonCheck : MonoBehaviour
 
     private void OnDisable()
     {
-        menuReference.action.started += Toggle;
+        menuReference.action.started -= Toggle;
+    }
+
+    private void Update()
+    {
+        GameState.isPaused = pauseMenu.activeSelf;
+    }
+
+    public void TogglePause()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        GameState.isPaused = pauseMenu.activeSelf;
     }
 
     void Toggle(InputAction.CallbackContext context)
     {
         Debug.Log("Toggling Pause");
         pauseMenu.SetActive(!pauseMenu.activeSelf);
-        if(!finishLine.activeSelf)
+        GameState.isPaused = pauseMenu.activeSelf;
+        if(Time.timeScale == 0f)
         {
             if (Time.timeScale == 0f)
             {
