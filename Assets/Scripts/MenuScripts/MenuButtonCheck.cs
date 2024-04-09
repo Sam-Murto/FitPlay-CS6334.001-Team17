@@ -38,8 +38,7 @@ public class MenuButtonCheck : MonoBehaviour
         Debug.Log("Toggling Pause");
         pauseMenu.SetActive(!pauseMenu.activeSelf);
         GameState.isPaused = pauseMenu.activeSelf;
-        if(Time.timeScale == 0f)
-        {
+
             if (Time.timeScale == 0f)
             {
                 Time.timeScale = 1f;
@@ -49,9 +48,5 @@ public class MenuButtonCheck : MonoBehaviour
                 Time.timeScale = 0f;
             }
         }
-        
-    }
-
-
 }
 
