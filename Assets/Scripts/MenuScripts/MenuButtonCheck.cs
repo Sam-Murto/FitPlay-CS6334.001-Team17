@@ -15,6 +15,7 @@ public class MenuButtonCheck : MonoBehaviour
     void OnEnable()
     {
         menuReference.action.started += Toggle;
+        Time.timeScale = 1f;
     }
 
     private void OnDisable()
@@ -38,20 +39,7 @@ public class MenuButtonCheck : MonoBehaviour
         Debug.Log("Toggling Pause");
         pauseMenu.SetActive(!pauseMenu.activeSelf);
         GameState.isPaused = pauseMenu.activeSelf;
-        if(Time.timeScale == 0f)
-        {
-            if (Time.timeScale == 0f)
-            {
-                Time.timeScale = 1f;
-            }
-            else
-            {
-                Time.timeScale = 0f;
-            }
+        Time.timeScale = (GameState.isPaused) ? 0f : 1f;
         }
-        
-    }
-
-
 }
 
