@@ -15,8 +15,6 @@ public class TimerScript : MonoBehaviour
     {
         if (timerIsActive)
         {
-            MenuButtonCheck menu_ButtonCheck = interactionManager.GetComponent<MenuButtonCheck>();
-            menu_ButtonCheck.enabled = true;
             elapsedTime += Time.deltaTime;
             UpdateTimerDisplay();
         }

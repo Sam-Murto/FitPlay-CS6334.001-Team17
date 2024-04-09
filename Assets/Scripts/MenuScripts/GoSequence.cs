@@ -8,6 +8,7 @@ public class GoSequence : MonoBehaviour
 
 
     public TextMeshProUGUI goSequenceText;
+    public GameObject interactionManager;
     public void beginGoSequence()
     {
         StartCoroutine(PerformActionsWithDelays());
@@ -30,6 +31,9 @@ public class GoSequence : MonoBehaviour
         goSequenceText.gameObject.SetActive(false);
         Time.timeScale = 1f;
         // Set Active to false
-        
+
+        MenuButtonCheck menu_ButtonCheck = interactionManager.GetComponent<MenuButtonCheck>();
+        menu_ButtonCheck.enabled = true;
+
     }
 }

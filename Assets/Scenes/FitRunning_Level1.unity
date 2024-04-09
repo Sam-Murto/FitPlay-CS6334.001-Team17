@@ -2815,7 +2815,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042266245}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1397d4220ac0d64c8ed64b47142c19f, type: 3}
   m_Name: 
@@ -2903,6 +2903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 320002200}
+  interactionManager: {fileID: 2042266245}
 --- !u!1 &2124814454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3233,6 +3234,10 @@ PrefabInstance:
       propertyPath: finish_stage
       value: 
       objectReference: {fileID: 320002197}
+    - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+      propertyPath: interactionManager
+      value: 
+      objectReference: {fileID: 2042266245}
     - target: {fileID: 3458416967086439886, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_IsActive
       value: 0
