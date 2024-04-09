@@ -21,6 +21,11 @@ public class MenuButtonCheck : MonoBehaviour
         menuReference.action.started -= Toggle;
     }
 
+    private void Update()
+    {
+        GameState.isPaused = pauseMenu.activeSelf;
+    }
+
     public void TogglePause()
     {
         pauseMenu.SetActive(!pauseMenu.activeSelf);

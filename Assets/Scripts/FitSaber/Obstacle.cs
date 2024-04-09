@@ -7,7 +7,7 @@ public class Obstacle : MonoBehaviour
     public float speed = 8.0f;
     void Update()
     {
-        if (GameState.isPaused || GameState.isLoading) return;
+        if (GameState.isLoading) return;
 
         float moveAmount = speed * Time.deltaTime;
         transform.Translate(Vector3.back * moveAmount);
