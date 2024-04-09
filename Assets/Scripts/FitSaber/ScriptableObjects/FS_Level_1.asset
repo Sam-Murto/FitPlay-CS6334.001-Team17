@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9fa11712d2c6804eaa122698da5698b, type: 3}
+  m_Name: FS_Level_1
+  m_EditorClassIdentifier: 
+  levelName: Level 1
+  speed: 8
+  obstacleSpawns:
+  - timeToReachPlayer: 5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 5.25
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 180
+  - timeToReachPlayer: 5.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 5.75
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 180
+  - timeToReachPlayer: 6
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 6.25
+    obstacleType: {fileID: 8142985320964473200, guid: a78b561f3a22f8747a28327dabead551, type: 3}
+    offset: {x: 0, y: 0.7}
+    rotation: 0
+  - timeToReachPlayer: 6.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.25, y: 0.7}
+    rotation: 270
+  - timeToReachPlayer: 6.75
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.25, y: 0.7}
+    rotation: 90
+  - timeToReachPlayer: 7
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.25, y: 0.55}
+    rotation: 270
+  - timeToReachPlayer: 8.5
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: -0.25, y: 1.2}
+    rotation: 0
+  - timeToReachPlayer: 8.5
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0, y: 1.2}
+    rotation: 0
+  - timeToReachPlayer: 8.5
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0.25, y: 1.2}
+    rotation: 0
+  - timeToReachPlayer: 9.75
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.6}
+    rotation: 0
+  - timeToReachPlayer: 10
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.7}
+    rotation: 180
+  - timeToReachPlayer: 12
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.5, y: 0.7}
+    rotation: 0
+  - timeToReachPlayer: 12
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0.5, y: 0.7}
+    rotation: 0
+  - timeToReachPlayer: 14
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0.5, y: 0.7}
+    rotation: 45
+  - timeToReachPlayer: 14
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.7}
+    rotation: 45
+  - timeToReachPlayer: 15
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.7}
+    rotation: 90
+  - timeToReachPlayer: 15.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.7}
+    rotation: 270
+  - timeToReachPlayer: 15.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.95}
+    rotation: 270
+  - timeToReachPlayer: 17
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.25, y: 0.7}
+    rotation: 90
+  - timeToReachPlayer: 18
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.25}
+    rotation: 0
+  - timeToReachPlayer: 20
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.7}
+    rotation: 180
+  - timeToReachPlayer: 20
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.25, y: 0.95}
+    rotation: 180
+  - timeToReachPlayer: 21
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 270
+  - timeToReachPlayer: 21
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 270
+  - timeToReachPlayer: 25.5
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 25.5
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0.25, y: 0.5}
+    rotation: 90
+  - timeToReachPlayer: 26
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 26
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0.25, y: 0.5}
+    rotation: 0
+  - timeToReachPlayer: 27
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 180
+  - timeToReachPlayer: 27.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0

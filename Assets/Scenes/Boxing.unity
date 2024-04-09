@@ -183,7 +183,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hello World!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -533,7 +533,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ae29ac02d08992344b9095971167e1c6, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1419,6 +1419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 587720690}
+  timerObject: {fileID: 0}
+  finishLine: {fileID: 0}
   menuReference: {fileID: 8823183334835807813, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1122920313
 GameObject:
