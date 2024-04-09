@@ -5,7 +5,6 @@ using UnityEngine.XR.Interaction;
 using UnityEngine.XR.Interaction.Toolkit;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using System.Linq;

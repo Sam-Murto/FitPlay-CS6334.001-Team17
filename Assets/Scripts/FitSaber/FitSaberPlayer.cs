@@ -10,20 +10,13 @@ public class FitSaberPlayer : MonoBehaviour
     [SerializeField]
     int scoreLossOnMiss;
 
-    [SerializeField]
-    public UnityEvent onPlayerHit;
-    private UnityAction playerHit;
-
     private void OnEnable()
     {
-        playerHit += Miss;
-        onPlayerHit.AddListener(playerHit);
     }
 
     private void OnDisable()
     {
-        playerHit -= Miss;
-        onPlayerHit.RemoveListener(playerHit);
+
     }
 
 
