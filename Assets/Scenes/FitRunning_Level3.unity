@@ -2866,6 +2866,7 @@ GameObject:
   - component: {fileID: 2042266253}
   - component: {fileID: 2042266252}
   - component: {fileID: 2042266251}
+  - component: {fileID: 2042266254}
   m_Layer: 0
   m_Name: XR Interaction Manager
   m_TagString: Untagged
@@ -2982,6 +2983,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionManager: {fileID: 2042266245}
   goSequenceText: {fileID: 227797950}
+--- !u!114 &2042266254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042266245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69005779c503b694a9c65a3cdb137fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myText: {fileID: 0}
+  secondText: {fileID: 0}
+  inputSource: 3
+  baseSpeed: 5
+  moveProvider: {fileID: 3169405274636799011}
 --- !u!1 &2130428982
 GameObject:
   m_ObjectHideFlags: 0
@@ -3327,3 +3345,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3169405275134643091, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
   m_PrefabInstance: {fileID: 3169405274636799008}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3169405274636799011 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+  m_PrefabInstance: {fileID: 3169405274636799008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

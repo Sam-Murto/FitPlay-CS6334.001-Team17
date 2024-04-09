@@ -558,11 +558,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1114040580 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3113217567417156717, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+--- !u!114 &1114040583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
   m_PrefabInstance: {fileID: 3169405274636799008}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1351873016
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,8 +973,8 @@ MonoBehaviour:
   myText: {fileID: 680011906}
   secondText: {fileID: 445006289}
   inputSource: 3
-  baseSpeed: 1
-  locomotion: {fileID: 1114040580}
+  baseSpeed: 5
+  moveProvider: {fileID: 1114040583}
 --- !u!114 &2042266252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,7 +1154,7 @@ PrefabInstance:
       objectReference: {fileID: 2042266249}
     - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_MoveSpeed
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: finish_stage
@@ -1355,7 +1361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9121602411133827194, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9121602411854096161, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
       propertyPath: m_Name
