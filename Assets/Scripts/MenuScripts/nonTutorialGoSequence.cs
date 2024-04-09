@@ -6,7 +6,8 @@ public class nonTutorialGoSequence : MonoBehaviour
 {
 
     private bool isStart = false;
-     void Update()
+    public GameObject interactionManager;
+    void Update()
     {
         if(!isStart)
         {
@@ -41,6 +42,8 @@ public class nonTutorialGoSequence : MonoBehaviour
         goSequenceText.gameObject.SetActive(false);
         Time.timeScale = 1f;
         // Set Active to false
+        MenuButtonCheck menu_ButtonCheck = interactionManager.GetComponent<MenuButtonCheck>();
+        menu_ButtonCheck.enabled = true;
 
     }
 }

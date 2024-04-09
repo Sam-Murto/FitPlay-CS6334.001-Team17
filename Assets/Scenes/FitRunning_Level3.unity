@@ -2909,7 +2909,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042266245}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1397d4220ac0d64c8ed64b47142c19f, type: 3}
   m_Name: 
@@ -2980,6 +2980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac9046b1bdc21f459409a74fb4cddc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionManager: {fileID: 2042266245}
   goSequenceText: {fileID: 227797950}
 --- !u!1 &2130428982
 GameObject:

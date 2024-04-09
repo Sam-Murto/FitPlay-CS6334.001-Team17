@@ -2217,6 +2217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac9046b1bdc21f459409a74fb4cddc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionManager: {fileID: 2042266245}
   goSequenceText: {fileID: 2116094829}
 --- !u!1001 &2116094828
 PrefabInstance:
