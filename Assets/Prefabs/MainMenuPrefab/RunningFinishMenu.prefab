@@ -144,7 +144,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 27
+    m_FontSize: 16
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Main Menu
 --- !u!1 &1279249466766611834
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,12 +404,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8347661912347575465}
   m_Layer: 0
-  m_Name: Back
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8347661912347575465
 RectTransform:
   m_ObjectHideFlags: 0
