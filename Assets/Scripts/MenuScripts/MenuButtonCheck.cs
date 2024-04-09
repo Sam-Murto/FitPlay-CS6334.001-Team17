@@ -15,6 +15,7 @@ public class MenuButtonCheck : MonoBehaviour
     void OnEnable()
     {
         menuReference.action.started += Toggle;
+        Time.timeScale = 1f;
     }
 
     private void OnDisable()
