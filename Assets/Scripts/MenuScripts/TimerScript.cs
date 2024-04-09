@@ -9,11 +9,14 @@ public class TimerScript : MonoBehaviour
     public TextMeshProUGUI timerText;
     private bool timerIsActive = true;
     private float elapsedTime = 0f;
+    public GameObject interactionManager;
 
     void Update()
     {
         if (timerIsActive)
         {
+            MenuButtonCheck menu_ButtonCheck = interactionManager.GetComponent<MenuButtonCheck>();
+            menu_ButtonCheck.enabled = true;
             elapsedTime += Time.deltaTime;
             UpdateTimerDisplay();
         }
