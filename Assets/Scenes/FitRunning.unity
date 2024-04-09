@@ -1148,7 +1148,7 @@ PrefabInstance:
       objectReference: {fileID: 2042266249}
     - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_MoveSpeed
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: finish_stage
@@ -1355,7 +1355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9121602411133827194, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9121602411854096161, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
       propertyPath: m_Name
