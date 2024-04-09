@@ -7,6 +7,7 @@ public class MenuButtonCheck : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject timerObject;
+    public GameObject finishLine;
 
     [SerializeField]
     InputActionReference menuReference;
@@ -39,12 +40,16 @@ public class MenuButtonCheck : MonoBehaviour
         GameState.isPaused = pauseMenu.activeSelf;
         if(Time.timeScale == 0f)
         {
-            Time.timeScale = 1f;
+            if (Time.timeScale == 0f)
+            {
+                Time.timeScale = 1f;
+            }
+            else
+            {
+                Time.timeScale = 0f;
+            }
         }
-        else
-        {
-            Time.timeScale = 0f;
-        }
+        
     }
 
 

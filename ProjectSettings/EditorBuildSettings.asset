@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FitRunning_Level1.unity
     guid: fd072a802846bea4fb9802b9583ac68e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/FitRunning_Level2.unity
     guid: a811b81b31b3a544ab7d2cc9c30e190c
