@@ -42,6 +42,8 @@ public class RunningInPlace : MonoBehaviour
         {
             AddValueToFront(Math.Abs(deviceVelocity.y));
 
+            Debug.Log("Successfully retrieved velocity data");
+
             // Check threshold for device velocity
             if (Math.Abs(deviceVelocity.y) > .1
                 && Math.Abs(deviceAngularVelocity.y) < .5
@@ -49,6 +51,7 @@ public class RunningInPlace : MonoBehaviour
                 && Math.Abs(deviceAngularVelocity.z) < .5
             )
             {
+                Debug.Log("Movement adjusted");
                 moveProvider.moveSpeed = baseSpeed;
             }
             else
