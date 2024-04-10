@@ -1454,6 +1454,8 @@ struct DrawParams_t523864F415D78BD8BB14E8B7BD349594D6187443;
 struct Dropdown_t54C0BDC1441E058BE37E796F68886671C270EF89;
 // UnityEngine.UIElements.DropdownMenu
 struct DropdownMenu_tCC0483D2EB24641C3ADAE4BC122C92ABCFB186D2;
+// UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider
+struct DynamicMoveProvider_t1743D232A797F4B68334ADA837902C8680933F5A;
 // System.Text.Encoding
 struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095;
 // UnityEngine.Event
@@ -26749,10 +26751,8 @@ struct FitSaberGameManager_t23164862A3684071A29B6B76693ADAFD23AF8372  : public M
 // FitSaberPlayer
 struct FitSaberPlayer_t9A12C66C6856C5D2878991A31C0E0BA95C69468A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.Int32 FitSaberPlayer::<score>k__BackingField
-	int32_t ___U3CscoreU3Ek__BackingField_4;
 	// System.Int32 FitSaberPlayer::scoreLossOnMiss
-	int32_t ___scoreLossOnMiss_5;
+	int32_t ___scoreLossOnMiss_4;
 };
 
 // FitSaberSound
@@ -27510,14 +27510,12 @@ struct RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905  : public MonoBe
 	int32_t ___inputSource_4;
 	// System.Single RunningInPlace::baseSpeed
 	float ___baseSpeed_5;
-	// UnityEngine.CharacterController RunningInPlace::characterController
-	CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* ___characterController_6;
-	// UnityEngine.XR.InputDevice RunningInPlace::device
-	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___device_7;
-	// UnityEngine.GameObject RunningInPlace::locomotion
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___locomotion_8;
+	// UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider RunningInPlace::moveProvider
+	DynamicMoveProvider_t1743D232A797F4B68334ADA837902C8680933F5A* ___moveProvider_6;
 	// System.Single[] RunningInPlace::locomotions
-	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___locomotions_9;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___locomotions_7;
+	// UnityEngine.XR.InputDevice RunningInPlace::headDevice
+	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___headDevice_8;
 };
 
 // Saber
@@ -46873,9 +46871,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5524[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5525[3] = 
 {
 	static_cast<int32_t>(offsetof(FitSaberLevel_tBB1142D28BAA8FA290F2F908D71F506662CB8A11, ___levelName_4)),static_cast<int32_t>(offsetof(FitSaberLevel_tBB1142D28BAA8FA290F2F908D71F506662CB8A11, ___speed_5)),static_cast<int32_t>(offsetof(FitSaberLevel_tBB1142D28BAA8FA290F2F908D71F506662CB8A11, ___obstacleSpawns_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5526[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5526[1] = 
 {
-	static_cast<int32_t>(offsetof(FitSaberPlayer_t9A12C66C6856C5D2878991A31C0E0BA95C69468A, ___U3CscoreU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(FitSaberPlayer_t9A12C66C6856C5D2878991A31C0E0BA95C69468A, ___scoreLossOnMiss_5)),};
+	static_cast<int32_t>(offsetof(FitSaberPlayer_t9A12C66C6856C5D2878991A31C0E0BA95C69468A, ___scoreLossOnMiss_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5527[3] = 
 {
 	static_cast<int32_t>(offsetof(FitSaberSound_tF5BC6788A9E40DFBE20CA5E36F49DDFB8058D0AB, ___strikeSound_4)),static_cast<int32_t>(offsetof(FitSaberSound_tF5BC6788A9E40DFBE20CA5E36F49DDFB8058D0AB, ___explosionSound_5)),static_cast<int32_t>(offsetof(FitSaberSound_tF5BC6788A9E40DFBE20CA5E36F49DDFB8058D0AB, ___playerDamagedSound_6)),};
@@ -46915,9 +46913,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5540[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5541[3] = 
 {
 	static_cast<int32_t>(offsetof(nonTutorialGoSequence_t05486F07B6F0BBC59EF90D44FB9683A43B0C26BC, ___isStart_4)),static_cast<int32_t>(offsetof(nonTutorialGoSequence_t05486F07B6F0BBC59EF90D44FB9683A43B0C26BC, ___interactionManager_5)),static_cast<int32_t>(offsetof(nonTutorialGoSequence_t05486F07B6F0BBC59EF90D44FB9683A43B0C26BC, ___goSequenceText_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5542[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5542[5] = 
 {
-	static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___inputSource_4)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___baseSpeed_5)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___characterController_6)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___device_7)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___locomotion_8)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___locomotions_9)),};
+	static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___inputSource_4)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___baseSpeed_5)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___moveProvider_6)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___locomotions_7)),static_cast<int32_t>(offsetof(RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905, ___headDevice_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5544[4] = 
 {
 	static_cast<int32_t>(offsetof(TimerScript_t64F3BBDDFC8A15B75B0ACF9057CBD8FAD8C55AD5, ___timerText_4)),static_cast<int32_t>(offsetof(TimerScript_t64F3BBDDFC8A15B75B0ACF9057CBD8FAD8C55AD5, ___timerIsActive_5)),static_cast<int32_t>(offsetof(TimerScript_t64F3BBDDFC8A15B75B0ACF9057CBD8FAD8C55AD5, ___elapsedTime_6)),static_cast<int32_t>(offsetof(TimerScript_t64F3BBDDFC8A15B75B0ACF9057CBD8FAD8C55AD5, ___interactionManager_7)),};

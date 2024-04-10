@@ -219,245 +219,233 @@ extern void FitSaberGameManager__ctor_m6A85A4FB067C1C21C2944D09FF65A0F3E2131DEF 
 extern void FitSaberLevel__ctor_m457DB5440556118EB07ABDC4A0B99E457DC0AD96 (void);
 // 0x00000068 System.Void FitSaberLevel/ObstacleSpawn::.ctor()
 extern void ObstacleSpawn__ctor_m5FF9B9347663977F0914106DA533650B65678DAF (void);
-// 0x00000069 System.Int32 FitSaberPlayer::get_score()
-extern void FitSaberPlayer_get_score_m41432F6F28D815D3C7AADF7628B6D7934BC0A56F (void);
-// 0x0000006A System.Void FitSaberPlayer::set_score(System.Int32)
-extern void FitSaberPlayer_set_score_m94DA5B67CC89FC979C146D8A5765412C423CBBA3 (void);
-// 0x0000006B System.Void FitSaberPlayer::OnEnable()
-extern void FitSaberPlayer_OnEnable_m36F0279E3AC890064AE217573E90A871321D9BDD (void);
-// 0x0000006C System.Void FitSaberPlayer::OnDisable()
-extern void FitSaberPlayer_OnDisable_m9A7F83609509773391B6BFA81360737D70EC353D (void);
-// 0x0000006D System.Void FitSaberPlayer::Update()
-extern void FitSaberPlayer_Update_m0D2C4096062582F4382AA739D119E03B3010BAB8 (void);
-// 0x0000006E System.Void FitSaberPlayer::Miss()
-extern void FitSaberPlayer_Miss_m8634E9A96CF12324180523EA719FDF884AB0C554 (void);
-// 0x0000006F System.Void FitSaberPlayer::.ctor()
+// 0x00000069 System.Void FitSaberPlayer::.ctor()
 extern void FitSaberPlayer__ctor_m86C8ECF8BF729B9E6857EB761E6C6729878DB7CD (void);
-// 0x00000070 System.Void FitSaberSound::PlayStrikeSound()
+// 0x0000006A System.Void FitSaberSound::PlayStrikeSound()
 extern void FitSaberSound_PlayStrikeSound_m368B3006747DC70BD3211379FC077DAB07A1B80B (void);
-// 0x00000071 System.Void FitSaberSound::PlayeExplosionSound()
+// 0x0000006B System.Void FitSaberSound::PlayeExplosionSound()
 extern void FitSaberSound_PlayeExplosionSound_m4A2934BA3EE1A1975D2A48E2109F4A6E0933A9B3 (void);
-// 0x00000072 System.Void FitSaberSound::PlayPlayerDamagedSound()
+// 0x0000006C System.Void FitSaberSound::PlayPlayerDamagedSound()
 extern void FitSaberSound_PlayPlayerDamagedSound_m46EC4B16032AB5DB805DD295B7D64456D860836A (void);
-// 0x00000073 System.Void FitSaberSound::.ctor()
+// 0x0000006D System.Void FitSaberSound::.ctor()
 extern void FitSaberSound__ctor_mFF32AA9FA982FA82637A46B05FB21BD0FB449D2F (void);
-// 0x00000074 System.Void FitSaberUIManager::Update()
+// 0x0000006E System.Void FitSaberUIManager::Update()
 extern void FitSaberUIManager_Update_mF16FA64CC8A367FA9BE6FF999937C5943883C3CA (void);
-// 0x00000075 System.Void FitSaberUIManager::.ctor()
+// 0x0000006F System.Void FitSaberUIManager::.ctor()
 extern void FitSaberUIManager__ctor_mD7AACC02842304E5F5CDAC2CCBF06A6F639737B6 (void);
-// 0x00000076 System.Void Obstacle::Update()
+// 0x00000070 System.Void Obstacle::Update()
 extern void Obstacle_Update_mF5AA4F52A2372F7FBFF7ED97999E26E984AA2AE4 (void);
-// 0x00000077 System.Void Obstacle::.ctor()
+// 0x00000071 System.Void Obstacle::.ctor()
 extern void Obstacle__ctor_mF400BC13FBAC15398D0EE2E05DF96F481257945D (void);
-// 0x00000078 System.Void ObstacleDeathZone::OnEnable()
+// 0x00000072 System.Void ObstacleDeathZone::OnEnable()
 extern void ObstacleDeathZone_OnEnable_m734D8BE1E49FD2F6E28C38B8D97CF574294E4CB9 (void);
-// 0x00000079 System.Void ObstacleDeathZone::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000073 System.Void ObstacleDeathZone::OnCollisionEnter(UnityEngine.Collision)
 extern void ObstacleDeathZone_OnCollisionEnter_m1E6FD55B79991AD247BAC1DBF1820ED7846D010F (void);
-// 0x0000007A System.Void ObstacleDeathZone::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000074 System.Void ObstacleDeathZone::OnTriggerEnter(UnityEngine.Collider)
 extern void ObstacleDeathZone_OnTriggerEnter_m8286C6A569EB0DE694D814891638614EC1591BB7 (void);
-// 0x0000007B System.Void ObstacleDeathZone::.ctor()
+// 0x00000075 System.Void ObstacleDeathZone::.ctor()
 extern void ObstacleDeathZone__ctor_m718653C013DF7880F5175164C522660C7582FF59 (void);
-// 0x0000007C UnityEngine.GameObject ObstacleSpawner::SpawnObstacle(FitSaberLevel,FitSaberLevel/ObstacleSpawn)
+// 0x00000076 UnityEngine.GameObject ObstacleSpawner::SpawnObstacle(FitSaberLevel,FitSaberLevel/ObstacleSpawn)
 extern void ObstacleSpawner_SpawnObstacle_m92B23083FEBCD731B13FDC3D9829EADED572FFF8 (void);
-// 0x0000007D System.Void ObstacleSpawner::.ctor()
+// 0x00000077 System.Void ObstacleSpawner::.ctor()
 extern void ObstacleSpawner__ctor_mD0E52BA33EF3B1B5E8235A469E089DA17CC63C94 (void);
-// 0x0000007E System.Void Saber::OnEnable()
+// 0x00000078 System.Void Saber::OnEnable()
 extern void Saber_OnEnable_m429207B37933C59384681C9B56DE0B2FC8156667 (void);
-// 0x0000007F System.Void Saber::Start()
+// 0x00000079 System.Void Saber::Start()
 extern void Saber_Start_m25201D71B2A2563EECB34C14F8E1C10F713FE557 (void);
-// 0x00000080 System.Void Saber::Update()
+// 0x0000007A System.Void Saber::Update()
 extern void Saber_Update_mA04DC7AC7AE5B28545FEFD4D419DF611C70BEEE6 (void);
-// 0x00000081 UnityEngine.Vector3 Saber::GetStrikeDirection()
+// 0x0000007B UnityEngine.Vector3 Saber::GetStrikeDirection()
 extern void Saber_GetStrikeDirection_m5313A7DE41E0E7F96B83B1D8D625213D1BAC75F9 (void);
-// 0x00000082 System.Void Saber::UpdateVelocity()
+// 0x0000007C System.Void Saber::UpdateVelocity()
 extern void Saber_UpdateVelocity_mEE59532C8B8509304640AA4FE014FB0324D208BA (void);
-// 0x00000083 UnityEngine.Vector3 Saber::GetSaberEndPosition()
+// 0x0000007D UnityEngine.Vector3 Saber::GetSaberEndPosition()
 extern void Saber_GetSaberEndPosition_m83A535DE0FC1C6EF17937A788BDD04A0B384BAE1 (void);
-// 0x00000084 System.Void Saber::OnTriggerEnter(UnityEngine.Collider)
+// 0x0000007E System.Void Saber::OnTriggerEnter(UnityEngine.Collider)
 extern void Saber_OnTriggerEnter_mFB2C3BED26055F54F68E9C5FDC809A8F412A558D (void);
-// 0x00000085 System.Void Saber::.ctor()
+// 0x0000007F System.Void Saber::.ctor()
 extern void Saber__ctor_mE8E122F9452454036AFDFD6E46F1F33D0DA26812 (void);
-// 0x00000086 System.Void SaberEnd::Start()
+// 0x00000080 System.Void SaberEnd::Start()
 extern void SaberEnd_Start_m46B1F26A498D837546DA126EB0934F356502CD70 (void);
-// 0x00000087 System.Void SaberEnd::Update()
+// 0x00000081 System.Void SaberEnd::Update()
 extern void SaberEnd_Update_m75B9F9228BB9FE00A0442E2A5D894ACC224990A4 (void);
-// 0x00000088 System.Void SaberEnd::.ctor()
+// 0x00000082 System.Void SaberEnd::.ctor()
 extern void SaberEnd__ctor_m6CCCE0486ABFDB3A8ED6B96CAE40213D6FDF9ECE (void);
-// 0x00000089 System.Void SelfDestructOnExpire::OnEnable()
+// 0x00000083 System.Void SelfDestructOnExpire::OnEnable()
 extern void SelfDestructOnExpire_OnEnable_mF1797E32492375A2B765A372BAFA131D77DF428F (void);
-// 0x0000008A System.Void SelfDestructOnExpire::Update()
+// 0x00000084 System.Void SelfDestructOnExpire::Update()
 extern void SelfDestructOnExpire_Update_m54C1FC09964AECA6150472EF5AE9E73AE5422C01 (void);
-// 0x0000008B System.Void SelfDestructOnExpire::.ctor()
+// 0x00000085 System.Void SelfDestructOnExpire::.ctor()
 extern void SelfDestructOnExpire__ctor_mEDBA5989B004C6A6EC36BD3AD13AE8B81625ECCB (void);
-// 0x0000008C System.Void Strikeable::GetStruck(UnityEngine.Vector3)
+// 0x00000086 System.Void Strikeable::GetStruck(UnityEngine.Vector3)
 extern void Strikeable_GetStruck_mBCD7D6537962DAA47571A63C59A7623E7B4E9F87 (void);
-// 0x0000008D System.Void Strikeable::Crumble()
+// 0x00000087 System.Void Strikeable::Crumble()
 extern void Strikeable_Crumble_mC8D8720EDBD13C24265BBD5F1661305423AF4A00 (void);
-// 0x0000008E System.Void Strikeable::.ctor()
+// 0x00000088 System.Void Strikeable::.ctor()
 extern void Strikeable__ctor_m997CFC76A5D2161C40FA663F61D414D6F8C442E2 (void);
-// 0x0000008F System.Void GameState::TogglePause()
+// 0x00000089 System.Void GameState::TogglePause()
 extern void GameState_TogglePause_mB3A029705E8B376EDA977AC09E4B35AE4A8670C2 (void);
-// 0x00000090 System.Void GameState::.ctor()
+// 0x0000008A System.Void GameState::.ctor()
 extern void GameState__ctor_m136973224640261C767FADCA144A37EEF91CB53C (void);
-// 0x00000091 System.Void GoSequence::beginGoSequence()
+// 0x0000008B System.Void GoSequence::beginGoSequence()
 extern void GoSequence_beginGoSequence_m119B378E44AFAD077C46CB812B5131D09C995283 (void);
-// 0x00000092 System.Collections.IEnumerator GoSequence::PerformActionsWithDelays()
+// 0x0000008C System.Collections.IEnumerator GoSequence::PerformActionsWithDelays()
 extern void GoSequence_PerformActionsWithDelays_mF6E8EF08432DD5D29BD76A9BFB152EFF82F3BEF3 (void);
-// 0x00000093 System.Void GoSequence::.ctor()
+// 0x0000008D System.Void GoSequence::.ctor()
 extern void GoSequence__ctor_m1B0891D0DBD70784AC3B2CF438B176BFBB6842A3 (void);
-// 0x00000094 System.Void GoSequence/<PerformActionsWithDelays>d__3::.ctor(System.Int32)
+// 0x0000008E System.Void GoSequence/<PerformActionsWithDelays>d__3::.ctor(System.Int32)
 extern void U3CPerformActionsWithDelaysU3Ed__3__ctor_m4C76D13F4C72844BE75D1EE6B2BE762A1D8469CB (void);
-// 0x00000095 System.Void GoSequence/<PerformActionsWithDelays>d__3::System.IDisposable.Dispose()
+// 0x0000008F System.Void GoSequence/<PerformActionsWithDelays>d__3::System.IDisposable.Dispose()
 extern void U3CPerformActionsWithDelaysU3Ed__3_System_IDisposable_Dispose_m1C07B4CCEE5539F7FB5F285B9AF1D40189161C59 (void);
-// 0x00000096 System.Boolean GoSequence/<PerformActionsWithDelays>d__3::MoveNext()
+// 0x00000090 System.Boolean GoSequence/<PerformActionsWithDelays>d__3::MoveNext()
 extern void U3CPerformActionsWithDelaysU3Ed__3_MoveNext_m099DC0AA102574E4847F1AEADB6595C18CF1B5D9 (void);
-// 0x00000097 System.Object GoSequence/<PerformActionsWithDelays>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000091 System.Object GoSequence/<PerformActionsWithDelays>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CPerformActionsWithDelaysU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m32C37F8FBE843826396ECA71E81A9E893845B450 (void);
-// 0x00000098 System.Void GoSequence/<PerformActionsWithDelays>d__3::System.Collections.IEnumerator.Reset()
+// 0x00000092 System.Void GoSequence/<PerformActionsWithDelays>d__3::System.Collections.IEnumerator.Reset()
 extern void U3CPerformActionsWithDelaysU3Ed__3_System_Collections_IEnumerator_Reset_m8075096B0C3CB7BCA675A68581D22BFD72847C54 (void);
-// 0x00000099 System.Object GoSequence/<PerformActionsWithDelays>d__3::System.Collections.IEnumerator.get_Current()
+// 0x00000093 System.Object GoSequence/<PerformActionsWithDelays>d__3::System.Collections.IEnumerator.get_Current()
 extern void U3CPerformActionsWithDelaysU3Ed__3_System_Collections_IEnumerator_get_Current_m0106FE72F1DF3D388C7D44F4CF097F06586D297C (void);
-// 0x0000009A System.Void MenuButtonCheck::OnEnable()
+// 0x00000094 System.Void MenuButtonCheck::OnEnable()
 extern void MenuButtonCheck_OnEnable_mDE1B01FA3633C64E4E78A752F9394C616EA2B148 (void);
-// 0x0000009B System.Void MenuButtonCheck::OnDisable()
+// 0x00000095 System.Void MenuButtonCheck::OnDisable()
 extern void MenuButtonCheck_OnDisable_mA062EB35866593FFF7647619FF2AEAF6ABB1676C (void);
-// 0x0000009C System.Void MenuButtonCheck::Update()
+// 0x00000096 System.Void MenuButtonCheck::Update()
 extern void MenuButtonCheck_Update_m67F665A9C9DE6048A591D5C6DF45C30BCCFDAEE9 (void);
-// 0x0000009D System.Void MenuButtonCheck::TogglePause()
+// 0x00000097 System.Void MenuButtonCheck::TogglePause()
 extern void MenuButtonCheck_TogglePause_m8EF8C778D218C7C87761CC733A27E7524EFFDA9A (void);
-// 0x0000009E System.Void MenuButtonCheck::Toggle(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000098 System.Void MenuButtonCheck::Toggle(UnityEngine.InputSystem.InputAction/CallbackContext)
 extern void MenuButtonCheck_Toggle_m9BFBC44FC576C3E4708B2F104EA1CD3B646D6C96 (void);
-// 0x0000009F System.Void MenuButtonCheck::.ctor()
+// 0x00000099 System.Void MenuButtonCheck::.ctor()
 extern void MenuButtonCheck__ctor_m5BAE784A389DF28038D8CD2111459C638488F525 (void);
-// 0x000000A0 System.Void nonTutorialGoSequence::Update()
+// 0x0000009A System.Void nonTutorialGoSequence::Update()
 extern void nonTutorialGoSequence_Update_mDDF5FA16613C8A0E3AF7228B24B183456B2503E1 (void);
-// 0x000000A1 System.Void nonTutorialGoSequence::beginGoSequence()
+// 0x0000009B System.Void nonTutorialGoSequence::beginGoSequence()
 extern void nonTutorialGoSequence_beginGoSequence_m2B70E17DCA2BD87CCD7493F6795CA32C727FF686 (void);
-// 0x000000A2 System.Collections.IEnumerator nonTutorialGoSequence::PerformActionsWithDelays()
+// 0x0000009C System.Collections.IEnumerator nonTutorialGoSequence::PerformActionsWithDelays()
 extern void nonTutorialGoSequence_PerformActionsWithDelays_m3A90A232266B333B887A1856B0254D135A868A15 (void);
-// 0x000000A3 System.Void nonTutorialGoSequence::.ctor()
+// 0x0000009D System.Void nonTutorialGoSequence::.ctor()
 extern void nonTutorialGoSequence__ctor_m809EC43CE0E67138AD744FAB0983C8AAFB67EA10 (void);
-// 0x000000A4 System.Void nonTutorialGoSequence/<PerformActionsWithDelays>d__5::.ctor(System.Int32)
+// 0x0000009E System.Void nonTutorialGoSequence/<PerformActionsWithDelays>d__5::.ctor(System.Int32)
 extern void U3CPerformActionsWithDelaysU3Ed__5__ctor_mD517650F7E014FE1A58B65F0773463A57B4AEFF2 (void);
-// 0x000000A5 System.Void nonTutorialGoSequence/<PerformActionsWithDelays>d__5::System.IDisposable.Dispose()
+// 0x0000009F System.Void nonTutorialGoSequence/<PerformActionsWithDelays>d__5::System.IDisposable.Dispose()
 extern void U3CPerformActionsWithDelaysU3Ed__5_System_IDisposable_Dispose_m5A5C83B4407B6068622F3284656F91B306BB019B (void);
-// 0x000000A6 System.Boolean nonTutorialGoSequence/<PerformActionsWithDelays>d__5::MoveNext()
+// 0x000000A0 System.Boolean nonTutorialGoSequence/<PerformActionsWithDelays>d__5::MoveNext()
 extern void U3CPerformActionsWithDelaysU3Ed__5_MoveNext_mF5B9840B41E5CD948AB3D74B7CD2F6A018540A8F (void);
-// 0x000000A7 System.Object nonTutorialGoSequence/<PerformActionsWithDelays>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000A1 System.Object nonTutorialGoSequence/<PerformActionsWithDelays>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CPerformActionsWithDelaysU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3B4D25F9E84F7452BCCB7F476959677B2A4F7C0E (void);
-// 0x000000A8 System.Void nonTutorialGoSequence/<PerformActionsWithDelays>d__5::System.Collections.IEnumerator.Reset()
+// 0x000000A2 System.Void nonTutorialGoSequence/<PerformActionsWithDelays>d__5::System.Collections.IEnumerator.Reset()
 extern void U3CPerformActionsWithDelaysU3Ed__5_System_Collections_IEnumerator_Reset_m3CEF6EA9FA0524C1C7681F154F6506AD25872DD6 (void);
-// 0x000000A9 System.Object nonTutorialGoSequence/<PerformActionsWithDelays>d__5::System.Collections.IEnumerator.get_Current()
+// 0x000000A3 System.Object nonTutorialGoSequence/<PerformActionsWithDelays>d__5::System.Collections.IEnumerator.get_Current()
 extern void U3CPerformActionsWithDelaysU3Ed__5_System_Collections_IEnumerator_get_Current_m037DAE42D673732920836DE5838B9EA9ACC537B3 (void);
-// 0x000000AA System.Void RunningInPlace::Start()
-extern void RunningInPlace_Start_m7D0A46FAC2DEC78EC0143EDE0762EA7F24B74B87 (void);
-// 0x000000AB System.Void RunningInPlace::Update()
+// 0x000000A4 System.Void RunningInPlace::OnEnable()
+extern void RunningInPlace_OnEnable_mFF0DEC50F74E5CD2E7FB9E75D170D1221D0C66BC (void);
+// 0x000000A5 System.Void RunningInPlace::Update()
 extern void RunningInPlace_Update_m124AD77C16FF3E329167A7D386C86DF5D5ED79FE (void);
-// 0x000000AC System.Void RunningInPlace::AddValueToFront(System.Single)
+// 0x000000A6 System.Void RunningInPlace::AddValueToFront(System.Single)
 extern void RunningInPlace_AddValueToFront_m8CE186A346D9D9BC1D4CB349335D386F1C0E3559 (void);
-// 0x000000AD System.Void RunningInPlace::.ctor()
+// 0x000000A7 System.Void RunningInPlace::.ctor()
 extern void RunningInPlace__ctor_mB63BE4A2E98699F3B5705D06CB4D031BD9DEB435 (void);
-// 0x000000AE System.Void SceneTransition::ChangeScene(System.Int32)
+// 0x000000A8 System.Void SceneTransition::ChangeScene(System.Int32)
 extern void SceneTransition_ChangeScene_m0DBD39D7AA6EFE0E127C7FABEC455B4509EB27C6 (void);
-// 0x000000AF System.Void SceneTransition::.ctor()
+// 0x000000A9 System.Void SceneTransition::.ctor()
 extern void SceneTransition__ctor_m6FEBED7A92C4C5A3ED76C9251DC10A680690B5E5 (void);
-// 0x000000B0 System.Void TimerScript::Update()
+// 0x000000AA System.Void TimerScript::Update()
 extern void TimerScript_Update_m45499011F7FDAC924A920E475712C081C0E00133 (void);
-// 0x000000B1 System.Void TimerScript::ToggleTimer()
+// 0x000000AB System.Void TimerScript::ToggleTimer()
 extern void TimerScript_ToggleTimer_m4BD757E4F7C566CD47FBF53043D02359E3657A76 (void);
-// 0x000000B2 System.Void TimerScript::UpdateTimerDisplay()
+// 0x000000AC System.Void TimerScript::UpdateTimerDisplay()
 extern void TimerScript_UpdateTimerDisplay_m93B599AC97A1F13CB2843CEC251CD9CD84FB0655 (void);
-// 0x000000B3 System.Void TimerScript::.ctor()
+// 0x000000AD System.Void TimerScript::.ctor()
 extern void TimerScript__ctor_m5341AAB8DB0EEC08CC13E3AFC70E88E04F577ADC (void);
-// 0x000000B4 System.Void ToggleObject::ToggleTargetObject(UnityEngine.GameObject)
+// 0x000000AE System.Void ToggleObject::ToggleTargetObject(UnityEngine.GameObject)
 extern void ToggleObject_ToggleTargetObject_m3015CE52898B58DEE246CB9E0B0EAC6CD34A93B8 (void);
-// 0x000000B5 System.Void ToggleObject::.ctor()
+// 0x000000AF System.Void ToggleObject::.ctor()
 extern void ToggleObject__ctor_mDEC6AB8200C0D28EF417E6E713A9804BB1647782 (void);
-// 0x000000B6 System.Void ToggleTimeScale::Awake()
+// 0x000000B0 System.Void ToggleTimeScale::Awake()
 extern void ToggleTimeScale_Awake_mF9E741F7D1B4996D1532775656320D33A994D7C8 (void);
-// 0x000000B7 System.Void ToggleTimeScale::Toggle()
+// 0x000000B1 System.Void ToggleTimeScale::Toggle()
 extern void ToggleTimeScale_Toggle_m8DDB29A04AD689A46E07AA556A30A48BC7EDB947 (void);
-// 0x000000B8 System.Void ToggleTimeScale::.ctor()
+// 0x000000B2 System.Void ToggleTimeScale::.ctor()
 extern void ToggleTimeScale__ctor_m67D12ACCE8CD7A03B90AB8928445CD2C09F0698D (void);
-// 0x000000B9 System.Void Move_wall::Start()
+// 0x000000B3 System.Void Move_wall::Start()
 extern void Move_wall_Start_mB1CFAC908C5ECC9ACDF2447038EC641F621B3D2A (void);
-// 0x000000BA System.Void Move_wall::Update()
+// 0x000000B4 System.Void Move_wall::Update()
 extern void Move_wall_Update_m54BC8B4A157048522A3E96852B9294808B3C7CFC (void);
-// 0x000000BB System.Void Move_wall::.ctor()
+// 0x000000B5 System.Void Move_wall::.ctor()
 extern void Move_wall__ctor_m20D0BF0349DD96C16417E16B200C7D20EFF22837 (void);
-// 0x000000BC System.Void Player_controller::Start()
+// 0x000000B6 System.Void Player_controller::Start()
 extern void Player_controller_Start_m07F4F6507510C1457F9A07C0533BD10B2ADE321E (void);
-// 0x000000BD System.Void Player_controller::Update()
+// 0x000000B7 System.Void Player_controller::Update()
 extern void Player_controller_Update_mE7BD5D13C51AE1DCD5F1CC1CCDE93B03A06B5A32 (void);
-// 0x000000BE System.Void Player_controller::OnTriggerEnter(UnityEngine.Collider)
+// 0x000000B8 System.Void Player_controller::OnTriggerEnter(UnityEngine.Collider)
 extern void Player_controller_OnTriggerEnter_mF5C92643B0D8516B1C3D3595285677F473D3592D (void);
-// 0x000000BF System.Int32 Player_controller::current_score()
+// 0x000000B9 System.Int32 Player_controller::current_score()
 extern void Player_controller_current_score_m8E91208AA2195462AEBA3F96944593A0E51D590B (void);
-// 0x000000C0 System.Void Player_controller::.ctor()
+// 0x000000BA System.Void Player_controller::.ctor()
 extern void Player_controller__ctor_mE4571151ACAB142D642B21C2A857E64093B6DDF3 (void);
-// 0x000000C1 System.Void Score_text::Start()
+// 0x000000BB System.Void Score_text::Start()
 extern void Score_text_Start_m10FA5BAADB3C75CABEE8A916CEA8924E945502FC (void);
-// 0x000000C2 System.Void Score_text::Update()
+// 0x000000BC System.Void Score_text::Update()
 extern void Score_text_Update_m620F7C73EDE9A2778B0853E38E2D52875E37B8CA (void);
-// 0x000000C3 System.Void Score_text::.ctor()
+// 0x000000BD System.Void Score_text::.ctor()
 extern void Score_text__ctor_m4CFFE51FB983EAC3D072A848428281AA677341D1 (void);
-// 0x000000C4 System.Void FollowCamera::Update()
+// 0x000000BE System.Void FollowCamera::Update()
 extern void FollowCamera_Update_m7F27B438BF442E57A4634CC05DCDCF073BA762BA (void);
-// 0x000000C5 System.Void FollowCamera::.ctor()
+// 0x000000BF System.Void FollowCamera::.ctor()
 extern void FollowCamera__ctor_m34E276CE6734948A2EF28412E342BB823F8FB69C (void);
-// 0x000000C6 System.Void GetInputDevices::Start()
+// 0x000000C0 System.Void GetInputDevices::Start()
 extern void GetInputDevices_Start_m05703637999B49A39E92F5C9B377174875D8925C (void);
-// 0x000000C7 System.Void GetInputDevices::.ctor()
+// 0x000000C1 System.Void GetInputDevices::.ctor()
 extern void GetInputDevices__ctor_m775C308DA265C6191578652ACBB2F8219C494726 (void);
-// 0x000000C8 System.Single UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_moveSpeed()
+// 0x000000C2 System.Single UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_moveSpeed()
 extern void FitSaberLocomotionProvider_get_moveSpeed_m6A13BC27FD9EB3E64EFDE0FD4FA94F1600A8F283 (void);
-// 0x000000C9 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_moveSpeed(System.Single)
+// 0x000000C3 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_moveSpeed(System.Single)
 extern void FitSaberLocomotionProvider_set_moveSpeed_mA76C50EF339C3856E15B6035B14CB06F84BAC534 (void);
-// 0x000000CA System.Boolean UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_enableStrafe()
+// 0x000000C4 System.Boolean UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_enableStrafe()
 extern void FitSaberLocomotionProvider_get_enableStrafe_m1116F09926DA6ED5279139E812585389AB4AAF6C (void);
-// 0x000000CB System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_enableStrafe(System.Boolean)
+// 0x000000C5 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_enableStrafe(System.Boolean)
 extern void FitSaberLocomotionProvider_set_enableStrafe_m1F6461F29357AB57B7978D8DF0301B36E0D36CB7 (void);
-// 0x000000CC System.Boolean UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_enableFly()
+// 0x000000C6 System.Boolean UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_enableFly()
 extern void FitSaberLocomotionProvider_get_enableFly_m213CD4B63EF447C446DAF13D4FC0153D2CB69CBB (void);
-// 0x000000CD System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_enableFly(System.Boolean)
+// 0x000000C7 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_enableFly(System.Boolean)
 extern void FitSaberLocomotionProvider_set_enableFly_mD854C0F1FBDC0C5851EC21CD213A7E26314F7D9D (void);
-// 0x000000CE System.Boolean UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_useGravity()
+// 0x000000C8 System.Boolean UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_useGravity()
 extern void FitSaberLocomotionProvider_get_useGravity_mEEADD408BE12F9264BA3E3EF814CA06E5CB90B49 (void);
-// 0x000000CF System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_useGravity(System.Boolean)
+// 0x000000C9 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_useGravity(System.Boolean)
 extern void FitSaberLocomotionProvider_set_useGravity_m73EE0B2B28565001C3198725B587EF195A9804F0 (void);
-// 0x000000D0 UnityEngine.Transform UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_forwardSource()
+// 0x000000CA UnityEngine.Transform UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_forwardSource()
 extern void FitSaberLocomotionProvider_get_forwardSource_mA5691AFD3219BEADC612BBEA01B11DE81B598E17 (void);
-// 0x000000D1 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_forwardSource(UnityEngine.Transform)
+// 0x000000CB System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_forwardSource(UnityEngine.Transform)
 extern void FitSaberLocomotionProvider_set_forwardSource_m1DC7F425474CC94C7FCC2F906ED323C5BBE25EFF (void);
-// 0x000000D2 UnityEngine.XR.Interaction.Toolkit.Locomotion.XROriginMovement UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_transformation()
+// 0x000000CC UnityEngine.XR.Interaction.Toolkit.Locomotion.XROriginMovement UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_transformation()
 extern void FitSaberLocomotionProvider_get_transformation_m68C898FA70D9A167B972278B0436DAE9771CC703 (void);
-// 0x000000D3 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_transformation(UnityEngine.XR.Interaction.Toolkit.Locomotion.XROriginMovement)
+// 0x000000CD System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_transformation(UnityEngine.XR.Interaction.Toolkit.Locomotion.XROriginMovement)
 extern void FitSaberLocomotionProvider_set_transformation_m821E85C943FCE2862C5D2019E7774A52B182DD1A (void);
-// 0x000000D4 UnityEngine.XR.Interaction.Toolkit.Inputs.Readers.XRInputValueReader`1<UnityEngine.Vector2> UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_leftHandMoveInput()
+// 0x000000CE UnityEngine.XR.Interaction.Toolkit.Inputs.Readers.XRInputValueReader`1<UnityEngine.Vector2> UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_leftHandMoveInput()
 extern void FitSaberLocomotionProvider_get_leftHandMoveInput_m15E53BD3A00F81876011CB48196C1D3EDB8854D0 (void);
-// 0x000000D5 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_leftHandMoveInput(UnityEngine.XR.Interaction.Toolkit.Inputs.Readers.XRInputValueReader`1<UnityEngine.Vector2>)
+// 0x000000CF System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_leftHandMoveInput(UnityEngine.XR.Interaction.Toolkit.Inputs.Readers.XRInputValueReader`1<UnityEngine.Vector2>)
 extern void FitSaberLocomotionProvider_set_leftHandMoveInput_m80C9AF59E72FD10001079D30789ACA65FE885B41 (void);
-// 0x000000D6 UnityEngine.XR.Interaction.Toolkit.Inputs.Readers.XRInputValueReader`1<UnityEngine.Vector2> UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_rightHandMoveInput()
+// 0x000000D0 UnityEngine.XR.Interaction.Toolkit.Inputs.Readers.XRInputValueReader`1<UnityEngine.Vector2> UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::get_rightHandMoveInput()
 extern void FitSaberLocomotionProvider_get_rightHandMoveInput_m169B413BDC32AFE5E4AD96A089615FEB420E463A (void);
-// 0x000000D7 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_rightHandMoveInput(UnityEngine.XR.Interaction.Toolkit.Inputs.Readers.XRInputValueReader`1<UnityEngine.Vector2>)
+// 0x000000D1 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::set_rightHandMoveInput(UnityEngine.XR.Interaction.Toolkit.Inputs.Readers.XRInputValueReader`1<UnityEngine.Vector2>)
 extern void FitSaberLocomotionProvider_set_rightHandMoveInput_m8E8B4C9C6E4D2C4AE99C57A7C7E059D99E8870D0 (void);
-// 0x000000D8 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::OnEnable()
+// 0x000000D2 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::OnEnable()
 extern void FitSaberLocomotionProvider_OnEnable_m34B7B80D41732BC38272F4323865A42766B6C4AC (void);
-// 0x000000D9 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::OnDisable()
+// 0x000000D3 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::OnDisable()
 extern void FitSaberLocomotionProvider_OnDisable_m838060A21D42C541DA1729CF413B3C34282EDF4F (void);
-// 0x000000DA System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::Update()
+// 0x000000D4 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::Update()
 extern void FitSaberLocomotionProvider_Update_m202427C607ACFA601464D6D0F2C1A9E155CCF988 (void);
-// 0x000000DB UnityEngine.Vector2 UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::ReadInput()
+// 0x000000D5 UnityEngine.Vector2 UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::ReadInput()
 extern void FitSaberLocomotionProvider_ReadInput_m5830B34235D8F83E9CE0629C27164CEE928A9D94 (void);
-// 0x000000DC UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::ComputeDesiredMove(UnityEngine.Vector2)
+// 0x000000D6 UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::ComputeDesiredMove(UnityEngine.Vector2)
 extern void FitSaberLocomotionProvider_ComputeDesiredMove_mE7756314448A0AE22B21ACAE3D18FAEBB390B8C4 (void);
-// 0x000000DD System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::MoveRig(UnityEngine.Vector3)
+// 0x000000D7 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::MoveRig(UnityEngine.Vector3)
 extern void FitSaberLocomotionProvider_MoveRig_m059B905F7BD3E46179B71C478A88DCDD54064A58 (void);
-// 0x000000DE System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::FindCharacterController()
+// 0x000000D8 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::FindCharacterController()
 extern void FitSaberLocomotionProvider_FindCharacterController_m90B520A25E2D72F3D2CD17D4B820DF8B681E2CD0 (void);
-// 0x000000DF System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::.ctor()
+// 0x000000D9 System.Void UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.FitSaberLocomotionProvider::.ctor()
 extern void FitSaberLocomotionProvider__ctor_m1F8FCE878A238735E4A7AEFBB08E59C58A41661B (void);
-static Il2CppMethodPointer s_methodPointers[223] = 
+static Il2CppMethodPointer s_methodPointers[217] = 
 {
 	Outline_get_OutlineMode_m407E90C88C66DA2B6155740D4FB9142C355A491B,
 	Outline_set_OutlineMode_m82C5D0413E7460037A2A2BF8FB60B84C9AC17C06,
@@ -563,12 +551,6 @@ static Il2CppMethodPointer s_methodPointers[223] =
 	FitSaberGameManager__ctor_m6A85A4FB067C1C21C2944D09FF65A0F3E2131DEF,
 	FitSaberLevel__ctor_m457DB5440556118EB07ABDC4A0B99E457DC0AD96,
 	ObstacleSpawn__ctor_m5FF9B9347663977F0914106DA533650B65678DAF,
-	FitSaberPlayer_get_score_m41432F6F28D815D3C7AADF7628B6D7934BC0A56F,
-	FitSaberPlayer_set_score_m94DA5B67CC89FC979C146D8A5765412C423CBBA3,
-	FitSaberPlayer_OnEnable_m36F0279E3AC890064AE217573E90A871321D9BDD,
-	FitSaberPlayer_OnDisable_m9A7F83609509773391B6BFA81360737D70EC353D,
-	FitSaberPlayer_Update_m0D2C4096062582F4382AA739D119E03B3010BAB8,
-	FitSaberPlayer_Miss_m8634E9A96CF12324180523EA719FDF884AB0C554,
 	FitSaberPlayer__ctor_m86C8ECF8BF729B9E6857EB761E6C6729878DB7CD,
 	FitSaberSound_PlayStrikeSound_m368B3006747DC70BD3211379FC077DAB07A1B80B,
 	FitSaberSound_PlayeExplosionSound_m4A2934BA3EE1A1975D2A48E2109F4A6E0933A9B3,
@@ -628,7 +610,7 @@ static Il2CppMethodPointer s_methodPointers[223] =
 	U3CPerformActionsWithDelaysU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3B4D25F9E84F7452BCCB7F476959677B2A4F7C0E,
 	U3CPerformActionsWithDelaysU3Ed__5_System_Collections_IEnumerator_Reset_m3CEF6EA9FA0524C1C7681F154F6506AD25872DD6,
 	U3CPerformActionsWithDelaysU3Ed__5_System_Collections_IEnumerator_get_Current_m037DAE42D673732920836DE5838B9EA9ACC537B3,
-	RunningInPlace_Start_m7D0A46FAC2DEC78EC0143EDE0762EA7F24B74B87,
+	RunningInPlace_OnEnable_mFF0DEC50F74E5CD2E7FB9E75D170D1221D0C66BC,
 	RunningInPlace_Update_m124AD77C16FF3E329167A7D386C86DF5D5ED79FE,
 	RunningInPlace_AddValueToFront_m8CE186A346D9D9BC1D4CB349335D386F1C0E3559,
 	RunningInPlace__ctor_mB63BE4A2E98699F3B5705D06CB4D031BD9DEB435,
@@ -683,7 +665,7 @@ static Il2CppMethodPointer s_methodPointers[223] =
 	FitSaberLocomotionProvider_FindCharacterController_m90B520A25E2D72F3D2CD17D4B820DF8B681E2CD0,
 	FitSaberLocomotionProvider__ctor_m1F8FCE878A238735E4A7AEFBB08E59C58A41661B,
 };
-static const int32_t s_InvokerIndices[223] = 
+static const int32_t s_InvokerIndices[217] = 
 {
 	6312,
 	5058,
@@ -785,12 +767,6 @@ static const int32_t s_InvokerIndices[223] =
 	5086,
 	6467,
 	5086,
-	6467,
-	6467,
-	6467,
-	6467,
-	6312,
-	5058,
 	6467,
 	6467,
 	6467,
@@ -913,7 +889,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	223,
+	217,
 	s_methodPointers,
 	0,
 	NULL,

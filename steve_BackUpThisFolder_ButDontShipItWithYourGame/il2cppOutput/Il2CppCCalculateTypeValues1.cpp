@@ -236,6 +236,8 @@ struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 struct DarumaDeath_t76A10840D30D078E0BF0CA2D8AAA3F1E31B4112D;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider
+struct DynamicMoveProvider_t1743D232A797F4B68334ADA837902C8680933F5A;
 // FitSaberGameManager
 struct FitSaberGameManager_t23164862A3684071A29B6B76693ADAFD23AF8372;
 // FitSaberLevel
@@ -5612,10 +5614,8 @@ struct FitSaberGameManager_t23164862A3684071A29B6B76693ADAFD23AF8372  : public M
 // FitSaberPlayer
 struct FitSaberPlayer_t9A12C66C6856C5D2878991A31C0E0BA95C69468A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.Int32 FitSaberPlayer::<score>k__BackingField
-	int32_t ___U3CscoreU3Ek__BackingField_4;
 	// System.Int32 FitSaberPlayer::scoreLossOnMiss
-	int32_t ___scoreLossOnMiss_5;
+	int32_t ___scoreLossOnMiss_4;
 };
 
 // FitSaberSound
@@ -6093,14 +6093,12 @@ struct RunningInPlace_t334F98C366BA30F2B0DD465D418CC12744F8F905  : public MonoBe
 	int32_t ___inputSource_4;
 	// System.Single RunningInPlace::baseSpeed
 	float ___baseSpeed_5;
-	// UnityEngine.CharacterController RunningInPlace::characterController
-	CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A* ___characterController_6;
-	// UnityEngine.XR.InputDevice RunningInPlace::device
-	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___device_7;
-	// UnityEngine.GameObject RunningInPlace::locomotion
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___locomotion_8;
+	// UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider RunningInPlace::moveProvider
+	DynamicMoveProvider_t1743D232A797F4B68334ADA837902C8680933F5A* ___moveProvider_6;
 	// System.Single[] RunningInPlace::locomotions
-	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___locomotions_9;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___locomotions_7;
+	// UnityEngine.XR.InputDevice RunningInPlace::headDevice
+	InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD ___headDevice_8;
 };
 
 // Saber
