@@ -11,8 +11,8 @@ using System.Linq;
 
 public class RunningInPlace : MonoBehaviour
 {
-    public Text myText;
-    public Text secondText;
+    //public Text myText;
+    //public Text secondText;
 
     public XRNode inputSource = XRNode.Head; // Use the head as the input source
     public float baseSpeed = 5.0f; // Base speed of movement

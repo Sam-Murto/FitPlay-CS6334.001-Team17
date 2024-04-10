@@ -424,7 +424,7 @@ PrefabInstance:
       objectReference: {fileID: 435517736}
     - target: {fileID: 9121602412707317167, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
@@ -2768,10 +2768,10 @@ GameObject:
   - component: {fileID: 2042266248}
   - component: {fileID: 2042266250}
   - component: {fileID: 2042266249}
-  - component: {fileID: 2042266251}
   - component: {fileID: 2042266254}
   - component: {fileID: 2042266253}
   - component: {fileID: 2042266252}
+  - component: {fileID: 2042266255}
   m_Layer: 0
   m_Name: XR Interaction Manager
   m_TagString: Untagged
@@ -2848,23 +2848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f68d49a5aa78542b2350b04cdf66fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2042266251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042266245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69005779c503b694a9c65a3cdb137fec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myText: {fileID: 3169405274636799013}
-  secondText: {fileID: 3169405274636799012}
-  inputSource: 3
-  baseSpeed: 5
-  moveProvider: {fileID: 3169405274636799011}
 --- !u!114 &2042266252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2905,6 +2888,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 320002200}
   interactionManager: {fileID: 2042266245}
+--- !u!114 &2042266255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042266245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69005779c503b694a9c65a3cdb137fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputSource: 3
+  baseSpeed: 1
+  moveProvider: {fileID: 3169405274636799011}
 --- !u!1 &2124814454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3223,6 +3221,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: sound_coin
       value: 
@@ -3508,27 +3510,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3169405274636799012 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6522401414002764934, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-  m_PrefabInstance: {fileID: 3169405274636799008}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3169405274636799013 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7424293717532264902, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-  m_PrefabInstance: {fileID: 3169405274636799008}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
