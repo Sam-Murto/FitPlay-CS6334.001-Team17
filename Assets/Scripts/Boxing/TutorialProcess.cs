@@ -18,7 +18,7 @@ public class TutorialProcess : MonoBehaviour
     void Start()
     {
         tutorialCanvas.enabled=true;
-        LoadStory("Assets/Story Scripts/tutorial/tutorial.txt");
+        LoadStory(Application.streamingAssetsPath + "/Story Scripts/tutorial/tutorial.txt");
         ShowNextLine();
     }
     
