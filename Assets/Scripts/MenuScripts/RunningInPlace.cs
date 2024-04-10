@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using System.Linq;
+using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
 
 public class RunningInPlace : MonoBehaviour
 {
@@ -22,33 +23,50 @@ public class RunningInPlace : MonoBehaviour
 
     InputDevice headDevice;
 
-    //private GameObject dynamicMoveProvider;
-    
-    //public Text deviceAccelerationText;
-    //public Text deviceAngularAccelerationText
+    [SerializeField]
+    float l;
+    Vector3 dPrev;
 
     void OnEnable()
     {
         headDevice = InputDevices.GetDeviceAtXRNode(inputSource);
+        dPrev = l * Vector3.forward;
     }
     void Update()
     {
         Vector3 currentAcceleration = Input.acceleration;
         float currentMagnitude = currentAcceleration.magnitude;
 
+
+
+
+
         if (headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 deviceVelocity)
-            && headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out Vector3 deviceAngularVelocity)
+            && headDevice.TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion deviceRotation)
+            && headDevice.TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 devicePosition)
         )
         {
+            Vector3 eulerRotation = deviceRotation.eulerAngles;
+            deviceVelocity -= VelocityFromAngleChange(eulerRotation, devicePosition);
+
             AddValueToFront(Math.Abs(deviceVelocity.y));
 
+<<<<<<< Updated upstream
+=======
+            
+
+>>>>>>> Stashed changes
             // Check threshold for device velocity
             if (Math.Abs(deviceVelocity.y) > .1
-                && Math.Abs(deviceAngularVelocity.y) < .5
-                && Math.Abs(deviceAngularVelocity.x) < .5
-                && Math.Abs(deviceAngularVelocity.z) < .5
+            //    && Math.Abs(deviceAngularVelocity.y) < .5
+            //    && Math.Abs(deviceAngularVelocity.x) < .5
+            //    && Math.Abs(deviceAngularVelocity.z) < .5
             )
             {
+<<<<<<< Updated upstream
+=======
+                
+>>>>>>> Stashed changes
                 moveProvider.moveSpeed = baseSpeed;
             }
             else
@@ -85,4 +103,30 @@ public class RunningInPlace : MonoBehaviour
         // Insert the new value at the beginning
         locomotions[0] = newValue;
     }
+
+    //Assumes rotation refers to an object on sphere surface
+    private Vector3 DisplacementFromCenter(Vector3 rotation, Vector3 position)
+    {
+        float inclination = Vector3.Angle(Vector3.up, rotation);
+        float azimuth = rotation.y;
+
+        float x = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Cos(Mathf.Deg2Rad * azimuth);
+        float y = l * Mathf.Cos(Mathf.Deg2Rad * inclination);
+        float z = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Sin(Mathf.Deg2Rad * azimuth);
+
+
+        return new Vector3(x, y, z);
+    }
+
+    private Vector3 VelocityFromAngleChange(Vector3 rotation, Vector3 position)
+    {
+        Vector3 dCurrent = DisplacementFromCenter(rotation, position);
+        Vector3 deltaD = dCurrent - dPrev;
+        Vector3 velocity = deltaD * Time.deltaTime;
+        dPrev = dCurrent;
+
+        return velocity;
+    }
+    
+
 }
