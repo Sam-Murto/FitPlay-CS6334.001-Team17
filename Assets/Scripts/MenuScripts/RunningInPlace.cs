@@ -9,6 +9,7 @@ using System;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using System.Linq;
 using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
+using Unity.XR.CoreUtils;
 
 public class RunningInPlace : MonoBehaviour
 {
@@ -46,27 +47,18 @@ public class RunningInPlace : MonoBehaviour
             && headDevice.TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 devicePosition)
         )
         {
-            Vector3 eulerRotation = deviceRotation.eulerAngles;
-            deviceVelocity -= VelocityFromAngleChange(eulerRotation, devicePosition);
+            Vector3 velFromAngleChange = VelocityFromAngleChange(deviceRotation).Abs();
+
+            deviceVelocity = deviceVelocity.Abs() - velFromAngleChange;
 
             AddValueToFront(Math.Abs(deviceVelocity.y));
 
-<<<<<<< Updated upstream
-=======
-            
 
->>>>>>> Stashed changes
+
             // Check threshold for device velocity
             if (Math.Abs(deviceVelocity.y) > .1
-            //    && Math.Abs(deviceAngularVelocity.y) < .5
-            //    && Math.Abs(deviceAngularVelocity.x) < .5
-            //    && Math.Abs(deviceAngularVelocity.z) < .5
             )
             {
-<<<<<<< Updated upstream
-=======
-                
->>>>>>> Stashed changes
                 moveProvider.moveSpeed = baseSpeed;
             }
             else
@@ -105,22 +97,28 @@ public class RunningInPlace : MonoBehaviour
     }
 
     //Assumes rotation refers to an object on sphere surface
-    private Vector3 DisplacementFromCenter(Vector3 rotation, Vector3 position)
+    private Vector3 DisplacementFromCenter(Quaternion rotation)
     {
-        float inclination = Vector3.Angle(Vector3.up, rotation);
-        float azimuth = rotation.y;
+        Vector3 rotationVector = rotation * Vector3.forward;
+        Vector3 eulerRotation = rotation.eulerAngles;
+        float inclination = Vector3.Angle(Vector3.up, rotationVector);
+        float azimuth = eulerRotation.y - (int)(eulerRotation.y / (2 * Mathf.PI)) * 2 * Mathf.PI;
 
-        float x = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Cos(Mathf.Deg2Rad * azimuth);
+
+        myText.text = inclination.ToString();
+
+
+        float x = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Cos(azimuth);
         float y = l * Mathf.Cos(Mathf.Deg2Rad * inclination);
-        float z = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Sin(Mathf.Deg2Rad * azimuth);
+        float z = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Sin(azimuth);
 
 
         return new Vector3(x, y, z);
     }
 
-    private Vector3 VelocityFromAngleChange(Vector3 rotation, Vector3 position)
+    private Vector3 VelocityFromAngleChange(Quaternion rotation)
     {
-        Vector3 dCurrent = DisplacementFromCenter(rotation, position);
+        Vector3 dCurrent = DisplacementFromCenter(rotation);
         Vector3 deltaD = dCurrent - dPrev;
         Vector3 velocity = deltaD * Time.deltaTime;
         dPrev = dCurrent;
