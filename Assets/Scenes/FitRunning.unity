@@ -964,7 +964,7 @@ MonoBehaviour:
   inputSource: 3
   baseSpeed: 5
   moveProvider: {fileID: 1114040583}
-  l: 50
+  l: 0.3
 --- !u!114 &2042266252
 MonoBehaviour:
   m_ObjectHideFlags: 0
