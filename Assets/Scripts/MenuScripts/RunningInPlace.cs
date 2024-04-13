@@ -21,7 +21,7 @@ public class RunningInPlace : MonoBehaviour
 
     public DynamicMoveProvider moveProvider;
     private float[] locomotions = new float[0];
-
+    public GameObject rig;
     InputDevice headDevice;
 
     [SerializeField]
@@ -60,12 +60,14 @@ public class RunningInPlace : MonoBehaviour
             )
             {
                 moveProvider.moveSpeed = (1 + deviceVelocity.y) * baseSpeed;
-                Vector3 forward = Camera.main.transform.forward;
+                Vector3 forward = rig.transform.forward;
                 forward.y = 0;
-                forward.Normalize();
-                transform.psoition += forward * moveProvider.movespeed * Time.deltaTime;
+                rig.transform.position += forward * moveProvider.moveSpeed * Time.deltaTime;
+                
+                //forward.Normalize();
+                //transform.position += forward * moveProvider.moveSpeed * Time.deltaTime;
             }
-            elseb 
+            else 
             {
                 moveProvider.moveSpeed = 0;
             }
@@ -109,7 +111,7 @@ public class RunningInPlace : MonoBehaviour
         float azimuth = eulerRotation.y - (int)(eulerRotation.y / (2 * Mathf.PI)) * 2 * Mathf.PI;
 
 
-        myText.text = inclination.ToString();
+        //myText.text = inclination.ToString();
 
 
         float x = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Cos(azimuth);
