@@ -11,73 +11,61 @@ using System.Linq;
 
 public class RunningInPlace : MonoBehaviour
 {
-    public Text myText;
-    public Text secondText;
+    //public Text myText;
+    //public Text secondText;
 
-     public XRNode inputSource = XRNode.Head; // Use the head as the input source
-    public float baseSpeed = 1.0f; // Base speed of movement
+    public XRNode inputSource = XRNode.Head; // Use the head as the input source
+    public float baseSpeed = 5.0f; // Base speed of movement
 
-    private CharacterController characterController;
-    private InputDevice device;
-
-    public GameObject locomotion;
+    public DynamicMoveProvider moveProvider;
     private float[] locomotions = new float[0];
 
+    InputDevice headDevice;
 
     //private GameObject dynamicMoveProvider;
     
     //public Text deviceAccelerationText;
-   // public Text deviceAngularAccelerationText
+    //public Text deviceAngularAccelerationText
 
-    void Start()
+    void OnEnable()
     {
-        characterController = GetComponent<CharacterController>();
-        device = InputDevices.GetDeviceAtXRNode(inputSource);
-        if (characterController == null)
-        {
-            Debug.LogError("CharacterController is not attached to the GameObject.");
-        }
+        headDevice = InputDevices.GetDeviceAtXRNode(inputSource);
     }
     void Update()
     {
-       // Type type = locomotion.GetType();
-       // Debug.Log(type);
-       //DynamicMoveProvider dynamicMoveProvider = locomotion.GetComponent<DynamicMoveProvider>();
         Vector3 currentAcceleration = Input.acceleration;
-        float currentMagnitude = currentAcceleration.magnitude; 
-        InputDevice headDevice = InputDevices.GetDeviceAtXRNode(XRNode.Head);
+        float currentMagnitude = currentAcceleration.magnitude;
 
-         if (headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 deviceVelocity)
-         && headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out Vector3 deviceAngularVelocity)
-
-         )
-            {
-               // myText.text = $"{deviceVelocity.y}";
-               // secondText.text = $"{deviceAngularVelocity.y}";
-
-
-            }
-        
-           if (device.TryGetFeatureValue(CommonUsages.deviceVelocity, out deviceVelocity)
-           && headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out Vector3 devicesAngularVelocity))
+        if (headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 deviceVelocity)
+            && headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out Vector3 deviceAngularVelocity)
+        )
         {
             AddValueToFront(Math.Abs(deviceVelocity.y));
 
-            if(Math.Abs(deviceVelocity.y) > .1 && 
-            Math.Abs(devicesAngularVelocity.y)< .5 &&  
-            Math.Abs(devicesAngularVelocity.x)< .5 && 
-            Math.Abs(devicesAngularVelocity.z) < .5)
+            Debug.Log("Successfully retrieved velocity data");
+
+            // Check threshold for device velocity
+            if (Math.Abs(deviceVelocity.y) > .1
+                && Math.Abs(deviceAngularVelocity.y) < .5
+                && Math.Abs(deviceAngularVelocity.x) < .5
+                && Math.Abs(deviceAngularVelocity.z) < .5
+            )
             {
-               locomotion.GetComponent<DynamicMoveProvider>().moveSpeed = 5;
+                Debug.Log("Movement adjusted");
+                moveProvider.moveSpeed = baseSpeed;
             }
             else
             {
-                locomotion.GetComponent<DynamicMoveProvider>().moveSpeed = 0;
+                moveProvider.moveSpeed = 0;
             }
-            
-        }
 
-        
+        }
+        // This is what was causing our bug. The game was unable to retrieve the device velocity. I solved this by trying to retrieve the device again if the movement information could not be retrieved.
+        else
+        {
+            Debug.Log("Could not retrieve device velocity and device angular velocity: Re-retrieving head device " + headDevice.name);
+            headDevice = InputDevices.GetDeviceAtXRNode(inputSource);
+        }
     
     }
     public void AddValueToFront(float newValue)
