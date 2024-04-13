@@ -8,64 +8,53 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using System.Linq;
-using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
-using Unity.XR.CoreUtils;
 
 public class RunningInPlace : MonoBehaviour
 {
-    public Text myText;
-    public Text secondText;
+    //public Text myText;
+    //public Text secondText;
 
     public XRNode inputSource = XRNode.Head; // Use the head as the input source
-    public float baseSpeed = 2.0f; // Base speed of movement
+    public float baseSpeed = 5.0f; // Base speed of movement
 
     public DynamicMoveProvider moveProvider;
     private float[] locomotions = new float[0];
 
     InputDevice headDevice;
 
-    [SerializeField]
-    float l;
-    Vector3 dPrev;
+    //private GameObject dynamicMoveProvider;
+    
+    //public Text deviceAccelerationText;
+    //public Text deviceAngularAccelerationText
 
     void OnEnable()
     {
         headDevice = InputDevices.GetDeviceAtXRNode(inputSource);
-        dPrev = l * Vector3.forward;
     }
     void Update()
     {
         Vector3 currentAcceleration = Input.acceleration;
         float currentMagnitude = currentAcceleration.magnitude;
 
-
-
-
-
         if (headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 deviceVelocity)
-            && headDevice.TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion deviceRotation)
-            && headDevice.TryGetFeatureValue(CommonUsages.devicePosition, out Vector3 devicePosition)
+            && headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out Vector3 deviceAngularVelocity)
         )
         {
-            Vector3 velFromAngleChange = VelocityFromAngleChange(deviceRotation).Abs();
-
-            deviceVelocity = deviceVelocity.Abs() - velFromAngleChange;
-
             AddValueToFront(Math.Abs(deviceVelocity.y));
 
-
+            Debug.Log("Successfully retrieved velocity data");
 
             // Check threshold for device velocity
             if (Math.Abs(deviceVelocity.y) > .1
+                && Math.Abs(deviceAngularVelocity.y) < .5
+                && Math.Abs(deviceAngularVelocity.x) < .5
+                && Math.Abs(deviceAngularVelocity.z) < .5
             )
             {
-                moveProvider.moveSpeed = (1 + deviceVelocity.y) * baseSpeed;
-                Vector3 forward = Camera.main.transform.forward;
-                forward.y = 0;
-                forward.Normalize();
-                transform.psoition += forward * moveProvider.movespeed * Time.deltaTime;
+                Debug.Log("Movement adjusted");
+                moveProvider.moveSpeed = baseSpeed;
             }
-            elseb 
+            else
             {
                 moveProvider.moveSpeed = 0;
             }
@@ -99,36 +88,4 @@ public class RunningInPlace : MonoBehaviour
         // Insert the new value at the beginning
         locomotions[0] = newValue;
     }
-
-    //Assumes rotation refers to an object on sphere surface
-    private Vector3 DisplacementFromCenter(Quaternion rotation)
-    {
-        Vector3 rotationVector = rotation * Vector3.forward;
-        Vector3 eulerRotation = rotation.eulerAngles;
-        float inclination = Vector3.Angle(Vector3.up, rotationVector);
-        float azimuth = eulerRotation.y - (int)(eulerRotation.y / (2 * Mathf.PI)) * 2 * Mathf.PI;
-
-
-        myText.text = inclination.ToString();
-
-
-        float x = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Cos(azimuth);
-        float y = l * Mathf.Cos(Mathf.Deg2Rad * inclination);
-        float z = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Sin(azimuth);
-
-
-        return new Vector3(x, y, z);
-    }
-
-    private Vector3 VelocityFromAngleChange(Quaternion rotation)
-    {
-        Vector3 dCurrent = DisplacementFromCenter(rotation);
-        Vector3 deltaD = dCurrent - dPrev;
-        Vector3 velocity = deltaD * Time.deltaTime;
-        dPrev = dCurrent;
-
-        return velocity;
-    }
-    
-
 }

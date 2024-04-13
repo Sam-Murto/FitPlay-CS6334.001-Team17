@@ -422,17 +422,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0456f0313c9f37341ad0dce07d4c6736, type: 3}
---- !u!114 &680011906 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7424293717532264902, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-  m_PrefabInstance: {fileID: 3169405274636799008}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &779174637
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,12 +948,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69005779c503b694a9c65a3cdb137fec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myText: {fileID: 680011906}
-  secondText: {fileID: 0}
   inputSource: 3
   baseSpeed: 5
   moveProvider: {fileID: 1114040583}
-  l: 50
 --- !u!114 &2042266252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,18 +1128,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2042266249}
-    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_MoveSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_LeftHandMoveInput.m_InputSourceMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_RightHandMoveInput.m_InputSourceMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: finish_stage
       value: 
@@ -1162,10 +1136,6 @@ PrefabInstance:
       propertyPath: interactionManager
       value: 
       objectReference: {fileID: 2042266245}
-    - target: {fileID: 3490734295925203508, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4336011911301305036, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_Name
       value: FitRunning XR Rig
@@ -1278,10 +1248,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 2042266250}
-    - target: {fileID: 8864824021519230678, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 2042266250}
     - target: {fileID: 8966418890724821236, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1357,10 +1323,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9121602411133827193, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 190
-      objectReference: {fileID: 0}
     - target: {fileID: 9121602411133827194, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1461,5 +1423,9 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 576686006}
+    - target: {fileID: 9121602412707317167, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641ccfb4f37a9ca43ad12cd34d6e7beb, type: 3}
