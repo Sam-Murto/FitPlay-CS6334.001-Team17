@@ -8,13 +8,11 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using System.Linq;
-using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
-using Unity.XR.CoreUtils;
 
 public class RunningInPlace : MonoBehaviour
 {
-    public Text myText;
-    public Text secondText;
+    //public Text myText;
+    //public Text secondText;
 
     public XRNode inputSource = XRNode.Head; // Use the head as the input source
     public float baseSpeed = 5.0f; // Base speed of movement
@@ -40,10 +38,6 @@ public class RunningInPlace : MonoBehaviour
         Vector3 currentAcceleration = Input.acceleration;
         float currentMagnitude = currentAcceleration.magnitude;
 
-
-
-
-
         if (headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 deviceVelocity)
             && headDevice.TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion deviceRotation)
         )
@@ -61,6 +55,7 @@ public class RunningInPlace : MonoBehaviour
             // Check threshold for average velocity
             if (averageVelocity > .1)
             {
+                Debug.Log("Movement adjusted");
                 moveProvider.moveSpeed = baseSpeed;
             }
             else
