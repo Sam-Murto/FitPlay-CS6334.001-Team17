@@ -1146,6 +1146,14 @@ PrefabInstance:
       propertyPath: m_MoveSpeed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+      propertyPath: m_LeftHandMoveInput.m_InputSourceMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+      propertyPath: m_RightHandMoveInput.m_InputSourceMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: finish_stage
       value: 

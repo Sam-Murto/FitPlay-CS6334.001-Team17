@@ -17,7 +17,7 @@ public class RunningInPlace : MonoBehaviour
     public Text secondText;
 
     public XRNode inputSource = XRNode.Head; // Use the head as the input source
-    public float baseSpeed = 5.0f; // Base speed of movement
+    public float baseSpeed = 2.0f; // Base speed of movement
 
     public DynamicMoveProvider moveProvider;
     private float[] locomotions = new float[0];
@@ -59,9 +59,13 @@ public class RunningInPlace : MonoBehaviour
             if (Math.Abs(deviceVelocity.y) > .1
             )
             {
-                moveProvider.moveSpeed = baseSpeed;
+                moveProvider.moveSpeed = (1 + deviceVelocity.y) * baseSpeed;
+                Vector3 forward = Camera.main.transform.forward;
+                forward.y = 0;
+                forward.Normalize();
+                transform.psoition += forward * moveProvider.movespeed * Time.deltaTime;
             }
-            else
+            elseb 
             {
                 moveProvider.moveSpeed = 0;
             }
