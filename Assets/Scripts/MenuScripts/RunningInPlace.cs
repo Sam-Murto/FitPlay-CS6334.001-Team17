@@ -8,10 +8,11 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using System.Linq;
+using Unity.XR.CoreUtils;
 
 public class RunningInPlace : MonoBehaviour
 {
-    //public Text myText;
+    public Text myText;
     //public Text secondText;
 
     public XRNode inputSource = XRNode.Head; // Use the head as the input source
