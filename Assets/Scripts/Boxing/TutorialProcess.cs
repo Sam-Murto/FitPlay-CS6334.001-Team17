@@ -12,13 +12,14 @@ public class TutorialProcess : MonoBehaviour
 {
     public Canvas tutorialCanvas;
     public TextMeshProUGUI tutorialText;
+    public TextAsset tutorialTextAsset;
     private List<string> lines = new List<string>();
     private int currentLine = 0;
     // Start is called before the first frame update
     void Start()
     {
         tutorialCanvas.enabled=true;
-        LoadStory("Assets/Story Scripts/tutorial/tutorial.txt");
+        LoadStory(Application.streamingAssetsPath + "/StoryScripts/tutorial/tutorial.txt");
         ShowNextLine();
     }
     
@@ -33,7 +34,10 @@ public class TutorialProcess : MonoBehaviour
     void LoadStory(string filePath)
     {
         // 读取文件的所有行到列表中
-        lines = new List<string>(File.ReadAllLines(filePath));
+        var contents = tutorialTextAsset.text;
+        lines.AddRange(contents.Split("\n"[0]));
+       
+
     }
     void ShowNextLine()
     {
