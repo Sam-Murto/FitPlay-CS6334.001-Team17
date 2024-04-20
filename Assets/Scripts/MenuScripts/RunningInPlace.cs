@@ -33,6 +33,10 @@ public class RunningInPlace : MonoBehaviour
 
     Vector3 dPrev;
 
+    float currentSpeed;
+    float targetSpeed;
+    float currentAcceleration;
+
     void OnEnable()
     {
         headDevice = InputDevices.GetDeviceAtXRNode(inputSource);
@@ -41,9 +45,6 @@ public class RunningInPlace : MonoBehaviour
     }
     void Update()
     {
-        Vector3 currentAcceleration = Input.acceleration;
-        float currentMagnitude = currentAcceleration.magnitude;
-
         if (headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 deviceVelocity)
             && headDevice.TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion deviceRotation)
         )
@@ -58,16 +59,14 @@ public class RunningInPlace : MonoBehaviour
 
             myText.text = "" + averageVelocity;
 
-            // Check threshold for average velocity
-            if (averageVelocity > runningThreshold)
-            {
-                Debug.Log("Movement adjusted");
-                moveProvider.moveSpeed = (baseSpeed* (1+averageVelocity));
-            }
-            else
-            {
-                moveProvider.moveSpeed = 0;
-            }
+
+            targetSpeed = baseSpeed * (1 + averageVelocity);
+            currentAcceleration = averageVelocity - runningThreshold;
+            currentSpeed += currentAcceleration;
+            currentSpeed = Mathf.Clamp(currentSpeed, 0f, targetSpeed);
+
+            moveProvider.moveSpeed = currentSpeed;
+
 
         }
         // This is what was causing our bug. The game was unable to retrieve the device velocity. I solved this by trying to retrieve the device again if the movement information could not be retrieved.
