@@ -9,6 +9,7 @@ using System;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using System.Linq;
 using Unity.XR.CoreUtils;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement;
 
 public class RunningInPlace : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class RunningInPlace : MonoBehaviour
     public XRNode inputSource = XRNode.Head; // Use the head as the input source
     public float baseSpeed = 2.0f; // Base speed of movement
 
-    public AutoMoveProvider moveProvider;
+    public FitRunningMoveProvider moveProvider;
     private List<float> velocities;
 
     InputDevice headDevice;

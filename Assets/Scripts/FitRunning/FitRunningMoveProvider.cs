@@ -6,17 +6,17 @@ namespace UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement
 {
     /// <summary>
     /// Locomotion provider that allows the user to smoothly move their rig continuously over time
-    /// Moves without 
+    /// based on read input values, such as from the controller thumbstick.
     /// </summary>
     /// <seealso cref="LocomotionProvider"/>
     /// <seealso cref="ContinuousTurnProvider"/>
     //[AddComponentMenu("XR/Locomotion/Continuous Move Provider", 11)]
-    public class FitSaberLocomotionProvider : LocomotionProvider
+    //[HelpURL(XRHelpURLConstants.k_ContinuousMoveProvider)]
+    public class FitRunningMoveProvider : LocomotionProvider
     {
         [SerializeField]
         [Tooltip("The speed, in units per second, to move forward.")]
-        float m_MoveSpeed = 1f;
-
+        float m_MoveSpeed = 0f;
         /// <summary>
         /// The speed, in units per second, to move forward.
         /// </summary>
@@ -157,10 +157,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement
         /// <inheritdoc />
         Vector2 ReadInput()
         {
-            var leftHandValue = m_LeftHandMoveInput.ReadValue();
-            var rightHandValue = m_RightHandMoveInput.ReadValue();
-
-            return leftHandValue + rightHandValue;
+            return Vector2.up;
         }
 
         /// <summary>

@@ -14,6 +14,13 @@ public class AutoMoveProvider : ContinuousMoveProvider
     public GameObject rig;
     private CharacterController characterController;
 
+    [SerializeField]
+    Transform leftHand;
+    [SerializeField]
+    Transform rightHand;
+    [SerializeField]
+    Transform head;
+
     void Start()
     {
         characterController = rig.GetComponent<CharacterController>();
@@ -23,9 +30,12 @@ public class AutoMoveProvider : ContinuousMoveProvider
         base.Update();
         if(enableAutoMove)
         {
-            Vector3 forwardDirection = Camera.main.transform.forward;
-            forwardDirection.y = 0;
-            forwardDirection.Normalize();
+            Vector3 headDir = head.forward;
+            Vector3 leftHandDir = (leftHand.position - head.position).normalized;
+            Vector3 rightHandDir = (rightHand.position - head.position).normalized;
+
+            Vector3 forwardDirection = head.forward;
+
             characterController.Move(forwardDirection * moveSpeed * Time.deltaTime);
            // Vector3 forwardMovmeent = Vector3.forward * constantSpeed * Time.deltaTime;
             //forwardDirection.Normalize();
