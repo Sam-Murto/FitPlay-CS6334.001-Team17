@@ -1051,7 +1051,9 @@ MonoBehaviour:
   inputSource: 3
   baseSpeed: 5
   moveProvider: {fileID: 1114040591}
+  runningThreshold: 0.035
   l: 0.3
+  framesAveragedForSpeed: 25
 --- !u!114 &2042266252
 MonoBehaviour:
   m_ObjectHideFlags: 0

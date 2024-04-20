@@ -24,6 +24,8 @@ public class RunningInPlace : MonoBehaviour
     InputDevice headDevice;
 
     [SerializeField]
+    float runningThreshold = 0.6f;
+    [SerializeField]
     float l;
 
     [SerializeField]
@@ -57,7 +59,7 @@ public class RunningInPlace : MonoBehaviour
             myText.text = "" + averageVelocity;
 
             // Check threshold for average velocity
-            if (averageVelocity > .1)
+            if (averageVelocity > runningThreshold)
             {
                 Debug.Log("Movement adjusted");
                 moveProvider.moveSpeed = (baseSpeed* (1+averageVelocity));
