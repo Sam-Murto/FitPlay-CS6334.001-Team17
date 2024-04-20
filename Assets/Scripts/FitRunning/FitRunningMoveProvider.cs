@@ -17,6 +17,14 @@ namespace UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement
         [SerializeField]
         [Tooltip("The speed, in units per second, to move forward.")]
         float m_MoveSpeed = 0f;
+
+        [SerializeField]
+        Transform head;
+        [SerializeField]
+        Transform leftHand;
+        [SerializeField]
+        Transform rightHand;
+
         /// <summary>
         /// The speed, in units per second, to move forward.
         /// </summary>
@@ -157,7 +165,20 @@ namespace UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement
         /// <inheritdoc />
         Vector2 ReadInput()
         {
-            return Vector2.up;
+            Vector3 leftDir = Vector3.ProjectOnPlane(leftHand.position - head.position, Vector3.up).normalized;
+            Vector3 rightDir = Vector3.ProjectOnPlane(rightHand.position - head.position, Vector3.up).normalized;
+            Vector3 forwardDir = Vector3.ProjectOnPlane(head.forward, Vector3.up).normalized;
+            Vector3 centerHands = Vector3.Slerp(leftDir, rightDir, 0.5f);
+            float angle = Vector3.Angle(forwardDir, centerHands);
+
+            Quaternion rotation = Quaternion.Euler(0, angle, 0);
+
+            Vector3 moveDir = (rotation * Vector3.forward).normalized;
+
+            return new Vector2(moveDir.x, moveDir.z);
+
+            //return Vector2.up;
+
         }
 
         /// <summary>
