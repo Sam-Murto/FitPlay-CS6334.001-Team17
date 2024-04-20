@@ -7,6 +7,7 @@ public class nonTutorialGoSequence : MonoBehaviour
 
     private bool isStart = false;
     public GameObject interactionManager;
+    public TextMeshProUGUI goSequenceText;
     void Update()
     {
         if(!isStart)
@@ -17,7 +18,6 @@ public class nonTutorialGoSequence : MonoBehaviour
         }
         
     }
-    public TextMeshProUGUI goSequenceText;
     public void beginGoSequence()
     {
         StartCoroutine(PerformActionsWithDelays());

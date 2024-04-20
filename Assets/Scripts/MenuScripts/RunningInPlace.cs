@@ -8,96 +8,106 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using System.Linq;
+using Unity.XR.CoreUtils;
 
 public class RunningInPlace : MonoBehaviour
 {
     public Text myText;
-    public Text secondText;
+    //public Text secondText;
 
-     public XRNode inputSource = XRNode.Head; // Use the head as the input source
-    public float baseSpeed = 1.0f; // Base speed of movement
+    public XRNode inputSource = XRNode.Head; // Use the head as the input source
+    public float baseSpeed = 5.0f; // Base speed of movement
 
-    private CharacterController characterController;
-    private InputDevice device;
+    public DynamicMoveProvider moveProvider;
+    private List<float> velocities;
 
-    public GameObject locomotion;
-    private float[] locomotions = new float[0];
+    InputDevice headDevice;
 
+    [SerializeField]
+    float l;
 
-    //private GameObject dynamicMoveProvider;
-    
-    //public Text deviceAccelerationText;
-   // public Text deviceAngularAccelerationText
+    Vector3 dPrev;
 
-    void Start()
+    void OnEnable()
     {
-        characterController = GetComponent<CharacterController>();
-        device = InputDevices.GetDeviceAtXRNode(inputSource);
-        if (characterController == null)
-        {
-            Debug.LogError("CharacterController is not attached to the GameObject.");
-        }
+        headDevice = InputDevices.GetDeviceAtXRNode(inputSource);
+        dPrev = l * Vector3.forward;
+        velocities = new List<float>();
     }
     void Update()
     {
-       // Type type = locomotion.GetType();
-       // Debug.Log(type);
-       //DynamicMoveProvider dynamicMoveProvider = locomotion.GetComponent<DynamicMoveProvider>();
         Vector3 currentAcceleration = Input.acceleration;
-        float currentMagnitude = currentAcceleration.magnitude; 
-        InputDevice headDevice = InputDevices.GetDeviceAtXRNode(XRNode.Head);
+        float currentMagnitude = currentAcceleration.magnitude;
 
-         if (headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 deviceVelocity)
-         && headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out Vector3 deviceAngularVelocity)
-
-         )
-            {
-               // myText.text = $"{deviceVelocity.y}";
-               // secondText.text = $"{deviceAngularVelocity.y}";
-
-
-            }
-        
-           if (device.TryGetFeatureValue(CommonUsages.deviceVelocity, out deviceVelocity)
-           && headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out Vector3 devicesAngularVelocity))
+        if (headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out Vector3 deviceVelocity)
+            && headDevice.TryGetFeatureValue(CommonUsages.deviceRotation, out Quaternion deviceRotation)
+        )
         {
-            AddValueToFront(Math.Abs(deviceVelocity.y));
+            Vector3 velFromAngleChange = VelocityFromAngleChange(deviceRotation).Abs();
 
-            if(Math.Abs(deviceVelocity.y) > .1 && 
-            Math.Abs(devicesAngularVelocity.y)< .5 &&  
-            Math.Abs(devicesAngularVelocity.x)< .5 && 
-            Math.Abs(devicesAngularVelocity.z) < .5)
+            deviceVelocity = deviceVelocity.Abs() - velFromAngleChange;
+
+            AddValueToFront(deviceVelocity.y);
+
+            float averageVelocity = GetAverageVelocity();
+
+            myText.text = "" + averageVelocity;
+
+            // Check threshold for average velocity
+            if (averageVelocity > .1)
             {
-               locomotion.GetComponent<DynamicMoveProvider>().moveSpeed = 5;
+                Debug.Log("Movement adjusted");
+                moveProvider.moveSpeed = baseSpeed;
             }
             else
             {
-                locomotion.GetComponent<DynamicMoveProvider>().moveSpeed = 0;
+                moveProvider.moveSpeed = 0;
             }
-            
-        }
 
-        
+        }
+        // This is what was causing our bug. The game was unable to retrieve the device velocity. I solved this by trying to retrieve the device again if the movement information could not be retrieved.
+        else
+        {
+            Debug.Log("Could not retrieve head device info: Re-retrieving head device " + headDevice.name);
+            headDevice = InputDevices.GetDeviceAtXRNode(inputSource);
+        }
     
     }
     public void AddValueToFront(float newValue)
     {
-        // If the array has 10 elements, prepare to add by shifting
-        if (locomotions.Length == 10)
+        velocities.Insert(0, newValue);
+        if(velocities.Count > 10)
         {
-            // Shift elements to the right, starting from the second to last element
-            for (int i = locomotions.Length - 2; i >= 0; i--)
-            {
-                locomotions[i + 1] = locomotions[i];
-            }
+            velocities.RemoveAt(10);
         }
-        else
-        {
-            // If array length is less than 10, simply resize and prepare for addition
-            System.Array.Resize(ref locomotions, locomotions.Length + 1);
-        }
-
-        // Insert the new value at the beginning
-        locomotions[0] = newValue;
     }
+
+    private float GetAverageVelocity() => velocities.Sum() / velocities.Count();
+
+    //Assumes rotation refers to an object on sphere surface
+    private Vector3 DisplacementFromCenter(Quaternion rotation)
+    {
+        Vector3 rotationVector = rotation * Vector3.forward;
+        Vector3 eulerRotation = rotation.eulerAngles;
+        float inclination = Vector3.Angle(Vector3.up, rotationVector);
+        float azimuth = eulerRotation.y - (int)(eulerRotation.y / (2 * Mathf.PI)) * 2 * Mathf.PI;
+
+        float x = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Cos(azimuth);
+        float y = l * Mathf.Cos(Mathf.Deg2Rad * inclination);
+        float z = l * Mathf.Sin(Mathf.Deg2Rad * inclination) * Mathf.Sin(azimuth);
+
+        return new Vector3(x, y, z);
+    }
+
+    private Vector3 VelocityFromAngleChange(Quaternion rotation)
+    {
+        Vector3 dCurrent = DisplacementFromCenter(rotation);
+        Vector3 deltaD = dCurrent - dPrev;
+        Vector3 velocity = deltaD / Time.unscaledDeltaTime;
+        dPrev = dCurrent;
+
+        return velocity;
+    }
+    
+
 }
