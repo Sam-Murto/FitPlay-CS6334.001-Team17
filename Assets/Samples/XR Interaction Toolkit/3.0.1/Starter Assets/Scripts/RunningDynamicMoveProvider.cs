@@ -110,10 +110,20 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
             forwardSource = m_CombinedTransform;
         }
-
+        //void Start()
+        //{
+        //    locomotionSystem.gravityApplicationMode = LocomotionSystem.GravityApplicationMode.Immediately;
+        //    //SetGravityApplicationMode(LocomotionSystem.GravityApplicationMode.Immediately);
+        //}
+        //void Update()
+        //{
+        //    Vector2 simulatedInput = new Vector2(0.0f, 1.0f);
+        //    Vector3 moveVector = ComputeDesiredMove(simulatedInput);
+        //}
         /// <inheritdoc />
         protected override Vector3 ComputeDesiredMove(Vector2 input)
         {
+            Debug.Log("inside");
             // Don't need to do anything if the total input is zero.
             // This is the same check as the base method.
             //if (input == Vector2.zero)
@@ -132,59 +142,62 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             }
 
             // Get the forward source for the left hand input
-            switch (m_LeftHandMovementDirection)
-            {
-                case MovementDirection.HeadRelative:
-                    if (m_HeadTransform != null)
-                        m_LeftMovementPose = m_HeadTransform.GetWorldPose();
+           // if (m_HeadTransform != null)
+                m_LeftMovementPose = m_HeadTransform.GetWorldPose();
+            //switch (m_LeftHandMovementDirection)
+            //{
+            //    case MovementDirection.HeadRelative:
+            //        if (m_HeadTransform != null)
+            //            m_LeftMovementPose = m_HeadTransform.GetWorldPose();
 
-                    break;
+            //        break;
 
-                case MovementDirection.HandRelative:
-                    if (m_LeftControllerTransform != null)
-                        m_LeftMovementPose = m_LeftControllerTransform.GetWorldPose();
+            //    case MovementDirection.HandRelative:
+            //        if (m_LeftControllerTransform != null)
+            //            m_LeftMovementPose = m_LeftControllerTransform.GetWorldPose();
 
-                    break;
+            //        break;
 
-                default:
-                    Assert.IsTrue(false, $"Unhandled {nameof(MovementDirection)}={m_LeftHandMovementDirection}");
-                    break;
-            }
+            //    default:
+            //        Assert.IsTrue(false, $"Unhandled {nameof(MovementDirection)}={m_LeftHandMovementDirection}");
+            //        break;
+            //}
 
             // Get the forward source for the right hand input
-            switch (m_RightHandMovementDirection)
-            {
-                case MovementDirection.HeadRelative:
-                    if (m_HeadTransform != null)
-                        m_RightMovementPose = m_HeadTransform.GetWorldPose();
+            //switch (m_RightHandMovementDirection)
+            //{
+            //    case MovementDirection.HeadRelative:
+            //        if (m_HeadTransform != null)
+            //            m_RightMovementPose = m_HeadTransform.GetWorldPose();
 
-                    break;
+            //        break;
 
-                case MovementDirection.HandRelative:
-                    if (m_RightControllerTransform != null)
-                        m_RightMovementPose = m_RightControllerTransform.GetWorldPose();
+            //    case MovementDirection.HandRelative:
+            //        if (m_RightControllerTransform != null)
+            //            m_RightMovementPose = m_RightControllerTransform.GetWorldPose();
 
-                    break;
+            //        break;
 
-                default:
-                    Assert.IsTrue(false, $"Unhandled {nameof(MovementDirection)}={m_RightHandMovementDirection}");
-                    break;
-            }
+            //    default:
+            //        Assert.IsTrue(false, $"Unhandled {nameof(MovementDirection)}={m_RightHandMovementDirection}");
+            //        break;
+            //}S
 
             // Combine the two poses into the forward source based on the magnitude of input
             var leftHandValue = leftHandMoveInput.ReadValue();
             var rightHandValue = rightHandMoveInput.ReadValue();
-
+            //Debug.Log("left hand value" );
+            //Debug.Log("right hand value");
             var totalSqrMagnitude = leftHandValue.sqrMagnitude + rightHandValue.sqrMagnitude;
             var leftHandBlend = 0.5f;
-            if (totalSqrMagnitude > Mathf.Epsilon)
+            //if (totalSqrMagnitude > Mathf.Epsilon)
                 leftHandBlend = leftHandValue.sqrMagnitude / totalSqrMagnitude;
 
             var combinedPosition = Vector3.Lerp(m_RightMovementPose.position, m_LeftMovementPose.position, leftHandBlend);
             var combinedRotation = Quaternion.Slerp(m_RightMovementPose.rotation, m_LeftMovementPose.rotation, leftHandBlend);
             m_CombinedTransform.SetPositionAndRotation(combinedPosition, combinedRotation);
 
-            return base.ComputeDesiredMove(input);
+            return base.ComputeDesiredMove(new Vector2(0.0f, 1.0f));
         }
     }
 }

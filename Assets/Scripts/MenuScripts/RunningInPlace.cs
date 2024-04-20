@@ -16,9 +16,9 @@ public class RunningInPlace : MonoBehaviour
     //public Text secondText;
 
     public XRNode inputSource = XRNode.Head; // Use the head as the input source
-    public float baseSpeed = 5.0f; // Base speed of movement
+    public float baseSpeed = 2.0f; // Base speed of movement
 
-    public DynamicMoveProvider moveProvider;
+    public AutoMoveProvider moveProvider;
     private List<float> velocities;
 
     InputDevice headDevice;
@@ -57,7 +57,7 @@ public class RunningInPlace : MonoBehaviour
             if (averageVelocity > .1)
             {
                 Debug.Log("Movement adjusted");
-                moveProvider.moveSpeed = baseSpeed;
+                moveProvider.moveSpeed = (baseSpeed* (1+averageVelocity));
             }
             else
             {
