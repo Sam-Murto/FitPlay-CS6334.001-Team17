@@ -31,6 +31,8 @@ public class RunningInPlace : MonoBehaviour
     [SerializeField]
     int framesAveragedForSpeed = 10;
 
+    [SerializeField]
+    float accelerationCoefficient = 2;
     Vector3 dPrev;
 
     float currentSpeed;
@@ -61,7 +63,7 @@ public class RunningInPlace : MonoBehaviour
 
 
             targetSpeed = baseSpeed * (1 + averageVelocity);
-            currentAcceleration = averageVelocity - runningThreshold;
+            currentAcceleration = (averageVelocity - runningThreshold) * accelerationCoefficient;
             currentSpeed += currentAcceleration;
             currentSpeed = Mathf.Clamp(currentSpeed, 0f, targetSpeed);
 
