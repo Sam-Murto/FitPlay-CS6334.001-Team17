@@ -26,6 +26,9 @@ public class RunningInPlace : MonoBehaviour
     [SerializeField]
     float l;
 
+    [SerializeField]
+    int framesAveragedForSpeed = 10;
+
     Vector3 dPrev;
 
     void OnEnable()
@@ -76,9 +79,9 @@ public class RunningInPlace : MonoBehaviour
     public void AddValueToFront(float newValue)
     {
         velocities.Insert(0, newValue);
-        if(velocities.Count > 10)
+        if(velocities.Count > framesAveragedForSpeed)
         {
-            velocities.RemoveAt(10);
+            velocities.RemoveAt(framesAveragedForSpeed);
         }
     }
 
