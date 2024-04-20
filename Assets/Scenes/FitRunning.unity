@@ -665,6 +665,9 @@ MonoBehaviour:
   m_Mediator: {fileID: 0}
   m_TransformationPriority: 0
   m_MoveSpeed: 0
+  head: {fileID: 576686009}
+  leftHand: {fileID: 352849223}
+  rightHand: {fileID: 1244594886}
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
