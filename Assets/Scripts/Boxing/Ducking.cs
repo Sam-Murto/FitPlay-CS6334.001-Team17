@@ -7,10 +7,12 @@ public class Ducking : MonoBehaviour
     public Transform player;
     public Transform target;
     public float duckingDistance=0;
+    public PlayerHealth playerHealth;
     public void LeftDucking()
     {
         if (target != null && player!=null)
         {
+            playerHealth.Invincible(0.5f);
             player.LookAt(target);
             Vector3 leftDirection = -player.right;
             player.position += leftDirection * duckingDistance;
@@ -21,6 +23,7 @@ public class Ducking : MonoBehaviour
     {
         if (target != null && player != null)
         {
+            playerHealth.Invincible(0.5f);
             player.LookAt(target);
             Vector3 rightDirection = player.right;
             player.position += rightDirection * duckingDistance;

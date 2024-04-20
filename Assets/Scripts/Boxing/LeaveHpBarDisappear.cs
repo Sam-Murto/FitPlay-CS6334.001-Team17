@@ -7,6 +7,7 @@ public class LeaveHpBarDisappear : MonoBehaviour
     public GameObject player;
     public Canvas associatedCanvas;
     public float disableDistance = 5f;
+    public Ducking ducking;
 
     // Start is called before the first frame update
     void Start()
