@@ -60,7 +60,11 @@ public class RunningInPlace : MonoBehaviour
 
             float averageVelocity = GetAverageVelocity();
 
-            myText.text = "" + averageVelocity;
+            if(myText != null)
+            {
+                myText.text = "" + averageVelocity;
+            }
+           
 
 
             targetSpeed = baseSpeed * (1 + averageVelocity);
