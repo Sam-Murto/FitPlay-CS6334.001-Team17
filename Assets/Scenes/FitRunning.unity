@@ -315,11 +315,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &352849223 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3169405275593288689, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-  m_PrefabInstance: {fileID: 3169405274636799008}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &353925121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 347290927944951017, guid: 0456f0313c9f37341ad0dce07d4c6736, type: 3}
@@ -349,25 +344,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &470224381 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8637334569682055866, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-  m_PrefabInstance: {fileID: 3169405274636799008}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fa7b4195685c3846be746c74f0ab2f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!20 &576686006 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3169405275134643094, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-  m_PrefabInstance: {fileID: 3169405274636799008}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &576686009 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3169405275134643091, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
   m_PrefabInstance: {fileID: 3169405274636799008}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &580083380
@@ -443,11 +422,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0456f0313c9f37341ad0dce07d4c6736, type: 3}
---- !u!1 &656267163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3113217567417156717, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-  m_PrefabInstance: {fileID: 3169405274636799008}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &779174637
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,161 +519,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1114040590
+--- !u!114 &1114040595 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1114040595, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+  m_PrefabInstance: {fileID: 3169405274636799008}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656267163}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0422fcf499be0254dac1c6585226a5da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Mediator: {fileID: 470224381}
-  m_TransformationPriority: 0
-  m_MoveSpeed: 0
-  m_EnableStrafe: 1
-  m_EnableFly: 0
-  m_UseGravity: 1
-  m_ForwardSource: {fileID: 576686009}
-  m_LeftHandMoveInput:
-    m_InputSourceMode: 2
-    m_InputAction:
-      m_Name: Left Hand Move
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: f75944c8-b577-4b2d-9d55-1e65626bb389
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_InputActionReference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-    m_ObjectReferenceObject: {fileID: 0}
-    m_ManualValue: {x: 0, y: 0}
-  m_RightHandMoveInput:
-    m_InputSourceMode: 2
-    m_InputAction:
-      m_Name: Right Hand Move
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: 6e47c8c1-cdb1-4748-bd9d-20cb1c18d94d
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_InputActionReference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-    m_ObjectReferenceObject: {fileID: 0}
-    m_ManualValue: {x: 0, y: 0}
-  m_HeadTransform: {fileID: 576686009}
-  m_LeftControllerTransform: {fileID: 352849223}
-  m_RightControllerTransform: {fileID: 1244594886}
-  m_LeftHandMovementDirection: 0
-  m_RightHandMovementDirection: 0
---- !u!114 &1114040591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656267163}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46f8a6889437fb142adb28bd7369cbfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Mediator: {fileID: 470224381}
-  m_TransformationPriority: 0
-  m_MoveSpeed: 3
-  m_EnableStrafe: 1
-  m_EnableFly: 0
-  m_UseGravity: 1
-  m_ForwardSource: {fileID: 0}
-  m_LeftHandMoveInput:
-    m_InputSourceMode: 2
-    m_InputAction:
-      m_Name: Left Hand Move
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: ba6b42e6-0c81-4d81-befd-2b977b277e3b
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_InputActionReference: {fileID: 0}
-    m_ObjectReferenceObject: {fileID: 0}
-    m_ManualValue: {x: 0, y: 0}
-  m_RightHandMoveInput:
-    m_InputSourceMode: 2
-    m_InputAction:
-      m_Name: Right Hand Move
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: 5db36fd1-c953-4fea-9c5e-7d975387af1d
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_InputActionReference: {fileID: 0}
-    m_ObjectReferenceObject: {fileID: 0}
-    m_ManualValue: {x: 0, y: 0}
-  constantSpeed: 2
-  enableAutoMove: 1
-  rig: {fileID: 1717954560737402604}
-  leftHand: {fileID: 0}
-  rightHand: {fileID: 0}
-  head: {fileID: 0}
---- !u!114 &1114040595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656267163}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6082135731f0bf24dabbcf7694cba2be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mediator: {fileID: 0}
-  m_TransformationPriority: 0
-  m_MoveSpeed: 0
-  head: {fileID: 576686009}
-  leftHand: {fileID: 352849223}
-  rightHand: {fileID: 1244594886}
-  m_EnableStrafe: 1
-  m_EnableFly: 0
-  m_UseGravity: 1
-  m_ForwardSource: {fileID: 0}
-  m_LeftHandMoveInput:
-    m_InputSourceMode: 2
-    m_InputAction:
-      m_Name: Left Hand Move
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: 6fed5835-dca7-4202-a9e9-1cc70f9ba65f
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_InputActionReference: {fileID: 0}
-    m_ObjectReferenceObject: {fileID: 0}
-    m_ManualValue: {x: 0, y: 0}
-  m_RightHandMoveInput:
-    m_InputSourceMode: 2
-    m_InputAction:
-      m_Name: Right Hand Move
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: 91750b34-d427-458c-bec0-8205fa50f9cc
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_InputActionReference: {fileID: 0}
-    m_ObjectReferenceObject: {fileID: 0}
-    m_ManualValue: {x: 0, y: 0}
 --- !u!114 &1150134495 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6522401414002764934, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
@@ -711,11 +541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1244594886 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3169405275299736336, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-  m_PrefabInstance: {fileID: 3169405274636799008}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1351873016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,34 +1110,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2042266249}
-    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_LeftHandMoveInput.m_InputSourceMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3015424519058225440, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_LeftHandMoveInput.m_InputActionReference
-      value: 
-      objectReference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-    - target: {fileID: 3169405275134643094, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: field of view
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169405275134643094, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: near clip plane
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169405275134643094, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: finish_stage
       value: 
@@ -1437,10 +1234,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2042266249}
-    - target: {fileID: 9044588929253331067, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
-      propertyPath: m_SkinWidth
-      value: 0.01
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
 --- !u!1 &3169405274636799009 stripped

@@ -319,6 +319,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76578024}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &226054268 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1114040595, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+  m_PrefabInstance: {fileID: 3169405274636799008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3169405274636799011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6082135731f0bf24dabbcf7694cba2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &320002196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2907,8 +2918,11 @@ MonoBehaviour:
   myText: {fileID: 0}
   inputSource: 3
   baseSpeed: 5
-  moveProvider: {fileID: 3169405274636799012}
+  moveProvider: {fileID: 226054268}
+  runningThreshold: 0.1
   l: 0.3
+  framesAveragedForSpeed: 25
+  accelerationCoefficient: 6
 --- !u!1 &2124814454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,7 +3661,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3169405274636799011}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46f8a6889437fb142adb28bd7369cbfc, type: 3}
   m_Name: 
@@ -3690,6 +3704,9 @@ MonoBehaviour:
   constantSpeed: 2
   enableAutoMove: 1
   rig: {fileID: 910931515}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  head: {fileID: 0}
 --- !u!114 &3169405274636799013 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8637334569682055866, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}

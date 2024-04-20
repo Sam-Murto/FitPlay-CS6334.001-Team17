@@ -169,7 +169,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement
             Vector3 rightDir = Vector3.ProjectOnPlane(rightHand.position - head.position, Vector3.up).normalized;
             Vector3 forwardDir = Vector3.ProjectOnPlane(head.forward, Vector3.up).normalized;
             Vector3 centerHands = Vector3.Slerp(leftDir, rightDir, 0.5f);
-            float angle = Vector3.Angle(forwardDir, centerHands);
+            float angle = Vector3.SignedAngle(forwardDir, centerHands,Vector3.up);
 
             Quaternion rotation = Quaternion.Euler(0, angle, 0);
 
