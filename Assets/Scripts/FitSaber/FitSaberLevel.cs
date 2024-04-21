@@ -21,6 +21,8 @@ public class FitSaberLevel : ScriptableObject
         public Vector2 offset;
         [SerializeField]
         public float rotation;
+        [SerializeField]
+        public Vector3 scale = Vector3.one;
 
     }
 

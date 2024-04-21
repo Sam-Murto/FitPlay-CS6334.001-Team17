@@ -7,9 +7,9 @@ public class DamagePlayer : Obstacle
 {
 
     // Update is called once per frame
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        FitSaberPlayer fitSaberPlayer = collision.collider.GetComponent<FitSaberPlayer>();
+        FitSaberPlayer fitSaberPlayer = collision.GetComponent<FitSaberPlayer>();
 
         if (fitSaberPlayer)
         {
