@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth = 100;
     public UnityEngine.UI.Image healthImage;
     private bool isFlashing = false;
+    private bool isInvincible = false;
 
     // Start is called before the first frame update
     void Start()
@@ -62,22 +63,39 @@ public class PlayerHealth : MonoBehaviour
     }
     public void AddHealth(float amount)
     {
-        currentHealth += amount;
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
+
+            currentHealth += amount;
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+        
     }
+
     public void RemoveHealth(float amount)
     {
-        currentHealth -= amount;
-        if (currentHealth < 0 )
+        if (!isInvincible)
         {
-            currentHealth = 0;
+            currentHealth -= amount;
+            if (currentHealth < 0)
+            {
+                currentHealth = 0;
+            }
         }
     }
-    void PlayerDead()
+    public void PlayerDead()
     {
 
+    }
+    public void Invincible(float duration)
+    {
+        StartCoroutine(BecomeInvincible(duration));
+    }
+
+    IEnumerator BecomeInvincible(float duration)
+    {
+        isInvincible = true;
+        yield return new WaitForSeconds(duration);
+        isInvincible = false;
     }
 }

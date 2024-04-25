@@ -6,10 +6,11 @@ using UnityEngine.XR;
 public class HeadsetMovementDetector : MonoBehaviour
 {
     public Ducking ducking;
+    public float DefinedThreshold = 0.8f;
     void Update()
     {
         List<InputDevice> devices = new List<InputDevice>();
-        float DefinedThreshold = 1f;
+        
         InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.HeadMounted, devices);
 
         foreach (var device in devices)

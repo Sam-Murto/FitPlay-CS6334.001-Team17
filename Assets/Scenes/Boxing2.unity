@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 1271879224}
   - component: {fileID: 1271879223}
   - component: {fileID: 1271879227}
+  - component: {fileID: 1271879228}
   m_Layer: 0
   m_Name: Scarlet
   m_TagString: Untagged
@@ -753,6 +754,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1271879228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271879217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481b8ff9e854df54ea956cb1b838080c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1503791929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1784055403689533107, guid: 3a051ca724180d3439c318e865fabdad, type: 3}
