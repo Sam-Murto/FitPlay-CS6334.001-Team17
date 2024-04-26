@@ -23,7 +23,7 @@ public class BoxingMenu : MonoBehaviour
 
     public void showWinningMenu()
     {
-        GameObject MenuSettings = GameObject.Find("BoxingFinishMenu");
+        //GameObject MenuSettings = GameObject.Find("BoxingFinishMenu");
         MenuSettings.SetActive(true);
     }
 }
