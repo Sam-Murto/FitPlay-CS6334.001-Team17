@@ -6,30 +6,24 @@ using UnityEngine;
 public class BoxingMenu : MonoBehaviour
 {
 
-    //public GameObject MenuSettings = GameObject.Find("BoxingFinishMenu");
     public GameObject MenuSettings;
-    void Start()
-    {
-        MenuSettings = GameObject.Find("BoxingFinishMenu");
-        Debug.Log("inside here");
-    }
-    void Update()
-    {
-        if(MenuSettings != null)
-        {
-            showGameOver();
-        }
+    public Text menuText;
 
+    public void Update()
+    {
+        //Debug.Log("Test");
+        //showGameOver();
     }
     public void showGameOver()
     {
-        MenuSettings.transform.Find("Menutext").GetComponent<Text>().text = "Game Over";
+        Debug.Log("test");
+        
         MenuSettings.SetActive(true);
     }
 
     public void showWinningMenu()
     {
-       // MenuSettings.MenuText.Text = "You Win!";
+        //GameObject MenuSettings = GameObject.Find("BoxingFinishMenu");
         MenuSettings.SetActive(true);
     }
 }
