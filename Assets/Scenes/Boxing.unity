@@ -1505,10 +1505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495099f7f65978349ab7a21e284ff8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1818642425}
-  target: {fileID: 1250344238}
-  duckingDistance: 1
-  playerHealth: {fileID: 1387221420}
 --- !u!114 &1183291420 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4880090753504099173, guid: d1f32f10939da844e88c2aec2ec47e49, type: 3}
@@ -3357,6 +3353,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2339848379725450144, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
+      propertyPath: boxingMenu
+      value: 
+      objectReference: {fileID: 1845359198}
+    - target: {fileID: 2339848379725450144, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
       propertyPath: healthImage
       value: 
       objectReference: {fileID: 1675270172}
@@ -3408,7 +3408,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2339848378946443790, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
 --- !u!1001 &5075610449559853404
 PrefabInstance:

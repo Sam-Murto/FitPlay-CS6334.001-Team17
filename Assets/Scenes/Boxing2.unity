@@ -490,6 +490,17 @@ PrefabInstance:
       objectReference: {fileID: 1599566245}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c76bc1d3c573c34d86f03a4efab14ee, type: 3}
+--- !u!114 &1038879797 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7568454255098782172, guid: 8c76bc1d3c573c34d86f03a4efab14ee, type: 3}
+  m_PrefabInstance: {fileID: 1038879796}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495099f7f65978349ab7a21e284ff8a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1052337818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -799,7 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   associatedCanvas: {fileID: 1085138564}
-  ducking: {fileID: 0}
+  ducking: {fileID: 1038879797}
 --- !u!114 &1271879225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,7 +826,7 @@ MonoBehaviour:
   player: {fileID: 1503791929}
   associatedCanvas: {fileID: 1085138564}
   disableDistance: 5
-  ducking: {fileID: 0}
+  ducking: {fileID: 1038879797}
 --- !u!114 &1271879226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,7 +1027,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2339848378946443790, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
 --- !u!114 &1599566245 stripped
 MonoBehaviour:

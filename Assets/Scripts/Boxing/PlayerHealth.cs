@@ -87,6 +87,7 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerDead()
     {
         boxingMenu.showGameOver();
+
     }
     public void Invincible(float duration)
     {
