@@ -3473,6 +3473,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeScene
       objectReference: {fileID: 0}
+    - target: {fileID: 6522401414002764934, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+      propertyPath: m_Text
+      value: Level Select
+      objectReference: {fileID: 0}
     - target: {fileID: 7136548810890673129, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_IsActive
       value: 0
