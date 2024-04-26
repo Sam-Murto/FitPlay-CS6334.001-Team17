@@ -196,6 +196,11 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1784055403689533109, guid: 3a051ca724180d3439c318e865fabdad, type: 3}
   m_PrefabInstance: {fileID: 704395125}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &704395127 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5075610447864196865, guid: 3a051ca724180d3439c318e865fabdad, type: 3}
+  m_PrefabInstance: {fileID: 704395125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &774707899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -471,6 +476,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7568454255098782172, guid: 8c76bc1d3c573c34d86f03a4efab14ee, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 704395127}
+    - target: {fileID: 7568454255098782172, guid: 8c76bc1d3c573c34d86f03a4efab14ee, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1271879221}
+    - target: {fileID: 7568454255098782172, guid: 8c76bc1d3c573c34d86f03a4efab14ee, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1599566245}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c76bc1d3c573c34d86f03a4efab14ee, type: 3}
 --- !u!1001 &1052337818
@@ -924,6 +941,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   scarlet: {fileID: 0}
+--- !u!114 &1486520148 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 391823458552207325, guid: 68c0bfa68c129d54791995406a5a8572, type: 3}
+  m_PrefabInstance: {fileID: 1052337818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1503791929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1784055403689533107, guid: 3a051ca724180d3439c318e865fabdad, type: 3}
@@ -936,6 +964,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2339848379725450144, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
+      propertyPath: healthImage
+      value: 
+      objectReference: {fileID: 1486520148}
     - target: {fileID: 2339848379725450150, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
       propertyPath: m_Name
       value: Player Health Controller
@@ -986,6 +1018,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
+--- !u!114 &1599566245 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2339848379725450144, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
+  m_PrefabInstance: {fileID: 1599566244}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eafc9e61361cf2479931b20c7932a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1979339895
 GameObject:
   m_ObjectHideFlags: 0

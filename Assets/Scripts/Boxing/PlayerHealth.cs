@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public UnityEngine.UI.Image healthImage;
     private bool isFlashing = false;
     private bool isInvincible = false;
+    public BoxingMenu boxingMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -85,7 +86,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void PlayerDead()
     {
-
+        boxingMenu.showGameOver();
     }
     public void Invincible(float duration)
     {
