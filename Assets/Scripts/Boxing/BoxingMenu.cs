@@ -11,19 +11,19 @@ public class BoxingMenu : MonoBehaviour
 
     public void Update()
     {
-        //Debug.Log("Test");
-        //showGameOver();
+
     }
     public void showGameOver()
     {
-        Debug.Log("test");
-        
+        menuText.text = "Game Over";
+        menuText.color = Color.red;
         MenuSettings.SetActive(true);
     }
 
     public void showWinningMenu()
     {
-        //GameObject MenuSettings = GameObject.Find("BoxingFinishMenu");
+        menuText.text = "You Win!";
+        menuText.color = Color.green;
         MenuSettings.SetActive(true);
     }
 }
