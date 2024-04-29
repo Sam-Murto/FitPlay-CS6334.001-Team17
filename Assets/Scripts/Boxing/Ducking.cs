@@ -10,32 +10,43 @@ public class Ducking : MonoBehaviour
     public PlayerHealth playerHealth;
     public void LeftDucking()
     {
-        if (target != null && player!=null)
+        if (target != null && player != null)
         {
             playerHealth.Invincible(0.5f);
-            player.LookAt(target);
+
+            // 计算与目标在同一水平面上的点
+            Vector3 targetPosition = new Vector3(target.position.x, player.position.y, target.position.z);
+
+            // 首次LookAt调整，避免在移动前影响方向计算
+            player.LookAt(targetPosition);
+
+            // 计算向左的方向
             Vector3 leftDirection = -player.right;
             player.position += leftDirection * duckingDistance;
-            player.LookAt(target);
+
+            // 再次LookAt以确保朝向正确
+            player.LookAt(targetPosition);
         }
     }
+
     public void RightDucking()
     {
         if (target != null && player != null)
         {
             playerHealth.Invincible(0.5f);
-            player.LookAt(target);
+            Vector3 targetPosition = new Vector3(target.position.x, player.position.y, target.position.z);
+            player.LookAt(targetPosition);
             Vector3 rightDirection = player.right;
             player.position += rightDirection * duckingDistance;
-            player.LookAt(target);
+            player.LookAt(targetPosition);
         }
     }
     public void Update()
     {
         // for debug
-        if(Input.GetKeyDown(KeyCode.D))
-        {
-            LeftDucking();
-        }
+        if (Input.GetKeyDown(KeyCode.D))
+            {
+                LeftDucking();
+            }
     }
 }
