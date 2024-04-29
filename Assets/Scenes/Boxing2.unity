@@ -621,7 +621,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796307409}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf88f12991a601443b7ce4b6450572ea, type: 3}
   m_Name: 
@@ -629,6 +629,7 @@ MonoBehaviour:
   player: {fileID: 1503791932}
   boss: {fileID: 1271879221}
   rotationSpeed: 1
+  alignmentThreshold: 5
 --- !u!4 &796307411
 Transform:
   m_ObjectHideFlags: 0
