@@ -19,7 +19,7 @@ public class TutorialProcess : MonoBehaviour
     void Start()
     {
         tutorialCanvas.enabled=true;
-        LoadStory(Application.streamingAssetsPath + "/StoryScripts/tutorial/tutorial.txt");
+        LoadStory();
         ShowNextLine();
     }
     
@@ -31,7 +31,7 @@ public class TutorialProcess : MonoBehaviour
             ShowNextLine();
         }
     }
-    void LoadStory(string filePath)
+    void LoadStory()
     {
         // 读取文件的所有行到列表中
         var contents = tutorialTextAsset.text;

@@ -5,10 +5,12 @@ using UnityEngine.XR;
 
 public class HeadsetMovementDetector : MonoBehaviour
 {
+    public Ducking ducking;
+    public float DefinedThreshold = 0.8f;
     void Update()
     {
         List<InputDevice> devices = new List<InputDevice>();
-        float DefinedThreshold = 1f;
+        
         InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.HeadMounted, devices);
 
         foreach (var device in devices)
@@ -17,7 +19,16 @@ public class HeadsetMovementDetector : MonoBehaviour
             {
                 if (Mathf.Abs(velocity.x) > DefinedThreshold) 
                 {
-                    UnityEngine.Debug.Log("快速横向移动检测");
+                    if (velocity.x > 0) 
+                    {
+                        UnityEngine.Debug.Log("快速向右移动检测");
+                        ducking.RightDucking();
+                    }
+                    else if (velocity.x < 0) 
+                    {
+                        UnityEngine.Debug.Log("快速向左移动检测");
+                        ducking.LeftDucking();
+                    }
                 }
             }
         }
