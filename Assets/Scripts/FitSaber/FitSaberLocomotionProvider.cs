@@ -16,6 +16,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement
         [SerializeField]
         [Tooltip("The speed, in units per second, to move forward.")]
         float m_MoveSpeed = 1f;
+
         /// <summary>
         /// The speed, in units per second, to move forward.
         /// </summary>
