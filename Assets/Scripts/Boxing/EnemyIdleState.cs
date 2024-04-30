@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class EnemyIdleState : EnemyBaseState
 {
+    float timer_attack = 2f;
     public override void EnterState(EnemyStateManager Enemy)
     {
         Debug.Log("Idle state");
     }
     public override void UpdateState(EnemyStateManager Enemy)
     {
-        Debug.Log("No Action in Idle state");
-        Enemy.SwitchState(Enemy.AttackState);
+        if(timer_attack > 0)
+        {
+            timer_attack -= Time.deltaTime;
+        }
+        else
+        {
+            Enemy.SwitchState(Enemy.AttackState);
+        }
     }
     public override void OnCollisionEnter(EnemyStateManager Enemy)
     {
