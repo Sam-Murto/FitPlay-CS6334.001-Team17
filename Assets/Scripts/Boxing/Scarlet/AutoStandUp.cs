@@ -44,3 +44,4 @@ public class AutoStandUp : MonoBehaviour
         UnityEngine.Debug.Log("Õ¾Á¢Íê³É£¡");
     }
 }
+      
