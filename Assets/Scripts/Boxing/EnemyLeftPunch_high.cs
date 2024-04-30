@@ -27,7 +27,7 @@ public class EnemyLeftPunch_high : MonoBehaviour
         if(current_state == false)
         {
             transform.position = Vector3.MoveTowards(transform.position, 
-        Player.transform.position, Time.deltaTime * MoveSpeed);
+        Player.transform.position + (Vector3.up * 0.5f), Time.deltaTime * MoveSpeed);
 
         }
 

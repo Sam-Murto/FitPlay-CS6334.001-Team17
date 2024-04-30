@@ -20,8 +20,6 @@ public class Enemy_hand_controller : MonoBehaviour
         var left_hand = Enemy_left_hand.GetComponent<EnemyLeftPunch_low>();
         movement_state = left_hand.MovementState();
         current_state = left_hand.RandomState();
-        Debug.Log("This state: " + movement_state);
-        Debug.Log("Random state: " + current_state);
 
         if(movement_state == true && left_origin.position == left_hand_pos.position)
         {
