@@ -4632,6 +4632,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2894275001884440293, guid: 7abe9dc7f3e3fb545b9a729cc51d112d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2981335305854345139, guid: 7abe9dc7f3e3fb545b9a729cc51d112d, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -4743,6 +4747,10 @@ PrefabInstance:
     - target: {fileID: 4695131203710655538, guid: 7abe9dc7f3e3fb545b9a729cc51d112d, type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942247322218008820, guid: 7abe9dc7f3e3fb545b9a729cc51d112d, type: 3}
+      propertyPath: m_Text
+      value: Level Select
       objectReference: {fileID: 0}
     - target: {fileID: 5049782306364530119, guid: 7abe9dc7f3e3fb545b9a729cc51d112d, type: 3}
       propertyPath: m_Layer
