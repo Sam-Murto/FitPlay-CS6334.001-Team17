@@ -14,6 +14,7 @@ public class EnemyBlock : MonoBehaviour
     public GameObject rightHand;
     public Queue<Vector3> leftHandPositions = new Queue<Vector3>();
     public Queue<Vector3> rightHandPositions = new Queue<Vector3>();
+    public float maxYTransform;
     int random_state;
     // Start is called before the first frame update
     void Start()
@@ -27,26 +28,24 @@ public class EnemyBlock : MonoBehaviour
         //updatePositionQueues();
         //update if trajecotry would hit opponent
         //Should be in idle state
-        if (leftHandPositions.Count >= 2)
+        if (leftHandPositions.Count >= 2 && rightHandPositions.Count >= 2)
         {
-            Vector3 averageDirection = calculateAverageDirection(leftHandPositions);
+            Vector3 averageDirectionLeft = calculateAverageDirection(leftHandPositions);
             RaycastHit leftHit;
-            if(Physics.Raycast(leftHand.transform.position, averageDirection, out leftHit, 10f))
+
+            Vector3 averageDirectionRight = calculateAverageDirection(rightHandPositions);
+            RaycastHit rightHit;
+
+            if (Physics.Raycast(leftHand.transform.position, averageDirectionLeft, out leftHit, 10f))
             {
                 Block(leftHit.point);
             }
-            //RaycastMethod 
-            
-        }
-        if (rightHandPositions.Count >= 2)
-        {
-            Vector3 averageDirection = calculateAverageDirection(rightHandPositions);
-            RaycastHit rightHit;
-            //Raycsat method
-            if (Physics.Raycast(rightHand.transform.position, averageDirection, out rightHit, 10f))
+            else if (Physics.Raycast(rightHand.transform.position, averageDirectionRight, out rightHit, 10f))
             {
                 Block(rightHit.point);
             }
+
+
         }
         
     }
@@ -56,7 +55,7 @@ public class EnemyBlock : MonoBehaviour
         if(current_state == false)
         {
             transform.position = Vector3.MoveTowards(transform.position,
-            hitPoint.transform.position, Time.deltaTime * MoveSpeed);
+            hitPoint, Time.deltaTime * MoveSpeed);
 
         }
 
