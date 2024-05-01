@@ -9,6 +9,7 @@ public class EnemyLeftPunch_low : MonoBehaviour
     public GameObject Player;
     public Transform origin_point;
     public float MoveSpeed;
+    public PlayerHealth playerHealth;
     int random_state;
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,7 @@ public class EnemyLeftPunch_low : MonoBehaviour
         if(other.gameObject.CompareTag("Body"))
         {
             Debug.Log("Player was attacked!!!");
+            playerHealth.RemoveHealth(10);
             current_state = true;
         }
 

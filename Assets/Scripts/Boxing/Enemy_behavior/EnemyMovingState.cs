@@ -15,13 +15,13 @@ public class EnemyMovingState : EnemyBaseState
         var Player = GameObject.Find("Body");
         distance_player = Vector3.Distance(Enemy.transform.position, Player.transform.position);
 
-        if (distance_player > 2.0f)
+        if (distance_player > 5.0f)
         {
             Enemy.transform.position = Vector3.MoveTowards(Enemy.transform.position, 
             Player.transform.position, Time.deltaTime * MoveSpeed);
         }
 
-        else if (distance_player <= 2.0f)
+        else if (distance_player <= 5.0f)
         {
             Enemy.SwitchState(Enemy.IdleState);
         }
