@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScarletDeath : MonoBehaviour,IDeath
 {
     public ParticleSystem shatterParticles;
-    public AutoStandUp autoStandUp;
+
     public BoxingMenu boxingMenu;
     public void OnDeath()
     {

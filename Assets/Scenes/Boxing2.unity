@@ -1680,6 +1680,7 @@ MonoBehaviour:
   healthBarSlider: {fileID: 638724907}
   currentHealth: 10
   maxHealth: 10
+  autoStandUp: {fileID: 1271879229}
 --- !u!114 &1271879224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6628,7 +6629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shatterParticles: {fileID: 1271879231}
-  autoStandUp: {fileID: 0}
   boxingMenu: {fileID: 1966613070}
 --- !u!114 &1486520148 stripped
 MonoBehaviour:

@@ -9,6 +9,7 @@ public class HealthControl : MonoBehaviour
     public float currentHealth; // 当前生命值
     public float maxHealth = 1000f; // 最大生命值，可以根据需要调整
     private bool isDead = false;
+    public AutoStandUp autoStandUp;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class HealthControl : MonoBehaviour
         {
             isDead = true;
             // 调用Boss的死亡方法
+            autoStandUp.isDeath = true;
             IDeath death = GetComponent<IDeath>();
             if (death != null)
             {
