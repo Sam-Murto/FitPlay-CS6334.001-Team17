@@ -4282,6 +4282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857105922}
   - component: {fileID: 1857105923}
+  - component: {fileID: 1857105924}
   m_Layer: 0
   m_Name: Tutorial Controller
   m_TagString: Untagged
@@ -4319,6 +4320,19 @@ MonoBehaviour:
   tutorialCanvas: {fileID: 1614161460}
   tutorialText: {fileID: 36997395}
   tutorialTextAsset: {fileID: 4900000, guid: e013ed478ee06454a8c49ebc14e3c7d6, type: 3}
+--- !u!114 &1857105924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857105921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3dc2d3637032e4abc96dddcd44313c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageCanvas: {fileID: 1649848554}
 --- !u!224 &1953699943 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8443973714222793847, guid: 97921d2fe19ea21419131dee1f292c0d, type: 3}
