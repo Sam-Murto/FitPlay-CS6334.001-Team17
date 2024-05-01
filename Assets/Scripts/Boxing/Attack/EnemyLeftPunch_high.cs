@@ -6,9 +6,11 @@ using UnityEngine;
 public class EnemyLeftPunch_high : MonoBehaviour
 {
     bool current_state = false;
-    public GameObject Player, Player_hand;
+    public GameObject Player;
     public Transform origin_point;
     public float MoveSpeed;
+
+    public PlayerHealth playerHealth;
     int random_state;
     // Start is called before the first frame update
     void Start()
@@ -37,22 +39,26 @@ public class EnemyLeftPunch_high : MonoBehaviour
         origin_point.position, Time.deltaTime * MoveSpeed);
         
         }
+
+        if(current_state == true && transform.position == origin_point.position)
+        {
+            current_state = false;
+            this.enabled = false;
+        }
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Body"))
         {
-            Debug.Log("Player was attacked!!!");
+            playerHealth.RemoveHealth(10);
             current_state = true;
-            random_state = Random.Range(1,2);
         }
 
         if(other.gameObject.CompareTag("Fist"))
         {
             Debug.Log("No damage");
             current_state = true;
-            random_state = Random.Range(1,2);
         }
     }
 

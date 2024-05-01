@@ -12,7 +12,7 @@ public class DarumaDeath : MonoBehaviour,IDeath
     }
     private IEnumerator DestroyAfterDelay()
     {
-        // µÈ´ıÎåÃë
+        // ç­‰å¾…äº”ç§’
         yield return new WaitForSeconds(10);
 
         Destroy(self);

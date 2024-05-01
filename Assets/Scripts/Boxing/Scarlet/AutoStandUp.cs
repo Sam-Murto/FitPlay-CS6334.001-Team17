@@ -3,10 +3,11 @@ using System.Collections;
 
 public class AutoStandUp : MonoBehaviour
 {
-    public float standUpSpeed = 10f;  // Õ¾Á¢ËÙ¶È£¬¿ÉÒÔµ÷Õû
+    public float standUpSpeed = 10f;  // ç«™ç«‹é€Ÿåº¦ï¼Œå¯ä»¥è°ƒæ•´
     private Rigidbody rb;
-    private Quaternion targetRotation;  // Ä¿±êĞı×ª
-    private bool isStandingUp = false;
+    private Quaternion targetRotation;  // ç›®æ ‡æ—‹è½¬
+    public bool isStandingUp = false;
+    public bool isDeath = false;
 
     private void Start()
     {
@@ -15,33 +16,40 @@ public class AutoStandUp : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // ¼ì²éÅö×²ÎïÌåµÄ±êÇ©ÊÇ·ñÊÇ"Body"»ò"Fist"
-        if ((collision.collider.tag == "Body" || collision.collider.tag == "Fist") && !isStandingUp)
-        {
-            StartCoroutine(StandUpRoutine());
-        }
+            // æ£€æŸ¥ç¢°æ’ç‰©ä½“çš„æ ‡ç­¾æ˜¯å¦æ˜¯"Body"æˆ–"Fist"
+            if ((collision.collider.tag == "Body" || collision.collider.tag == "Fist") && !isStandingUp)
+            {
+                StartCoroutine(StandUpRoutine());
+            }
     }
 
     private IEnumerator StandUpRoutine()
     {
         isStandingUp = true;
-        // µÈ´ıÒ»¶ÎÊ±¼ä£¬È»ºó¿ªÊ¼Õ¾Á¢¶¯×÷
-        yield return new WaitForSeconds(3f);  // µÈ´ı1Ãëºó¿ªÊ¼Õ¾Á¢
-        Vector3 targetDirection = new Vector3(0, transform.eulerAngles.y, 0);  // ±£Áôµ±Ç°µÄ Y ÖáĞı×ª
+        // ç­‰å¾…ä¸€æ®µæ—¶é—´ï¼Œç„¶åå¼€å§‹ç«™ç«‹åŠ¨ä½œ
+        yield return new WaitForSeconds(3f);  // ç­‰å¾…3ç§’åå¼€å§‹ç«™ç«‹
+        if (isDeath ) {
+            isStandingUp = false;
+            yield break; }
+        Vector3 targetDirection = new Vector3(0, transform.eulerAngles.y, 0);  // ä¿ç•™å½“å‰çš„ Y è½´æ—‹è½¬
         Quaternion fromRotation = transform.rotation;
         Quaternion toRotation = Quaternion.Euler(targetDirection);
-        rb.velocity = Vector3.zero;  // ÖØÖÃÏßĞÔËÙ¶È
-        rb.angularVelocity = Vector3.zero;  // ÖØÖÃ½ÇËÙ¶È
-        UnityEngine.Debug.Log("ÕâÊÇÒ»¸ö¿ØÖÆÌ¨ÏûÏ¢£¡");
+        rb.velocity = Vector3.zero;  // é‡ç½®çº¿æ€§é€Ÿåº¦
+        rb.angularVelocity = Vector3.zero;  // é‡ç½®è§’é€Ÿåº¦
+        rb.Sleep();  // ä½¿Rigidbodyè¿›å…¥ä¼‘çœ çŠ¶æ€ï¼Œåœæ­¢æ‰€æœ‰ç‰©ç†è®¡ç®—
+        rb.WakeUp();  // ç«‹å³å”¤é†’Rigidbodyï¼Œä¿æŒæ— å¤–åŠ›å½±å“çš„çŠ¶æ€
+        UnityEngine.Debug.Log("è¿™æ˜¯ä¸€ä¸ªæ§åˆ¶å°æ¶ˆæ¯ï¼");
         while (Quaternion.Angle(fromRotation, toRotation) > 0.1f)
         {
-            // ÂıÂıĞı×ªµ½Ä¿±êĞı×ª
+            // æ…¢æ…¢æ—‹è½¬åˆ°ç›®æ ‡æ—‹è½¬
             transform.rotation = Quaternion.Slerp(fromRotation, toRotation, Time.deltaTime * standUpSpeed);
             fromRotation = transform.rotation;
             yield return null;
         }
         isStandingUp = false;
-        UnityEngine.Debug.Log("Õ¾Á¢Íê³É£¡");
+        UnityEngine.Debug.Log("ç«™ç«‹å®Œæˆï¼");
+        rb.Sleep();  // ä½¿Rigidbodyè¿›å…¥ä¼‘çœ çŠ¶æ€ï¼Œåœæ­¢æ‰€æœ‰ç‰©ç†è®¡ç®—
+        rb.WakeUp();  // ç«‹å³å”¤é†’Rigidbodyï¼Œä¿æŒæ— å¤–åŠ›å½±å“çš„çŠ¶æ€
     }
 }
       
