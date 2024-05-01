@@ -2853,6 +2853,10 @@ PrefabInstance:
       value: ChangeScene
       objectReference: {fileID: 0}
     - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+      propertyPath: finish_menu
+      value: 
+      objectReference: {fileID: 475778472}
+    - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: interactionManager
       value: 
       objectReference: {fileID: 2042266245}

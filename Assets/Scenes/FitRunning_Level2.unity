@@ -2140,6 +2140,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeScene
       objectReference: {fileID: 0}
+    - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+      propertyPath: finish_menu
+      value: 
+      objectReference: {fileID: 3169405274636799011}
+    - target: {fileID: 3169405275794013411, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
+      propertyPath: interactionManager
+      value: 
+      objectReference: {fileID: 2042266245}
     - target: {fileID: 4336011911301305036, guid: e8477265a32c0654b9b254702ee7ac74, type: 3}
       propertyPath: m_Name
       value: FitRunning XR Rig
