@@ -549,6 +549,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 4006917669663122970, guid: 3a051ca724180d3439c318e865fabdad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.31
+      objectReference: {fileID: 0}
     - target: {fileID: 5075610447864196864, guid: 3a051ca724180d3439c318e865fabdad, type: 3}
       propertyPath: m_Name
       value: Character
@@ -1830,6 +1834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standUpSpeed: 5
+  isStandingUp: 0
   isDeath: 0
 --- !u!199 &1271879230
 ParticleSystemRenderer:
@@ -6624,6 +6629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shatterParticles: {fileID: 1271879231}
   autoStandUp: {fileID: 0}
+  boxingMenu: {fileID: 1966613070}
 --- !u!114 &1486520148 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 391823458552207325, guid: 68c0bfa68c129d54791995406a5a8572, type: 3}
@@ -6652,6 +6658,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2339848379725450144, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
+      propertyPath: boxingMenu
+      value: 
+      objectReference: {fileID: 1966613070}
     - target: {fileID: 2339848379725450144, guid: 9dfc5c876c100b54db7657ba12d5bafb, type: 3}
       propertyPath: healthImage
       value: 
