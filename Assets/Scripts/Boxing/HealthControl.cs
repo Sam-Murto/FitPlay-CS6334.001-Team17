@@ -10,7 +10,7 @@ public class HealthControl : MonoBehaviour
     public float maxHealth = 1000f; // 最大生命值，可以根据需要调整
     private bool isDead = false;
     public AutoStandUp autoStandUp;
-    private bool isInvincible;
+    private bool isInvincible=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +21,13 @@ public class HealthControl : MonoBehaviour
 
     public void UpdateHealth(float healthChange)
     {
-        if(isInvincible)
+        if(!isInvincible)
         {
-            return;
-        }
         currentHealth += healthChange;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // 限制生命值在0到最大生命值之间
         healthBarSlider.value = currentHealth; // 更新Slider的值显示新的生命值
         UnityEngine.Debug.Log("Current Health: " + currentHealth);
+        }
     }
     void Update()
     {
