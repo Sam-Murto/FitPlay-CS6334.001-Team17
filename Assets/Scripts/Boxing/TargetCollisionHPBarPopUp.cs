@@ -4,6 +4,7 @@ public class TargetCollisionHPBarPopUp : MonoBehaviour
 {
     // 与这个目标物体关联的Canvas
     public Canvas associatedCanvas; // The Canvas associated with this target object
+    public Ducking ducking;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class TargetCollisionHPBarPopUp : MonoBehaviour
                 UnityEngine.Debug.Log("Player has collided with the target!"); // 玩家已经与目标碰撞！
                 // 启用关联的Canvas
                 associatedCanvas.enabled = true; // Enable the associated Canvas
+                ducking.target = this.gameObject.transform;
             }
         }
     }

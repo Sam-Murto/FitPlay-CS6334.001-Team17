@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FitRunning.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Boxing2.unity
+    guid: 4768924bd41163046b8d80191592d0c7
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8a4dc22059e1425469af99bdb8fdda10, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 90fcddaa5678ab64791f4b09294367b6, type: 2}
