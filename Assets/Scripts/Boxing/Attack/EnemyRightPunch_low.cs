@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyLeftPunch_low : MonoBehaviour
+public class EnemyRightPunch_low : MonoBehaviour
 {
     bool current_state = false;
     public GameObject Player;

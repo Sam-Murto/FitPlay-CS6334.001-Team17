@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyLeftPunch_high : MonoBehaviour
 {
     bool current_state = false;
-    public GameObject Player, Player_hand;
+    public GameObject Player;
     public Transform origin_point;
     public float MoveSpeed;
     int random_state;
@@ -37,6 +37,12 @@ public class EnemyLeftPunch_high : MonoBehaviour
         origin_point.position, Time.deltaTime * MoveSpeed);
         
         }
+
+        if(current_state == true && transform.position == origin_point.position)
+        {
+            current_state = false;
+            this.enabled = false;
+        }
     }
 
     private void OnCollisionEnter(Collision other)
@@ -45,14 +51,12 @@ public class EnemyLeftPunch_high : MonoBehaviour
         {
             Debug.Log("Player was attacked!!!");
             current_state = true;
-            random_state = Random.Range(1,2);
         }
 
         if(other.gameObject.CompareTag("Fist"))
         {
             Debug.Log("No damage");
             current_state = true;
-            random_state = Random.Range(1,2);
         }
     }
 
