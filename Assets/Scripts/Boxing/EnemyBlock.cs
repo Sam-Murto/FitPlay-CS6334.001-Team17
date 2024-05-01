@@ -30,24 +30,33 @@ public class EnemyBlock : MonoBehaviour
         if (leftHandPositions.Count >= 2)
         {
             Vector3 averageDirection = calculateAverageDirection(leftHandPositions);
+            RaycastHit leftHit;
+            if(Physics.Raycast(leftHand.transform.position, averageDirection, out leftHit, 10f))
+            {
+                Block(leftHit.point);
+            }
             //RaycastMethod 
-            Block();
+            
         }
         if (rightHandPositions.Count >= 2)
         {
             Vector3 averageDirection = calculateAverageDirection(rightHandPositions);
+            RaycastHit rightHit;
             //Raycsat method
-            Block();
+            if (Physics.Raycast(rightHand.transform.position, averageDirection, out rightHit, 10f))
+            {
+                Block(rightHit.point);
+            }
         }
         
     }
 
-    public void Block ()
+    public void Block ( Vector3 hitPoint)
     {
         if(current_state == false)
         {
-            transform.position = Vector3.MoveTowards(transform.position, 
-        Block_point.transform.position, Time.deltaTime * MoveSpeed);
+            transform.position = Vector3.MoveTowards(transform.position,
+            hitPoint.transform.position, Time.deltaTime * MoveSpeed);
 
         }
 
