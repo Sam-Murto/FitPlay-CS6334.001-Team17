@@ -782,6 +782,7 @@ MonoBehaviour:
   healthBarSlider: {fileID: 1411993749}
   currentHealth: 10
   maxHealth: 10
+  autoStandUp: {fileID: 0}
 --- !u!114 &283270164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2079,6 +2080,7 @@ MonoBehaviour:
   healthBarSlider: {fileID: 790192686}
   currentHealth: 10
   maxHealth: 10
+  autoStandUp: {fileID: 0}
 --- !u!114 &1250344242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3126,6 +3128,9 @@ MonoBehaviour:
   Block_point: {fileID: 1844140392}
   origin_point: {fileID: 2003312467}
   MoveSpeed: 2
+  maxPositions: 0
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
 --- !u!1001 &1506698568
 PrefabInstance:
   m_ObjectHideFlags: 0
