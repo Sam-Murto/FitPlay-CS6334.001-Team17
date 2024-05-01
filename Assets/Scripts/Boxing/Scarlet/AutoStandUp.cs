@@ -27,8 +27,8 @@ public class AutoStandUp : MonoBehaviour
     {
         isStandingUp = true;
         // 等待一段时间，然后开始站立动作
-        yield return new WaitForSeconds(3f);  // 等待1秒后开始站立
-        if(isDeath ) {
+        yield return new WaitForSeconds(3f);  // 等待3秒后开始站立
+        if (isDeath ) {
             isStandingUp = false;
             yield break; }
         Vector3 targetDirection = new Vector3(0, transform.eulerAngles.y, 0);  // 保留当前的 Y 轴旋转
@@ -48,6 +48,8 @@ public class AutoStandUp : MonoBehaviour
         }
         isStandingUp = false;
         UnityEngine.Debug.Log("站立完成！");
+        rb.Sleep();  // 使Rigidbody进入休眠状态，停止所有物理计算
+        rb.WakeUp();  // 立即唤醒Rigidbody，保持无外力影响的状态
     }
 }
       
