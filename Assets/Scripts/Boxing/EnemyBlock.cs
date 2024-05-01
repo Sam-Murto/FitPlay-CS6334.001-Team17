@@ -6,14 +6,21 @@ using UnityEngine;
 public class EnemyBlock : MonoBehaviour
 {
     bool current_state = false;
+    public GameObject Enemy;
     public GameObject Block_point;
-    public Transform origin_point;
+    public GameObject originalLeftPosition;
+    public GameObject originalRightPosition;
     public float MoveSpeed;
     public int maxPositions;
     public GameObject leftHand;
     public GameObject rightHand;
-    public Queue<Vector3> leftHandPositions = new Queue<Vector3>();
-    public Queue<Vector3> rightHandPositions = new Queue<Vector3>();
+    public LinkedList<Vector3> leftHandPositions = new LinkedList<Vector3>();
+    public LinkedList<Vector3> rightHandPositions = new LinkedList<Vector3>();
+    public float maxYTransform;
+    private Vector3 firstQueueItemLeft;
+
+    public GameObject leftHandPositionBlock;
+    public GameObject rightHandPositionBlock;
     int random_state;
     // Start is called before the first frame update
     void Start()
@@ -24,54 +31,43 @@ public class EnemyBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //updatePositionQueues();
-        //update if trajecotry would hit opponent
-        //Should be in idle state
-        if (leftHandPositions.Count >= 2)
-        {
-            Vector3 averageDirection = calculateAverageDirection(leftHandPositions);
-            //RaycastMethod 
-            Block();
-        }
-        if (rightHandPositions.Count >= 2)
-        {
-            Vector3 averageDirection = calculateAverageDirection(rightHandPositions);
-            //Raycsat method
-            Block();
-        }
-        
+        Block();
     }
 
-    public void Block ()
+    public void Block()
     {
-        if(current_state == false)
+        Debug.Log("inside Block");
+        if (current_state == false)
         {
-            transform.position = Vector3.MoveTowards(transform.position, 
-        Block_point.transform.position, Time.deltaTime * MoveSpeed);
-
+            leftHand.transform.position = Vector3.MoveTowards(leftHand.transform.position,
+            leftHandPositionBlock.transform.position, Time.deltaTime * MoveSpeed);
+            rightHand.transform.position = Vector3.MoveTowards(rightHand.transform.position,
+           rightHandPositionBlock.transform.position, Time.deltaTime * MoveSpeed);
+            //current_state = true;
         }
 
-        StartCoroutine (BlockDelay());
+        StartCoroutine(BlockDelay());
 
-        if(current_state == true)
+        if (current_state == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, 
-        origin_point.position, Time.deltaTime * MoveSpeed);
-        
+            //transform.position = Vector3.MoveTowards(transform.position,
+            //origin_point.position, Time.deltaTime * MoveSpeed);
+
+
         }
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.CompareTag("Fist"))
+        if (other.gameObject.CompareTag("Fist"))
         {
-            Debug.Log("No damage");
+            //Debug.Log("No damage");
             current_state = true;
-            random_state = Random.Range(1,2);
+            random_state = Random.Range(1, 2);
         }
     }
 
-    private IEnumerator BlockDelay ()
+    private IEnumerator BlockDelay()
     {
         yield return new WaitForSeconds(1);
         current_state = true;
@@ -89,13 +85,13 @@ public class EnemyBlock : MonoBehaviour
         Vector3 sumDirection = Vector3.zero;
         Vector3 previousInstance = theQueue.Peek();
 
-        foreach(Vector3 instance in theQueue)
+        foreach (Vector3 instance in theQueue)
         {
             Vector3 direction = instance - previousInstance;
             sumDirection += direction.normalized;
             previousInstance = instance;
 
-           
+
         }
         if (theQueue.Count > 1)
         {
@@ -117,21 +113,26 @@ public class EnemyBlock : MonoBehaviour
 
         return willHitOpponent;
     }
+
+    private void updatePositionQueues()
+    {
+        Debug.Log("Inside Quee");
+        if(leftHandPositions.Count >= maxPositions)
+        {
+            Debug.Log("inside here DEQUE");
+            leftHandPositions.RemoveFirst();
+        }
+        if (rightHandPositions.Count >= maxPositions)
+        {
+            rightHandPositions.RemoveFirst();
+        }
+        
+    leftHandPositions.AddLast(leftHand.transform.position);
     
-    ////private void updatePositionQueues()
-    //{
-    //    if(leftHandPositions.Count >= maxPositions)
-    //    {
-    //        leftHandPositions.Dequeue();
-    //    }
-    //    if (rightHandPositions.Count >= maxPositions)
-    //    {
-    //        rightHandPositions.Dequeue();
-    //    }
-    //    leftHandPositions.Enqueue(leftHand.transform.position);
-    //    rightHandPositions.Enqueue(leftHand.transform.position);
-    //}
-    
+    rightHandPositions.AddLast(leftHand.transform.position);
+        Debug.Log("final updatePositions Que");
+    }
+
     public bool MovementState()
     {
         return current_state;
