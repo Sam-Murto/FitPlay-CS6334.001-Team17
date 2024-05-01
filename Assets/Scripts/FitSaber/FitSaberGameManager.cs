@@ -69,6 +69,7 @@ public class FitSaberGameManager : MonoBehaviour
 
     private void OnEnable()
     {
+        Time.timeScale = 1.0f;
         menuReference.action.started += PauseGame;
         obstacles = new List<GameObject>();
         player.gameObject.transform.position = spawnLocation;
