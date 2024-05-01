@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class FitSaberGameManager : MonoBehaviour
 {
+    // Game Events
     [SerializeField]
     public UnityEvent<Strikeable> onObstacleStruck;
-
     [SerializeField]
     public UnityEvent<Strikeable> onStrikableReachDeathZone;
     [SerializeField]
@@ -18,9 +19,9 @@ public class FitSaberGameManager : MonoBehaviour
     public UnityEvent<Bomb> onBombReachDeathZone;
     [SerializeField]
     public UnityEvent<Bomb> onBombExplode;
-
-    bool levelOver = false;
-    bool inTutorial = false;
+    // System Control Events
+    [SerializeField]
+    public UnityEvent<TutorialPanel> onTutorialFinished;
 
     public int score { get; private set; }
 
@@ -46,10 +47,31 @@ public class FitSaberGameManager : MonoBehaviour
     [SerializeField]
     GameObject inGameOverlay;
 
+    [SerializeField]
+    InputActionReference menuReference;
+
+    [SerializeField]
+    GameObject player;
+
+    [SerializeField]
+    Vector3 spawnLocation;
+
+    [SerializeField]
+    Transform pauseSpawn;
+
+    [SerializeField]
+    Transform levelOverSpawn;
+
+    Vector3 savedPlayerPosition;
+
+
+
 
     private void OnEnable()
     {
+        menuReference.action.started += PauseGame;
         obstacles = new List<GameObject>();
+        player.gameObject.transform.position = spawnLocation;
         DisplayTutorial();
     }
 
@@ -75,7 +97,7 @@ public class FitSaberGameManager : MonoBehaviour
             obstacles.Add(obstacle);
 
         }
-        levelOver = false;
+
         GameState.isLoading = false;
     }
 
@@ -155,9 +177,60 @@ public class FitSaberGameManager : MonoBehaviour
 
     private void EndLevel()
     {
+        menuReference.action.started -= PauseGame;
+
+        player.transform.position = levelOverSpawn.position;
+
         inGameOverlay.SetActive(false);
-        levelCompleteMenu.SetActive(true);
-        FindObjectOfType<MenuButtonCheck>().enabled = false;
+    }
+    public void RestartGame()
+    {
+        menuReference.action.started += PauseGame;
+        inGameOverlay.SetActive(true);
+
+        player.transform.position = spawnLocation;
+
+        LoadLevel();
+
+    }
+
+    public void EndTutorial(TutorialPanel panel)
+    {
+        panel.gameObject.SetActive(false);
+        LoadLevel();
+        GameState.isPaused = false;
+    }
+
+    public void PauseGame(InputAction.CallbackContext context)
+    {
+        menuReference.action.started -= PauseGame;
+        menuReference.action.started += UnpauseGame;
+
+        savedPlayerPosition = player.transform.position;
+        player.transform.position = pauseSpawn.position;
+        GameState.isPaused = true;
+    
+}
+
+    public void UnpauseGame()
+    {
+        menuReference.action.started -= UnpauseGame;
+        menuReference.action.started += PauseGame;
+
+        player.transform.position = savedPlayerPosition;
+        GameState.isPaused = false;
+
+    }
+
+    public void UnpauseGame(InputAction.CallbackContext context)
+    {
+        menuReference.action.started -= UnpauseGame;
+        menuReference.action.started += PauseGame;
+
+        player.transform.position = savedPlayerPosition;
+        GameState.isPaused = false;
+
+        Time.timeScale = (GameState.isPaused) ? 0f : 1f;
     }
 
 }

@@ -17,6 +17,81 @@ MonoBehaviour:
   obstacleSpawns:
   - timeToReachPlayer: 5
     obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
-    offset: {x: -0.25, y: 0}
+    offset: {x: -0.75, y: 0}
     rotation: 0
-    scale: {x: 1, y: 1, z: 5}
+    scale: {x: 1, y: 8, z: 5}
+  - timeToReachPlayer: 7
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 1}
+    rotation: 0
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 7.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 1}
+    rotation: 180
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 8
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 0
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 8.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.5}
+    rotation: 180
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 10
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.75}
+    rotation: 0
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 11
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0, y: 0.75}
+    rotation: 180
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 13
+    obstacleType: {fileID: 3427558984568896563, guid: 2f43b84015f36564aab247e214e2ce76, type: 3}
+    offset: {x: 0, y: 1.5}
+    rotation: 0
+    scale: {x: 8, y: 1, z: 5}
+  - timeToReachPlayer: 14.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0.75, y: 0.5}
+    rotation: 270
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 14.5
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.75, y: 0.5}
+    rotation: 90
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 15
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0.75, y: 0.5}
+    rotation: 90
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 15
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.75, y: 0.5}
+    rotation: 270
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 15.75
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: 0.75, y: 0.5}
+    rotation: 270
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 15.75
+    obstacleType: {fileID: 9092941761928537665, guid: 6da805863cebbd34f891f5321614143f, type: 3}
+    offset: {x: -0.75, y: 0.5}
+    rotation: 90
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 16.25
+    obstacleType: {fileID: 8142985320964473200, guid: a78b561f3a22f8747a28327dabead551, type: 3}
+    offset: {x: 0.75, y: 0.5}
+    rotation: 0
+    scale: {x: 0.5, y: 0.5, z: 0.2}
+  - timeToReachPlayer: 16.25
+    obstacleType: {fileID: 8142985320964473200, guid: a78b561f3a22f8747a28327dabead551, type: 3}
+    offset: {x: -0.75, y: 0.5}
+    rotation: 0
+    scale: {x: 0.5, y: 0.5, z: 0.2}
