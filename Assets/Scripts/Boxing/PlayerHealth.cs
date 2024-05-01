@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
             }
             if (currentHealth >= maxHealth * 0.2f && !isFlashing)
             {
-                // ¸ù¾İÉúÃüÖµ¼ÆËãÍ¸Ã÷¶È£¬ÉúÃüÖµÔ½µÍ£¬Í¸Ã÷¶ÈÔ½µÍ£¨ÑÕÉ«Ô½Éî£©
+                // æ ¹æ®ç”Ÿå‘½å€¼è®¡ç®—é€æ˜åº¦ï¼Œç”Ÿå‘½å€¼è¶Šä½ï¼Œé€æ˜åº¦è¶Šä½ï¼ˆé¢œè‰²è¶Šæ·±ï¼‰
                 float alpha = 0.4f * (1.0f - (currentHealth / maxHealth));
                 healthImage.color = new Color(102, 0, 0, alpha);
             }
@@ -45,13 +45,13 @@ public class PlayerHealth : MonoBehaviour
     {
         isFlashing = true;
 
-        while (currentHealth <= maxHealth * 0.2f)
+        while (currentHealth <= maxHealth * 0.2f && currentHealth>0)
         {
-            float minFlashDuration = 0.3f;  // ÉúÃüÖµ×îµÍÊ±µÄ×îĞ¡ÉÁË¸¼ä¸ô
-            float maxFlashDuration = 0.6f;  // ÉúÃüÖµ¸ßÓÚ20%Ê±µÄ×î´óÉÁË¸¼ä¸ô
-            float healthFraction = (currentHealth / (maxHealth * 0.2f));  // ÉúÃüÖµÕ¼×îĞ¡ãĞÖµµÄ±ÈÀı
+            float minFlashDuration = 0.3f;  // ç”Ÿå‘½å€¼æœ€ä½æ—¶çš„æœ€å°é—ªçƒé—´éš”
+            float maxFlashDuration = 0.6f;  // ç”Ÿå‘½å€¼é«˜äº20%æ—¶çš„æœ€å¤§é—ªçƒé—´éš”
+            float healthFraction = (currentHealth / (maxHealth * 0.2f));  // ç”Ÿå‘½å€¼å æœ€å°é˜ˆå€¼çš„æ¯”ä¾‹
 
-            // Ê¹ÓÃÏßĞÔ²åÖµ¼ÆËãµ±Ç°µÄÉÁË¸¼ä¸ô
+            // ä½¿ç”¨çº¿æ€§æ’å€¼è®¡ç®—å½“å‰çš„é—ªçƒé—´éš”
             float flashDuration = Mathf.Lerp(minFlashDuration, maxFlashDuration, healthFraction);
 
             healthImage.color = new Color(102, 0, 0, 0.32f); // More vivid red
@@ -87,6 +87,7 @@ public class PlayerHealth : MonoBehaviour
     public void PlayerDead()
     {
         boxingMenu.showGameOver();
+        Time.timeScale = 0;
 
     }
     public void Invincible(float duration)

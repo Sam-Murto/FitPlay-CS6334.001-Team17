@@ -5,36 +5,60 @@ using UnityEngine.UI;
 
 public class HealthControl : MonoBehaviour
 {
-    public Slider healthBarSlider; // ÔÚInspectorÖĞÖ¸¶¨µÄSlider×é¼ş
-    public float currentHealth; // µ±Ç°ÉúÃüÖµ
-    public float maxHealth = 1000f; // ×î´óÉúÃüÖµ£¬¿ÉÒÔ¸ù¾İĞèÒªµ÷Õû
+    public Slider healthBarSlider; // åœ¨Inspectorä¸­æŒ‡å®šçš„Sliderç»„ä»¶
+    public float currentHealth; // å½“å‰ç”Ÿå‘½å€¼
+    public float maxHealth = 1000f; // æœ€å¤§ç”Ÿå‘½å€¼ï¼Œå¯ä»¥æ ¹æ®éœ€è¦è°ƒæ•´
     private bool isDead = false;
+    public AutoStandUp autoStandUp;
+    private bool isInvincible=false;
     // Start is called before the first frame update
     void Start()
     {
-        // ³õÊ¼»¯Ê±ÉèÖÃÑªÌõµÄ×î´óÖµºÍµ±Ç°Öµ
+        // åˆå§‹åŒ–æ—¶è®¾ç½®è¡€æ¡çš„æœ€å¤§å€¼å’Œå½“å‰å€¼
         healthBarSlider.maxValue = maxHealth;
         healthBarSlider.value = currentHealth;
     }
 
     public void UpdateHealth(float healthChange)
     {
+        if(!isInvincible)
+        {
         currentHealth += healthChange;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // ÏŞÖÆÉúÃüÖµÔÚ0µ½×î´óÉúÃüÖµÖ®¼ä
-        healthBarSlider.value = currentHealth; // ¸üĞÂSliderµÄÖµÏÔÊ¾ĞÂµÄÉúÃüÖµ
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // é™åˆ¶ç”Ÿå‘½å€¼åœ¨0åˆ°æœ€å¤§ç”Ÿå‘½å€¼ä¹‹é—´
+        healthBarSlider.value = currentHealth; // æ›´æ–°Sliderçš„å€¼æ˜¾ç¤ºæ–°çš„ç”Ÿå‘½å€¼
         UnityEngine.Debug.Log("Current Health: " + currentHealth);
+        }
     }
     void Update()
     {
+        healthBarSlider.value = currentHealth;
         if (currentHealth <= 0 && isDead == false)
         {
             isDead = true;
-            // µ÷ÓÃBossµÄËÀÍö·½·¨
+            // è°ƒç”¨Bossçš„æ­»äº¡æ–¹æ³•
+            autoStandUp.isDeath = true;
             IDeath death = GetComponent<IDeath>();
             if (death != null)
             {
                 death.OnDeath();
             }
         }
+    }
+    public void Invincible(float duration)
+    {
+        StartCoroutine(BecomeInvincible(duration));
+    }
+
+    IEnumerator BecomeInvincible(float duration)
+    {
+        isInvincible = true;
+        yield return new WaitForSeconds(duration);
+        isInvincible = false;
+    }
+    public void KeepInvincible()
+    { isInvincible = true; }
+    public void CancelInvincible()
+    {
+        isInvincible = false;
     }
 }
