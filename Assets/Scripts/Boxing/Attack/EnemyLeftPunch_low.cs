@@ -37,6 +37,12 @@ public class EnemyLeftPunch_low : MonoBehaviour
         origin_point.position, Time.deltaTime * MoveSpeed);
         
         }
+
+        if(current_state == true && transform.position == origin_point.position)
+        {
+            current_state = false;
+            this.enabled = false;
+        }
     }
 
     private void OnCollisionEnter(Collision other)
