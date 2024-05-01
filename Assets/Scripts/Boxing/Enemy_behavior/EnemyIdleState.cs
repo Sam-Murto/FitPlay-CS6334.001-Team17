@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class EnemyIdleState : EnemyBaseState
 {
-    float timer_attack = 2f;
+    float attack_cooldown = 2f;
+    float timer_attack;
     public override void EnterState(EnemyStateManager Enemy)
     {
         Debug.Log("Idle state");
+        timer_attack = attack_cooldown;
     }
     public override void UpdateState(EnemyStateManager Enemy)
     {
