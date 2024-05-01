@@ -72,6 +72,11 @@ public class Saber : MonoBehaviour
             bomb.GetStruck();
         }
 
+        StrikeableButton button = collider.GetComponent<StrikeableButton>();
+        if(button != null) 
+        {
+            button.GetStruck(GetStrikeDirection());
+        }
 
     }
 

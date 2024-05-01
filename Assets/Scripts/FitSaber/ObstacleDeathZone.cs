@@ -12,23 +12,13 @@ public class ObstacleDeathZone : MonoBehaviour
         gameManager = FindObjectOfType<FitSaberGameManager>();
     }
 
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        DamagePlayer obstacle = collision.collider.GetComponentInParent<DamagePlayer>();
-
-        if (obstacle)
-            gameManager.onDamagePlayerReachDeathZone?.Invoke(obstacle);
-
-    }
-
     private void OnTriggerEnter(Collider collider)
     {
-        Strikeable obstacle = collider.GetComponent<Strikeable>();
+        Strikeable strikeable = collider.GetComponent<Strikeable>();
 
-        if (obstacle)
+        if (strikeable)
         {
-            gameManager.onStrikableReachDeathZone?.Invoke(obstacle);
+            gameManager.onStrikableReachDeathZone?.Invoke(strikeable);
         }
         
         Bomb bomb = collider.GetComponent<Bomb>();
@@ -38,6 +28,10 @@ public class ObstacleDeathZone : MonoBehaviour
             gameManager.onBombReachDeathZone?.Invoke(bomb);
         }
 
+        DamagePlayer damagePlayer = collider.GetComponentInParent<DamagePlayer>();
+
+        if (damagePlayer)
+            gameManager.onDamagePlayerReachDeathZone?.Invoke(damagePlayer);
 
     }
 }
