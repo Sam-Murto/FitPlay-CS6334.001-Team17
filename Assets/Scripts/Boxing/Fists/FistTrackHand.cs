@@ -23,7 +23,7 @@ public class FistTrackHand : MonoBehaviour
 
 
             // 输出或使用这个世界坐标
-            UnityEngine.Debug.Log("Center World Position: " + centerWorld);
+            //UnityEngine.Debug.Log("Center World Position: " + centerWorld);
 
             fist.transform.position = centerWorld;
         }

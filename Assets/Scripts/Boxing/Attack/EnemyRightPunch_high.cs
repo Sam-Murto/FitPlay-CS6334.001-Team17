@@ -11,10 +11,14 @@ public class EnemyRightPunch_high : MonoBehaviour
     public float MoveSpeed;
     public PlayerHealth playerHealth;
     int random_state;
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    float maxDistance = 2.0f;
+    float distanceTraveled = 0.0f;
+
+    // Start is called before the first frame update
+    void OnEnable()
+    {
+        distanceTraveled = 0.0f;
     }
 
     // Update is called once per frame
@@ -27,8 +31,15 @@ public class EnemyRightPunch_high : MonoBehaviour
     {
         if(current_state == false)
         {
+            distanceTraveled += MoveSpeed * Time.deltaTime;
+
             transform.position = Vector3.MoveTowards(transform.position, 
         Player.transform.position + (Vector3.up * 0.5f), Time.deltaTime * MoveSpeed);
+
+            if (distanceTraveled > maxDistance)
+            {
+                current_state = true;
+            }
 
         }
 

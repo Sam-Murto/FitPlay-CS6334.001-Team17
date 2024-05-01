@@ -11,10 +11,13 @@ public class EnemyRightPunch_low : MonoBehaviour
     public float MoveSpeed;
     public PlayerHealth playerHealth;
     int random_state;
-    // Start is called before the first frame update
-    void Start()
-    {
+    float maxDistance = 2.0f;
+    float distanceTraveled;
 
+    // Start is called before the first frame update
+    void OnEnable()
+    {
+        distanceTraveled = 0.0f;
     }
 
     // Update is called once per frame
@@ -25,11 +28,17 @@ public class EnemyRightPunch_low : MonoBehaviour
 
     public void Left_punch ()
     {
-        if(current_state == false)
+        if (current_state == false)
         {
-            transform.position = Vector3.MoveTowards(transform.position, 
+            distanceTraveled += MoveSpeed * Time.deltaTime;
+
+            transform.position = Vector3.MoveTowards(transform.position,
         Player.transform.position, Time.deltaTime * MoveSpeed);
 
+            if (distanceTraveled > maxDistance)
+            {
+                current_state = true;
+            }
         }
 
         if(current_state == true)

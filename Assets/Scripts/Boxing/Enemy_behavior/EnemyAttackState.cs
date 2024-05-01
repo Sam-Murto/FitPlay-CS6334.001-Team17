@@ -8,49 +8,36 @@ public class EnemyAttackState : EnemyBaseState
         Debug.Log("Attack state");
         random_state = Random.Range(1,5);
         Debug.Log("State : " + random_state);
-        if (random_state == 1)
+        switch (random_state)
         {
-            Left_punch_low_activate(Enemy);
-        }
-        
-        else if (random_state == 2)
-        {
-            Left_punch_high_activate(Enemy);
+            case 1:
+                Left_punch_low_activate(Enemy);
+                break;
+            case 2:
+                Left_punch_high_activate(Enemy);
+                break;
+            case 3:
+                Right_punch_low_activate(Enemy);
+                break;
+            case 4:
+                Right_punch_high_activate(Enemy);
+                break;
         }
 
-        else if (random_state == 3)
-        {
-            Right_punch_low_activate(Enemy);
-        }
-
-        else if (random_state == 4)
-        {
-            Right_punch_high_activate(Enemy);
-        }
-        
     }
     public override void UpdateState(EnemyStateManager Enemy)
     {
-        if (random_state == 1)
+        switch (random_state)
         {
-            Left_punch_low(Enemy);
+            case 1: Left_punch_low(Enemy);
+                break;
+            case 2: Left_punch_high(Enemy);
+                break;
+            case 3: Right_punch_low(Enemy);
+                break;
+            case 4: Right_punch_high(Enemy);
+                break;
         }
-        
-        else if (random_state == 2)
-        {
-            Left_punch_high(Enemy);
-        }
-
-        else if (random_state == 3)
-        {
-            Right_punch_low(Enemy);
-        }
-
-        else if (random_state == 4)
-        {
-            Right_punch_high(Enemy);
-        }
-        
     }
     public override void OnCollisionEnter(EnemyStateManager Enemy)
     {

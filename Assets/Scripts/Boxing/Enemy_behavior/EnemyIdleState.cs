@@ -41,7 +41,7 @@ public class EnemyIdleState : EnemyBaseState
             timer_defense -= Time.deltaTime;
         }
 
-        if(timer_attack <= 0 && distance_player <= 5.0f)
+        if(timer_attack <= 0 && distance_player <= 3.0f)
         {
             if(attack_probability > 0.2)
             {
@@ -54,7 +54,7 @@ public class EnemyIdleState : EnemyBaseState
             }
         }
 
-        if(timer_move <= 0 && distance_player > 5.0f)
+        if(timer_move <= 0 && distance_player > 3.0f)
         {
             Enemy.SwitchState(Enemy.MovingState);
         }
