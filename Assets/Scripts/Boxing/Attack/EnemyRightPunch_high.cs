@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnemyLeftPunch_low : MonoBehaviour
+public class EnemyRightPunch_high : MonoBehaviour
 {
     bool current_state = false;
     public GameObject Player;
@@ -28,7 +28,7 @@ public class EnemyLeftPunch_low : MonoBehaviour
         if(current_state == false)
         {
             transform.position = Vector3.MoveTowards(transform.position, 
-        Player.transform.position, Time.deltaTime * MoveSpeed);
+        Player.transform.position + (Vector3.up * 0.5f), Time.deltaTime * MoveSpeed);
 
         }
 

@@ -65,7 +65,7 @@ RectTransform:
   m_Children:
   - {fileID: 5075610448153465839}
   m_Father: {fileID: 1784055403689533104}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -607,7 +607,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1784055403689533104}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5075610449623049956
 MeshFilter:
@@ -818,6 +818,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7054983079989838557, guid: 7abe9dc7f3e3fb545b9a729cc51d112d, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208758836680490940, guid: 7abe9dc7f3e3fb545b9a729cc51d112d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563388116602191433, guid: 7abe9dc7f3e3fb545b9a729cc51d112d, type: 3}
+      propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

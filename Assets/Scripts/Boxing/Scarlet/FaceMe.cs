@@ -8,21 +8,34 @@ public class FaceMe : MonoBehaviour
     public Transform boss;
     public float rotationSpeed = 1.0f;
     public float alignmentThreshold = 5.0f;
+    public float fallenThreshold = 60f;
+    public bool fallenEnabled = false;
+    public HealthControl healthcontrol;
     void Update()
     {
         float angle = Vector3.Angle(Vector3.up, boss.up);
         if (angle < alignmentThreshold)
         {
-            // ¼ÆËã´ÓBossµ½Íæ¼ÒµÄ·½ÏòÏòÁ¿
+            // è®¡ç®—ä»ŽBossåˆ°çŽ©å®¶çš„æ–¹å‘å‘é‡
             Vector3 direction = boss.position - player.position;
-            direction.y = 0; // ½«Y·ÖÁ¿ÉèÎª0£¬±£Ö¤Ðý×ªÖ»ÔÚXZÆ½ÃæÄÚ
+            direction.y = 0; // å°†Yåˆ†é‡è®¾ä¸º0ï¼Œä¿è¯æ—‹è½¬åªåœ¨XZå¹³é¢å†…
 
-            // ´´½¨ÃæÏò¸Ã·½ÏòµÄÐý×ª
+            // åˆ›å»ºé¢å‘è¯¥æ–¹å‘çš„æ—‹è½¬
             Quaternion lookRotation = Quaternion.LookRotation(direction);
 
-            // Ó¦ÓÃÐý×ªµ½BossµÄTransformÉÏ
+            // åº”ç”¨æ—‹è½¬åˆ°Bossçš„Transformä¸Š
             boss.rotation = Quaternion.Slerp(boss.rotation, lookRotation, Time.deltaTime * rotationSpeed);
 
+        }
+        if (angle > fallenThreshold) 
+        { 
+            fallenEnabled = true;
+            healthcontrol.KeepInvincible();
+        }
+        else
+        {
+            fallenEnabled= false;
+            healthcontrol.CancelInvincible();
         }
     }
 }
