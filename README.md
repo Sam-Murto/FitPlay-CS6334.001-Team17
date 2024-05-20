@@ -30,3 +30,11 @@ struck by the sabers. </p>
 <p> FitRunning is a time trial game in which the player must run through a level with basic obstacles along with coins that will increase their score. The player must move 
 through the level by actually running in place </p>
 
+## 3rd Party Assets
+
+<p> We used sounds taken from 3rd party sources for the games. These include: </p>
+
+* Punch for FitBoxing and FitSaber: https://pixabay.com/sound-effects/punch-6-166699/
+* Metal strike for FitSaber: https://assetstore.unity.com/packages/audio/sound-fx/free-sound-effectspack-155776
+* Explosion for FitSaber: https://pixabay.com/sound-effects/explosion-6055/
+* Collect points for FitRunning: https://pixabay.com/sound-effects/collect-points-190037/
